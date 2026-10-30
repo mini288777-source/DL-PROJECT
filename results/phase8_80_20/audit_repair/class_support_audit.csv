@@ -1,0 +1,8 @@
+canonical_class,is_emergency,test_support,support_status,reported_recall,reported_precision,reported_f1,macro_f1_inclusion
+GENERAL_SPEECH,False,1155,SUPPORTED,SUPPORTED,SUPPORTED,SUPPORTED,Included (canonical zero_division=0)
+CRITICAL_RESPONSE,True,17,SUPPORTED,SUPPORTED,SUPPORTED,SUPPORTED,Included (canonical zero_division=0)
+FALL,True,14,SUPPORTED,SUPPORTED,SUPPORTED,SUPPORTED,Included (canonical zero_division=0)
+BREATHING_MEDICAL,True,11,SUPPORTED,SUPPORTED,SUPPORTED,SUPPORTED,Included (canonical zero_division=0)
+PAIN,True,9,SUPPORTED,SUPPORTED,SUPPORTED,SUPPORTED,Included (canonical zero_division=0)
+SOS_HELP,True,9,SUPPORTED,SUPPORTED,SUPPORTED,SUPPORTED,Included (canonical zero_division=0)
+LOCATION,True,0,ZERO_SUPPORT_ABSENT,N/A — no true examples in test set,N/A,N/A,Included (canonical zero_division=0)

@@ -1,0 +1,220 @@
+# ==============================================================================
+# PHASE 7: CONTINUAL QUANTUM-CLASSICAL PERSONALIZATION RESEARCH PROTOCOL
+# EXTENSION BOUNDARY & CONTRACT SPECIFICATION (PHASE 7.0 FREEZE)
+# ==============================================================================
+
+project_extension:
+  name: "Continual Quantum Personalization"
+  status: "experimental"
+  scope: "Post-Phase-6.5 Longitudinal Self-Improving Research Extension"
+  execution_phase: "7.0 (Boundary & Contract Freeze Only)"
+  model_training_allowed: false
+  new_experiments_allowed: false
+
+baseline:
+  frozen_phase: "Phase_1_to_6_5"
+  immutable: true
+  authoritative_decision: "CASE B — NO STATISTICALLY SUPPORTED QUANTUM ADVANTAGE under the evaluated fixed-kernel protocol"
+  operational_status:
+    deployment_readiness: "NOT READY"
+    clinical_validation: "NOT PERFORMED"
+    physical_quantum_hardware: "NOT TESTED"
+
+encoder:
+  model: "openai/whisper-tiny"
+  embedding_dim: 384
+  frozen: true
+  dtype: "float32"
+  normalization: "unit_L2"
+  trainable: false
+
+taxonomy:
+  source: "config/taxonomy.yaml"
+  classes:
+    - "GENERAL_SPEECH"
+    - "CRITICAL_RESPONSE"
+    - "FALL"
+    - "BREATHING_MEDICAL"
+    - "PAIN"
+    - "SOS_HELP"
+    - "LOCATION"
+
+initial_personalization:
+  budgets:
+    - 20
+    - 30
+    - 50
+  source_split: "phase6_5/splits/recovery_splits_hierarchical_ready.json"
+
+continual_budget:
+  status: "DEFINED_POST_EMPIRICAL_AUDIT"
+  audit_date: "2026-10-06"
+  empirical_basis: "Phase 7.4 empirical audit of 15 TORGO speakers in recovery_splits_hierarchical_ready.json"
+  budgets:
+    - 20
+    - 30
+    - 40
+    - 50
+  accumulation_trajectory:
+    B0: 20  # Initial calibration seed
+    B1: 30  # +10 verified experiences
+    B2: 40  # +10 verified experiences
+    B3: 50  # +10 verified experiences
+  protected_test_source: "phase6_5/splits/recovery_splits_hierarchical_ready.json (N=50 held-out split, 68 to 943 recordings per speaker, zero overlap)"
+  ceiling_policy: "Budgets > 50 empirically prohibited due to recording availability constraints in low-resource atypical speech (e.g. F01 has only 68 remaining test utterances)."
+
+continual_learning_lifecycle:
+  description: >
+    Strict closed-loop continual learning protocol requiring quality checks,
+    confidence gates, eligibility filtering, protected validation, and versioned promotion.
+  pipeline_steps:
+    - step: 1
+      name: "INTERACTION"
+      description: "User speech input acquired in deployment simulation."
+    - step: 2
+      name: "QUALITY_CHECK"
+      description: "Audio SNR, clipping, and feature sanity inspection."
+    - step: 3
+      name: "PREDICTION"
+      description: "Active model generates Stage-1 gate and Stage-2 subtype logits."
+    - step: 4
+      name: "CONFIDENCE"
+      description: "Uncertainty quantification and calibrated confidence extraction."
+    - step: 5
+      name: "ELIGIBILITY"
+      description: "Sample filtered for novelty, stability, and confirmation requirements."
+    - step: 6
+      name: "EXPERIENCE_BUFFER"
+      description: "Eligible samples appended to immutable experience store."
+    - step: 7
+      name: "CANDIDATE_DATASET"
+      description: "Balanced replay selection combining initial seed and verified experience."
+    - step: 8
+      name: "MODEL_UPDATE"
+      description: "Offline calibration of candidate model on candidate dataset."
+    - step: 9
+      name: "PROTECTED_VALIDATION"
+      description: "Strict multi-metric evaluation against held-out protected validation set."
+    - step: 10
+      name: "PROMOTE_OR_REJECT"
+      description: "Candidate model compared against previous active version."
+    - step: 11
+      name: "MODEL_VERSION"
+      description: "Cryptographically tagged version activated or rolled back."
+
+experience_record_schema:
+  description: "Typed schema contract for all samples admitted to experience memory."
+  fields:
+    - sample_id: "string (unique UUID/MD5)"
+    - speaker_id: "string (TORGO speaker identifier)"
+    - audio_reference: "string (path or URI to audio recording)"
+    - embedding_reference: "string (path to frozen 384-D Whisper embedding)"
+    - predicted_intent: "string (canonical taxonomy class ID)"
+    - confirmed_intent: "string (verified canonical taxonomy class ID)"
+    - prediction_confidence: "float [0.0, 1.0]"
+    - confirmation_source: "string (user_explicit, clinician_verified, oracle_ground_truth)"
+    - timestamp: "string (ISO 8601 UTC timestamp)"
+    - model_version: "string (version ID of predicting model)"
+    - representation_version: "string (embedding encoder version hash)"
+    - learning_status: "string (canonical status enum)"
+    - data_source: "string (torgo_stream, held_out_test, interactive_eval)"
+    - quality_score: "float [0.0, 1.0] (acoustic SNR/cleanness metric)"
+    - novelty_score: "float [0.0, 1.0] (representation distance from existing support)"
+    - environment_metadata: "dict (noise level, SNR, channel metadata)"
+  learning_statuses:
+    - "UNREVIEWED"
+    - "AUTO_ELIGIBLE"
+    - "USER_CONFIRMED"
+    - "REJECTED"
+    - "QUARANTINED"
+    - "USED_FOR_TRAINING"
+    - "VALIDATION_ONLY"
+
+model_version_schema:
+  description: "Typed schema contract for versioned personalized models."
+  fields:
+    - model_id: "string (classical_adapter, rbf_svm, qsvc, etc.)"
+    - version: "string (semantic version string vX.Y.Z)"
+    - parent_version: "string (version of base model before update)"
+    - training_sample_ids: "list[string] (exact sample IDs used in training)"
+    - training_dataset_hash: "string (SHA-256 hash of training data array)"
+    - configuration_hash: "string (SHA-256 hash of hyperparameters)"
+    - representation_version: "string (embedding specification hash)"
+    - quantum_configuration: "dict (qubits, reps, feature_map, backend, or null)"
+    - metrics: "dict (validation metrics achieved)"
+    - created_at: "string (ISO 8601 UTC timestamp)"
+    - status: "string (canonical model state enum)"
+  model_states:
+    - "CANDIDATE"
+    - "VALIDATED"
+    - "ACTIVE"
+    - "REJECTED"
+    - "ROLLED_BACK"
+    - "ARCHIVED"
+  mutation_rule: "No model shall be modified in-place; all versions are immutable and tagged."
+
+validation_contract:
+  description: "Gatekeeping interface governing candidate model promotion."
+  evaluation_targets:
+    - "protected_validation_data (isolated from experience memory)"
+    - "previous_active_model (direct paired comparison)"
+    - "safety_critical_emergency_metrics (recall and false-alarm bounds)"
+  required_metrics:
+    - "Emergency Recall"
+    - "End-to-End Emergency Precision"
+    - "False-Emergency Rate"
+    - "IPER"
+    - "Stage-2 Balanced Accuracy"
+    - "End-to-End Macro-F1"
+  promotion_policy: "TO_BE_DEFINED_IN_PHASE_7.6"
+
+future_quantum_tracks:
+  description: "Roadmap of experimental comparison tracks for subsequent subphases."
+  tracks:
+    TRACK_A:
+      name: "Fixed classical baseline"
+      description: "Phase 6.5 frozen Classical RBF-SVM and Adapter without updates."
+    TRACK_B:
+      name: "Continual classical personalization"
+      description: "Classical Adapter / RBF-SVM updated via verified experience memory."
+    TRACK_C:
+      name: "Fixed QSVC"
+      description: "Phase 6.5 frozen Q8-R1 QSVC without updates."
+    TRACK_D:
+      name: "Continual QSVC"
+      description: "QSVC kernel memory updated via support vector expansion / replay."
+    TRACK_E:
+      name: "Trainable quantum representation"
+      description: "Variational quantum feature map with parameterized rotation gates."
+    TRACK_F:
+      name: "Hybrid classical + quantum"
+      description: "Classical representation refinement combined with quantum kernel decision."
+  execution_status: "FUTURE_TRACKS_ONLY — NO EXPERIMENTAL RUNS IN PHASE 7.0"
+
+research_questions:
+  RQ7.1: "Does verified experience accumulation improve speaker-specific atypical speech recognition?"
+  RQ7.2: "How does performance change as verified personalized samples accumulate?"
+  RQ7.3: "Can confidence-aware learning reduce self-training errors?"
+  RQ7.4: "Can replay prevent catastrophic forgetting?"
+  RQ7.5: "Can drift detection identify when personalization needs recalibration?"
+  RQ7.6: "Does continual quantum personalization provide benefit beyond continual classical personalization?"
+  RQ7.7: "Does a trainable quantum representation outperform the fixed quantum kernel under matched conditions?"
+
+scientific_hypotheses:
+  H1: "Continual verified personalization improves speaker-specific performance relative to the initial personalized model."
+  H2: "Replay-based continual learning reduces catastrophic forgetting relative to naïve incremental updating."
+  H3: "Confidence-aware sample eligibility reduces harmful self-training updates."
+  H4: "Continual quantum personalization may improve with increasing verified experience, but this is an empirical question."
+  H5: "Trainable quantum representation may provide additional benefit over fixed QSVC, but this is an empirical question."
+
+anti_hallucination_rules:
+  RULE_1: "Never invent experimental results."
+  RULE_2: "Never invent datasets."
+  RULE_3: "Never invent future sample budgets."
+  RULE_4: "Never claim a model improved until an experiment verifies it."
+  RULE_5: "Never convert a prediction into ground truth automatically."
+  RULE_6: "Never modify frozen Phase 1–6.5 evidence."
+  RULE_7: "Never change the frozen CASE B conclusion."
+  RULE_8: "Never introduce new metrics without defining them."
+  RULE_9: "Never compare unequal experimental conditions as though they were matched."
+  RULE_10: "Never start the next phase automatically."

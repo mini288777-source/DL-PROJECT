@@ -1,0 +1,135 @@
+# ==============================================================================
+# PHASE 8 REPAIRED RESEARCH PROTOCOL: RESIDUAL FUSION & CONFIRMATORY BENCHMARK
+# ==============================================================================
+# Pre-registered and canonically frozen before repaired confirmatory evaluation.
+
+metadata:
+  protocol_name: "Phase8_Repaired_Quantum_Recovery_Protocol"
+  version: "2.0.0-frozen-repaired"
+  date: "October 2026"
+  target_question: "Does a quantum residual module mathematically influence and improve emergency detection over matched classical controls?"
+  clinical_disclaimer: "RESEARCH DEMO PROTOTYPE ONLY — NOT CLINICALLY VALIDATED"
+
+dataset_and_cohort:
+  dataset_name: "TORGO Database of Dysarthric Speech"
+  total_speakers: 15
+  dysarthric_speakers:
+    - "F01"
+    - "F03"
+    - "F04"
+    - "M01"
+    - "M02"
+    - "M03"
+    - "M04"
+    - "M05"
+  control_speakers:
+    - "FC01"
+    - "FC02"
+    - "FC03"
+    - "MC01"
+    - "MC02"
+    - "MC03"
+    - "MC04"
+  audio_sampling_rate: 16000
+  feature_extractor: "openai/whisper-tiny"
+  embedding_dimension: 384
+  embedding_normalization: "unit_l2"
+
+taxonomy:
+  canonical_classes:
+    - "GENERAL_SPEECH"
+    - "CRITICAL_RESPONSE"
+    - "FALL"
+    - "BREATHING_MEDICAL"
+    - "PAIN"
+    - "SOS_HELP"
+    - "LOCATION"
+  general_speech_class: "GENERAL_SPEECH"
+  emergency_classes:
+    - "CRITICAL_RESPONSE"
+    - "FALL"
+    - "BREATHING_MEDICAL"
+    - "PAIN"
+    - "SOS_HELP"
+    - "LOCATION"
+
+experimental_matrix:
+  budgets: [20, 30, 40, 50]
+  canonical_cells: 60  # 15 speakers x 4 budgets
+  master_seed: 42
+  eval_conditions:
+    - "clean"
+
+fusion_architecture:
+  fusion_form: "z_final = z_gate + alpha * z_residual"
+  alpha_policy: "pre_registered_fixed"
+  alpha_value: 0.5
+  probability_activation: "sigmoid"
+
+threshold_policy:
+  method: "internal_validation_grid_search"
+  validation_splits: 4
+  search_range: [0.10, 0.90]
+  step_size: 0.05
+  objective: "maximize_recall_subject_to_fer_bound"
+  fer_bound: 0.15
+
+training_objective:
+  loss: "Weighted_BCEWithLogitsLoss"
+  pos_weight_policy: "training_data_ratio"  # n_general / n_emergency computed strictly from training split
+
+tracks:
+  track_a_classical_recovery:
+    name: "Unconstrained Classical Recovery"
+    stage1_gate:
+      architecture: "Linear(384, 64) -> LayerNorm(64) -> GELU() -> Dropout(0.1) -> Linear(64, 1)"
+      optimizer: "AdamW"
+      lr: 0.005
+      epochs: 40
+    residual:
+      architecture: "Linear(384, 64) -> GELU() -> Linear(64, 1)"
+      optimizer: "AdamW"
+      lr: 0.005
+      epochs: 30
+
+  track_b_quantum_residual:
+    name: "Quantum Residual Emergency Module"
+    stage1_gate:
+      architecture: "Identical to Track A (Linear 384->64->1)"
+    bottleneck_projection:
+      dim: 8
+      method: "TrainOnlyPCAPipeline (scaled to [0, pi])"
+    residual_vqc:
+      qubits: 8
+      circuit_depth: 2
+      feature_map: "AngleEmbedding(8)"
+      ansatz: "BasicEntanglerLayers(weights, wires=8)"
+      trainable_params: 16
+      measurement: "Expectation(PauliZ) on wire 0 -> scaled logit"
+      optimizer: "Adam"
+      lr: 0.01
+      epochs: 25
+
+  track_c_matched_classical_shadow:
+    name: "Matched Classical Shadow Model"
+    stage1_gate:
+      architecture: "Identical to Track A and B"
+    bottleneck_projection:
+      dim: 8
+      method: "Identical to Track B (TrainOnlyPCAPipeline)"
+    residual_mlp:
+      architecture: "Linear(8, 16) -> GELU() -> Linear(16, 1)"
+      trainable_params: 161
+      optimizer: "Adam"
+      lr: 0.01
+      epochs: 25
+
+subtype_classifier:
+  architecture: "Linear(384, 64) -> LayerNorm(64) -> GELU() -> Linear(64, 6)"
+  optimizer: "AdamW"
+  lr: 0.005
+  epochs: 30
+
+safety_governance:
+  max_acceptable_fer: 0.15
+  min_acceptable_emergency_recall: 0.05

@@ -1,0 +1,103 @@
+# ==============================================================================
+# CANONICAL INTENT TAXONOMY
+# SINGLE SOURCE OF TRUTH FOR SPEECH INTENT CLASSES & HIERARCHICAL ROUTING
+# ==============================================================================
+
+version: "1.0.0"
+description: >
+  Authoritative 7-class intent taxonomy used across all TORGO atypical speech experiments.
+  Invented labels (e.g., Medical, Fire, Police, Safety, Mobility, Assistance) MUST NOT be
+  used in place of these canonical identifiers.
+
+canonical_classes:
+  GENERAL_SPEECH:
+    canonical_id: "GENERAL_SPEECH"
+    display_name: "General Conversational Speech"
+    emergency_flag: false
+    stage1_label: 0
+    corpus_prevalence_count: 5770
+    corpus_prevalence_pct: 95.1055
+    feasibility: "universal"
+    description: "Conversational, non-urgent, or everyday speech prompts."
+
+  CRITICAL_RESPONSE:
+    canonical_id: "CRITICAL_RESPONSE"
+    display_name: "Critical Emergency Response"
+    emergency_flag: true
+    stage1_label: 1
+    corpus_prevalence_count: 98
+    corpus_prevalence_pct: 1.6153
+    feasibility: "common"
+    description: "Urgent calls requiring immediate emergency intervention."
+
+  FALL:
+    canonical_id: "FALL"
+    display_name: "Fall Detection & Alert"
+    emergency_flag: true
+    stage1_label: 1
+    corpus_prevalence_count: 64
+    corpus_prevalence_pct: 1.0549
+    feasibility: "common"
+    description: "Utterances signaling a fall or inability to rise."
+
+  BREATHING_MEDICAL:
+    canonical_id: "BREATHING_MEDICAL"
+    display_name: "Breathing & Acute Medical Distress"
+    emergency_flag: true
+    stage1_label: 1
+    corpus_prevalence_count: 52
+    corpus_prevalence_pct: 0.8571
+    feasibility: "common"
+    description: "Shortness of breath, acute medical distress, or choking."
+
+  PAIN:
+    canonical_id: "PAIN"
+    display_name: "Severe Acute Pain"
+    emergency_flag: true
+    stage1_label: 1
+    corpus_prevalence_count: 31
+    corpus_prevalence_pct: 0.5109
+    feasibility: "data_limited"
+    description: "Verbalizations expressing acute or incapacitating pain. Limited availability across speakers."
+
+  SOS_HELP:
+    canonical_id: "SOS_HELP"
+    display_name: "General SOS & Distress Call"
+    emergency_flag: true
+    stage1_label: 1
+    corpus_prevalence_count: 36
+    corpus_prevalence_pct: 0.5934
+    feasibility: "common"
+    description: "Direct cries for help, SOS, or general distress."
+
+  LOCATION:
+    canonical_id: "LOCATION"
+    display_name: "Emergency Location Specification"
+    emergency_flag: true
+    stage1_label: 1
+    corpus_prevalence_count: 16
+    corpus_prevalence_pct: 0.2637
+    feasibility: "data_limited"
+    description: "Spatial localization utterances for responders. Severe data scarcity across speakers."
+
+hierarchical_mapping:
+  stage1:
+    binary_classes:
+      0: "GENERAL_SPEECH"
+      1: "EMERGENCY"
+    emergency_group:
+      - "CRITICAL_RESPONSE"
+      - "FALL"
+      - "BREATHING_MEDICAL"
+      - "PAIN"
+      - "SOS_HELP"
+      - "LOCATION"
+  stage2:
+    router_scope: "Feasible emergency classes present in speaker calibration/test data"
+    disallowed_unmapped_labels:
+      - "Medical"
+      - "Fire"
+      - "Police"
+      - "Safety"
+      - "Mobility"
+      - "Assistance"

@@ -1,0 +1,17 @@
+record_type,comparison_id,metric_name,unit,n_evaluations,mean,std,median,pct_mean,pct_std,diff_mean,ci_95_lower,ci_95_upper,wilcoxon_stat,raw_p_value,holm_p_value,decision
+MODEL_DESCRIPTIVE,q8_r1,IPER (Intent Preservation Rate),"fraction [0, 1]",60,0.0825,0.1361,0.0,8.25,13.61,,,,,,,DESCRIPTIVE
+MODEL_DESCRIPTIVE,q8_r1,IPER_ERROR (Intent Preservation Error Rate),"fraction [0, 1]",60,0.9175,0.1361,1.0,91.75,13.61,,,,,,,DESCRIPTIVE
+MODEL_DESCRIPTIVE,rbf_d8,IPER (Intent Preservation Rate),"fraction [0, 1]",60,0.1169,0.1714,0.0,11.69,17.14,,,,,,,DESCRIPTIVE
+MODEL_DESCRIPTIVE,rbf_d8,IPER_ERROR (Intent Preservation Error Rate),"fraction [0, 1]",60,0.8831,0.1714,1.0,88.31,17.14,,,,,,,DESCRIPTIVE
+MODEL_DESCRIPTIVE,adp_d8,IPER (Intent Preservation Rate),"fraction [0, 1]",60,0.1421,0.1417,0.125,14.21,14.17,,,,,,,DESCRIPTIVE
+MODEL_DESCRIPTIVE,adp_d8,IPER_ERROR (Intent Preservation Error Rate),"fraction [0, 1]",60,0.8579,0.1417,0.875,85.79,14.17,,,,,,,DESCRIPTIVE
+MODEL_DESCRIPTIVE,q4_r1,IPER (Intent Preservation Rate),"fraction [0, 1]",60,0.0661,0.1055,0.0,6.61,10.55,,,,,,,DESCRIPTIVE
+MODEL_DESCRIPTIVE,q4_r1,IPER_ERROR (Intent Preservation Error Rate),"fraction [0, 1]",60,0.9339,0.1055,1.0,93.39,10.55,,,,,,,DESCRIPTIVE
+MODEL_DESCRIPTIVE,q8_r2,IPER (Intent Preservation Rate),"fraction [0, 1]",60,0.0765,0.1384,0.0,7.65,13.84,,,,,,,DESCRIPTIVE
+MODEL_DESCRIPTIVE,q8_r2,IPER_ERROR (Intent Preservation Error Rate),"fraction [0, 1]",60,0.9235,0.1384,1.0,92.35,13.84,,,,,,,DESCRIPTIVE
+PAIRED_CONTRAST,P4_RATE,Q8-R1 vs RBF-SVM d=8 [IPER],"fraction [0, 1]",60,0.0825,0.1361,0.0,8.25,13.61,-0.0344,-0.0617,-0.0071,29.5,0.014547,0.058189,NO_STATISTICAL_DIFFERENCE (CASE B)
+PAIRED_CONTRAST,P4_ERROR,Q8-R1 vs RBF-SVM d=8 [IPER_ERROR],"fraction [0, 1]",60,0.9175,0.1361,1.0,91.75,13.61,0.0344,0.0071,0.0617,29.5,0.014559,0.058236,NO_STATISTICAL_DIFFERENCE (CASE B)
+PAIRED_CONTRAST,S4_RATE,Q8-R1 vs Adapter d=8 [IPER],"fraction [0, 1]",60,0.0825,0.1361,0.0,8.25,13.61,-0.0597,-0.0953,-0.024,134.0,0.002967,0.002967,CLASSICAL_SUPERIOR (Adapter higher IPER)
+PAIRED_CONTRAST,S4_ERROR,Q8-R1 vs Adapter d=8 [IPER_ERROR],"fraction [0, 1]",60,0.9175,0.1361,1.0,91.75,13.61,0.0597,0.024,0.0953,134.5,0.003049,0.003049,CLASSICAL_SUPERIOR (Adapter higher IPER)
+PAIRED_CONTRAST,A1_RATE,Q4-R1 vs Q8-R1 (Qubit Scaling) [IPER],"fraction [0, 1]",60,0.0661,0.1055,0.0,6.61,10.55,-0.0164,-0.0505,0.0177,79.0,0.33109,0.662181,NO_STATISTICAL_DIFFERENCE
+PAIRED_CONTRAST,A2_RATE,Q8-R1 vs Q8-R2 (Depth Scaling) [IPER],"fraction [0, 1]",60,0.0825,0.1361,0.0,8.25,13.61,0.0059,-0.0093,0.0211,11.0,0.611453,1.0,NO_STATISTICAL_DIFFERENCE

@@ -1,0 +1,18 @@
+criterion,status,blocking,evidence,action_required
+Encoder identity,PASS,TRUE,"openai/whisper-tiny (384-d) verified in config, code, cache, manifest, reports. Approved CPU adaptation documented in reports/encoder_identity_audit.md",Maintain 384-d in Phase 4
+Embedding dimension consistency,PASS,TRUE,"384-d verified across raw model output, cache files, manifest, Phase 3 models, and Phase 4 spec in reports/representation_consistency.md",None
+Phase 1 split integrity,PASS,TRUE,"60 split definitions across 15 speakers, 100% audio valid, verified in splits/torgo_splits.json and test_torgo_reproducibility.py",None
+N=20 validity,PASS,TRUE,"Verified exactly 20 unique recordings per speaker, unique hashes, nested subsets in reports/phase3_5_sample_budget_audit.csv",None
+N=30 validity,PASS,TRUE,"Verified exactly 30 unique recordings per speaker, unique hashes, nested subsets in reports/phase3_5_sample_budget_audit.csv",None
+N=40 validity,PASS,TRUE,"Verified exactly 40 unique recordings per speaker, unique hashes, nested subsets in reports/phase3_5_sample_budget_audit.csv",None
+N=50 validity,PASS,TRUE,"Verified exactly 50 unique recordings per speaker, unique hashes, nested subsets in reports/phase3_5_sample_budget_audit.csv",None
+Emergency taxonomy validity,PASS,TRUE,"7-class taxonomy with deterministic single-word mapping and literary exclusion rules verified in reports/phase3_5_intent_validity_audit.csv",None
+Class-balance characterization,WARNING,FALSE,"GENERAL_SPEECH constitutes 95.10% of cohort data; 7 of 60 conditions are single-class. Fully audited in reports/phase3_5_class_balance_analysis.md",Phase 4 must evaluate identical 60 conditions and use identical fallback
+RBF invariance explanation,PASS,TRUE,"Invariance proven mathematically as majority-class margin collapse under unweighted C=1.0 in reports/phase3_5_rbf_invariance_audit.md",None
+Adapter correctness,PASS,TRUE,"Verified exactly 25223 trainable parameters, frozen encoder, fixed seed 42, AdamW in tests/test_phase3_baselines.py",None
+Metric correctness,PASS,TRUE,"Macro-F1, Accuracy, Weighted-F1 with zero_division=0 verified against manual calculation in reports/phase3_5_metric_validation.md",None
+IPER data readiness,PASS,TRUE,"All 42536 prediction instances preserved with recording_id, speaker_id, true_intent, predicted_intent, reference_transcript in results/phase3/predictions.csv",None
+Leakage audit,PASS,TRUE,"Zero overlap between adaptation and test sets across recording IDs and prompts verified in reports/phase3_5_leakage_audit.md",None
+Reproducibility,PASS,TRUE,"Bit-for-bit repeatability verified via tests/test_phase3_5_reproducibility.py",None
+Classical/quantum comparability,PASS,TRUE,"Strict input contract (same data, representations, labels, metrics) defined in reports/phase3_5_phase4_comparability.md",Strictly follow contract during Phase 4 implementation
+Documentation completeness,PASS,TRUE,"All reports, CSVs, and status files generated and cross-referenced",Update README.md and PHASE_STATUS.md

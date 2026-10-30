@@ -1,0 +1,96 @@
+{
+  "benchmark": "Phase 8 Supplementary 80/20 Benchmark",
+  "timestamp": "2026-10-10T12:00:00Z",
+  "safety_bound_specification": {
+    "metric": "False Emergency Rate (FER)",
+    "definition": "FP / (FP + TN) = FP / Total_General_Speech",
+    "upper_bound_limit": 0.15,
+    "safety_bound_percentage": "15.0%"
+  },
+  "locked_test_safety_evaluations": {
+    "oof_calibrated_policy": {
+      "description": "Training-only 5-fold Stratified Out-of-Fold calibration (unbiased, zero test leakage)",
+      "Track_A_Classical": {
+        "FP": 317,
+        "TN": 838,
+        "total_general_speech": 1155,
+        "FER": 0.27445887445887446,
+        "FER_percentage": "27.45%",
+        "safety_status": "FAIL",
+        "reason": "FER (27.45%) exceeds safety limit of 15.0%"
+      },
+      "Track_B_Quantum": {
+        "FP": 301,
+        "TN": 854,
+        "total_general_speech": 1155,
+        "FER": 0.2606060606060606,
+        "FER_percentage": "26.06%",
+        "safety_status": "FAIL",
+        "reason": "FER (26.06%) exceeds safety limit of 15.0%"
+      },
+      "Track_C_Matched_Shadow": {
+        "FP": 300,
+        "TN": 855,
+        "total_general_speech": 1155,
+        "FER": 0.2597402597402597,
+        "FER_percentage": "25.97%",
+        "safety_status": "FAIL",
+        "reason": "FER (25.97%) exceeds safety limit of 15.0%"
+      },
+      "collective_verdict": "FAILED \u2014 All three models fail the locked-test FER requirement under the OOF-calibrated policy. No model may be labeled as safety-passing."
+    },
+    "in_sample_calibrated_policy_historical": {
+      "description": "Historical in-sample calibration on training probabilities (subject to optimism bias)",
+      "Track_A_Classical": {
+        "FER": 0.12294372294372294,
+        "safety_status": "PASS_IN_SAMPLE_ONLY"
+      },
+      "Track_B_Quantum": {
+        "FER": 0.11861471861471862,
+        "safety_status": "PASS_IN_SAMPLE_ONLY"
+      },
+      "Track_C_Matched_Shadow": {
+        "FER": 0.1523809523809524,
+        "safety_status": "FAIL"
+      }
+    }
+  },
+  "overall_safety_status": {
+    "locked_test_fer_limit": "FAILED",
+    "classical_safety_status": "FAIL",
+    "quantum_safety_status": "FAIL",
+    "matched_shadow_safety_status": "FAIL"
+  },
+  "statistical_interpretation": {
+    "hypothesis_test_conclusion": "no statistically significant quantum advantage was demonstrated",
+    "accuracy_mcnemar_test": {
+      "discordant_pairs": {
+        "quantum_only_correct": 38,
+        "classical_only_correct": 33
+      },
+      "p_value": 0.6353076420876663,
+      "is_significant": false
+    },
+    "emergency_recall_mcnemar_test_in_sample": {
+      "discordant_pairs": {
+        "quantum_only_detected": 4,
+        "classical_only_detected": 3
+      },
+      "p_value": 1.0,
+      "is_significant": false
+    },
+    "emergency_recall_mcnemar_test_oof": {
+      "discordant_pairs": {
+        "quantum_only_detected": 4,
+        "classical_only_detected": 2
+      },
+      "p_value": 0.6875,
+      "is_significant": false
+    },
+    "equivalence_language_guidance": "A non-significant test of difference (p > 0.05) does not prove statistical equivalence. In the absence of a prespecified equivalence margin and a formal Two One-Sided Tests (TOST) design, equivalence cannot be asserted; rather, the data demonstrates that no statistically significant quantum advantage was observed."
+  },
+  "protocol_governance": {
+    "test_set_lock_policy": "STRICTLY LOCKED \u2014 No further threshold tuning or hyperparameter adjustments may be evaluated on the locked test set.",
+    "future_work_requirement": "Any further threshold development must use training/validation data only (e.g. nested cross-validation), and any future safety claim requires an entirely independent confirmation dataset."
+  }
+}

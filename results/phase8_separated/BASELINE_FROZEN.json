@@ -1,0 +1,15 @@
+{
+  "status": "frozen",
+  "track": "Track_A_Classical",
+  "total_cells": 60,
+  "total_predictions": 21268,
+  "results_csv": "results_track_a.csv",
+  "results_hash": "07caaf640899b2c294291c1aee09cfcfb7c53819158f223898cd287690a4d521",
+  "predictions_csv": "predictions_track_a.csv",
+  "predictions_hash": "aefab847b1eb853c84cb029880e8f869338a1d9636d4bdcb9bdf94212f794f2a",
+  "mean_emergency_recall": 0.37766414141414134,
+  "mean_false_emergency_rate": 0.44187458528741363,
+  "mean_macro_f1": 0.09801671243640454,
+  "timestamp": 1791608770.1340728,
+  "manifest_version": "2.0-repaired-separated"
+}

@@ -1,0 +1,363 @@
+{
+  "dataset_name": "TORGO",
+  "root_directory": "D:\\DL\\TORGO DATASET",
+  "total_parquet_files": 4,
+  "total_raw_bytes": 1564871166,
+  "total_raw_size_mb": 1492.38,
+  "raw_files": [
+    {
+      "path": "TORGO DATASET\\train-00000-of-00004.parquet",
+      "size_bytes": 370393998,
+      "size_mb": 353.24
+    },
+    {
+      "path": "TORGO DATASET\\train-00001-of-00004.parquet",
+      "size_bytes": 397400150,
+      "size_mb": 378.99
+    },
+    {
+      "path": "TORGO DATASET\\train-00002-of-00004.parquet",
+      "size_bytes": 356341262,
+      "size_mb": 339.83
+    },
+    {
+      "path": "TORGO DATASET\\train-00003-of-00004.parquet",
+      "size_bytes": 440735756,
+      "size_mb": 420.32
+    }
+  ],
+  "total_utterances": 16552,
+  "unique_filenames": 16552,
+  "duplicate_filenames": 0,
+  "malformed_filenames_count": 0,
+  "malformed_filenames": [],
+  "schema_columns": [
+    "audio",
+    "transcription",
+    "speech_status",
+    "gender",
+    "duration"
+  ],
+  "audio_container_format": "WAV (RIFF standard header stored as raw bytes in parquet)",
+  "sample_rate_hz": 16000,
+  "channels": 1,
+  "total_audio_duration_sec": 49238.3,
+  "total_audio_duration_hours": 13.68,
+  "mean_utterance_duration_sec": 2.97,
+  "min_utterance_duration_sec": 0.15,
+  "max_utterance_duration_sec": 193.83,
+  "transcripts": {
+    "null_count": 0,
+    "empty_count": 0,
+    "unique_count": 967
+  },
+  "microphone_breakdown": {
+    "arrayMic": 8697,
+    "headMic": 7855
+  },
+  "speaker_count": 15,
+  "dysarthric_speaker_count": 8,
+  "control_speaker_count": 7,
+  "speakers": {
+    "F01": {
+      "speaker_id": "F01",
+      "speaker_group": "dysarthria",
+      "gender": "female",
+      "total_recordings": 236,
+      "unique_prompts": 118,
+      "unique_transcripts": 97,
+      "sessions": [
+        "1"
+      ],
+      "microphone_breakdown": {
+        "arrayMic": 118,
+        "headMic": 118
+      },
+      "total_duration_sec": 573.62,
+      "mean_duration_sec": 2.43,
+      "min_duration_sec": 0.75,
+      "max_duration_sec": 12.6
+    },
+    "F03": {
+      "speaker_id": "F03",
+      "speaker_group": "dysarthria",
+      "gender": "female",
+      "total_recordings": 1087,
+      "unique_prompts": 213,
+      "unique_transcripts": 426,
+      "sessions": [
+        "1",
+        "2",
+        "3"
+      ],
+      "microphone_breakdown": {
+        "headMic": 546,
+        "arrayMic": 541
+      },
+      "total_duration_sec": 2985.65,
+      "mean_duration_sec": 2.75,
+      "min_duration_sec": 0.15,
+      "max_duration_sec": 193.83
+    },
+    "F04": {
+      "speaker_id": "F04",
+      "speaker_group": "dysarthria",
+      "gender": "female",
+      "total_recordings": 673,
+      "unique_prompts": 250,
+      "unique_transcripts": 354,
+      "sessions": [
+        "1",
+        "2"
+      ],
+      "microphone_breakdown": {
+        "arrayMic": 429,
+        "headMic": 244
+      },
+      "total_duration_sec": 2202.22,
+      "mean_duration_sec": 3.27,
+      "min_duration_sec": 0.6,
+      "max_duration_sec": 10.35
+    },
+    "FC01": {
+      "speaker_id": "FC01",
+      "speaker_group": "healthy",
+      "gender": "female",
+      "total_recordings": 302,
+      "unique_prompts": 151,
+      "unique_transcripts": 131,
+      "sessions": [
+        "1"
+      ],
+      "microphone_breakdown": {
+        "arrayMic": 151,
+        "headMic": 151
+      },
+      "total_duration_sec": 1082.92,
+      "mean_duration_sec": 3.59,
+      "min_duration_sec": 2.25,
+      "max_duration_sec": 7.35
+    },
+    "FC02": {
+      "speaker_id": "FC02",
+      "speaker_group": "healthy",
+      "gender": "female",
+      "total_recordings": 2187,
+      "unique_prompts": 975,
+      "unique_transcripts": 903,
+      "sessions": [
+        "2",
+        "3"
+      ],
+      "microphone_breakdown": {
+        "arrayMic": 1220,
+        "headMic": 967
+      },
+      "total_duration_sec": 6221.79,
+      "mean_duration_sec": 2.84,
+      "min_duration_sec": 1.2,
+      "max_duration_sec": 7.5
+    },
+    "FC03": {
+      "speaker_id": "FC03",
+      "speaker_group": "healthy",
+      "gender": "female",
+      "total_recordings": 1922,
+      "unique_prompts": 405,
+      "unique_transcripts": 698,
+      "sessions": [
+        "1",
+        "2",
+        "3"
+      ],
+      "microphone_breakdown": {
+        "headMic": 963,
+        "arrayMic": 959
+      },
+      "total_duration_sec": 5000.87,
+      "mean_duration_sec": 2.6,
+      "min_duration_sec": 0.85,
+      "max_duration_sec": 8.49
+    },
+    "M01": {
+      "speaker_id": "M01",
+      "speaker_group": "dysarthria",
+      "gender": "male",
+      "total_recordings": 743,
+      "unique_prompts": 285,
+      "unique_transcripts": 320,
+      "sessions": [
+        "1",
+        "3"
+      ],
+      "microphone_breakdown": {
+        "arrayMic": 372,
+        "headMic": 371
+      },
+      "total_duration_sec": 2935.93,
+      "mean_duration_sec": 3.95,
+      "min_duration_sec": 1.01,
+      "max_duration_sec": 179.94
+    },
+    "M02": {
+      "speaker_id": "M02",
+      "speaker_group": "dysarthria",
+      "gender": "male",
+      "total_recordings": 772,
+      "unique_prompts": 232,
+      "unique_transcripts": 335,
+      "sessions": [
+        "1",
+        "2"
+      ],
+      "microphone_breakdown": {
+        "headMic": 388,
+        "arrayMic": 384
+      },
+      "total_duration_sec": 2836.81,
+      "mean_duration_sec": 3.67,
+      "min_duration_sec": 0.9,
+      "max_duration_sec": 17.7
+    },
+    "M03": {
+      "speaker_id": "M03",
+      "speaker_group": "dysarthria",
+      "gender": "male",
+      "total_recordings": 810,
+      "unique_prompts": 406,
+      "unique_transcripts": 348,
+      "sessions": [
+        "2"
+      ],
+      "microphone_breakdown": {
+        "headMic": 406,
+        "arrayMic": 404
+      },
+      "total_duration_sec": 2544.56,
+      "mean_duration_sec": 3.14,
+      "min_duration_sec": 1.45,
+      "max_duration_sec": 8.4
+    },
+    "M04": {
+      "speaker_id": "M04",
+      "speaker_group": "dysarthria",
+      "gender": "male",
+      "total_recordings": 666,
+      "unique_prompts": 286,
+      "unique_transcripts": 231,
+      "sessions": [
+        "1",
+        "2"
+      ],
+      "microphone_breakdown": {
+        "arrayMic": 389,
+        "headMic": 277
+      },
+      "total_duration_sec": 2872.64,
+      "mean_duration_sec": 4.31,
+      "min_duration_sec": 0.6,
+      "max_duration_sec": 23.25
+    },
+    "M05": {
+      "speaker_id": "M05",
+      "speaker_group": "dysarthria",
+      "gender": "male",
+      "total_recordings": 587,
+      "unique_prompts": 357,
+      "unique_transcripts": 386,
+      "sessions": [
+        "1",
+        "2"
+      ],
+      "microphone_breakdown": {
+        "headMic": 470,
+        "arrayMic": 117
+      },
+      "total_duration_sec": 2705.76,
+      "mean_duration_sec": 4.61,
+      "min_duration_sec": 0.32,
+      "max_duration_sec": 20.85
+    },
+    "MC01": {
+      "speaker_id": "MC01",
+      "speaker_group": "healthy",
+      "gender": "male",
+      "total_recordings": 2155,
+      "unique_prompts": 419,
+      "unique_transcripts": 786,
+      "sessions": [
+        "1",
+        "2",
+        "3"
+      ],
+      "microphone_breakdown": {
+        "arrayMic": 1078,
+        "headMic": 1077
+      },
+      "total_duration_sec": 6512.2,
+      "mean_duration_sec": 3.02,
+      "min_duration_sec": 0.6,
+      "max_duration_sec": 9.0
+    },
+    "MC02": {
+      "speaker_id": "MC02",
+      "speaker_group": "healthy",
+      "gender": "male",
+      "total_recordings": 1123,
+      "unique_prompts": 383,
+      "unique_transcripts": 538,
+      "sessions": [
+        "1",
+        "2"
+      ],
+      "microphone_breakdown": {
+        "arrayMic": 674,
+        "headMic": 449
+      },
+      "total_duration_sec": 3974.91,
+      "mean_duration_sec": 3.54,
+      "min_duration_sec": 1.95,
+      "max_duration_sec": 8.55
+    },
+    "MC03": {
+      "speaker_id": "MC03",
+      "speaker_group": "healthy",
+      "gender": "male",
+      "total_recordings": 1669,
+      "unique_prompts": 594,
+      "unique_transcripts": 655,
+      "sessions": [
+        "1",
+        "2"
+      ],
+      "microphone_breakdown": {
+        "arrayMic": 870,
+        "headMic": 799
+      },
+      "total_duration_sec": 3536.25,
+      "mean_duration_sec": 2.12,
+      "min_duration_sec": 0.15,
+      "max_duration_sec": 6.75
+    },
+    "MC04": {
+      "speaker_id": "MC04",
+      "speaker_group": "healthy",
+      "gender": "male",
+      "total_recordings": 1620,
+      "unique_prompts": 993,
+      "unique_transcripts": 718,
+      "sessions": [
+        "1",
+        "2"
+      ],
+      "microphone_breakdown": {
+        "arrayMic": 991,
+        "headMic": 629
+      },
+      "total_duration_sec": 3252.16,
+      "mean_duration_sec": 2.01,
+      "min_duration_sec": 0.3,
+      "max_duration_sec": 6.45
+    }
+  }
+}

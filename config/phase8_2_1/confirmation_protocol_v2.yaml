@@ -1,0 +1,207 @@
+# PHASE 8.2.1: CONFIRMATION PROTOCOL SPECIFICATION (VERSION 2)
+# Protocol Version: 2.0.0-phase8.2.1-repaired
+# Creation Timestamp: 2026-10-10T19:25:00Z
+# Status: BLOCKED
+# Purpose: Corrected Preregistered Confirmation Protocol with Disentangled Decision Thresholds and FER Constraints
+# Historical Predecessor: config/phase8_2/confirmation_protocol.yaml (Defect Corrected: tau=0.1500 conflation)
+
+protocol_metadata:
+  protocol_version: "2.0.0-phase8.2.1-repaired"
+  creation_timestamp: "2026-10-10T19:25:00Z"
+  status: "BLOCKED"
+  governance_gate: "BLOCKED — INDEPENDENT CONFIRMATION DATA UNAVAILABLE & CHECKPOINTS UNMATERIALIZED"
+  historical_audit_reference: "research/phase8_2_1/THRESHOLD_PROTOCOL_FORENSIC_AUDIT.md"
+  correction_rationale: "Phase 8.2 erroneously equated the FER safety bound (0.1500) to classifier decision threshold tau. Protocol v2 explicitly decouples classifier decision thresholds from FER safety constraints and enforces strict provenance."
+
+confirmation_data_status:
+  status: "NOT_AVAILABLE"
+  eligible_independent_datasets_count: 0
+  audited_inventory_reference: "results/phase8_2/confirmation_dataset_inventory.csv"
+  overlap_audit_reference: "results/phase8_2/confirmation_overlap_audit.json"
+  disqualification_summary:
+    torgo_development_pool_80: "Disqualified: 100% overlap with Phase 8.1 nested CV training, tuning, and threshold selection."
+    torgo_locked_test_20: "Disqualified: Quarantined as DIAGNOSTIC_ONLY due to repeated inspection in Phase 8 benchmark and repair audits."
+    external_corpora: "Disqualified: Not present in repository."
+    prospective_cohort: "Disqualified: Acquisition not yet commenced."
+
+safety_constraints:
+  fer_metric_name: "False Emergency Rate (FER)"
+  fer_definition_id: "canonical_metric_registry:reports/FINAL_METRIC_DEFINITIONS.md#L52-L62"
+  fer_formula: "FP / (FP + TN) = FP / Total_General_Speech"
+  fer_maximum_fraction: 0.1500
+  fer_maximum_percent: 15.0
+  fer_unit: "fraction"
+  comparator: "less_than_or_equal"
+  applies_to: "confirmation_evaluation"
+  enforcement_rule: "Both pooled FER AND speaker-specific FER must not exceed 0.1500 (15.0%). A pooled FER <= 15% does not establish individual speaker compliance."
+  post_hoc_threshold_adjustment: "STRICTLY_PROHIBITED — Operating thresholds must be locked prior to evaluating any confirmation data."
+  unit_conversion_rule: "When FER is represented as a percentage (0-100), it must be divided by 100.0 before comparing against fer_maximum_fraction (0.1500). Direct comparison between 15 and 0.15 without conversion is prohibited."
+
+decision_policy:
+  score_name: "calibrated_emergency_probability"
+  score_range: [0.0, 1.0]
+  comparator: "greater_than_or_equal"
+  threshold_selection_rule: "max Recall subject to FER <= 0.1500 on development data"
+  historical_defect_classification: "FER_LIMIT_MISUSED_AS_DECISION_THRESHOLD"
+  historical_tau_disposition: "tau = 0.1500 rejected. It was an accidental transcription of the FER <= 15% limit. At tau = 0.1500, empirical FER exceeds 82-90%."
+  
+  candidate_models:
+    Track_A_Baseline:
+      model_id: "Track_A_Baseline"
+      architecture: "Stage 1 Logistic Gate + Classical Residual MLP (384-D)"
+      checkpoint_reference: "checkpoints/phase8_1/track_a_fold_models.pt"
+      checkpoint_status: "UNMATERIALIZED — File not present in repository filesystem"
+      checkpoint_sha256: null
+      score_definition: "0.5 * P_gate(emergency) + 0.5 * P_residual(emergency)"
+      score_scale: "probability_unit_interval_[0,1]"
+      calibration_version: "uncalibrated_ensemble_average"
+      selection_dataset_partition: "Phase 8.1 80% Training Pool (4,852 utterances, 15 speakers)"
+      selection_method: "Nested 5-fold inner CV OOF grid search over [0.40, 0.85]"
+      selection_artifact: "results/phase8_1/threshold_registry.json"
+      development_pooled_operating_point: 0.6000
+      development_mean_selected_tau: 0.7453
+      development_tau_range: [0.50, 0.85]
+      readiness_for_evaluation: "BLOCKED — Checkpoint missing and confirmation data unavailable"
+
+    INT-1-CALIB:
+      model_id: "INT-1-CALIB"
+      architecture: "Stage 1 Logistic Gate + Platt-Calibrated Residual (384-D)"
+      checkpoint_reference: "checkpoints/phase8_1/int1_calib_models.pt"
+      checkpoint_status: "UNMATERIALIZED — File not present in repository filesystem"
+      checkpoint_sha256: null
+      score_definition: "sigmoid(zscore(P_raw))"
+      score_scale: "probability_unit_interval_[0,1]"
+      calibration_version: "platt_logistic_scaling"
+      selection_dataset_partition: "Phase 8.1 80% Training Pool (4,852 utterances, 15 speakers)"
+      selection_method: "Nested 5-fold inner CV OOF grid search over [0.40, 0.85]"
+      selection_artifact: "results/phase8_1/threshold_registry.json"
+      development_pooled_operating_point: 0.8000
+      development_mean_selected_tau: 0.7960
+      development_tau_range: [0.70, 0.85]
+      readiness_for_evaluation: "BLOCKED — Checkpoint missing and confirmation data unavailable"
+
+    INT-2-COST:
+      model_id: "INT-2-COST"
+      architecture: "Stage 1 Logistic Gate + Cost-Sensitive Residual (5:1 penalty)"
+      checkpoint_reference: "checkpoints/phase8_1/int2_cost_models.pt"
+      checkpoint_status: "UNMATERIALIZED — File not present in repository filesystem"
+      checkpoint_sha256: null
+      score_definition: "0.5 * P_gate + 0.5 * P_residual_cost"
+      score_scale: "probability_unit_interval_[0,1]"
+      calibration_version: "cost_reweighted_loss"
+      selection_dataset_partition: "Phase 8.1 80% Training Pool (4,852 utterances, 15 speakers)"
+      selection_method: "Nested 5-fold inner CV OOF grid search over [0.40, 0.85]"
+      selection_artifact: "results/phase8_1/threshold_registry.json"
+      development_pooled_operating_point: 0.6500
+      development_mean_selected_tau: 0.7027
+      development_tau_range: [0.40, 0.85]
+      readiness_for_evaluation: "BLOCKED — Checkpoint missing and confirmation data unavailable"
+
+    INT-3-SAMP:
+      model_id: "INT-3-SAMP"
+      architecture: "Stage 1 Logistic Gate + Balanced-Sampled Residual (1:1 emergency:general)"
+      checkpoint_reference: "checkpoints/phase8_1/int3_samp_models.pt"
+      checkpoint_status: "UNMATERIALIZED — File not present in repository filesystem"
+      checkpoint_sha256: null
+      score_definition: "0.5 * P_gate + 0.5 * P_residual_samp"
+      score_scale: "probability_unit_interval_[0,1]"
+      calibration_version: "minority_oversampling"
+      selection_dataset_partition: "Phase 8.1 80% Training Pool (4,852 utterances, 15 speakers)"
+      selection_method: "Nested 5-fold inner CV OOF grid search over [0.40, 0.85]"
+      selection_artifact: "results/phase8_1/threshold_registry.json"
+      development_pooled_operating_point: 0.6500
+      development_mean_selected_tau: 0.7093
+      development_tau_range: [0.40, 0.85]
+      readiness_for_evaluation: "BLOCKED — Checkpoint missing and confirmation data unavailable"
+
+    Track_B_Quantum:
+      model_id: "Track_B_Quantum"
+      architecture: "Stage 1 Logistic Gate + 8-Qubit VQC Quantum Residual"
+      checkpoint_reference: "checkpoints/phase8_1/track_b_quantum_models.pt"
+      checkpoint_status: "UNMATERIALIZED — File not present in repository filesystem"
+      checkpoint_sha256: null
+      score_definition: "0.5 * P_gate + 0.5 * P_vqc"
+      score_scale: "probability_unit_interval_[0,1]"
+      calibration_version: "quantum_variational_circuit_8q"
+      selection_dataset_partition: "Phase 8.1 80% Training Pool (4,852 utterances, 15 speakers)"
+      selection_method: "Nested 5-fold inner CV OOF grid search over [0.40, 0.85]"
+      selection_artifact: "results/phase8_1/threshold_registry.json"
+      development_pooled_operating_point: 0.6000
+      development_mean_selected_tau: 0.7280
+      development_tau_range: [0.50, 0.85]
+      readiness_for_evaluation: "BLOCKED — Checkpoint missing and confirmation data unavailable"
+
+    Track_C_Shadow:
+      model_id: "Track_C_Shadow"
+      architecture: "Stage 1 Logistic Gate + Parameter-Matched Classical MLP Shadow"
+      checkpoint_reference: "checkpoints/phase8_1/track_c_shadow_models.pt"
+      checkpoint_status: "UNMATERIALIZED — File not present in repository filesystem"
+      checkpoint_sha256: null
+      score_definition: "0.5 * P_gate + 0.5 * P_shadow"
+      score_scale: "probability_unit_interval_[0,1]"
+      calibration_version: "matched_classical_mlp_8d"
+      selection_dataset_partition: "Phase 8.1 80% Training Pool (4,852 utterances, 15 speakers)"
+      selection_method: "Nested 5-fold inner CV OOF grid search over [0.40, 0.85]"
+      selection_artifact: "results/phase8_1/threshold_registry.json"
+      development_pooled_operating_point: 0.6000
+      development_mean_selected_tau: 0.7333
+      development_tau_range: [0.40, 0.85]
+      readiness_for_evaluation: "BLOCKED — Checkpoint missing and confirmation data unavailable"
+
+canonical_taxonomy:
+  canonical_classes:
+    - GENERAL_SPEECH
+    - CRITICAL_RESPONSE
+    - FALL
+    - BREATHING_MEDICAL
+    - PAIN
+    - SOS_HELP
+    - LOCATION
+  emergency_classes:
+    - CRITICAL_RESPONSE
+    - FALL
+    - BREATHING_MEDICAL
+    - PAIN
+    - SOS_HELP
+    - LOCATION
+  general_speech_class: GENERAL_SPEECH
+
+zero_support_policy:
+  policy: "Classes with zero true instances in confirmation set reported as N/A for F1/Recall/Precision. Canonical 7-class Macro-F1 retains zero in numerator with fixed denominator=7."
+  canonical_reference: "reports/FINAL_METRIC_DEFINITIONS.md#L75-L84"
+
+evaluation_metric_definitions:
+  primary_safety:
+    metric: "False Emergency Rate (FER)"
+    formula: "FP / (FP + TN)"
+    bound: 0.1500
+  primary_utility:
+    metric: "End-to-End Emergency Recall"
+    formula: "TP / (TP + FN)"
+  secondary_utility:
+    metric: "End-to-End Emergency Precision"
+    formula: "TP / (TP + FP)"
+  overall_classification:
+    metric: "Canonical 7-Class Macro-F1"
+    formula: "sum(F1_c) / 7.0"
+
+statistical_testing_framework:
+  sample_unit: "Utterance with speaker-clustered bootstrap standard errors"
+  primary_comparisons:
+    - comparison: "Track B (Quantum) vs Track A (Classical Baseline)"
+      hypothesis: "Track B demonstrates superior Emergency Recall subject to FER <= 0.1500"
+    - comparison: "Track B (Quantum) vs Track C (Matched Classical Shadow)"
+      hypothesis: "Track B demonstrates quantum-specific advantage beyond parameter matching"
+  multiplicity_correction: "Holm-Bonferroni step-down correction across primary hypotheses"
+  alpha_level: 0.05
+  power_planning_method: "Wilson score confidence width targeting FER margin of error <= 0.02 at 95% confidence level"
+
+data_locking_contract:
+  manifest_fingerprint_required: true
+  sha256_verification_before_reading: true
+  eval_execution: "Single-shot forward inference only. Zero fitting, tuning, calibration, PCA estimation, replay, or threshold modification on confirmation data."
+  stopping_criteria:
+    - "Provenance gap or missing session metadata"
+    - "Detection of historical TORGO audio hashing matches"
+    - "Emergency class support under 30 true positive events"
+    - "Unmaterialized candidate checkpoint reference"

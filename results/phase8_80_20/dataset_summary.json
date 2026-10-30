@@ -1,0 +1,69 @@
+{
+  "dataset_name": "TORGO Database of Dysarthric Speech",
+  "source_manifest": "data/manifests/torgo_manifest.csv",
+  "dataset_fingerprint": "16c1304221900a8ca5a278adc2528ba2807881e9c526a322b7a649135bc80a58",
+  "quality_status": "ALL VALID (6067/6067)",
+  "audio_integrity": "ALL 6067 AUDIO FILES VERIFIED UNIQUE (0 DUPLICATES)",
+  "whisper_embeddings": "ALL 6067 384-D EMBEDDINGS PRESENT ON DISK",
+  "total_active_utterances": 6067,
+  "train_pool_size": 4852,
+  "test_pool_size": 1215,
+  "train_pool_percentage": 79.9736278226471,
+  "test_pool_percentage": 20.02637217735289,
+  "speaker_count": 15,
+  "speaker_breakdown": {
+    "dysarthric_speakers": [
+      "F01",
+      "F03",
+      "F04",
+      "M01",
+      "M02",
+      "M03",
+      "M04",
+      "M05"
+    ],
+    "control_speakers": [
+      "FC01",
+      "FC02",
+      "FC03",
+      "MC01",
+      "MC02",
+      "MC03",
+      "MC04"
+    ],
+    "dysarthric_samples_total": 2147,
+    "dysarthric_train_samples": 1717,
+    "dysarthric_test_samples": 430,
+    "control_samples_total": 3920,
+    "control_train_samples": 3135,
+    "control_test_samples": 785
+  },
+  "intent_distribution": {
+    "train": {
+      "BREATHING_MEDICAL": 40,
+      "CRITICAL_RESPONSE": 70,
+      "FALL": 53,
+      "GENERAL_SPEECH": 4615,
+      "SOS_HELP": 31,
+      "PAIN": 34,
+      "LOCATION": 9
+    },
+    "test": {
+      "BREATHING_MEDICAL": 11,
+      "CRITICAL_RESPONSE": 17,
+      "FALL": 14,
+      "GENERAL_SPEECH": 1155,
+      "SOS_HELP": 9,
+      "PAIN": 9
+    },
+    "total_emergency_train": 237,
+    "total_emergency_test": 60,
+    "emergency_test_ratio": 0.20202020202020202
+  },
+  "stratification_methodology": {
+    "seed": 42,
+    "policy": "speaker-aware intent-stratified",
+    "singleton_policy": "Classes with n=1 within speaker allocated to train pool to ensure model exposure without data fabrication",
+    "limitation_note": "LOCATION has only 9 occurrences in entire dataset (max 2 per speaker). Under 20% test rounding (0.2 * 2 = 0.4 -> 0), all 9 samples were placed in training pool. Emergency test evaluation therefore covers CRITICAL_RESPONSE, FALL, BREATHING_MEDICAL, PAIN, and SOS_HELP."
+  }
+}

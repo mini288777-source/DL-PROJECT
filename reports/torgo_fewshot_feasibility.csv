@@ -1,0 +1,16 @@
+speaker_id,speaker_group,total_prompts,N20_possible,N30_possible,N40_possible,N50_possible,usable_test_count,notes
+F01,dysarthric,118,True,True,True,True,68,Supports all N=20..50 sweeps with 68 held-out test prompts
+F03,dysarthric,213,True,True,True,True,163,Supports all N=20..50 sweeps with 163 held-out test prompts
+F04,dysarthric,250,True,True,True,True,200,Supports all N=20..50 sweeps with 200 held-out test prompts
+FC01,control,151,True,True,True,True,101,Supports all N=20..50 sweeps with 101 held-out test prompts
+FC02,control,975,True,True,True,True,925,Supports all N=20..50 sweeps with 925 held-out test prompts
+FC03,control,405,True,True,True,True,355,Supports all N=20..50 sweeps with 355 held-out test prompts
+M01,dysarthric,285,True,True,True,True,235,Supports all N=20..50 sweeps with 235 held-out test prompts
+M02,dysarthric,232,True,True,True,True,182,Supports all N=20..50 sweeps with 182 held-out test prompts
+M03,dysarthric,406,True,True,True,True,356,Supports all N=20..50 sweeps with 356 held-out test prompts
+M04,dysarthric,286,True,True,True,True,236,Supports all N=20..50 sweeps with 236 held-out test prompts
+M05,dysarthric,357,True,True,True,True,307,Supports all N=20..50 sweeps with 307 held-out test prompts
+MC01,control,419,True,True,True,True,369,Supports all N=20..50 sweeps with 369 held-out test prompts
+MC02,control,383,True,True,True,True,333,Supports all N=20..50 sweeps with 333 held-out test prompts
+MC03,control,594,True,True,True,True,544,Supports all N=20..50 sweeps with 544 held-out test prompts
+MC04,control,993,True,True,True,True,943,Supports all N=20..50 sweeps with 943 held-out test prompts

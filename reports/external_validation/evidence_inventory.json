@@ -1,0 +1,188 @@
+{
+  "project_name": "Low-Resource Personalized Atypical Speech Recognition Using Hybrid Quantum-Classical Deep Learning for Reliable Emergency Communication",
+  "inventory_id": "INV-EXT-VAL-2026-001",
+  "audit_phase": "EXTERNAL_VALIDATION_READINESS_AND_FULL_SCALE_APP_BLUEPRINT",
+  "audit_timestamp": "2026-10-10T19:00:00Z",
+  "overall_readiness_status": "BLOCKED_EXTERNAL_PREREQUISITES",
+  "blueprint_status": "READY_FOR_OWNER_REVIEW",
+  "gate_statuses": {
+    "gate_a": {
+      "status": "COMPLETE",
+      "scientific_finding": "No statistically supported quantum advantage under tested protocol",
+      "frozen": true
+    },
+    "gate_b_2": {
+      "status": "COMPLETE",
+      "application_finding": "Local controlled research demonstration operating on served Phase 7.5 adapter",
+      "frozen": true
+    },
+    "gate_c": {
+      "status": "BLOCKED_EXTERNAL_PREREQUISITES",
+      "reason": "Requires lawfully acquired external atypical cohort, executed DUA, institutional IRB approval, clinical SLP oversight, and public OSF preregistration"
+    },
+    "gate_d": {
+      "status": "BLOCKED_EXTERNAL_PREREQUISITES",
+      "reason": "Clinical and emergency safety unproven; requires prospective clinical trials, IEC 62304 / ISO 14971 QMS controls, and regulatory clearance"
+    }
+  },
+  "verification_summary": {
+    "total_automated_tests": 611,
+    "total_passing_tests": 611,
+    "total_failing_tests": 0,
+    "total_skipped_tests": 0,
+    "pass_rate_percentage": 100.0,
+    "suite_duration_seconds": 85.49,
+    "test_warnings_count": 14,
+    "historical_checksums_tracked": 28,
+    "historical_checksums_matched": 28,
+    "historical_checksum_mismatches": 0,
+    "historical_checksums_file": "reports/project_readiness/checksums.json"
+  },
+  "codebase_hardening_records": [
+    {
+      "file_path": "src/data/external_dataset_validator.py",
+      "nature_of_change": "Fail-closed guardrail hardening against synthetic data and TORGO overlap",
+      "description": "Expanded SYNTHETIC_PATH_KEYWORDS (19 keywords), expanded synth_col_keys (22 columns) and synth_val_indicators (21 values), added provenance metadata inspection rejecting synthetic cohorts, added empty/whitespace audio path check, and enforced uppercase TORGO speaker ID matching."
+    },
+    {
+      "file_path": "src/evaluation/confirmatory_runner.py",
+      "nature_of_change": "Single-pass execution race condition and lock integrity hardening",
+      "description": "Implemented atomic temporary file replacement (.replace()) for confirmatory lock writing and pre-write existence check raising SINGLE_PASS_RACE_CONDITION."
+    },
+    {
+      "file_path": "tests/gate_c/test_gate_c_infrastructure.py",
+      "nature_of_change": "Regression tests for hardened dataset validation guardrails",
+      "description": "Added 5 unit tests verifying case-insensitive TORGO overlap, multi-column synthetic schema detection, provenance metadata synthesis rejection, advanced keyword synthesis rejection, and empty audio path rejection. Gate C test suite increased from 12 to 17 tests."
+    }
+  ],
+  "deliverables": {
+    "phase_a_ground_truth": {
+      "file_path": "reports/external_validation/REPOSITORY_GROUND_TRUTH_AND_BLOCKER_MATRIX.csv",
+      "size_bytes": 13887,
+      "sha256": "11107958868d480a9523d13007ad352253bebde2c579863d0942d9e5fcaaae3c",
+      "description": "Comprehensive matrix of 31 reconciled repository requirements, statuses, code anchors, dependencies, and stop conditions."
+    },
+    "phase_b_dataset_landscape": {
+      "landscape_report": {
+        "file_path": "reports/external_validation/EXTERNAL_DATASET_LANDSCAPE.md",
+        "size_bytes": 19410,
+        "sha256": "9fb754351215da5423cd0ae8301ee75c9d75b51541d7169acbf298aa4793a34d",
+        "description": "Detailed investigation of 6 external atypical speech resources (SAP, UA-Speech, Nemours, PC-GITA, Euphonia, TORGO)."
+      },
+      "licensing_register": {
+        "file_path": "reports/external_validation/DATASET_ACCESS_LICENSING_REGISTER.csv",
+        "size_bytes": 5275,
+        "sha256": "51df6382499d285c0c3d60e02c0c08fbe2c335b7a6546532d47f39d844ebc31a",
+        "description": "Structured register of 27 custodial and legal fields per candidate dataset."
+      },
+      "source_evidence_json": {
+        "file_path": "reports/external_validation/DATASET_SOURCE_EVIDENCE.json",
+        "size_bytes": 10372,
+        "sha256": "ae7235aa50cbae641d16c7e7852ca2379cc082fae67ee3780feb6532a41e3d37",
+        "description": "Verified custodial URLs, citations, access tiers, and constraints."
+      }
+    },
+    "phase_c_acquisition_governance": {
+      "acquisition_workflow": {
+        "file_path": "reports/external_validation/DATASET_ACQUISITION_WORKFLOW.md",
+        "size_bytes": 15142,
+        "sha256": "80bee1e578ce4616e464fcc3560736675c36318f409141a6514ec3fcc2ebac57",
+        "description": "12-component acquisition process, scoring rubric, DPIA, RBAC, and draft templates."
+      },
+      "ethics_dua_tracker": {
+        "file_path": "reports/external_validation/ETHICS_DUA_CLINICAL_OVERSIGHT_TRACKER.csv",
+        "size_bytes": 4787,
+        "sha256": "3a73e0ce585685df98e423900d15f1b0d2a1087898830972d45ef65b4a391800",
+        "description": "Status tracker across 12 ethics, DUA, clinical oversight, and privacy items."
+      },
+      "external_dependencies": {
+        "file_path": "reports/external_validation/EXTERNAL_DEPENDENCY_LOG.csv",
+        "size_bytes": 3248,
+        "sha256": "3c53f18061e954c601c5afe7509ec2feeae2b1f30f529049e89a331a04dd8e5c",
+        "description": "8 critical external dependencies, owners, statuses, and stop conditions."
+      }
+    },
+    "phase_d_statistical_audit": {
+      "cohort_partition_plan": {
+        "file_path": "reports/external_validation/COHORT_AND_PARTITION_PLAN.md",
+        "size_bytes": 9357,
+        "sha256": "0bb437c5a74fa005fb6755dfbe6f251d31d762a7b940cd2e01e54833a7f55994",
+        "description": "Disjoint 30% dev / 70% locked confirmatory partition by speaker, anti-leakage rules, and stopping criteria."
+      },
+      "power_and_design_effect": {
+        "file_path": "reports/external_validation/POWER_AND_DESIGN_EFFECT_REASSESSMENT.md",
+        "size_bytes": 13317,
+        "sha256": "ba9532c025226e71e79966cdbb298f7f90f767012eaebd0acb89901e0bee53de",
+        "description": "Rigorous re-computation of DEFF=6.70 baseline and inflation to DEFF=10.54 under clinical dysarthric variance."
+      },
+      "endpoint_label_matrix": {
+        "file_path": "reports/external_validation/ENDPOINT_LABEL_AVAILABILITY_MATRIX.csv",
+        "size_bytes": 2307,
+        "sha256": "eb761f45f6041e1ae773e9b8f494085986ca98db76e8a36316b8645a6c6fc977",
+        "description": "Mapping of primary/secondary endpoints demonstrating universal absence of emergency intent labels."
+      }
+    },
+    "phase_e_preconditions_preregistration": {
+      "precondition_matrix": {
+        "file_path": "reports/external_validation/CONFIRMATORY_RUNNER_PRECONDITION_MATRIX.csv",
+        "size_bytes": 6848,
+        "sha256": "20f90031c8d391e32556899277122162a777c1e707a3544352703a3c5a0d72ad",
+        "description": "20 mandatory preconditions, repository code anchors, required external evidence, and fail-closed behaviors."
+      },
+      "readiness_report": {
+        "file_path": "reports/external_validation/PREREGISTRATION_AND_CONFIRMATION_READINESS.md",
+        "size_bytes": 8077,
+        "sha256": "89040707698986ac945a0b283266644b614fa025d75124954791bca6077b7ec7",
+        "description": "Precondition audit, runner code path security analysis, and OSF vs ClinicalTrials.gov comparison."
+      }
+    },
+    "phase_f_safety_alignment": {
+      "safety_dependencies": {
+        "file_path": "reports/external_validation/GATE_D_SAFETY_EVIDENCE_DEPENDENCIES.md",
+        "size_bytes": 8399,
+        "sha256": "0f1355ef4994b529721860cfa9b1f03d7eccd9ae62bc49515b8e5415108f3241",
+        "description": "Goal Structuring Notation safety claims, hazard mitigations, and runtime safety boundaries."
+      }
+    },
+    "phase_g_application_blueprint": {
+      "product_requirements": {
+        "file_path": "reports/external_validation/FULL_SCALE_APPLICATION_PRODUCT_REQUIREMENTS.md",
+        "size_bytes": 14386,
+        "sha256": "97ed3dcce8c86db310062393b1136230b093564351c16be75437ea19eb36c467",
+        "description": "Full-scale application PRD, STRIDE threat model, RBAC personas, API contract plan, WCAG 2.1 AA criteria."
+      },
+      "phased_roadmap": {
+        "file_path": "reports/external_validation/FULL_SCALE_APPLICATION_ROADMAP.md",
+        "size_bytes": 10486,
+        "sha256": "dbf03e3097f0ec0a1441498b50f5688ce4440fd7a56b994a3df0f84e6ed6c579",
+        "description": "6-phase engineering implementation roadmap, effort estimates, exit criteria, and Gate C/D dependency mapping."
+      }
+    },
+    "phase_9_synthesis_and_verification": {
+      "executive_readiness_report": {
+        "file_path": "reports/external_validation/EXTERNAL_VALIDATION_READINESS_REPORT.md",
+        "size_bytes": 23867,
+        "sha256": "4180029a2bf9480256585dcaa266ad12da91f5fd066931341b141b15756912d4",
+        "description": "Master executive synthesis report across repository ground truth, external landscape, governance, statistics, preconditions, Gate C/D statuses, and owner decisions."
+      },
+      "owner_action_register": {
+        "file_path": "reports/external_validation/OWNER_ACTION_REGISTER.csv",
+        "size_bytes": 1974,
+        "sha256": "bb091ad6553ae717f60fbc44c13e5743444d23fe4418c0c9612335700850fbdb",
+        "description": "Actionable decision matrix for project owner with priorities, dependencies, and immediate next steps."
+      },
+      "test_and_integrity_results": {
+        "file_path": "reports/external_validation/TEST_AND_INTEGRITY_RESULTS.md",
+        "size_bytes": 8301,
+        "sha256": "bf333270d55071eb0614ee74805dcab36d9f6895e75466041e890e9f00fadc07",
+        "description": "Granular execution log of 611 passing tests and 28/28 historical SHA-256 checksum verifications."
+      },
+      "change_log": {
+        "file_path": "reports/external_validation/CHANGE_LOG.md",
+        "size_bytes": 4545,
+        "sha256": "91ecf2eaae87d31594fdfe0a5028c9f425465cd01c432cfa9484a8ffbf8865c4",
+        "description": "Audit record of minimal fail-closed guardrail hardening and regression tests."
+      }
+    }
+  }
+}

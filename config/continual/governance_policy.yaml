@@ -1,0 +1,60 @@
+# ==============================================================================
+# PHASE 7.6: MODEL VALIDATION GATE & SAFETY GOVERNANCE POLICY
+# PRE-REGISTERED RESEARCH CONFIGURATION CONTRACT (FROZEN PRIOR TO EVALUATION)
+# ==============================================================================
+
+policy_metadata:
+  policy_id: "phase7_6_safety_first_model_governance"
+  policy_version: "v1.0.0_frozen"
+  effective_phase: "7.6"
+  status: "FROZEN"
+  immutable: true
+  description: >
+    Governs candidate model validation, safety veto enforcement, three-way promotion decisions
+    (PROMOTE, REJECT, HOLD), and rollback procedures, matching PHASE7_MODEL_VERSION_CONTRACT.md.
+
+decision_modes:
+  - "PROMOTE"
+  - "REJECT"
+  - "HOLD"
+
+mandatory_safety_gates:
+  # Mandatory Emergency Safety: Zero tolerance for emergency recall regression
+  emergency_recall_regression_tolerance: 0.00   # Delta Recall >= 0.00 vs active parent
+  # False Emergency Rate ceiling and delta tolerance
+  max_allowed_false_emergency_rate: 0.50        # Absolute FER ceiling
+  max_fer_increase_tolerance: 0.05              # Delta FER <= +0.05 vs active parent
+  # Unconditional safety veto
+  safety_veto_enabled: true
+  veto_rule: >
+    If candidate model exhibits emergency recall regression or excessive false emergency rate,
+    the candidate is strictly REJECTED, regardless of aggregate Macro-F1 or Accuracy gains.
+
+quality_gates:
+  # Minimum performance parity on overall classification
+  macro_f1_regression_tolerance: -0.01          # Delta Macro-F1 >= -0.01 vs active parent
+  min_general_speech_recall: 0.70               # General speech discrimination baseline
+
+evidence_sufficiency_gates:
+  # Criteria for HOLD state vs definitive decision
+  min_emergency_test_samples: 2                 # Requires >= 2 true emergency instances
+  min_total_validation_samples: 10              # Requires >= 10 total validation instances
+  insufficient_evidence_action: "HOLD"
+
+contamination_firewall:
+  # Strict anti-leakage verification
+  require_zero_training_overlap: true
+  require_zero_replay_overlap: true
+  reject_on_contamination: true
+
+reason_registry:
+  PROMOTED_ALL_GATES_PASS: "Candidate meets all safety, quality, and evidence gates."
+  REJECTED_SAFETY_VETO_EMERGENCY_RECALL: "Safety Veto: Candidate degrades emergency recall relative to active model."
+  REJECTED_SAFETY_VETO_FER_EXCEEDED: "Safety Veto: Candidate exceeds allowable false emergency rate threshold."
+  REJECTED_MACRO_F1_REGRESSION: "Candidate exhibits unacceptable degradation in overall Macro-F1."
+  REJECTED_VALIDATION_CONTAMINATION: "Critical Integrity Violation: Validation data contaminated by training/replay experiences."
+  REJECTED_INVALID_MODEL_VERSION: "Model version record or artifact integrity check failed."
+  REJECTED_SPEAKER_MISMATCH: "Candidate model speaker does not match validation dataset speaker partition."
+  REJECTED_PARENT_LINEAGE_MISMATCH: "Candidate parent version does not match currently active model version."
+  HOLD_INSUFFICIENT_EMERGENCY_EVIDENCE: "Insufficient emergency test instances to evaluate safety-critical recall reliably."
+  HOLD_INSUFFICIENT_VALIDATION_SAMPLES: "Validation sample size below statistical reliability threshold."

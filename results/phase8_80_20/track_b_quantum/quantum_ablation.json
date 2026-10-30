@@ -1,0 +1,167 @@
+[
+  {
+    "speaker_id": "F01",
+    "speaker_group": "dysarthric",
+    "weight_delta_norm": 1.5883346796035767,
+    "quantum_residual_l2_norm": 1.9134352680240392,
+    "mean_abs_prob_diff_zero": 0.011382122789105307,
+    "mean_abs_prob_diff_shuffled": 0.015253152003009252,
+    "prediction_flips_zero": 0,
+    "prediction_flips_shuffled": 0,
+    "participation_verified": true
+  },
+  {
+    "speaker_id": "F03",
+    "speaker_group": "dysarthric",
+    "weight_delta_norm": 1.619067907333374,
+    "quantum_residual_l2_norm": 2.768630660794261,
+    "mean_abs_prob_diff_zero": 0.02421783199041239,
+    "mean_abs_prob_diff_shuffled": 0.03260840125781373,
+    "prediction_flips_zero": 1,
+    "prediction_flips_shuffled": 2,
+    "participation_verified": true
+  },
+  {
+    "speaker_id": "F04",
+    "speaker_group": "dysarthric",
+    "weight_delta_norm": 2.107801914215088,
+    "quantum_residual_l2_norm": 4.938168994302134,
+    "mean_abs_prob_diff_zero": 0.05394833329189162,
+    "mean_abs_prob_diff_shuffled": 0.08524610715714911,
+    "prediction_flips_zero": 4,
+    "prediction_flips_shuffled": 6,
+    "participation_verified": true
+  },
+  {
+    "speaker_id": "FC01",
+    "speaker_group": "control",
+    "weight_delta_norm": 1.1595861911773682,
+    "quantum_residual_l2_norm": 2.5299891064577804,
+    "mean_abs_prob_diff_zero": 0.031091063233655267,
+    "mean_abs_prob_diff_shuffled": 0.039242721666392144,
+    "prediction_flips_zero": 1,
+    "prediction_flips_shuffled": 2,
+    "participation_verified": true
+  },
+  {
+    "speaker_id": "FC02",
+    "speaker_group": "control",
+    "weight_delta_norm": 2.6871659755706787,
+    "quantum_residual_l2_norm": 6.198702075872572,
+    "mean_abs_prob_diff_zero": 0.037453617513995154,
+    "mean_abs_prob_diff_shuffled": 0.05657652514361478,
+    "prediction_flips_zero": 7,
+    "prediction_flips_shuffled": 7,
+    "participation_verified": true
+  },
+  {
+    "speaker_id": "FC03",
+    "speaker_group": "control",
+    "weight_delta_norm": 1.080066204071045,
+    "quantum_residual_l2_norm": 1.9878135432145505,
+    "mean_abs_prob_diff_zero": 0.01928270105366538,
+    "mean_abs_prob_diff_shuffled": 0.02498637818579809,
+    "prediction_flips_zero": 6,
+    "prediction_flips_shuffled": 7,
+    "participation_verified": true
+  },
+  {
+    "speaker_id": "M01",
+    "speaker_group": "dysarthric",
+    "weight_delta_norm": 1.8475407361984253,
+    "quantum_residual_l2_norm": 5.711569968394126,
+    "mean_abs_prob_diff_zero": 0.06567035395461386,
+    "mean_abs_prob_diff_shuffled": 0.07905211286609043,
+    "prediction_flips_zero": 1,
+    "prediction_flips_shuffled": 1,
+    "participation_verified": true
+  },
+  {
+    "speaker_id": "M02",
+    "speaker_group": "dysarthric",
+    "weight_delta_norm": 1.2090835571289062,
+    "quantum_residual_l2_norm": 1.5220337292323365,
+    "mean_abs_prob_diff_zero": 0.015058960922432607,
+    "mean_abs_prob_diff_shuffled": 0.01911948176516236,
+    "prediction_flips_zero": 5,
+    "prediction_flips_shuffled": 9,
+    "participation_verified": true
+  },
+  {
+    "speaker_id": "M03",
+    "speaker_group": "dysarthric",
+    "weight_delta_norm": 2.321387529373169,
+    "quantum_residual_l2_norm": 8.934380593010053,
+    "mean_abs_prob_diff_zero": 0.05426570372010534,
+    "mean_abs_prob_diff_shuffled": 0.06531970186188614,
+    "prediction_flips_zero": 2,
+    "prediction_flips_shuffled": 8,
+    "participation_verified": true
+  },
+  {
+    "speaker_id": "M04",
+    "speaker_group": "dysarthric",
+    "weight_delta_norm": 1.646715760231018,
+    "quantum_residual_l2_norm": 5.030818104930173,
+    "mean_abs_prob_diff_zero": 0.05320909038105448,
+    "mean_abs_prob_diff_shuffled": 0.0654221039555773,
+    "prediction_flips_zero": 3,
+    "prediction_flips_shuffled": 4,
+    "participation_verified": true
+  },
+  {
+    "speaker_id": "M05",
+    "speaker_group": "dysarthric",
+    "weight_delta_norm": 1.4304438829421997,
+    "quantum_residual_l2_norm": 2.8948451463210803,
+    "mean_abs_prob_diff_zero": 0.015230561622129515,
+    "mean_abs_prob_diff_shuffled": 0.019542913213162916,
+    "prediction_flips_zero": 3,
+    "prediction_flips_shuffled": 3,
+    "participation_verified": true
+  },
+  {
+    "speaker_id": "MC01",
+    "speaker_group": "control",
+    "weight_delta_norm": 3.109471321105957,
+    "quantum_residual_l2_norm": 6.217211430250138,
+    "mean_abs_prob_diff_zero": 0.060221908695444665,
+    "mean_abs_prob_diff_shuffled": 0.08717322535108336,
+    "prediction_flips_zero": 4,
+    "prediction_flips_shuffled": 13,
+    "participation_verified": true
+  },
+  {
+    "speaker_id": "MC02",
+    "speaker_group": "control",
+    "weight_delta_norm": 2.5042500495910645,
+    "quantum_residual_l2_norm": 3.6840378511323966,
+    "mean_abs_prob_diff_zero": 0.03722921909673426,
+    "mean_abs_prob_diff_shuffled": 0.053051019660999524,
+    "prediction_flips_zero": 6,
+    "prediction_flips_shuffled": 13,
+    "participation_verified": true
+  },
+  {
+    "speaker_id": "MC03",
+    "speaker_group": "control",
+    "weight_delta_norm": 1.666481614112854,
+    "quantum_residual_l2_norm": 8.93793736089501,
+    "mean_abs_prob_diff_zero": 0.06559840165991591,
+    "mean_abs_prob_diff_shuffled": 0.08381812451808096,
+    "prediction_flips_zero": 8,
+    "prediction_flips_shuffled": 10,
+    "participation_verified": true
+  },
+  {
+    "speaker_id": "MC04",
+    "speaker_group": "control",
+    "weight_delta_norm": 1.5800434350967407,
+    "quantum_residual_l2_norm": 11.030583423378946,
+    "mean_abs_prob_diff_zero": 0.0594913400464012,
+    "mean_abs_prob_diff_shuffled": 0.08610056763058158,
+    "prediction_flips_zero": 6,
+    "prediction_flips_shuffled": 9,
+    "participation_verified": true
+  }
+]

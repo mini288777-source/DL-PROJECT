@@ -1,0 +1,133 @@
+{
+  "release_candidate_id": "qsvc-q8-r1-research-demo-rc1",
+  "project_title": "Low-Resource Personalized Atypical Speech Recognition Using Hybrid Quantum-Classical Deep Learning for Reliable Emergency Communication",
+  "release_date": "2026-10-11",
+  "release_verdict": "RELEASE_READY_FOR_LOCAL_RESEARCH_DEMONSTRATION",
+  "git_commit": "UNVERSIONED_LOCAL_DIRECTORY_NO_GIT_ROOT",
+  "runtime_environment": {
+    "os": "Windows Server / Windows 10/11",
+    "python_executable": "C:\\Users\\lucky\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe",
+    "python_version": "3.11.15",
+    "frameworks": {
+      "fastapi": "0.135.1",
+      "uvicorn": "0.41.0",
+      "qiskit": "1.4.1",
+      "qiskit_machine_learning": "0.7.2",
+      "scikit_learn": "1.4.2",
+      "numpy": "1.26.4",
+      "torch": "2.6.0+cpu",
+      "librosa": "0.10.2.post1",
+      "pytest": "9.1.1"
+    }
+  },
+  "quantum_model_specification": {
+    "model_id": "qsvc_q8_r1",
+    "model_name": "Quantum Support Vector Classifier (8 Qubits, Reps=1)",
+    "n_qubits": 8,
+    "feature_map": {
+      "name": "ZZFeatureMap",
+      "reps": 1,
+      "entanglement": "linear"
+    },
+    "kernel": {
+      "type": "FidelityQuantumKernel",
+      "implementation": "StatevectorFidelity"
+    },
+    "classifier": {
+      "type": "QSVC (sklearn.svm.SVC with precomputed kernel)",
+      "regularization_C": 1.0,
+      "classes": [0, 1, 2, 3, 4, 5, 6],
+      "class_labels": [
+        "CALL_NURSE",
+        "EMERGENCY",
+        "FOOD_WATER",
+        "GENERAL_SPEECH",
+        "PAIN_DISCOMFORT",
+        "REST_ROOM",
+        "YES_NO_CONFIRMATION"
+      ]
+    },
+    "preprocessing_pipeline": {
+      "audio_sampling_rate_hz": 16000,
+      "audio_normalization": "librosa.util.normalize (-1.0 to 1.0)",
+      "whisper_encoder_embedding_dim": 384,
+      "pca_reduction": {
+        "n_components": 8,
+        "input_dim": 384,
+        "variance_retained": "Fitted PCA pipeline in checkpoint"
+      },
+      "min_max_scaler": {
+        "feature_range": [0.0, 3.141592653589793]
+      }
+    }
+  },
+  "canonical_quantum_checkpoints": {
+    "checkpoint_directory": "models/continual/phase7_8/{speaker}/qsvc_q8_r1/v{speaker}_budget50_qsvc_seed{seed}/model_checkpoint.pkl",
+    "speakers_verified": [
+      "F01", "F03", "F04", "FC01", "FC02", "FC03",
+      "M01", "M02", "M03", "M04", "M05", "MC01", "MC02", "MC03", "MC04"
+    ],
+    "count": 15,
+    "checkpoint_f01_sha256": "7f4621d4c8c6ff474a2d7600f484f466635b03a484dea9036e9fe813d49feace",
+    "checkpoint_f01_size_bytes": 33252
+  },
+  "recovered_inference_reference_sidecars": {
+    "sidecar_directory": "models/quantum/qsvc_q8_r1/inference_reference/{speaker}/",
+    "inventory_manifest": "models/quantum/qsvc_q8_r1/inference_reference/inventory_manifest.json",
+    "inventory_manifest_sha256": "652f9646e931d268466a6ae4bad33512a466947a4719058a512386ff83a31d76",
+    "sidecar_f01_matrix": "models/quantum/qsvc_q8_r1/inference_reference/F01/X_train_pca.npy",
+    "sidecar_f01_matrix_sha256": "5a984d8b73b700f559d3d81b66c64410d4ab7d8a79d5b2bda7f21331ff5f43bb",
+    "sidecar_f01_matrix_shape": [50, 8],
+    "sidecar_f01_matrix_dtype": "float32",
+    "gram_matrix_reconstruction_max_abs_diff": 0.0
+  },
+  "historical_checksum_audit": {
+    "registry_path": "reports/project_readiness/checksums.json",
+    "total_historical_files": 28,
+    "matched_historical_files": 28,
+    "mismatched_files": 0,
+    "missing_files": 0,
+    "status": "100% MATCHED"
+  },
+  "regression_test_summary": {
+    "test_command": "python -m pytest tests/ -q",
+    "total_collected": 648,
+    "passed": 648,
+    "failed": 0,
+    "skipped": 0,
+    "exit_code": 0,
+    "duration_seconds": 355.96
+  },
+  "live_smoke_test_summary": {
+    "host": "http://127.0.0.1:8000",
+    "health_endpoint": "HTTP 200 (healthy)",
+    "ready_endpoint": "HTTP 200 (ready: true, quantum_model_ready: true)",
+    "live_quantum_predict": "HTTP 200 (intent: GENERAL_SPEECH, latency: ~635 ms)",
+    "classical_model_rejection": "HTTP 400 (MODEL_NOT_ALLOWED_FOR_OPERATIONAL_INFERENCE)",
+    "classical_spy_invocations": 0,
+    "unmaterialized_model_rejection": "HTTP 503 (QUANTUM_MODEL_NOT_READY)",
+    "unknown_speaker_rejection": "HTTP 404 (SPEAKER_NOT_FOUND)",
+    "audio_file_upload_predict": "HTTP 200 (valid transcription and quantum intent)",
+    "websocket_streaming_predict": "HTTP 101/JSON (valid lifecycle and memory clearance)"
+  },
+  "governance_gates": {
+    "gate_a_mathematical_reproducibility": "PASSED (Maximum difference 0.00000000 against historical kernel cache)",
+    "gate_b_engineering_prototype": "PASSED (17/17 tests passed)",
+    "gate_b2_quantum_only_application": "PASSED (47/47 tests passed, 0 classical fallback)",
+    "gate_c_controlled_clinical_pilot": "BLOCKED_EXTERNAL_PREREQUISITES",
+    "gate_d_emergency_clinical_deployment": "BLOCKED_SAFETY_EVIDENCE"
+  },
+  "operational_instructions": {
+    "start_command": "uvicorn src.app.main:app --host 127.0.0.1 --port 8000",
+    "stop_command": "Stop-Process -Id <PID> or CTRL+C in terminal",
+    "smoke_test_command": "curl http://127.0.0.1:8000/ready",
+    "full_test_command": "python -m pytest tests/ -q"
+  },
+  "known_limitations": [
+    "No quantum advantage demonstrated over classical baselines in statistical audits (Phase 6/6.5).",
+    "Operating threshold tau=0.60 is demonstration default only and marked THRESHOLD_PROVENANCE_UNVERIFIED.",
+    "Scores are uncalibrated SVM decision margins and must not be treated as certified clinical probabilities.",
+    "Gate C is strictly blocked due to 10 unresolved external prerequisites (IRB, DUA, prospective cohort).",
+    "Gate D is strictly blocked; system must never be connected to 911/CAD, telephony, or emergency services."
+  ]
+}

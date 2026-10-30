@@ -1,0 +1,102 @@
+# PHASE 8.1 FROZEN SAFETY RECOVERY PROTOCOL SPECIFICATION
+# Protocol Version: 1.0.0-phase8.1-frozen
+# Creation Timestamp: 2026-10-10T12:15:00Z
+# Status: FROZEN — IMMUTABLE PRIOR TO MODEL DEVELOPMENT
+
+dataset:
+  name: "TORGO Atypical Speech Database"
+  manifest: "results/phase8_80_20/split_manifest.csv"
+  manifest_fingerprint: "16c1304221900a8ca5a278adc2528ba2807881e9c526a322b7a649135bc80a58"
+  total_utterances: 6067
+  train_pool_utterances: 4852
+  locked_test_utterances: 1215
+  test_status: "LOCKED_DIAGNOSTIC_ONLY"  # Cannot be used for model tuning or selection
+
+taxonomy:
+  canonical_classes:
+    - GENERAL_SPEECH
+    - CRITICAL_RESPONSE
+    - FALL
+    - BREATHING_MEDICAL
+    - PAIN
+    - SOS_HELP
+    - LOCATION
+  emergency_classes:
+    - CRITICAL_RESPONSE
+    - FALL
+    - BREATHING_MEDICAL
+    - PAIN
+    - SOS_HELP
+    - LOCATION
+  general_speech_class: GENERAL_SPEECH
+  zero_support_class_policy:
+    absent_classes: ["LOCATION"]
+    reporting_convention: "N/A — no true examples in test set"
+    macro_f1_canonical: "divide_by_7_zero_division_0"
+
+cross_validation:
+  strategy: "Nested Grouped Stratified Cross-Validation"
+  outer_folds: 5
+  inner_folds: 5
+  seed: 42
+  grouping_key: "prompt_id"  # Every prompt group kept strictly in single fold
+  stratification_key: "is_emergency"
+  development_pool: "train_80_percent_only"  # 4,852 utterances
+
+safety_constraint:
+  metric: "False Emergency Rate (FER)"
+  definition: "FP / (FP + TN) = FP / Total_General_Speech"
+  bound: 0.1500  # FER <= 15.0% strictly enforced; never loosened
+  operating_point_rule: "max Recall subject to FER <= 0.15 on inner-validation folds"
+  uncertainty_method: "Wilson Score Interval & Fold-level 95% Confidence Interval"
+
+models_and_search_space:
+  feature_extractor: "Whisper-Base 384-D cached representations"
+  pca_dimension: 8
+  pca_fitting: "Strictly on inner training fold only"
+  
+  tracks:
+    track_a_classical:
+      description: "Stage 1 Logistic Gate + 384-D Classical Residual Module"
+      alpha: 0.5
+      regularization_C: 1.0
+    
+    track_b_quantum:
+      description: "Stage 1 Logistic Gate + 8-Qubit VQC Residual Module"
+      qubits: 8
+      layers: 2
+      ansatz: "AngleEmbedding + BasicEntanglerLayers"
+      simulator: "PennyLane default.qubit"
+      trainable_params: 18
+      alpha: 0.5
+
+    track_c_shadow:
+      description: "Stage 1 Logistic Gate + 8-D Classical Shadow Residual Module"
+      alpha: 0.5
+      hidden_dim: 16
+
+registered_interventions:
+  intervention_1_calibration:
+    id: "INT-1-CALIB"
+    description: "Platt Scaling (logistic calibration) on inner validation probabilities"
+    control: "Raw uncalibrated sigmoid probabilities"
+  
+  intervention_2_cost_sensitive:
+    id: "INT-2-COST"
+    description: "Focal loss / Cost-sensitive reweighting (pos_weight = (1-p)/p) on train only"
+    control: "Standard cross-entropy loss"
+
+  intervention_3_balanced_sampling:
+    id: "INT-3-SAMP"
+    description: "Stratified minority oversampling / replay on inner train only"
+    control: "Natural empirical prevalence sampling"
+
+stopping_and_selection_rules:
+  selection_criterion: "Inner-validation Recall subject to FER <= 0.15"
+  infeasible_fallback: "SAFETY-INFEASIBLE (no candidate meeting FER <= 0.15)"
+  no_outer_fold_leakage: true
+
+independent_confirmation:
+  policy: "Requires newly collected or unused dataset not inspected in Phase 1-8"
+  availability: "NOT AVAILABLE in current repository"
+  reporting_status: "INDEPENDENT SAFETY CONFIRMATION: NOT AVAILABLE"

@@ -1,0 +1,1501 @@
+recording_id,speaker_id,speaker_group,split_role,audio_path,transcript,duration_sec,intent
+F01_1_headMic_0009,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0009.wav,pat,1.255,GENERAL_SPEECH
+F01_1_headMic_0018,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0018.wav,no,2.075,CRITICAL_RESPONSE
+F01_1_headMic_0020,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0020.wav,Usually minus several buttons,4.874,GENERAL_SPEECH
+F01_1_headMic_0021,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0021.wav,dug,1.844,GENERAL_SPEECH
+F01_1_headMic_0024,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0024.wav,knee,1.682,GENERAL_SPEECH
+F01_1_headMic_0026,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0026.wav,train,2.061,GENERAL_SPEECH
+F01_1_headMic_0027,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0027.wav,but he always answers Banana oil,5.262,GENERAL_SPEECH
+F01_1_headMic_0030,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0030.wav,The quick brown fox jumps over the lazy dog,4.801,GENERAL_SPEECH
+F01_1_headMic_0032,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0032.wav,She had your dark suit in greasy wash water all year,7.567,GENERAL_SPEECH
+F01_1_headMic_0034,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0034.wav,feet,0.868,GENERAL_SPEECH
+F01_1_headMic_0037,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0037.wav,rake,1.817,GENERAL_SPEECH
+F01_1_headMic_0039,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0039.wav,swore,1.275,GENERAL_SPEECH
+F01_1_headMic_0040,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0040.wav,rave,1.356,GENERAL_SPEECH
+F01_1_headMic_0042,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0042.wav,for,0.784,GENERAL_SPEECH
+F01_1_headMic_0043,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0043.wav,sip,1.751,GENERAL_SPEECH
+F01_1_headMic_0047,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0047.wav,one,1.351,GENERAL_SPEECH
+F01_1_headMic_0048,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0048.wav,fair,1.901,GENERAL_SPEECH
+F01_1_headMic_0049,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0049.wav,two,1.584,GENERAL_SPEECH
+F01_1_headMic_0050,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0050.wav,beta,1.934,GENERAL_SPEECH
+F01_1_headMic_0052,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0052.wav,spark,1.468,GENERAL_SPEECH
+F01_1_headMic_0057,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0057.wav,race,1.568,GENERAL_SPEECH
+F01_1_headMic_0058,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0058.wav,the,0.951,GENERAL_SPEECH
+F01_1_headMic_0060,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0060.wav,form,1.367,GENERAL_SPEECH
+F01_1_headMic_0061,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0061.wav,dark,1.167,GENERAL_SPEECH
+F01_1_headMic_0062,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0062.wav,sip,1.067,GENERAL_SPEECH
+F01_1_headMic_0066,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0066.wav,weed,2.118,GENERAL_SPEECH
+F01_1_headMic_0073,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0073.wav,chair,1.17,GENERAL_SPEECH
+F01_1_headMic_0074,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0074.wav,bubble,1.254,GENERAL_SPEECH
+F01_1_headMic_0075,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0075.wav,warm,1.354,GENERAL_SPEECH
+F01_1_headMic_0079,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0079.wav,air,1.222,BREATHING_MEDICAL
+F01_1_headMic_0085,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0085.wav,sip,1.591,GENERAL_SPEECH
+F01_1_headMic_0086,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0086.wav,go,1.361,CRITICAL_RESPONSE
+F01_1_headMic_0087,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0087.wav,alpha,1.591,GENERAL_SPEECH
+F01_1_headMic_0088,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0088.wav,left,1.43,GENERAL_SPEECH
+F01_1_headMic_0091,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0091.wav,dagger,2.168,GENERAL_SPEECH
+F01_1_headMic_0094,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0094.wav,slip,1.308,FALL
+F01_1_headMic_0102,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0102.wav,bug,0.943,GENERAL_SPEECH
+F01_1_headMic_0103,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0103.wav,lead,1.193,GENERAL_SPEECH
+F01_1_headMic_0110,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0110.wav,warm,1.387,GENERAL_SPEECH
+F01_1_headMic_0111,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0111.wav,corn,1.635,GENERAL_SPEECH
+F01_1_headMic_0113,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0113.wav,knew,1.833,GENERAL_SPEECH
+F01_1_headMic_0114,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0114.wav,Well he is nearly ninety three years old,5.102,GENERAL_SPEECH
+F01_1_headMic_0116,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0116.wav,Twice each day he plays skillfully and with zest upon our small organ,9.807,GENERAL_SPEECH
+F01_1_headMic_0117,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0117.wav,feed,1.833,GENERAL_SPEECH
+F01_1_headMic_0121,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0121.wav,park,1.833,GENERAL_SPEECH
+F01_1_headMic_0123,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0123.wav,down,1.684,FALL
+F01_1_headMic_0129,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0129.wav,storm,0.941,GENERAL_SPEECH
+F01_1_headMic_0130,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0130.wav,Grandfather likes to be modern in his language,5.746,GENERAL_SPEECH
+F01_1_headMic_0132,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0132.wav,When he speaks his voice is just a bit cracked and quivers a trifle,9.163,GENERAL_SPEECH
+F01_1_headMic_0134,F01,dysarthric,adaptation,data/torgo/audio/F01_1_headMic_0134.wav,yes,1.981,CRITICAL_RESPONSE
+F01_1_headMic_0006,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0006.wav,stick,1.399,GENERAL_SPEECH
+F01_1_headMic_0007,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0007.wav,tear,2.268,GENERAL_SPEECH
+F01_1_headMic_0008,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0008.wav,Except in the winter when the ooze or snow or ice prevents,9.844,GENERAL_SPEECH
+F01_1_headMic_0010,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0010.wav,up,2.075,GENERAL_SPEECH
+F01_1_headMic_0011,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0011.wav,meat,1.592,GENERAL_SPEECH
+F01_1_headMic_0012,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0012.wav,meat,1.641,GENERAL_SPEECH
+F01_1_headMic_0013,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0013.wav,know,1.303,GENERAL_SPEECH
+F01_1_headMic_0014,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0014.wav,he slowly takes a short walk in the open air each day,6.562,BREATHING_MEDICAL
+F01_1_headMic_0015,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0015.wav,air,2.123,BREATHING_MEDICAL
+F01_1_headMic_0016,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0016.wav,swarm,2.413,GENERAL_SPEECH
+F01_1_headMic_0017,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0017.wav,double,2.413,GENERAL_SPEECH
+F01_1_headMic_0019,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0019.wav,storm,1.882,GENERAL_SPEECH
+F01_1_headMic_0022,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0022.wav,You wished to know all about my grandfather,4.99,GENERAL_SPEECH
+F01_1_headMic_0025,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0025.wav,feet,2.333,GENERAL_SPEECH
+F01_1_headMic_0028,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0028.wav,but he always answers Banana oil,3.607,GENERAL_SPEECH
+F01_1_headMic_0029,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0029.wav,beat,1.573,GENERAL_SPEECH
+F01_1_headMic_0031,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0031.wav,The quick brown fox jumps over the lazy dog,4.611,GENERAL_SPEECH
+F01_1_headMic_0033,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0033.wav,car,0.868,GENERAL_SPEECH
+F01_1_headMic_0035,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0035.wav,giving those who observe him a pronounced feeling of the utmost respect,12.422,GENERAL_SPEECH
+F01_1_headMic_0036,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0036.wav,We have often urged him to walk more and smoke less,6.319,GENERAL_SPEECH
+F01_1_headMic_0041,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0041.wav,rave,1.112,GENERAL_SPEECH
+F01_1_headMic_0044,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0044.wav,grow,1.401,GENERAL_SPEECH
+F01_1_headMic_0045,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0045.wav,bit,1.134,GENERAL_SPEECH
+F01_1_headMic_0046,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0046.wav,chair,1.384,GENERAL_SPEECH
+F01_1_headMic_0051,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0051.wav,rage,1.384,GENERAL_SPEECH
+F01_1_headMic_0053,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0053.wav,swarm,1.301,GENERAL_SPEECH
+F01_1_headMic_0054,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0054.wav,beat,1.151,GENERAL_SPEECH
+F01_1_headMic_0059,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0059.wav,the,0.951,GENERAL_SPEECH
+F01_1_headMic_0063,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0063.wav,farm,1.217,GENERAL_SPEECH
+F01_1_headMic_0064,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0064.wav,raid,1.534,GENERAL_SPEECH
+F01_1_headMic_0065,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0065.wav,fee,1.167,GENERAL_SPEECH
+F01_1_headMic_0069,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0069.wav,bat,1.421,GENERAL_SPEECH
+F01_1_headMic_0070,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0070.wav,horn,1.521,GENERAL_SPEECH
+F01_1_headMic_0071,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0071.wav,jagged,1.638,GENERAL_SPEECH
+F01_1_headMic_0072,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0072.wav,sheet,1.521,GENERAL_SPEECH
+F01_1_headMic_0076,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0076.wav,ship,1.321,GENERAL_SPEECH
+F01_1_headMic_0080,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0080.wav,hair,1.868,GENERAL_SPEECH
+F01_1_headMic_0081,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0081.wav,share,1.038,GENERAL_SPEECH
+F01_1_headMic_0082,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0082.wav,rate,1.015,GENERAL_SPEECH
+F01_1_headMic_0083,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0083.wav,goat,1.776,GENERAL_SPEECH
+F01_1_headMic_0084,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0084.wav,trace,1.983,GENERAL_SPEECH
+F01_1_headMic_0089,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0089.wav,sticks,1.591,GENERAL_SPEECH
+F01_1_headMic_0090,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0090.wav,trouble,2.029,SOS_HELP
+F01_1_headMic_0092,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0092.wav,read,1.153,GENERAL_SPEECH
+F01_1_headMic_0093,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0093.wav,A long flowing beard clings to his chin,4.151,GENERAL_SPEECH
+F01_1_headMic_0095,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0095.wav,glow,1.424,GENERAL_SPEECH
+F01_1_headMic_0097,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0097.wav,trade,1.482,GENERAL_SPEECH
+F01_1_headMic_0098,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0098.wav,range,1.308,GENERAL_SPEECH
+F01_1_headMic_0099,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0099.wav,stubble,1.02,GENERAL_SPEECH
+F01_1_headMic_0100,F01,dysarthric,test,data/torgo/audio/F01_1_headMic_0100.wav,floor,1.982,FALL
+F03_1_headMic_0198,F03,dysarthric,adaptation,data/torgo/audio/F03_1_headMic_0198.wav,urgent,1.435,GENERAL_SPEECH
+F03_2_headMic_0001,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0001.wav,fear,3.45,GENERAL_SPEECH
+F03_2_headMic_0027,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0027.wav,delta,2.46,GENERAL_SPEECH
+F03_2_headMic_0028,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0028.wav,Where were you while we were away,3.37,GENERAL_SPEECH
+F03_2_headMic_0032,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0032.wav,Two other cases also were under advisement,5.855,GENERAL_SPEECH
+F03_2_headMic_0033,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0033.wav,Two other cases were also under advisement,4.915,GENERAL_SPEECH
+F03_2_headMic_0034,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0034.wav,pay,2.92,GENERAL_SPEECH
+F03_2_headMic_0035,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0035.wav,charlie,2.155,GENERAL_SPEECH
+F03_2_headMic_0037,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0037.wav,Both figures would go higher in later years,6.775,GENERAL_SPEECH
+F03_2_headMic_0038,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0038.wav,much,2.395,GENERAL_SPEECH
+F03_2_headMic_0045,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0045.wav,knot,2.425,GENERAL_SPEECH
+F03_2_headMic_0049,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0049.wav,slay,1.795,GENERAL_SPEECH
+F03_2_headMic_0050,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0050.wav,root,1.845,GENERAL_SPEECH
+F03_2_headMic_0059,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0059.wav,yes,3.7,CRITICAL_RESPONSE
+F03_2_headMic_0064,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0064.wav,leak,2.825,GENERAL_SPEECH
+F03_2_headMic_0069,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0069.wav,echo,2.385,GENERAL_SPEECH
+F03_2_headMic_0072,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0072.wav,We rode horseback to the farm,4.245,GENERAL_SPEECH
+F03_2_headMic_0076,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0076.wav,park,1.995,GENERAL_SPEECH
+F03_2_headMic_0078,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0078.wav,written,1.66,GENERAL_SPEECH
+F03_2_headMic_0079,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0079.wav,thought,3.85,GENERAL_SPEECH
+F03_2_headMic_0080,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0080.wav,The little schoolhouse stood empty,5.27,GENERAL_SPEECH
+F03_2_headMic_0089,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0089.wav,loyal,2.63,GENERAL_SPEECH
+F03_2_headMic_0096,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0096.wav,seed,1.475,GENERAL_SPEECH
+F03_2_headMic_0098,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0098.wav,The museum hires musicians every evening,6.12,GENERAL_SPEECH
+F03_2_headMic_0102,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0102.wav,mike,2.415,GENERAL_SPEECH
+F03_2_headMic_0106,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0106.wav,sign,2.92,GENERAL_SPEECH
+F03_2_headMic_0107,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0107.wav,bit,1.76,GENERAL_SPEECH
+F03_2_headMic_0108,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0108.wav,kitten,3.59,GENERAL_SPEECH
+F03_2_headMic_0115,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0115.wav,liar,1.735,GENERAL_SPEECH
+F03_2_headMic_0119,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0119.wav,sigh,1.77,GENERAL_SPEECH
+F03_2_headMic_0120,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0120.wav,fitting,2.205,GENERAL_SPEECH
+F03_2_headMic_0121,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0121.wav,thorn,1.64,GENERAL_SPEECH
+F03_2_headMic_0129,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0129.wav,dark,1.55,GENERAL_SPEECH
+F03_2_headMic_0131,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0131.wav,The dolphins swam around our boat,6.39,GENERAL_SPEECH
+F03_2_headMic_0133,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0133.wav,It eventually became a rather proud claim,9.59,GENERAL_SPEECH
+F03_2_headMic_0140,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0140.wav,hitting,1.74,GENERAL_SPEECH
+F03_2_headMic_0144,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0144.wav,harp,1.355,GENERAL_SPEECH
+F03_2_headMic_0148,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0148.wav,knitting,1.66,GENERAL_SPEECH
+F03_2_headMic_0153,F03,dysarthric,adaptation,data/torgo/audio/F03_2_headMic_0153.wav,It was a good win for us,2.205,GENERAL_SPEECH
+F03_3_headMic_0011,F03,dysarthric,adaptation,data/torgo/audio/F03_3_headMic_0011.wav,night,2.01,GENERAL_SPEECH
+F03_3_headMic_0117,F03,dysarthric,adaptation,data/torgo/audio/F03_3_headMic_0117.wav,He is definitely a notch above us,3.975,GENERAL_SPEECH
+F03_3_headMic_0161,F03,dysarthric,adaptation,data/torgo/audio/F03_3_headMic_0161.wav,sip,1.315,GENERAL_SPEECH
+F03_3_headMic_0169,F03,dysarthric,adaptation,data/torgo/audio/F03_3_headMic_0169.wav,tango,1.41,GENERAL_SPEECH
+F03_3_headMic_0170,F03,dysarthric,adaptation,data/torgo/audio/F03_3_headMic_0170.wav,leak,1.24,GENERAL_SPEECH
+F03_3_headMic_0173,F03,dysarthric,adaptation,data/torgo/audio/F03_3_headMic_0173.wav,red,1.45,GENERAL_SPEECH
+F03_3_headMic_0188,F03,dysarthric,adaptation,data/torgo/audio/F03_3_headMic_0188.wav,He wrapped the package hastily,2.635,GENERAL_SPEECH
+F03_3_headMic_0192,F03,dysarthric,adaptation,data/torgo/audio/F03_3_headMic_0192.wav,She wore warm fleecy woolen overalls,4.45,GENERAL_SPEECH
+F03_3_headMic_0193,F03,dysarthric,adaptation,data/torgo/audio/F03_3_headMic_0193.wav,hotel,1.09,GENERAL_SPEECH
+F03_3_headMic_0200,F03,dysarthric,adaptation,data/torgo/audio/F03_3_headMic_0200.wav,no,1.32,CRITICAL_RESPONSE
+F03_3_headMic_0209,F03,dysarthric,adaptation,data/torgo/audio/F03_3_headMic_0209.wav,He further proposed grants of an unspecified sum for experimental hospitals,7.05,GENERAL_SPEECH
+F03_1_headMic_0175,F03,dysarthric,test,data/torgo/audio/F03_1_headMic_0175.wav,You're used to being on the field,2.905,GENERAL_SPEECH
+F03_1_headMic_0177,F03,dysarthric,test,data/torgo/audio/F03_1_headMic_0177.wav,error,1.572,GENERAL_SPEECH
+F03_1_headMic_0178,F03,dysarthric,test,data/torgo/audio/F03_1_headMic_0178.wav,tile,1.128,GENERAL_SPEECH
+F03_2_headMic_0002,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0002.wav,know,2.46,GENERAL_SPEECH
+F03_2_headMic_0003,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0003.wav,though,1.575,GENERAL_SPEECH
+F03_2_headMic_0004,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0004.wav,droop,4.145,GENERAL_SPEECH
+F03_2_headMic_0005,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0005.wav,loop,1.925,GENERAL_SPEECH
+F03_2_headMic_0006,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0006.wav,If you destroy confidence in banks you do something to the economy he said,14.11,GENERAL_SPEECH
+F03_2_headMic_0007,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0007.wav,If you destroy confidence in banks you do something to the economy he said,9.255,GENERAL_SPEECH
+F03_2_headMic_0008,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0008.wav,You'd be better off taking a cold shower,5.48,GENERAL_SPEECH
+F03_2_headMic_0009,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0009.wav,cheer,1.97,GENERAL_SPEECH
+F03_2_headMic_0012,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0012.wav,rock,2.52,GENERAL_SPEECH
+F03_2_headMic_0013,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0013.wav,no,2.0,CRITICAL_RESPONSE
+F03_2_headMic_0014,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0014.wav,peer,3.53,GENERAL_SPEECH
+F03_2_headMic_0015,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0015.wav,deer,1.94,GENERAL_SPEECH
+F03_2_headMic_0016,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0016.wav,white,1.73,GENERAL_SPEECH
+F03_2_headMic_0017,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0017.wav,Will Robin wear a yellow lily,5.345,GENERAL_SPEECH
+F03_2_headMic_0018,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0018.wav,play,2.155,GENERAL_SPEECH
+F03_2_headMic_0019,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0019.wav,floor,1.965,FALL
+F03_2_headMic_0020,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0020.wav,The islands are sparsely populated,6.665,GENERAL_SPEECH
+F03_2_headMic_0021,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0021.wav,Bright sunshine shimmers on the ocean,6.135,GENERAL_SPEECH
+F03_2_headMic_0022,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0022.wav,jungle,2.305,GENERAL_SPEECH
+F03_2_headMic_0023,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0023.wav,single,1.685,GENERAL_SPEECH
+F03_2_headMic_0025,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0025.wav,briar,2.42,GENERAL_SPEECH
+F03_2_headMic_0026,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0026.wav,side,1.685,GENERAL_SPEECH
+F03_2_headMic_0029,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0029.wav,Everything went real smooth the sheriff said,8.09,GENERAL_SPEECH
+F03_2_headMic_0030,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0030.wav,pot,1.85,GENERAL_SPEECH
+F03_2_headMic_0031,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0031.wav,Two other cases also were under advisement,7.53,GENERAL_SPEECH
+F03_2_headMic_0036,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0036.wav,thigh,2.32,GENERAL_SPEECH
+F03_2_headMic_0039,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0039.wav,hate,1.54,GENERAL_SPEECH
+F03_2_headMic_0040,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0040.wav,three,1.735,GENERAL_SPEECH
+F03_2_headMic_0041,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0041.wav,slip,2.215,FALL
+F03_2_headMic_0042,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0042.wav,slip,4.6,FALL
+F03_2_headMic_0043,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0043.wav,I tried to tell people in the community,5.48,GENERAL_SPEECH
+F03_2_headMic_0044,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0044.wav,near,5.03,GENERAL_SPEECH
+F03_2_headMic_0046,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0046.wav,sparkle,2.025,GENERAL_SPEECH
+F03_2_headMic_0047,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0047.wav,sprinkle,2.455,GENERAL_SPEECH
+F03_2_headMic_0048,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0048.wav,group,2.01,GENERAL_SPEECH
+F03_2_headMic_0051,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0051.wav,snoop,1.65,GENERAL_SPEECH
+F03_2_headMic_0052,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0052.wav,forward,3.135,GENERAL_SPEECH
+F03_2_headMic_0053,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0053.wav,four,2.235,GENERAL_SPEECH
+F03_2_headMic_0054,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0054.wav,Mother sews yellow,9.925,GENERAL_SPEECH
+F03_2_headMic_0055,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0055.wav,Mother sews yellow gingham aprons,5.8,GENERAL_SPEECH
+F03_2_headMic_0056,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0056.wav,here,2.785,GENERAL_SPEECH
+F03_2_headMic_0057,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0057.wav,write,1.39,GENERAL_SPEECH
+F03_2_headMic_0058,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0058.wav,If you are losing water replace it immediately,4.765,GENERAL_SPEECH
+F03_2_headMic_0060,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0060.wav,cart,1.46,GENERAL_SPEECH
+F03_2_headMic_0061,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0061.wav,take,1.42,GENERAL_SPEECH
+F03_2_headMic_0062,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0062.wav,seven,1.71,GENERAL_SPEECH
+F03_2_headMic_0063,F03,dysarthric,test,data/torgo/audio/F03_2_headMic_0063.wav,Day after day some new episode is reported,6.32,GENERAL_SPEECH
+F04_1_arrayMic_0012,F04,dysarthric,adaptation,data/torgo/audio/F04_1_arrayMic_0012.wav,born,1.65,GENERAL_SPEECH
+F04_1_arrayMic_0025,F04,dysarthric,adaptation,data/torgo/audio/F04_1_arrayMic_0025.wav,he dressed himself in an ancient black frock coat,4.5,GENERAL_SPEECH
+F04_1_arrayMic_0161,F04,dysarthric,adaptation,data/torgo/audio/F04_1_arrayMic_0161.wav,tear,1.35,GENERAL_SPEECH
+F04_2_headMic_0006,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0006.wav,prior,1.74,GENERAL_SPEECH
+F04_2_headMic_0007,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0007.wav,play,1.75,GENERAL_SPEECH
+F04_2_headMic_0009,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0009.wav,He will allow a rare lilyrare lieDDDDDDDDDCCCCCCCCCCC,5.265,GENERAL_SPEECH
+F04_2_headMic_0010,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0010.wav,shear,2.31,GENERAL_SPEECH
+F04_2_headMic_0014,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0014.wav,This was easy for us,3.165,GENERAL_SPEECH
+F04_2_headMic_0017,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0017.wav,sprinkle,2.36,GENERAL_SPEECH
+F04_2_headMic_0027,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0027.wav,galore,2.43,GENERAL_SPEECH
+F04_2_headMic_0028,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0028.wav,I tried to tell people in the community,4.57,GENERAL_SPEECH
+F04_2_headMic_0033,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0033.wav,bear,1.985,GENERAL_SPEECH
+F04_2_headMic_0036,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0036.wav,Nothing is as offensive as innocence,6.69,GENERAL_SPEECH
+F04_2_headMic_0038,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0038.wav,peer,2.225,GENERAL_SPEECH
+F04_2_headMic_0039,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0039.wav,lip,3.535,GENERAL_SPEECH
+F04_2_headMic_0056,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0056.wav,explore,2.82,GENERAL_SPEECH
+F04_2_headMic_0062,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0062.wav,Jane may earn more money by working hard,6.255,PAIN
+F04_2_headMic_0067,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0067.wav,four,2.8,GENERAL_SPEECH
+F04_2_headMic_0096,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0096.wav,I expect we'll bounce back this week,5.585,GENERAL_SPEECH
+F04_2_headMic_0102,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0102.wav,brought,2.455,GENERAL_SPEECH
+F04_2_headMic_0104,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0104.wav,pit,4.375,GENERAL_SPEECH
+F04_2_headMic_0107,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0107.wav,sergeant,3.185,GENERAL_SPEECH
+F04_2_headMic_0108,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0108.wav,Carl lives in a lovely home,4.535,GENERAL_SPEECH
+F04_2_headMic_0121,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0121.wav,shy,1.76,GENERAL_SPEECH
+F04_2_headMic_0130,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0130.wav,papa,2.56,GENERAL_SPEECH
+F04_2_headMic_0141,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0141.wav,bitten,3.48,GENERAL_SPEECH
+F04_2_headMic_0143,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0143.wav,This is not a program of socialized medicine,7.4,BREATHING_MEDICAL
+F04_2_headMic_0150,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0150.wav,take,2.065,GENERAL_SPEECH
+F04_2_headMic_0152,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0152.wav,sitting,3.49,GENERAL_SPEECH
+F04_2_headMic_0154,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0154.wav,rich,2.62,GENERAL_SPEECH
+F04_2_headMic_0163,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0163.wav,eight,4.595,GENERAL_SPEECH
+F04_2_headMic_0169,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0169.wav,lima,1.565,GENERAL_SPEECH
+F04_2_headMic_0170,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0170.wav,She wore warm fleecy woolen overalls,7.435,GENERAL_SPEECH
+F04_2_headMic_0171,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0171.wav,vat,2.87,GENERAL_SPEECH
+F04_2_headMic_0173,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0173.wav,yes,2.38,CRITICAL_RESPONSE
+F04_2_headMic_0178,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0178.wav,heart,3.405,GENERAL_SPEECH
+F04_2_headMic_0180,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0180.wav,kilo,3.19,GENERAL_SPEECH
+F04_2_headMic_0190,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0190.wav,barn,2.54,GENERAL_SPEECH
+F04_2_headMic_0200,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0200.wav,He wrapped the package hastily,4.65,GENERAL_SPEECH
+F04_2_headMic_0201,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0201.wav,chop,2.74,GENERAL_SPEECH
+F04_2_headMic_0202,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0202.wav,start,2.605,GENERAL_SPEECH
+F04_2_headMic_0208,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0208.wav,A good attitude is unbeatable,3.235,GENERAL_SPEECH
+F04_2_headMic_0209,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0209.wav,dread,1.79,GENERAL_SPEECH
+F04_2_headMic_0210,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0210.wav,shell,1.945,GENERAL_SPEECH
+F04_2_headMic_0213,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0213.wav,ticker,3.82,GENERAL_SPEECH
+F04_2_headMic_0216,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0216.wav,uniform,2.205,GENERAL_SPEECH
+F04_2_headMic_0221,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0221.wav,no,2.565,CRITICAL_RESPONSE
+F04_2_headMic_0222,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0222.wav,zip,2.95,GENERAL_SPEECH
+F04_2_headMic_0229,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0229.wav,nest,2.7,GENERAL_SPEECH
+F04_2_headMic_0250,F04,dysarthric,adaptation,data/torgo/audio/F04_2_headMic_0250.wav,victor,3.045,GENERAL_SPEECH
+F04_1_arrayMic_0068,F04,dysarthric,test,data/torgo/audio/F04_1_arrayMic_0068.wav,warm,1.35,GENERAL_SPEECH
+F04_1_arrayMic_0129,F04,dysarthric,test,data/torgo/audio/F04_1_arrayMic_0129.wav,pile,1.65,GENERAL_SPEECH
+F04_1_arrayMic_0165,F04,dysarthric,test,data/torgo/audio/F04_1_arrayMic_0165.wav,no,1.95,CRITICAL_RESPONSE
+F04_2_headMic_0001,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0001.wav,shoot,2.555,GENERAL_SPEECH
+F04_2_headMic_0002,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0002.wav,I looked up and noticed two old men,5.07,GENERAL_SPEECH
+F04_2_headMic_0003,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0003.wav,slay,1.775,GENERAL_SPEECH
+F04_2_headMic_0004,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0004.wav,Will Robin wear a yellow lily,4.76,GENERAL_SPEECH
+F04_2_headMic_0005,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0005.wav,I was conscious all the time,3.645,GENERAL_SPEECH
+F04_2_headMic_0008,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0008.wav,briar,3.285,GENERAL_SPEECH
+F04_2_headMic_0011,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0011.wav,suit,2.825,GENERAL_SPEECH
+F04_2_headMic_0013,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0013.wav,All the big baseball players get traded,4.54,GENERAL_SPEECH
+F04_2_headMic_0015,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0015.wav,fear,2.345,GENERAL_SPEECH
+F04_2_headMic_0016,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0016.wav,fear,2.745,GENERAL_SPEECH
+F04_2_headMic_0018,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0018.wav,snoop,2.005,GENERAL_SPEECH
+F04_2_headMic_0019,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0019.wav,I scrubbed the floors thoroughly,4.445,GENERAL_SPEECH
+F04_2_headMic_0020,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0020.wav,boot,3.14,GENERAL_SPEECH
+F04_2_headMic_0021,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0021.wav,boot,2.16,GENERAL_SPEECH
+F04_2_headMic_0022,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0022.wav,rocks,1.9,GENERAL_SPEECH
+F04_2_headMic_0023,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0023.wav,witch,2.06,GENERAL_SPEECH
+F04_2_headMic_0024,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0024.wav,though,3.53,GENERAL_SPEECH
+F04_2_headMic_0026,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0026.wav,though,2.18,GENERAL_SPEECH
+F04_2_headMic_0029,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0029.wav,gnaw,2.99,GENERAL_SPEECH
+F04_2_headMic_0030,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0030.wav,cycle,1.955,GENERAL_SPEECH
+F04_2_headMic_0031,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0031.wav,delta,2.775,GENERAL_SPEECH
+F04_2_headMic_0032,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0032.wav,She is thinner than I am,4.455,GENERAL_SPEECH
+F04_2_headMic_0034,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0034.wav,error,2.82,GENERAL_SPEECH
+F04_2_headMic_0035,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0035.wav,jungle,2.75,GENERAL_SPEECH
+F04_2_headMic_0037,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0037.wav,menu,2.07,GENERAL_SPEECH
+F04_2_headMic_0040,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0040.wav,dot,2.845,GENERAL_SPEECH
+F04_2_headMic_0041,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0041.wav,We gathered shells on the beach,4.61,GENERAL_SPEECH
+F04_2_headMic_0042,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0042.wav,I feel I can play this weekend,4.82,GENERAL_SPEECH
+F04_2_headMic_0043,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0043.wav,tie,2.27,GENERAL_SPEECH
+F04_2_headMic_0044,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0044.wav,tie,3.125,GENERAL_SPEECH
+F04_2_headMic_0045,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0045.wav,sigh,2.37,GENERAL_SPEECH
+F04_2_headMic_0046,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0046.wav,mere,1.95,GENERAL_SPEECH
+F04_2_headMic_0047,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0047.wav,Everything went real smooth the sheriff said,5.54,GENERAL_SPEECH
+F04_2_headMic_0048,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0048.wav,pad,2.745,GENERAL_SPEECH
+F04_2_headMic_0049,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0049.wav,sigh,4.765,GENERAL_SPEECH
+F04_2_headMic_0050,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0050.wav,sigh,3.765,GENERAL_SPEECH
+F04_2_headMic_0051,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0051.wav,side,3.12,GENERAL_SPEECH
+F04_2_headMic_0052,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0052.wav,Their house is grey and white,4.635,GENERAL_SPEECH
+F04_2_headMic_0053,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0053.wav,Are your grades higher or lower than Nancy's,6.44,GENERAL_SPEECH
+F04_2_headMic_0054,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0054.wav,urgent,3.815,GENERAL_SPEECH
+F04_2_headMic_0055,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0055.wav,The humidity is overwhelming there,4.515,GENERAL_SPEECH
+F04_2_headMic_0057,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0057.wav,They carried me off on the stretcher,5.565,GENERAL_SPEECH
+F04_2_headMic_0058,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0058.wav,One validated acts of school districts,6.905,GENERAL_SPEECH
+F04_2_headMic_0059,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0059.wav,loop,2.19,GENERAL_SPEECH
+F04_2_headMic_0060,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0060.wav,yes,1.81,CRITICAL_RESPONSE
+F04_2_headMic_0061,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0061.wav,floor,2.565,FALL
+F04_2_headMic_0063,F04,dysarthric,test,data/torgo/audio/F04_2_headMic_0063.wav,back,1.785,GENERAL_SPEECH
+FC01_1_headMic_0007,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0007.wav,pat,2.42,GENERAL_SPEECH
+FC01_1_headMic_0008,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0008.wav,spark,2.955,GENERAL_SPEECH
+FC01_1_headMic_0012,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0012.wav,no,3.075,CRITICAL_RESPONSE
+FC01_1_headMic_0014,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0014.wav,rate,3.275,GENERAL_SPEECH
+FC01_1_headMic_0017,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0017.wav,grow,3.795,GENERAL_SPEECH
+FC01_1_headMic_0020,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0020.wav,bubble,3.145,GENERAL_SPEECH
+FC01_1_headMic_0029,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0029.wav,bit,3.3,GENERAL_SPEECH
+FC01_1_headMic_0040,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0040.wav,Well he is nearly ninetythree years old,5.54,GENERAL_SPEECH
+FC01_1_headMic_0042,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0042.wav,bug,3.42,GENERAL_SPEECH
+FC01_1_headMic_0047,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0047.wav,A long flowing beard clings to his chin,5.305,GENERAL_SPEECH
+FC01_1_headMic_0048,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0048.wav,feed,3.435,GENERAL_SPEECH
+FC01_1_headMic_0050,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0050.wav,jagged,3.195,GENERAL_SPEECH
+FC01_1_headMic_0053,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0053.wav,raid,3.21,GENERAL_SPEECH
+FC01_1_headMic_0056,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0056.wav,rage,3.27,GENERAL_SPEECH
+FC01_1_headMic_0058,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0058.wav,trace,3.125,GENERAL_SPEECH
+FC01_1_headMic_0061,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0061.wav,Except in the winter when the ooze or snow or ice prevents,6.855,GENERAL_SPEECH
+FC01_1_headMic_0063,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0063.wav,down,3.325,FALL
+FC01_1_headMic_0065,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0065.wav,double,3.275,GENERAL_SPEECH
+FC01_1_headMic_0066,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0066.wav,alpha,3.18,GENERAL_SPEECH
+FC01_1_headMic_0069,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0069.wav,beat,2.88,GENERAL_SPEECH
+FC01_1_headMic_0074,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0074.wav,stick,3.63,GENERAL_SPEECH
+FC01_1_headMic_0081,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0081.wav,ship,2.795,GENERAL_SPEECH
+FC01_1_headMic_0084,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0084.wav,usually minus several buttons,4.23,GENERAL_SPEECH
+FC01_1_headMic_0085,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0085.wav,usually minus several buttons,4.12,GENERAL_SPEECH
+FC01_1_headMic_0086,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0086.wav,for,3.49,GENERAL_SPEECH
+FC01_1_headMic_0087,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0087.wav,knew,2.97,GENERAL_SPEECH
+FC01_1_headMic_0089,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0089.wav,sip,3.13,GENERAL_SPEECH
+FC01_1_headMic_0105,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0105.wav,train,2.97,GENERAL_SPEECH
+FC01_1_headMic_0106,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0106.wav,trait,2.835,GENERAL_SPEECH
+FC01_1_headMic_0109,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0109.wav,right,2.98,GENERAL_SPEECH
+FC01_1_headMic_0111,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0111.wav,yet he still thinks as swiftly as ever,4.745,GENERAL_SPEECH
+FC01_1_headMic_0112,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0112.wav,slip,3.075,FALL
+FC01_1_headMic_0113,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0113.wav,he slowly takes a short walk in the open air each day,5.255,BREATHING_MEDICAL
+FC01_1_headMic_0115,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0115.wav,share,2.86,GENERAL_SPEECH
+FC01_1_headMic_0119,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0119.wav,range,3.195,GENERAL_SPEECH
+FC01_1_headMic_0121,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0121.wav,sheet,3.055,GENERAL_SPEECH
+FC01_1_headMic_0124,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0124.wav,read,3.32,GENERAL_SPEECH
+FC01_1_headMic_0125,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0125.wav,meat,3.395,GENERAL_SPEECH
+FC01_1_headMic_0136,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0136.wav,slay,2.86,GENERAL_SPEECH
+FC01_1_headMic_0138,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0138.wav,hear,3.03,GENERAL_SPEECH
+FC01_1_headMic_0141,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0141.wav,rocks,2.815,GENERAL_SPEECH
+FC01_1_headMic_0143,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0143.wav,play,3.08,GENERAL_SPEECH
+FC01_1_headMic_0144,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0144.wav,ate,3.295,GENERAL_SPEECH
+FC01_1_headMic_0145,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0145.wav,whoop,3.495,GENERAL_SPEECH
+FC01_1_headMic_0146,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0146.wav,sleep,3.09,GENERAL_SPEECH
+FC01_1_headMic_0148,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0148.wav,yes,3.385,CRITICAL_RESPONSE
+FC01_1_headMic_0152,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0152.wav,sigh,2.7,GENERAL_SPEECH
+FC01_1_headMic_0153,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0153.wav,sigh,3.06,GENERAL_SPEECH
+FC01_1_headMic_0155,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0155.wav,deer,2.97,GENERAL_SPEECH
+FC01_1_headMic_0163,FC01,control,adaptation,data/torgo/audio/FC01_1_headMic_0163.wav,jungle,2.735,GENERAL_SPEECH
+FC01_1_headMic_0005,FC01,control,test,data/torgo/audio/FC01_1_headMic_0005.wav,dug,2.59,GENERAL_SPEECH
+FC01_1_headMic_0006,FC01,control,test,data/torgo/audio/FC01_1_headMic_0006.wav,dark,2.625,GENERAL_SPEECH
+FC01_1_headMic_0009,FC01,control,test,data/torgo/audio/FC01_1_headMic_0009.wav,sip,2.65,GENERAL_SPEECH
+FC01_1_headMic_0010,FC01,control,test,data/torgo/audio/FC01_1_headMic_0010.wav,farm,2.87,GENERAL_SPEECH
+FC01_1_headMic_0011,FC01,control,test,data/torgo/audio/FC01_1_headMic_0011.wav,rave,2.81,GENERAL_SPEECH
+FC01_1_headMic_0013,FC01,control,test,data/torgo/audio/FC01_1_headMic_0013.wav,fair,3.205,GENERAL_SPEECH
+FC01_1_headMic_0015,FC01,control,test,data/torgo/audio/FC01_1_headMic_0015.wav,When he speaks his voice is just a bit cracked and quivers a trifle,6.52,GENERAL_SPEECH
+FC01_1_headMic_0016,FC01,control,test,data/torgo/audio/FC01_1_headMic_0016.wav,the,3.29,GENERAL_SPEECH
+FC01_1_headMic_0018,FC01,control,test,data/torgo/audio/FC01_1_headMic_0018.wav,corn,3.32,GENERAL_SPEECH
+FC01_1_headMic_0019,FC01,control,test,data/torgo/audio/FC01_1_headMic_0019.wav,storm,3.6,GENERAL_SPEECH
+FC01_1_headMic_0021,FC01,control,test,data/torgo/audio/FC01_1_headMic_0021.wav,warm,2.93,GENERAL_SPEECH
+FC01_1_headMic_0022,FC01,control,test,data/torgo/audio/FC01_1_headMic_0022.wav,yes,3.145,CRITICAL_RESPONSE
+FC01_1_headMic_0024,FC01,control,test,data/torgo/audio/FC01_1_headMic_0024.wav,swarm,3.005,GENERAL_SPEECH
+FC01_1_headMic_0026,FC01,control,test,data/torgo/audio/FC01_1_headMic_0026.wav,The quick brown fox jumps over the lazy dog,6.195,GENERAL_SPEECH
+FC01_1_headMic_0028,FC01,control,test,data/torgo/audio/FC01_1_headMic_0028.wav,form,3.02,GENERAL_SPEECH
+FC01_1_headMic_0030,FC01,control,test,data/torgo/audio/FC01_1_headMic_0030.wav,feet,3.475,GENERAL_SPEECH
+FC01_1_headMic_0031,FC01,control,test,data/torgo/audio/FC01_1_headMic_0031.wav,chair,3.36,GENERAL_SPEECH
+FC01_1_headMic_0032,FC01,control,test,data/torgo/audio/FC01_1_headMic_0032.wav,left,3.27,GENERAL_SPEECH
+FC01_1_headMic_0033,FC01,control,test,data/torgo/audio/FC01_1_headMic_0033.wav,giving those who observe him a pronounced feeling of the utmost respect,6.195,GENERAL_SPEECH
+FC01_1_headMic_0034,FC01,control,test,data/torgo/audio/FC01_1_headMic_0034.wav,tip,2.895,GENERAL_SPEECH
+FC01_1_headMic_0035,FC01,control,test,data/torgo/audio/FC01_1_headMic_0035.wav,trouble,2.94,SOS_HELP
+FC01_1_headMic_0036,FC01,control,test,data/torgo/audio/FC01_1_headMic_0036.wav,Don't ask me to carry an oily rag like that,4.72,GENERAL_SPEECH
+FC01_1_headMic_0037,FC01,control,test,data/torgo/audio/FC01_1_headMic_0037.wav,warm,3.1,GENERAL_SPEECH
+FC01_1_headMic_0038,FC01,control,test,data/torgo/audio/FC01_1_headMic_0038.wav,feet,3.43,GENERAL_SPEECH
+FC01_1_headMic_0039,FC01,control,test,data/torgo/audio/FC01_1_headMic_0039.wav,lead,3.17,GENERAL_SPEECH
+FC01_1_headMic_0041,FC01,control,test,data/torgo/audio/FC01_1_headMic_0041.wav,weed,3.255,GENERAL_SPEECH
+FC01_1_headMic_0043,FC01,control,test,data/torgo/audio/FC01_1_headMic_0043.wav,read,3.115,GENERAL_SPEECH
+FC01_1_headMic_0044,FC01,control,test,data/torgo/audio/FC01_1_headMic_0044.wav,stubble,4.375,GENERAL_SPEECH
+FC01_1_headMic_0045,FC01,control,test,data/torgo/audio/FC01_1_headMic_0045.wav,swore,3.43,GENERAL_SPEECH
+FC01_1_headMic_0046,FC01,control,test,data/torgo/audio/FC01_1_headMic_0046.wav,We have often urged him to walk more and smoke less,6.39,GENERAL_SPEECH
+FC01_1_headMic_0049,FC01,control,test,data/torgo/audio/FC01_1_headMic_0049.wav,air,3.2,BREATHING_MEDICAL
+FC01_1_headMic_0051,FC01,control,test,data/torgo/audio/FC01_1_headMic_0051.wav,goat,2.94,GENERAL_SPEECH
+FC01_1_headMic_0052,FC01,control,test,data/torgo/audio/FC01_1_headMic_0052.wav,store,3.36,GENERAL_SPEECH
+FC01_1_headMic_0054,FC01,control,test,data/torgo/audio/FC01_1_headMic_0054.wav,You wished to know all about my grandfather,5.12,GENERAL_SPEECH
+FC01_1_headMic_0055,FC01,control,test,data/torgo/audio/FC01_1_headMic_0055.wav,sticks,3.295,GENERAL_SPEECH
+FC01_1_headMic_0057,FC01,control,test,data/torgo/audio/FC01_1_headMic_0057.wav,beta,3.605,GENERAL_SPEECH
+FC01_1_headMic_0060,FC01,control,test,data/torgo/audio/FC01_1_headMic_0060.wav,hair,2.83,GENERAL_SPEECH
+FC01_1_headMic_0062,FC01,control,test,data/torgo/audio/FC01_1_headMic_0062.wav,rain,2.73,GENERAL_SPEECH
+FC01_1_headMic_0064,FC01,control,test,data/torgo/audio/FC01_1_headMic_0064.wav,beat,3.525,GENERAL_SPEECH
+FC01_1_headMic_0067,FC01,control,test,data/torgo/audio/FC01_1_headMic_0067.wav,knew,2.99,GENERAL_SPEECH
+FC01_1_headMic_0068,FC01,control,test,data/torgo/audio/FC01_1_headMic_0068.wav,trade,3.405,GENERAL_SPEECH
+FC01_1_headMic_0070,FC01,control,test,data/torgo/audio/FC01_1_headMic_0070.wav,fee,3.115,GENERAL_SPEECH
+FC01_1_headMic_0071,FC01,control,test,data/torgo/audio/FC01_1_headMic_0071.wav,rake,3.195,GENERAL_SPEECH
+FC01_1_headMic_0072,FC01,control,test,data/torgo/audio/FC01_1_headMic_0072.wav,he dresses himself in an ancient black frock coat,6.585,GENERAL_SPEECH
+FC01_1_headMic_0073,FC01,control,test,data/torgo/audio/FC01_1_headMic_0073.wav,park,3.025,GENERAL_SPEECH
+FC01_1_headMic_0075,FC01,control,test,data/torgo/audio/FC01_1_headMic_0075.wav,but he always answers Banana oil,5.26,GENERAL_SPEECH
+FC01_1_headMic_0077,FC01,control,test,data/torgo/audio/FC01_1_headMic_0077.wav,but he always answers Banana oil,4.21,GENERAL_SPEECH
+FC01_1_headMic_0078,FC01,control,test,data/torgo/audio/FC01_1_headMic_0078.wav,dagger,2.795,GENERAL_SPEECH
+FC01_1_headMic_0079,FC01,control,test,data/torgo/audio/FC01_1_headMic_0079.wav,horn,2.65,GENERAL_SPEECH
+FC01_1_headMic_0082,FC01,control,test,data/torgo/audio/FC01_1_headMic_0082.wav,race,2.965,GENERAL_SPEECH
+FC02_2_arrayMic_0226,FC02,control,adaptation,data/torgo/audio/FC02_2_arrayMic_0226.wav,slip,3.15,FALL
+FC02_3_headMic_0008,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0008.wav,chop,2.48,GENERAL_SPEECH
+FC02_3_headMic_0017,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0017.wav,There is a treehouse up above,3.86,GENERAL_SPEECH
+FC02_3_headMic_0035,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0035.wav,barn,2.22,GENERAL_SPEECH
+FC02_3_headMic_0084,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0084.wav,lima,2.725,GENERAL_SPEECH
+FC02_3_headMic_0089,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0089.wav,Alimony harms a divorced man's wealth,4.515,GENERAL_SPEECH
+FC02_3_headMic_0094,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0094.wav,leak,2.025,GENERAL_SPEECH
+FC02_3_headMic_0116,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0116.wav,heart,2.045,GENERAL_SPEECH
+FC02_3_headMic_0117,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0117.wav,thorn,1.935,GENERAL_SPEECH
+FC02_3_headMic_0158,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0158.wav,meat,2.445,GENERAL_SPEECH
+FC02_3_headMic_0173,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0173.wav,said,2.56,GENERAL_SPEECH
+FC02_3_headMic_0197,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0197.wav,yes,1.86,CRITICAL_RESPONSE
+FC02_3_headMic_0202,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0202.wav,Those musicians harmonize marvelously,4.255,GENERAL_SPEECH
+FC02_3_headMic_0207,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0207.wav,sin,2.5,GENERAL_SPEECH
+FC02_3_headMic_0216,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0216.wav,best,2.59,GENERAL_SPEECH
+FC02_3_headMic_0292,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0292.wav,much,2.23,GENERAL_SPEECH
+FC02_3_headMic_0293,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0293.wav,coat,2.155,GENERAL_SPEECH
+FC02_3_headMic_0336,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0336.wav,lee,1.775,GENERAL_SPEECH
+FC02_3_headMic_0346,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0346.wav,yes,2.07,CRITICAL_RESPONSE
+FC02_3_headMic_0375,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0375.wav,lend,1.77,GENERAL_SPEECH
+FC02_3_headMic_0409,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0409.wav,coat,2.01,GENERAL_SPEECH
+FC02_3_headMic_0424,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0424.wav,three,2.46,GENERAL_SPEECH
+FC02_3_headMic_0437,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0437.wav,reap,1.875,GENERAL_SPEECH
+FC02_3_headMic_0449,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0449.wav,beat,1.97,GENERAL_SPEECH
+FC02_3_headMic_0475,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0475.wav,reef,1.98,GENERAL_SPEECH
+FC02_3_headMic_0495,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0495.wav,We just didn't look good,2.775,GENERAL_SPEECH
+FC02_3_headMic_0530,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0530.wav,The lack of heat compounded the tenant's grievances,5.07,GENERAL_SPEECH
+FC02_3_headMic_0547,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0547.wav,rip,2.04,GENERAL_SPEECH
+FC02_3_headMic_0560,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0560.wav,Range was a vital detail,3.14,GENERAL_SPEECH
+FC02_3_headMic_0565,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0565.wav,The structures housing the apartments are of masonry and frame construction,6.31,GENERAL_SPEECH
+FC02_3_headMic_0570,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0570.wav,The singer's finger had a splinter,3.645,GENERAL_SPEECH
+FC02_3_headMic_0608,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0608.wav,fill,1.835,GENERAL_SPEECH
+FC02_3_headMic_0611,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0611.wav,pit,1.64,GENERAL_SPEECH
+FC02_3_headMic_0634,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0634.wav,lax,1.86,GENERAL_SPEECH
+FC02_3_headMic_0644,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0644.wav,The eastern coast is a place for pure pleasure and excitement,4.745,GENERAL_SPEECH
+FC02_3_headMic_0650,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0650.wav,hall,1.76,GENERAL_SPEECH
+FC02_3_headMic_0699,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0699.wav,The store serves meals every day,3.755,GENERAL_SPEECH
+FC02_3_headMic_0726,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0726.wav,It was time to go up myself,3.41,GENERAL_SPEECH
+FC02_3_headMic_0729,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0729.wav,born,2.24,GENERAL_SPEECH
+FC02_3_headMic_0746,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0746.wav,farm,1.985,GENERAL_SPEECH
+FC02_3_headMic_0761,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0761.wav,It was a huge part of my life,3.655,GENERAL_SPEECH
+FC02_3_headMic_0783,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0783.wav,She makes other trips for pleasure,3.525,GENERAL_SPEECH
+FC02_3_headMic_0826,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0826.wav,stall,2.0,GENERAL_SPEECH
+FC02_3_headMic_0842,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0842.wav,Maybe it's taking longer to get things squared away than the bankers expected,6.575,GENERAL_SPEECH
+FC02_3_headMic_0858,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0858.wav,fall,2.255,FALL
+FC02_3_headMic_0864,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0864.wav,saddle,1.935,GENERAL_SPEECH
+FC02_3_headMic_0890,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0890.wav,ball,2.085,GENERAL_SPEECH
+FC02_3_headMic_0896,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0896.wav,rattle,2.13,GENERAL_SPEECH
+FC02_3_headMic_0914,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0914.wav,A large household needs lots of appliances,4.165,GENERAL_SPEECH
+FC02_3_headMic_0973,FC02,control,adaptation,data/torgo/audio/FC02_3_headMic_0973.wav,tore,1.81,GENERAL_SPEECH
+FC02_2_arrayMic_0005,FC02,control,test,data/torgo/audio/FC02_2_arrayMic_0005.wav,no,1.35,CRITICAL_RESPONSE
+FC02_2_arrayMic_0022,FC02,control,test,data/torgo/audio/FC02_2_arrayMic_0022.wav,right,2.85,GENERAL_SPEECH
+FC02_2_arrayMic_0033,FC02,control,test,data/torgo/audio/FC02_2_arrayMic_0033.wav,stick,3.6,GENERAL_SPEECH
+FC02_2_arrayMic_0034,FC02,control,test,data/torgo/audio/FC02_2_arrayMic_0034.wav,warm,3.0,GENERAL_SPEECH
+FC02_2_arrayMic_0140,FC02,control,test,data/torgo/audio/FC02_2_arrayMic_0140.wav,The humidity is overwhelming there,5.4,GENERAL_SPEECH
+FC02_2_arrayMic_0153,FC02,control,test,data/torgo/audio/FC02_2_arrayMic_0153.wav,slay,2.85,GENERAL_SPEECH
+FC02_2_arrayMic_0225,FC02,control,test,data/torgo/audio/FC02_2_arrayMic_0225.wav,here,3.0,GENERAL_SPEECH
+FC02_3_headMic_0006,FC02,control,test,data/torgo/audio/FC02_3_headMic_0006.wav,foxtrot,2.87,GENERAL_SPEECH
+FC02_3_headMic_0007,FC02,control,test,data/torgo/audio/FC02_3_headMic_0007.wav,papa,2.61,GENERAL_SPEECH
+FC02_3_headMic_0009,FC02,control,test,data/torgo/audio/FC02_3_headMic_0009.wav,Both injuries were to the same leg,4.14,GENERAL_SPEECH
+FC02_3_headMic_0010,FC02,control,test,data/torgo/audio/FC02_3_headMic_0010.wav,hark,2.02,GENERAL_SPEECH
+FC02_3_headMic_0011,FC02,control,test,data/torgo/audio/FC02_3_headMic_0011.wav,hitting,2.37,GENERAL_SPEECH
+FC02_3_headMic_0012,FC02,control,test,data/torgo/audio/FC02_3_headMic_0012.wav,cart,2.065,GENERAL_SPEECH
+FC02_3_headMic_0013,FC02,control,test,data/torgo/audio/FC02_3_headMic_0013.wav,him,2.04,GENERAL_SPEECH
+FC02_3_headMic_0014,FC02,control,test,data/torgo/audio/FC02_3_headMic_0014.wav,The books are very expensive,3.835,GENERAL_SPEECH
+FC02_3_headMic_0015,FC02,control,test,data/torgo/audio/FC02_3_headMic_0015.wav,The books are very expensive,3.685,GENERAL_SPEECH
+FC02_3_headMic_0016,FC02,control,test,data/torgo/audio/FC02_3_headMic_0016.wav,rich,2.19,GENERAL_SPEECH
+FC02_3_headMic_0018,FC02,control,test,data/torgo/audio/FC02_3_headMic_0018.wav,hotel,2.215,GENERAL_SPEECH
+FC02_3_headMic_0019,FC02,control,test,data/torgo/audio/FC02_3_headMic_0019.wav,hotel,2.685,GENERAL_SPEECH
+FC02_3_headMic_0020,FC02,control,test,data/torgo/audio/FC02_3_headMic_0020.wav,I expect we'll bounce back this week,4.25,GENERAL_SPEECH
+FC02_3_headMic_0021,FC02,control,test,data/torgo/audio/FC02_3_headMic_0021.wav,tell,2.59,GENERAL_SPEECH
+FC02_3_headMic_0023,FC02,control,test,data/torgo/audio/FC02_3_headMic_0023.wav,reek,2.95,GENERAL_SPEECH
+FC02_3_headMic_0024,FC02,control,test,data/torgo/audio/FC02_3_headMic_0024.wav,six,2.52,GENERAL_SPEECH
+FC02_3_headMic_0025,FC02,control,test,data/torgo/audio/FC02_3_headMic_0025.wav,park,2.44,GENERAL_SPEECH
+FC02_3_headMic_0026,FC02,control,test,data/torgo/audio/FC02_3_headMic_0026.wav,This is not a program of socialized medicine,4.87,BREATHING_MEDICAL
+FC02_3_headMic_0027,FC02,control,test,data/torgo/audio/FC02_3_headMic_0027.wav,take,2.595,GENERAL_SPEECH
+FC02_3_headMic_0028,FC02,control,test,data/torgo/audio/FC02_3_headMic_0028.wav,bloat,2.405,GENERAL_SPEECH
+FC02_3_headMic_0029,FC02,control,test,data/torgo/audio/FC02_3_headMic_0029.wav,bit,2.735,GENERAL_SPEECH
+FC02_3_headMic_0030,FC02,control,test,data/torgo/audio/FC02_3_headMic_0030.wav,cake,2.69,GENERAL_SPEECH
+FC02_3_headMic_0031,FC02,control,test,data/torgo/audio/FC02_3_headMic_0031.wav,knitting,2.7,GENERAL_SPEECH
+FC02_3_headMic_0032,FC02,control,test,data/torgo/audio/FC02_3_headMic_0032.wav,A roll of wire lay near the wall,4.16,GENERAL_SPEECH
+FC02_3_headMic_0036,FC02,control,test,data/torgo/audio/FC02_3_headMic_0036.wav,We rode horseback to the farm,4.05,GENERAL_SPEECH
+FC02_3_headMic_0037,FC02,control,test,data/torgo/audio/FC02_3_headMic_0037.wav,seed,2.715,GENERAL_SPEECH
+FC02_3_headMic_0038,FC02,control,test,data/torgo/audio/FC02_3_headMic_0038.wav,golf,2.515,GENERAL_SPEECH
+FC02_3_headMic_0039,FC02,control,test,data/torgo/audio/FC02_3_headMic_0039.wav,fill,2.725,GENERAL_SPEECH
+FC02_3_headMic_0040,FC02,control,test,data/torgo/audio/FC02_3_headMic_0040.wav,The box contained three sweaters,4.075,GENERAL_SPEECH
+FC02_3_headMic_0041,FC02,control,test,data/torgo/audio/FC02_3_headMic_0041.wav,mike,2.185,GENERAL_SPEECH
+FC02_3_headMic_0042,FC02,control,test,data/torgo/audio/FC02_3_headMic_0042.wav,If you are losing water replace it immediately,4.625,GENERAL_SPEECH
+FC02_3_headMic_0043,FC02,control,test,data/torgo/audio/FC02_3_headMic_0043.wav,pit,2.065,GENERAL_SPEECH
+FC02_3_headMic_0044,FC02,control,test,data/torgo/audio/FC02_3_headMic_0044.wav,yes,2.495,CRITICAL_RESPONSE
+FC02_3_headMic_0045,FC02,control,test,data/torgo/audio/FC02_3_headMic_0045.wav,hem,2.465,GENERAL_SPEECH
+FC02_3_headMic_0046,FC02,control,test,data/torgo/audio/FC02_3_headMic_0046.wav,sitting,2.92,GENERAL_SPEECH
+FC02_3_headMic_0047,FC02,control,test,data/torgo/audio/FC02_3_headMic_0047.wav,hum,2.525,GENERAL_SPEECH
+FC02_3_headMic_0048,FC02,control,test,data/torgo/audio/FC02_3_headMic_0048.wav,When all else fails use force,4.3,GENERAL_SPEECH
+FC02_3_headMic_0049,FC02,control,test,data/torgo/audio/FC02_3_headMic_0049.wav,It was a good win for us,3.415,GENERAL_SPEECH
+FC02_3_headMic_0050,FC02,control,test,data/torgo/audio/FC02_3_headMic_0050.wav,lick,2.545,GENERAL_SPEECH
+FC02_3_headMic_0051,FC02,control,test,data/torgo/audio/FC02_3_headMic_0051.wav,The job provides many benefits,4.08,GENERAL_SPEECH
+FC02_3_headMic_0052,FC02,control,test,data/torgo/audio/FC02_3_headMic_0052.wav,She wore warm fleecy woolen overalls,4.99,GENERAL_SPEECH
+FC02_3_headMic_0053,FC02,control,test,data/torgo/audio/FC02_3_headMic_0053.wav,hill,2.495,GENERAL_SPEECH
+FC02_3_headMic_0054,FC02,control,test,data/torgo/audio/FC02_3_headMic_0054.wav,lair,2.72,GENERAL_SPEECH
+FC03_1_headMic_0227,FC03,control,adaptation,data/torgo/audio/FC03_1_headMic_0227.wav,sleep,2.235,GENERAL_SPEECH
+FC03_1_headMic_0391,FC03,control,adaptation,data/torgo/audio/FC03_1_headMic_0391.wav,seeds,2.125,GENERAL_SPEECH
+FC03_1_headMic_0392,FC03,control,adaptation,data/torgo/audio/FC03_1_headMic_0392.wav,city,2.155,GENERAL_SPEECH
+FC03_1_headMic_0401,FC03,control,adaptation,data/torgo/audio/FC03_1_headMic_0401.wav,The misguided souls have lost their way,4.325,GENERAL_SPEECH
+FC03_2_headMic_0033,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0033.wav,nest,2.04,GENERAL_SPEECH
+FC03_2_headMic_0043,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0043.wav,ship,2.075,GENERAL_SPEECH
+FC03_2_headMic_0051,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0051.wav,Being able to dance can help too,3.12,SOS_HELP
+FC03_2_headMic_0059,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0059.wav,four,1.785,GENERAL_SPEECH
+FC03_2_headMic_0076,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0076.wav,red,1.71,GENERAL_SPEECH
+FC03_2_headMic_0081,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0081.wav,ham,1.665,GENERAL_SPEECH
+FC03_2_headMic_0086,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0086.wav,yankee,1.625,GENERAL_SPEECH
+FC03_2_headMic_0088,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0088.wav,up,1.485,GENERAL_SPEECH
+FC03_2_headMic_0099,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0099.wav,You want him to do well,3.545,GENERAL_SPEECH
+FC03_2_headMic_0101,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0101.wav,The pair of shoes was new,3.965,GENERAL_SPEECH
+FC03_2_headMic_0121,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0121.wav,shred,1.795,GENERAL_SPEECH
+FC03_2_headMic_0122,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0122.wav,thread,1.87,GENERAL_SPEECH
+FC03_2_headMic_0126,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0126.wav,Young people participate in athletic activities,4.24,GENERAL_SPEECH
+FC03_2_headMic_0137,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0137.wav,geese,2.51,GENERAL_SPEECH
+FC03_2_headMic_0142,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0142.wav,goat,2.485,GENERAL_SPEECH
+FC03_2_headMic_0143,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0143.wav,weep,1.95,GENERAL_SPEECH
+FC03_2_headMic_0147,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0147.wav,four,2.125,GENERAL_SPEECH
+FC03_2_headMic_0151,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0151.wav,sew,2.1,GENERAL_SPEECH
+FC03_2_headMic_0162,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0162.wav,shoot,1.925,GENERAL_SPEECH
+FC03_2_headMic_0166,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0166.wav,see,1.84,GENERAL_SPEECH
+FC03_2_headMic_0175,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0175.wav,The fish swam across the pond,3.71,GENERAL_SPEECH
+FC03_2_headMic_0183,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0183.wav,bill,1.81,GENERAL_SPEECH
+FC03_2_headMic_0203,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0203.wav,rise,2.075,GENERAL_SPEECH
+FC03_2_headMic_0217,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0217.wav,pork,1.76,GENERAL_SPEECH
+FC03_2_headMic_0222,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0222.wav,snake,1.485,GENERAL_SPEECH
+FC03_2_headMic_0236,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0236.wav,short,1.56,GENERAL_SPEECH
+FC03_2_headMic_0239,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0239.wav,fork,1.975,GENERAL_SPEECH
+FC03_2_headMic_0243,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0243.wav,I called two different painters,3.37,GENERAL_SPEECH
+FC03_2_headMic_0253,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0253.wav,steak,1.9,GENERAL_SPEECH
+FC03_2_headMic_0257,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0257.wav,Barb's gold bracelet was a graduation present,4.195,GENERAL_SPEECH
+FC03_2_headMic_0266,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0266.wav,sport,1.91,GENERAL_SPEECH
+FC03_2_headMic_0268,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0268.wav,fed,1.685,GENERAL_SPEECH
+FC03_2_headMic_0279,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0279.wav,tail,1.865,GENERAL_SPEECH
+FC03_2_headMic_0292,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0292.wav,The marriage went well from the start,3.26,GENERAL_SPEECH
+FC03_2_headMic_0299,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0299.wav,six,1.77,GENERAL_SPEECH
+FC03_2_headMic_0305,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0305.wav,temper,2.095,GENERAL_SPEECH
+FC03_2_headMic_0313,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0313.wav,I also can be quite vocal,3.29,GENERAL_SPEECH
+FC03_2_headMic_0314,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0314.wav,six,1.755,GENERAL_SPEECH
+FC03_2_headMic_0315,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0315.wav,reap,1.7,GENERAL_SPEECH
+FC03_2_headMic_0318,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0318.wav,sticks,1.605,GENERAL_SPEECH
+FC03_2_headMic_0322,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0322.wav,reef,1.86,GENERAL_SPEECH
+FC03_2_headMic_0323,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0323.wav,Mom strongly dislikes appetizers,3.995,GENERAL_SPEECH
+FC03_2_headMic_0350,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0350.wav,ache,1.395,PAIN
+FC03_2_headMic_0365,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0365.wav,fender,1.455,GENERAL_SPEECH
+FC03_2_headMic_0381,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0381.wav,lender,1.75,GENERAL_SPEECH
+FC03_2_headMic_0382,FC03,control,adaptation,data/torgo/audio/FC03_2_headMic_0382.wav,Worse luck was still to come,3.305,GENERAL_SPEECH
+FC03_1_headMic_0249,FC03,control,test,data/torgo/audio/FC03_1_headMic_0249.wav,three,1.75,GENERAL_SPEECH
+FC03_1_headMic_0306,FC03,control,test,data/torgo/audio/FC03_1_headMic_0306.wav,five,2.125,GENERAL_SPEECH
+FC03_1_headMic_0330,FC03,control,test,data/torgo/audio/FC03_1_headMic_0330.wav,It was a good win for us,4.015,GENERAL_SPEECH
+FC03_1_headMic_0352,FC03,control,test,data/torgo/audio/FC03_1_headMic_0352.wav,There is a treehouse up above,3.6,GENERAL_SPEECH
+FC03_1_headMic_0378,FC03,control,test,data/torgo/audio/FC03_1_headMic_0378.wav,at,2.065,GENERAL_SPEECH
+FC03_1_headMic_0393,FC03,control,test,data/torgo/audio/FC03_1_headMic_0393.wav,Carl lives in a lively home,3.715,GENERAL_SPEECH
+FC03_1_headMic_0394,FC03,control,test,data/torgo/audio/FC03_1_headMic_0394.wav,oscar,2.305,GENERAL_SPEECH
+FC03_1_headMic_0395,FC03,control,test,data/torgo/audio/FC03_1_headMic_0395.wav,mike,2.105,GENERAL_SPEECH
+FC03_1_headMic_0396,FC03,control,test,data/torgo/audio/FC03_1_headMic_0396.wav,The little schoolhouse stood empty,3.62,GENERAL_SPEECH
+FC03_1_headMic_0397,FC03,control,test,data/torgo/audio/FC03_1_headMic_0397.wav,witch,2.015,GENERAL_SPEECH
+FC03_1_headMic_0398,FC03,control,test,data/torgo/audio/FC03_1_headMic_0398.wav,side,2.03,GENERAL_SPEECH
+FC03_1_headMic_0399,FC03,control,test,data/torgo/audio/FC03_1_headMic_0399.wav,spark,1.97,GENERAL_SPEECH
+FC03_1_headMic_0400,FC03,control,test,data/torgo/audio/FC03_1_headMic_0400.wav,pretty,2.15,GENERAL_SPEECH
+FC03_1_headMic_0402,FC03,control,test,data/torgo/audio/FC03_1_headMic_0402.wav,blow,2.27,GENERAL_SPEECH
+FC03_1_headMic_0403,FC03,control,test,data/torgo/audio/FC03_1_headMic_0403.wav,him,2.28,GENERAL_SPEECH
+FC03_1_headMic_0404,FC03,control,test,data/torgo/audio/FC03_1_headMic_0404.wav,no,1.965,CRITICAL_RESPONSE
+FC03_1_headMic_0405,FC03,control,test,data/torgo/audio/FC03_1_headMic_0405.wav,kilo,1.78,GENERAL_SPEECH
+FC03_2_headMic_0001,FC03,control,test,data/torgo/audio/FC03_2_headMic_0001.wav,The hotel owner struggled,3.95,GENERAL_SPEECH
+FC03_2_headMic_0002,FC03,control,test,data/torgo/audio/FC03_2_headMic_0002.wav,The hotel owner shrugged,3.73,GENERAL_SPEECH
+FC03_2_headMic_0003,FC03,control,test,data/torgo/audio/FC03_2_headMic_0003.wav,litter,2.11,GENERAL_SPEECH
+FC03_2_headMic_0004,FC03,control,test,data/torgo/audio/FC03_2_headMic_0004.wav,bitter,1.955,GENERAL_SPEECH
+FC03_2_headMic_0005,FC03,control,test,data/torgo/audio/FC03_2_headMic_0005.wav,Although always alone we survive,4.025,GENERAL_SPEECH
+FC03_2_headMic_0006,FC03,control,test,data/torgo/audio/FC03_2_headMic_0006.wav,thread,2.505,GENERAL_SPEECH
+FC03_2_headMic_0007,FC03,control,test,data/torgo/audio/FC03_2_headMic_0007.wav,tin,1.835,GENERAL_SPEECH
+FC03_2_headMic_0008,FC03,control,test,data/torgo/audio/FC03_2_headMic_0008.wav,dead,1.89,GENERAL_SPEECH
+FC03_2_headMic_0009,FC03,control,test,data/torgo/audio/FC03_2_headMic_0009.wav,People who value themselves are life's winners,4.99,GENERAL_SPEECH
+FC03_2_headMic_0010,FC03,control,test,data/torgo/audio/FC03_2_headMic_0010.wav,walk,1.945,GENERAL_SPEECH
+FC03_2_headMic_0011,FC03,control,test,data/torgo/audio/FC03_2_headMic_0011.wav,The wait for work can be very long,4.405,GENERAL_SPEECH
+FC03_2_headMic_0012,FC03,control,test,data/torgo/audio/FC03_2_headMic_0012.wav,hand,1.875,GENERAL_SPEECH
+FC03_2_headMic_0013,FC03,control,test,data/torgo/audio/FC03_2_headMic_0013.wav,He really crucified himself he nailed it for a yard loss,6.435,GENERAL_SPEECH
+FC03_2_headMic_0014,FC03,control,test,data/torgo/audio/FC03_2_headMic_0014.wav,He really crucified him he nailed it for a yard loss,6.295,GENERAL_SPEECH
+FC03_2_headMic_0015,FC03,control,test,data/torgo/audio/FC03_2_headMic_0015.wav,Please open the window quickly,3.695,GENERAL_SPEECH
+FC03_2_headMic_0016,FC03,control,test,data/torgo/audio/FC03_2_headMic_0016.wav,ticker,2.14,GENERAL_SPEECH
+FC03_2_headMic_0017,FC03,control,test,data/torgo/audio/FC03_2_headMic_0017.wav,litter,2.4,GENERAL_SPEECH
+FC03_2_headMic_0018,FC03,control,test,data/torgo/audio/FC03_2_headMic_0018.wav,You can ride stagecoach,4.075,GENERAL_SPEECH
+FC03_2_headMic_0020,FC03,control,test,data/torgo/audio/FC03_2_headMic_0020.wav,and,2.15,GENERAL_SPEECH
+FC03_2_headMic_0021,FC03,control,test,data/torgo/audio/FC03_2_headMic_0021.wav,hand,2.125,GENERAL_SPEECH
+FC03_2_headMic_0022,FC03,control,test,data/torgo/audio/FC03_2_headMic_0022.wav,It's fun to roast marshmallows on a gas burner,5.24,GENERAL_SPEECH
+FC03_2_headMic_0023,FC03,control,test,data/torgo/audio/FC03_2_headMic_0023.wav,quicker,2.125,GENERAL_SPEECH
+FC03_2_headMic_0024,FC03,control,test,data/torgo/audio/FC03_2_headMic_0024.wav,bed,1.855,LOCATION
+FC03_2_headMic_0025,FC03,control,test,data/torgo/audio/FC03_2_headMic_0025.wav,Then we'd really have someplace to go,4.48,GENERAL_SPEECH
+FC03_2_headMic_0026,FC03,control,test,data/torgo/audio/FC03_2_headMic_0026.wav,left,1.91,GENERAL_SPEECH
+FC03_2_headMic_0027,FC03,control,test,data/torgo/audio/FC03_2_headMic_0027.wav,sing,1.945,GENERAL_SPEECH
+FC03_2_headMic_0028,FC03,control,test,data/torgo/audio/FC03_2_headMic_0028.wav,Travel is about the only leisure we have,4.925,GENERAL_SPEECH
+FC03_2_headMic_0029,FC03,control,test,data/torgo/audio/FC03_2_headMic_0029.wav,This is a good place though small,4.34,GENERAL_SPEECH
+FC03_2_headMic_0030,FC03,control,test,data/torgo/audio/FC03_2_headMic_0030.wav,shell,1.97,GENERAL_SPEECH
+FC03_2_headMic_0031,FC03,control,test,data/torgo/audio/FC03_2_headMic_0031.wav,whisky,2.195,GENERAL_SPEECH
+FC03_2_headMic_0032,FC03,control,test,data/torgo/audio/FC03_2_headMic_0032.wav,nod,1.735,GENERAL_SPEECH
+FC03_2_headMic_0034,FC03,control,test,data/torgo/audio/FC03_2_headMic_0034.wav,nice,1.895,GENERAL_SPEECH
+FC03_2_headMic_0035,FC03,control,test,data/torgo/audio/FC03_2_headMic_0035.wav,nut,1.88,GENERAL_SPEECH
+M01_1_headMic_0021,M01,dysarthric,adaptation,data/torgo/audio/M01_1_headMic_0021.wav,bat,3.69,GENERAL_SPEECH
+M01_1_headMic_0083,M01,dysarthric,adaptation,data/torgo/audio/M01_1_headMic_0083.wav,knew,3.85,GENERAL_SPEECH
+M01_3_arrayMic_0180,M01,dysarthric,adaptation,data/torgo/audio/M01_3_arrayMic_0180.wav,hill,2.25,GENERAL_SPEECH
+M01_3_arrayMic_0219,M01,dysarthric,adaptation,data/torgo/audio/M01_3_arrayMic_0219.wav,papa,1.8,GENERAL_SPEECH
+M01_3_headMic_0007,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0007.wav,tear,1.753,GENERAL_SPEECH
+M01_3_headMic_0009,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0009.wav,store,1.939,GENERAL_SPEECH
+M01_3_headMic_0015,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0015.wav,swore,2.231,GENERAL_SPEECH
+M01_3_headMic_0020,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0020.wav,feed,1.806,GENERAL_SPEECH
+M01_3_headMic_0023,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0023.wav,sip,2.098,GENERAL_SPEECH
+M01_3_headMic_0034,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0034.wav,pay,1.471,GENERAL_SPEECH
+M01_3_headMic_0039,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0039.wav,bad,1.728,PAIN
+M01_3_headMic_0049,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0049.wav,shear,2.068,GENERAL_SPEECH
+M01_3_headMic_0055,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0055.wav,gnaw,1.894,GENERAL_SPEECH
+M01_3_headMic_0063,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0063.wav,rock,1.808,GENERAL_SPEECH
+M01_3_headMic_0065,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0065.wav,suit,1.269,GENERAL_SPEECH
+M01_3_headMic_0075,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0075.wav,bad,1.595,PAIN
+M01_3_headMic_0077,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0077.wav,fear,1.963,GENERAL_SPEECH
+M01_3_headMic_0082,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0082.wav,snoop,1.733,GENERAL_SPEECH
+M01_3_headMic_0089,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0089.wav,floor,2.223,FALL
+M01_3_headMic_0101,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0101.wav,knot,1.827,GENERAL_SPEECH
+M01_3_headMic_0102,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0102.wav,bat,1.431,GENERAL_SPEECH
+M01_3_headMic_0103,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0103.wav,Their house is grey and white,4.84,GENERAL_SPEECH
+M01_3_headMic_0105,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0105.wav,This was easy for us,3.352,GENERAL_SPEECH
+M01_3_headMic_0125,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0125.wav,My sister made the flowered curtains,6.029,GENERAL_SPEECH
+M01_3_headMic_0160,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0160.wav,This is not a program of socialized medicine,6.792,BREATHING_MEDICAL
+M01_3_headMic_0166,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0166.wav,The little schoolhouse stood empty,4.973,GENERAL_SPEECH
+M01_3_headMic_0170,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0170.wav,at,1.335,GENERAL_SPEECH
+M01_3_headMic_0176,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0176.wav,zero,1.272,GENERAL_SPEECH
+M01_3_headMic_0177,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0177.wav,Day after day some new episode is reported,6.592,GENERAL_SPEECH
+M01_3_headMic_0186,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0186.wav,oscar,2.073,GENERAL_SPEECH
+M01_3_headMic_0195,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0195.wav,at,1.991,GENERAL_SPEECH
+M01_3_headMic_0199,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0199.wav,juliet,2.171,GENERAL_SPEECH
+M01_3_headMic_0208,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0208.wav,She wore warm fleecy woolen overalls,5.795,GENERAL_SPEECH
+M01_3_headMic_0214,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0214.wav,mike,1.595,GENERAL_SPEECH
+M01_3_headMic_0220,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0220.wav,november,1.982,GENERAL_SPEECH
+M01_3_headMic_0222,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0222.wav,I expect we'll bounce back this week,4.597,GENERAL_SPEECH
+M01_3_headMic_0230,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0230.wav,fat,1.56,GENERAL_SPEECH
+M01_3_headMic_0233,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0233.wav,dart,1.442,GENERAL_SPEECH
+M01_3_headMic_0234,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0234.wav,leak,1.29,GENERAL_SPEECH
+M01_3_headMic_0237,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0237.wav,nine,1.677,GENERAL_SPEECH
+M01_3_headMic_0238,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0238.wav,spark,1.747,GENERAL_SPEECH
+M01_3_headMic_0241,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0241.wav,kilo,1.98,GENERAL_SPEECH
+M01_3_headMic_0244,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0244.wav,leak,1.779,GENERAL_SPEECH
+M01_3_headMic_0245,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0245.wav,thought,3.643,GENERAL_SPEECH
+M01_3_headMic_0246,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0246.wav,thought,1.345,GENERAL_SPEECH
+M01_3_headMic_0260,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0260.wav,sitting,2.177,GENERAL_SPEECH
+M01_3_headMic_0263,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0263.wav,city,1.822,GENERAL_SPEECH
+M01_3_headMic_0265,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0265.wav,him,2.13,GENERAL_SPEECH
+M01_3_headMic_0275,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0275.wav,Swing your arm as high as you can,5.703,GENERAL_SPEECH
+M01_3_headMic_0278,M01,dysarthric,adaptation,data/torgo/audio/M01_3_headMic_0278.wav,Both injuries were to the same leg,6.508,GENERAL_SPEECH
+M01_1_headMic_0052,M01,dysarthric,test,data/torgo/audio/M01_1_headMic_0052.wav,form,3.31,GENERAL_SPEECH
+M01_1_headMic_0074,M01,dysarthric,test,data/torgo/audio/M01_1_headMic_0074.wav,car,3.54,GENERAL_SPEECH
+M01_3_headMic_0001,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0001.wav,one,1.514,GENERAL_SPEECH
+M01_3_headMic_0002,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0002.wav,air,1.195,BREATHING_MEDICAL
+M01_3_headMic_0003,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0003.wav,gadget,1.939,GENERAL_SPEECH
+M01_3_headMic_0004,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0004.wav,knee,1.009,GENERAL_SPEECH
+M01_3_headMic_0005,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0005.wav,race,1.461,GENERAL_SPEECH
+M01_3_headMic_0006,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0006.wav,torn,1.408,GENERAL_SPEECH
+M01_3_headMic_0008,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0008.wav,grow,1.434,GENERAL_SPEECH
+M01_3_headMic_0010,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0010.wav,sheet,2.311,GENERAL_SPEECH
+M01_3_headMic_0011,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0011.wav,range,2.258,GENERAL_SPEECH
+M01_3_headMic_0012,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0012.wav,sip,1.647,GENERAL_SPEECH
+M01_3_headMic_0013,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0013.wav,The quick brown fox jumps over the lazy dog,7.863,GENERAL_SPEECH
+M01_3_headMic_0014,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0014.wav,the,1.833,GENERAL_SPEECH
+M01_3_headMic_0016,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0016.wav,train,2.683,GENERAL_SPEECH
+M01_3_headMic_0017,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0017.wav,beat,2.045,GENERAL_SPEECH
+M01_3_headMic_0018,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0018.wav,chair,1.488,GENERAL_SPEECH
+M01_3_headMic_0019,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0019.wav,dark,2.152,GENERAL_SPEECH
+M01_3_headMic_0022,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0022.wav,floor,2.125,FALL
+M01_3_headMic_0024,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0024.wav,feet,1.301,GENERAL_SPEECH
+M01_3_headMic_0025,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0025.wav,wish,1.476,GENERAL_SPEECH
+M01_3_headMic_0026,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0026.wav,sigh,1.938,GENERAL_SPEECH
+M01_3_headMic_0027,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0027.wav,troop,1.565,GENERAL_SPEECH
+M01_3_headMic_0028,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0028.wav,mere,1.191,GENERAL_SPEECH
+M01_3_headMic_0029,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0029.wav,I was conscious all the time,4.951,GENERAL_SPEECH
+M01_3_headMic_0030,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0030.wav,slip,1.962,FALL
+M01_3_headMic_0031,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0031.wav,fate,2.312,GENERAL_SPEECH
+M01_3_headMic_0032,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0032.wav,pot,1.401,GENERAL_SPEECH
+M01_3_headMic_0033,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0033.wav,We gathered shells on the beach,5.955,GENERAL_SPEECH
+M01_3_headMic_0035,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0035.wav,Where were you while we were away,4.951,GENERAL_SPEECH
+M01_3_headMic_0036,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0036.wav,pile,1.308,GENERAL_SPEECH
+M01_3_headMic_0037,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0037.wav,air,1.868,BREATHING_MEDICAL
+M01_3_headMic_0038,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0038.wav,galore,1.798,GENERAL_SPEECH
+M01_3_headMic_0040,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0040.wav,play,1.611,GENERAL_SPEECH
+M01_3_headMic_0041,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0041.wav,urgent,2.032,GENERAL_SPEECH
+M01_3_headMic_0042,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0042.wav,The islands are sparsely populated,8.734,GENERAL_SPEECH
+M01_3_headMic_0043,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0043.wav,Both figures would go higher in later years,7.496,GENERAL_SPEECH
+M01_3_headMic_0044,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0044.wav,back,1.39,GENERAL_SPEECH
+M01_3_headMic_0045,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0045.wav,One validated acts of school districts,7.421,GENERAL_SPEECH
+M01_3_headMic_0046,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0046.wav,knew,1.477,GENERAL_SPEECH
+M01_3_headMic_0047,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0047.wav,forward,1.912,GENERAL_SPEECH
+M01_3_headMic_0048,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0048.wav,shoot,1.599,GENERAL_SPEECH
+M01_3_headMic_0050,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0050.wav,suit,2.138,GENERAL_SPEECH
+M01_3_headMic_0051,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0051.wav,droop,1.929,GENERAL_SPEECH
+M01_3_headMic_0053,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0053.wav,peer,1.755,GENERAL_SPEECH
+M01_3_headMic_0054,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0054.wav,jaw,1.964,GENERAL_SPEECH
+M01_3_headMic_0056,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0056.wav,Are your grades higher or lower than Nancy's,7.004,GENERAL_SPEECH
+M01_3_headMic_0057,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0057.wav,root,1.773,GENERAL_SPEECH
+M01_3_headMic_0058,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0058.wav,witch,2.312,GENERAL_SPEECH
+M01_3_headMic_0059,M01,dysarthric,test,data/torgo/audio/M01_3_headMic_0059.wav,three,1.808,GENERAL_SPEECH
+M02_1_headMic_0008,M02,dysarthric,adaptation,data/torgo/audio/M02_1_headMic_0008.wav,alpha,1.703,GENERAL_SPEECH
+M02_1_headMic_0020,M02,dysarthric,adaptation,data/torgo/audio/M02_1_headMic_0020.wav,Grandfather likes to be modern in his language,7.991,GENERAL_SPEECH
+M02_1_headMic_0027,M02,dysarthric,adaptation,data/torgo/audio/M02_1_headMic_0027.wav,the,3.155,GENERAL_SPEECH
+M02_1_headMic_0031,M02,dysarthric,adaptation,data/torgo/audio/M02_1_headMic_0031.wav,go,2.51,CRITICAL_RESPONSE
+M02_1_headMic_0033,M02,dysarthric,adaptation,data/torgo/audio/M02_1_headMic_0033.wav,share,2.638,GENERAL_SPEECH
+M02_1_headMic_0035,M02,dysarthric,adaptation,data/torgo/audio/M02_1_headMic_0035.wav,I can,5.05,GENERAL_SPEECH
+M02_1_headMic_0042,M02,dysarthric,adaptation,data/torgo/audio/M02_1_headMic_0042.wav,tip,1.837,GENERAL_SPEECH
+M02_1_headMic_0044,M02,dysarthric,adaptation,data/torgo/audio/M02_1_headMic_0044.wav,he dresses himself in an ancient black frock coat,10.12,GENERAL_SPEECH
+M02_1_headMic_0046,M02,dysarthric,adaptation,data/torgo/audio/M02_1_headMic_0046.wav,tear,3.155,GENERAL_SPEECH
+M02_1_headMic_0048,M02,dysarthric,adaptation,data/torgo/audio/M02_1_headMic_0048.wav,chair,1.905,GENERAL_SPEECH
+M02_1_headMic_0049,M02,dysarthric,adaptation,data/torgo/audio/M02_1_headMic_0049.wav,swarm,2.403,GENERAL_SPEECH
+M02_1_headMic_0051,M02,dysarthric,adaptation,data/torgo/audio/M02_1_headMic_0051.wav,bat,2.227,GENERAL_SPEECH
+M02_1_headMic_0054,M02,dysarthric,adaptation,data/torgo/audio/M02_1_headMic_0054.wav,trait,2.296,GENERAL_SPEECH
+M02_1_headMic_0069,M02,dysarthric,adaptation,data/torgo/audio/M02_1_headMic_0069.wav,train,2.837,GENERAL_SPEECH
+M02_1_headMic_0186,M02,dysarthric,adaptation,data/torgo/audio/M02_1_headMic_0186.wav,charlie,2.619,GENERAL_SPEECH
+M02_1_headMic_0224,M02,dysarthric,adaptation,data/torgo/audio/M02_1_headMic_0224.wav,fate,2.053,GENERAL_SPEECH
+M02_2_headMic_0078,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0078.wav,The humidity is overwhelming there,6.055,GENERAL_SPEECH
+M02_2_headMic_0086,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0086.wav,My sister made the flowered curtains,6.58,GENERAL_SPEECH
+M02_2_headMic_0088,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0088.wav,Two other cases also were under advisement,8.575,GENERAL_SPEECH
+M02_2_headMic_0094,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0094.wav,pat,3.815,GENERAL_SPEECH
+M02_2_headMic_0096,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0096.wav,A roll of wire lay near the wall,7.6,GENERAL_SPEECH
+M02_2_headMic_0106,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0106.wav,pretty,2.22,GENERAL_SPEECH
+M02_2_headMic_0108,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0108.wav,pitting,2.66,GENERAL_SPEECH
+M02_2_headMic_0111,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0111.wav,Both injuries were to the same leg,9.95,GENERAL_SPEECH
+M02_2_headMic_0112,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0112.wav,tell,1.945,GENERAL_SPEECH
+M02_2_headMic_0113,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0113.wav,lair,2.55,GENERAL_SPEECH
+M02_2_headMic_0121,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0121.wav,This is a period of transition for me,8.54,GENERAL_SPEECH
+M02_2_headMic_0125,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0125.wav,sign,2.695,GENERAL_SPEECH
+M02_2_headMic_0142,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0142.wav,pit,2.305,GENERAL_SPEECH
+M02_2_headMic_0143,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0143.wav,november,1.87,GENERAL_SPEECH
+M02_2_headMic_0148,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0148.wav,start,1.835,GENERAL_SPEECH
+M02_2_headMic_0149,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0149.wav,foxtrot,4.575,GENERAL_SPEECH
+M02_2_headMic_0156,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0156.wav,yes,3.935,CRITICAL_RESPONSE
+M02_2_headMic_0161,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0161.wav,The museum hires musicians every evening,11.625,GENERAL_SPEECH
+M02_2_headMic_0167,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0167.wav,spark,2.935,GENERAL_SPEECH
+M02_2_headMic_0181,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0181.wav,park,3.2,GENERAL_SPEECH
+M02_2_headMic_0183,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0183.wav,hill,2.715,GENERAL_SPEECH
+M02_2_headMic_0185,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0185.wav,seven,2.57,GENERAL_SPEECH
+M02_2_headMic_0187,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0187.wav,I expect we'll bounce back this week,7.895,GENERAL_SPEECH
+M02_2_headMic_0189,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0189.wav,blow,2.99,GENERAL_SPEECH
+M02_2_headMic_0190,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0190.wav,Alfalfa is healthy for you,6.415,GENERAL_SPEECH
+M02_2_headMic_0199,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0199.wav,six,2.405,GENERAL_SPEECH
+M02_2_headMic_0202,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0202.wav,He further proposed grants of an unspecified sum for experimental hospitals,15.915,GENERAL_SPEECH
+M02_2_headMic_0204,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0204.wav,If you are losing water replace it immediately,9.455,GENERAL_SPEECH
+M02_2_headMic_0206,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0206.wav,league,2.14,GENERAL_SPEECH
+M02_2_headMic_0217,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0217.wav,part,3.05,GENERAL_SPEECH
+M02_2_headMic_0222,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0222.wav,When all else fails use force,8.07,GENERAL_SPEECH
+M02_2_headMic_0228,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0228.wav,Carl lives in a lively home,7.005,GENERAL_SPEECH
+M02_2_headMic_0238,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0238.wav,hand,2.12,GENERAL_SPEECH
+M02_2_headMic_0240,M02,dysarthric,adaptation,data/torgo/audio/M02_2_headMic_0240.wav,sitter,1.925,GENERAL_SPEECH
+M02_1_headMic_0006,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0006.wav,grow,1.922,GENERAL_SPEECH
+M02_1_headMic_0007,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0007.wav,feed,2.266,GENERAL_SPEECH
+M02_1_headMic_0009,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0009.wav,pat,1.938,GENERAL_SPEECH
+M02_1_headMic_0010,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0010.wav,farm,2.125,GENERAL_SPEECH
+M02_1_headMic_0012,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0012.wav,sip,2.125,GENERAL_SPEECH
+M02_1_headMic_0014,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0014.wav,dagger,1.938,GENERAL_SPEECH
+M02_1_headMic_0015,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0015.wav,rain,2.172,GENERAL_SPEECH
+M02_1_headMic_0016,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0016.wav,fair,1.86,GENERAL_SPEECH
+M02_1_headMic_0017,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0017.wav,feet,1.641,GENERAL_SPEECH
+M02_1_headMic_0018,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0018.wav,ship,2.672,GENERAL_SPEECH
+M02_1_headMic_0019,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0019.wav,park,1.944,GENERAL_SPEECH
+M02_1_headMic_0021,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0021.wav,bubble,1.924,GENERAL_SPEECH
+M02_1_headMic_0022,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0022.wav,bit,3.214,GENERAL_SPEECH
+M02_1_headMic_0023,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0023.wav,Well he is nearly ninetythree years old,8.04,GENERAL_SPEECH
+M02_1_headMic_0024,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0024.wav,trouble,2.638,SOS_HELP
+M02_1_headMic_0025,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0025.wav,chair,2.843,GENERAL_SPEECH
+M02_1_headMic_0026,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0026.wav,raid,2.833,GENERAL_SPEECH
+M02_1_headMic_0028,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0028.wav,gadget,2.159,GENERAL_SPEECH
+M02_1_headMic_0029,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0029.wav,one,2.09,GENERAL_SPEECH
+M02_1_headMic_0030,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0030.wav,torn,2.471,GENERAL_SPEECH
+M02_1_headMic_0032,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0032.wav,swarm,2.97,GENERAL_SPEECH
+M02_1_headMic_0034,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0034.wav,giving those who observe him a pronounced feeling of the utmost respect,12.924,GENERAL_SPEECH
+M02_1_headMic_0036,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0036.wav,I can read,3.136,GENERAL_SPEECH
+M02_1_headMic_0038,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0038.wav,feet,2.012,GENERAL_SPEECH
+M02_1_headMic_0039,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0039.wav,sticks,2.55,GENERAL_SPEECH
+M02_1_headMic_0040,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0040.wav,rate,1.797,GENERAL_SPEECH
+M02_1_headMic_0041,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0041.wav,knew,1.963,GENERAL_SPEECH
+M02_1_headMic_0043,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0043.wav,know,2.432,GENERAL_SPEECH
+M02_1_headMic_0045,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0045.wav,yes,3.165,CRITICAL_RESPONSE
+M02_1_headMic_0047,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0047.wav,store,2.921,GENERAL_SPEECH
+M02_1_headMic_0053,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0053.wav,stubble,3.663,GENERAL_SPEECH
+M02_1_headMic_0055,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0055.wav,She had your dark suit in greasy wash water all year,9.534,GENERAL_SPEECH
+M02_1_headMic_0056,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0056.wav,horn,3.436,GENERAL_SPEECH
+M02_1_headMic_0057,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0057.wav,lead,3.32,GENERAL_SPEECH
+M02_1_headMic_0058,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0058.wav,sheet,2.49,GENERAL_SPEECH
+M02_1_headMic_0059,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0059.wav,beta,2.779,GENERAL_SPEECH
+M02_1_headMic_0060,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0060.wav,slip,3.107,FALL
+M02_1_headMic_0061,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0061.wav,beat,3.243,GENERAL_SPEECH
+M02_1_headMic_0062,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0062.wav,When he speaks his voice is just a bit cracked and quivers a trifle,14.09,GENERAL_SPEECH
+M02_1_headMic_0063,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0063.wav,car,2.471,GENERAL_SPEECH
+M02_1_headMic_0064,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0064.wav,knee,2.644,GENERAL_SPEECH
+M02_1_headMic_0065,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0065.wav,no,2.239,CRITICAL_RESPONSE
+M02_1_headMic_0066,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0066.wav,yet he still thinks as swiftly as ever,7.605,GENERAL_SPEECH
+M02_1_headMic_0067,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0067.wav,usually minus several buttons,5.539,GENERAL_SPEECH
+M02_1_headMic_0068,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0068.wav,floor,2.548,FALL
+M02_1_headMic_0070,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0070.wav,weed,1.891,GENERAL_SPEECH
+M02_1_headMic_0071,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0071.wav,We have often urged him to walk more and smoke less,8.589,GENERAL_SPEECH
+M02_1_headMic_0072,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0072.wav,left,1.641,GENERAL_SPEECH
+M02_1_headMic_0073,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0073.wav,born,3.011,GENERAL_SPEECH
+M02_1_headMic_0074,M02,dysarthric,test,data/torgo/audio/M02_1_headMic_0074.wav,beat,2.239,GENERAL_SPEECH
+M03_2_headMic_0020,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0020.wav,glow,1.915,GENERAL_SPEECH
+M03_2_headMic_0026,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0026.wav,sheet,2.46,GENERAL_SPEECH
+M03_2_headMic_0050,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0050.wav,air,2.215,BREATHING_MEDICAL
+M03_2_headMic_0058,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0058.wav,train,2.915,GENERAL_SPEECH
+M03_2_headMic_0074,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0074.wav,but he always answers Banana oil,3.755,GENERAL_SPEECH
+M03_2_headMic_0077,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0077.wav,trace,2.235,GENERAL_SPEECH
+M03_2_headMic_0087,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0087.wav,trade,2.38,GENERAL_SPEECH
+M03_2_headMic_0092,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0092.wav,share,2.25,GENERAL_SPEECH
+M03_2_headMic_0096,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0096.wav,Twice each day he plays skillfully and with zest upon our small organ,6.005,GENERAL_SPEECH
+M03_2_headMic_0102,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0102.wav,When he speaks his voice is just a bit cracked and quivers a trifle,7.16,GENERAL_SPEECH
+M03_2_headMic_0117,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0117.wav,Don't ask me to carry an oily rag like that,4.16,GENERAL_SPEECH
+M03_2_headMic_0119,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0119.wav,You'd be better off taking a cold shower,4.315,GENERAL_SPEECH
+M03_2_headMic_0128,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0128.wav,One validated acts of school districts,4.995,GENERAL_SPEECH
+M03_2_headMic_0129,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0129.wav,know,3.375,GENERAL_SPEECH
+M03_2_headMic_0135,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0135.wav,Jane may earn more money by working hard,4.35,PAIN
+M03_2_headMic_0137,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0137.wav,write,2.58,GENERAL_SPEECH
+M03_2_headMic_0142,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0142.wav,floor,2.805,FALL
+M03_2_headMic_0148,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0148.wav,area,2.395,GENERAL_SPEECH
+M03_2_headMic_0177,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0177.wav,mere,2.54,GENERAL_SPEECH
+M03_2_headMic_0180,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0180.wav,delta,3.06,GENERAL_SPEECH
+M03_2_headMic_0181,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0181.wav,slay,2.085,GENERAL_SPEECH
+M03_2_headMic_0190,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0190.wav,sprinkle,2.52,GENERAL_SPEECH
+M03_2_headMic_0193,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0193.wav,back,2.585,GENERAL_SPEECH
+M03_2_headMic_0204,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0204.wav,bear,2.22,GENERAL_SPEECH
+M03_2_headMic_0205,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0205.wav,pat,1.895,GENERAL_SPEECH
+M03_2_headMic_0214,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0214.wav,here,2.495,GENERAL_SPEECH
+M03_2_headMic_0229,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0229.wav,jungle,2.325,GENERAL_SPEECH
+M03_2_headMic_0230,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0230.wav,explore,2.93,GENERAL_SPEECH
+M03_2_headMic_0236,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0236.wav,fate,2.51,GENERAL_SPEECH
+M03_2_headMic_0240,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0240.wav,pot,1.95,GENERAL_SPEECH
+M03_2_headMic_0256,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0256.wav,This is a period of transition for me,4.665,GENERAL_SPEECH
+M03_2_headMic_0267,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0267.wav,hill,2.145,GENERAL_SPEECH
+M03_2_headMic_0269,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0269.wav,brought,2.34,GENERAL_SPEECH
+M03_2_headMic_0273,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0273.wav,The misguided souls have lost their way,3.08,GENERAL_SPEECH
+M03_2_headMic_0279,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0279.wav,city,2.385,GENERAL_SPEECH
+M03_2_headMic_0288,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0288.wav,pit,2.325,GENERAL_SPEECH
+M03_2_headMic_0289,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0289.wav,leak,2.33,GENERAL_SPEECH
+M03_2_headMic_0298,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0298.wav,oscar,2.28,GENERAL_SPEECH
+M03_2_headMic_0315,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0315.wav,spark,3.335,GENERAL_SPEECH
+M03_2_headMic_0343,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0343.wav,seeds,2.265,GENERAL_SPEECH
+M03_2_headMic_0347,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0347.wav,eight,2.47,GENERAL_SPEECH
+M03_2_headMic_0360,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0360.wav,bloat,2.315,GENERAL_SPEECH
+M03_2_headMic_0363,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0363.wav,cake,2.195,GENERAL_SPEECH
+M03_2_headMic_0365,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0365.wav,leak,2.595,GENERAL_SPEECH
+M03_2_headMic_0367,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0367.wav,papa,3.22,GENERAL_SPEECH
+M03_2_headMic_0381,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0381.wav,We rode horseback to the farm,3.41,GENERAL_SPEECH
+M03_2_headMic_0390,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0390.wav,sit,2.375,GENERAL_SPEECH
+M03_2_headMic_0407,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0407.wav,said,2.325,GENERAL_SPEECH
+M03_2_headMic_0416,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0416.wav,tango,2.42,GENERAL_SPEECH
+M03_2_headMic_0421,M03,dysarthric,adaptation,data/torgo/audio/M03_2_headMic_0421.wav,we have an excellent team,3.1,GENERAL_SPEECH
+M03_2_headMic_0002,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0002.wav,now,5.195,CRITICAL_RESPONSE
+M03_2_headMic_0003,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0003.wav,know,2.59,GENERAL_SPEECH
+M03_2_headMic_0004,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0004.wav,farm,2.35,GENERAL_SPEECH
+M03_2_headMic_0005,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0005.wav,rain,1.86,GENERAL_SPEECH
+M03_2_headMic_0006,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0006.wav,gadget,2.19,GENERAL_SPEECH
+M03_2_headMic_0007,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0007.wav,race,2.35,GENERAL_SPEECH
+M03_2_headMic_0008,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0008.wav,lead,2.45,GENERAL_SPEECH
+M03_2_headMic_0009,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0009.wav,ship,2.235,GENERAL_SPEECH
+M03_2_headMic_0010,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0010.wav,air,2.375,BREATHING_MEDICAL
+M03_2_headMic_0011,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0011.wav,tip,2.345,GENERAL_SPEECH
+M03_2_headMic_0013,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0013.wav,Well he is nearly ninetythree years old,3.835,GENERAL_SPEECH
+M03_2_headMic_0014,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0014.wav,Well he is nearly ninetythree years old,4.675,GENERAL_SPEECH
+M03_2_headMic_0015,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0015.wav,hair,2.47,GENERAL_SPEECH
+M03_2_headMic_0016,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0016.wav,alpha,2.25,GENERAL_SPEECH
+M03_2_headMic_0017,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0017.wav,warm,2.8,GENERAL_SPEECH
+M03_2_headMic_0021,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0021.wav,goat,2.61,GENERAL_SPEECH
+M03_2_headMic_0022,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0022.wav,weed,2.545,GENERAL_SPEECH
+M03_2_headMic_0023,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0023.wav,knew,2.04,GENERAL_SPEECH
+M03_2_headMic_0024,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0024.wav,bug,2.965,GENERAL_SPEECH
+M03_2_headMic_0025,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0025.wav,no,2.35,CRITICAL_RESPONSE
+M03_2_headMic_0028,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0028.wav,corn,2.445,GENERAL_SPEECH
+M03_2_headMic_0029,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0029.wav,Except in the winter when the ooze or snow or ice prevents,6.06,GENERAL_SPEECH
+M03_2_headMic_0030,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0030.wav,feed,2.0,GENERAL_SPEECH
+M03_2_headMic_0031,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0031.wav,right,2.265,GENERAL_SPEECH
+M03_2_headMic_0032,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0032.wav,fair,2.045,GENERAL_SPEECH
+M03_2_headMic_0033,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0033.wav,bat,3.975,GENERAL_SPEECH
+M03_2_headMic_0034,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0034.wav,feet,2.905,GENERAL_SPEECH
+M03_2_headMic_0035,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0035.wav,trouble,2.29,SOS_HELP
+M03_2_headMic_0037,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0037.wav,double,2.49,GENERAL_SPEECH
+M03_2_headMic_0038,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0038.wav,rate,2.71,GENERAL_SPEECH
+M03_2_headMic_0039,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0039.wav,range,2.845,GENERAL_SPEECH
+M03_2_headMic_0040,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0040.wav,raid,2.685,GENERAL_SPEECH
+M03_2_headMic_0041,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0041.wav,pat,2.54,GENERAL_SPEECH
+M03_2_headMic_0042,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0042.wav,chair,4.165,GENERAL_SPEECH
+M03_2_headMic_0043,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0043.wav,swarm,2.62,GENERAL_SPEECH
+M03_2_headMic_0044,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0044.wav,storm,2.75,GENERAL_SPEECH
+M03_2_headMic_0045,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0045.wav,She had your dark suit in greasy wash water all year,5.14,GENERAL_SPEECH
+M03_2_headMic_0046,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0046.wav,grow,2.305,GENERAL_SPEECH
+M03_2_headMic_0047,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0047.wav,dark,2.645,GENERAL_SPEECH
+M03_2_headMic_0048,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0048.wav,jagged,2.755,GENERAL_SPEECH
+M03_2_headMic_0049,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0049.wav,up,1.88,GENERAL_SPEECH
+M03_2_headMic_0051,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0051.wav,stubble,2.125,GENERAL_SPEECH
+M03_2_headMic_0052,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0052.wav,tear,2.92,GENERAL_SPEECH
+M03_2_headMic_0053,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0053.wav,trait,2.03,GENERAL_SPEECH
+M03_2_headMic_0054,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0054.wav,store,2.26,GENERAL_SPEECH
+M03_2_headMic_0055,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0055.wav,read,2.42,GENERAL_SPEECH
+M03_2_headMic_0056,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0056.wav,beta,2.015,GENERAL_SPEECH
+M03_2_headMic_0057,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0057.wav,usually minus several buttons,3.73,GENERAL_SPEECH
+M03_2_headMic_0059,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0059.wav,park,2.49,GENERAL_SPEECH
+M03_2_headMic_0060,M03,dysarthric,test,data/torgo/audio/M03_2_headMic_0060.wav,dagger,2.515,GENERAL_SPEECH
+M04_1_arrayMic_0088,M04,dysarthric,adaptation,data/torgo/audio/M04_1_arrayMic_0088.wav,She had your dark suit in greasy wash water all year,16.014,GENERAL_SPEECH
+M04_2_headMic_0007,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0007.wav,Grandfather likes to be modern in his language,10.44,GENERAL_SPEECH
+M04_2_headMic_0015,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0015.wav,up,2.745,GENERAL_SPEECH
+M04_2_headMic_0020,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0020.wav,spark,2.955,GENERAL_SPEECH
+M04_2_headMic_0028,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0028.wav,rage,2.535,GENERAL_SPEECH
+M04_2_headMic_0034,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0034.wav,down,2.445,FALL
+M04_2_headMic_0039,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0039.wav,I can,6.875,GENERAL_SPEECH
+M04_2_headMic_0045,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0045.wav,We have often urged him to walk more and smoke less,14.895,GENERAL_SPEECH
+M04_2_headMic_0050,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0050.wav,feed,2.485,GENERAL_SPEECH
+M04_2_headMic_0067,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0067.wav,ship,2.48,GENERAL_SPEECH
+M04_2_headMic_0072,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0072.wav,floor,3.01,FALL
+M04_2_headMic_0073,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0073.wav,dark,2.78,GENERAL_SPEECH
+M04_2_headMic_0079,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0079.wav,feed,3.38,GENERAL_SPEECH
+M04_2_headMic_0084,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0084.wav,tip,3.06,GENERAL_SPEECH
+M04_2_headMic_0096,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0096.wav,glow,3.005,GENERAL_SPEECH
+M04_2_headMic_0098,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0098.wav,Well he is nearly ninetythree years old,8.355,GENERAL_SPEECH
+M04_2_headMic_0110,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0110.wav,weed,2.76,GENERAL_SPEECH
+M04_2_headMic_0112,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0112.wav,beat,2.285,GENERAL_SPEECH
+M04_2_headMic_0114,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0114.wav,trait,3.385,GENERAL_SPEECH
+M04_2_headMic_0117,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0117.wav,knew,2.49,GENERAL_SPEECH
+M04_2_headMic_0120,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0120.wav,bug,2.56,GENERAL_SPEECH
+M04_2_headMic_0123,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0123.wav,no,2.35,CRITICAL_RESPONSE
+M04_2_headMic_0126,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0126.wav,storm,2.74,GENERAL_SPEECH
+M04_2_headMic_0127,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0127.wav,lead,3.025,GENERAL_SPEECH
+M04_2_headMic_0132,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0132.wav,boot,3.485,GENERAL_SPEECH
+M04_2_headMic_0136,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0136.wav,tie,2.4,GENERAL_SPEECH
+M04_2_headMic_0144,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0144.wav,bad,2.885,PAIN
+M04_2_headMic_0155,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0155.wav,I was conscious all the time,8.105,GENERAL_SPEECH
+M04_2_headMic_0165,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0165.wav,peer,3.8,GENERAL_SPEECH
+M04_2_headMic_0166,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0166.wav,witch,2.825,GENERAL_SPEECH
+M04_2_headMic_0169,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0169.wav,area,3.27,GENERAL_SPEECH
+M04_2_headMic_0176,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0176.wav,galore,3.975,GENERAL_SPEECH
+M04_2_headMic_0180,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0180.wav,write,2.375,GENERAL_SPEECH
+M04_2_headMic_0182,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0182.wav,He will allow a rare lie,6.51,GENERAL_SPEECH
+M04_2_headMic_0187,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0187.wav,Why yell or worry over silly items,7.86,GENERAL_SPEECH
+M04_2_headMic_0190,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0190.wav,Where were you while we were away,10.275,GENERAL_SPEECH
+M04_2_headMic_0200,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0200.wav,sigh,2.655,GENERAL_SPEECH
+M04_2_headMic_0207,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0207.wav,pay,2.415,GENERAL_SPEECH
+M04_2_headMic_0209,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0209.wav,mut,2.375,GENERAL_SPEECH
+M04_2_headMic_0212,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0212.wav,urgent,2.52,GENERAL_SPEECH
+M04_2_headMic_0216,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0216.wav,Mother sews yellow gingham aprons,12.41,GENERAL_SPEECH
+M04_2_headMic_0224,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0224.wav,rocks,2.82,GENERAL_SPEECH
+M04_2_headMic_0226,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0226.wav,You'd be better off taking a cold shower,13.54,GENERAL_SPEECH
+M04_2_headMic_0243,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0243.wav,fruit,2.68,GENERAL_SPEECH
+M04_2_headMic_0248,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0248.wav,Nothing is as offensive as innocence,8.715,GENERAL_SPEECH
+M04_2_headMic_0262,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0262.wav,pat,2.64,GENERAL_SPEECH
+M04_2_headMic_0269,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0269.wav,thigh,5.205,GENERAL_SPEECH
+M04_2_headMic_0274,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0274.wav,The islands are sparsely populated,10.205,GENERAL_SPEECH
+M04_2_headMic_0286,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0286.wav,She wore warm fleecy woolen overalls,9.195,GENERAL_SPEECH
+M04_2_headMic_0294,M04,dysarthric,adaptation,data/torgo/audio/M04_2_headMic_0294.wav,park,2.76,GENERAL_SPEECH
+M04_1_arrayMic_0005,M04,dysarthric,test,data/torgo/audio/M04_1_arrayMic_0005.wav,trouble,3.45,SOS_HELP
+M04_1_arrayMic_0025,M04,dysarthric,test,data/torgo/audio/M04_1_arrayMic_0025.wav,rave,2.25,GENERAL_SPEECH
+M04_1_arrayMic_0027,M04,dysarthric,test,data/torgo/audio/M04_1_arrayMic_0027.wav,floor,2.4,FALL
+M04_1_arrayMic_0089,M04,dysarthric,test,data/torgo/audio/M04_1_arrayMic_0089.wav,rage,2.1,GENERAL_SPEECH
+M04_1_arrayMic_0108,M04,dysarthric,test,data/torgo/audio/M04_1_arrayMic_0108.wav,hair,4.8,GENERAL_SPEECH
+M04_1_arrayMic_0109,M04,dysarthric,test,data/torgo/audio/M04_1_arrayMic_0109.wav,horn,2.85,GENERAL_SPEECH
+M04_1_arrayMic_0118,M04,dysarthric,test,data/torgo/audio/M04_1_arrayMic_0118.wav,yes,2.4,CRITICAL_RESPONSE
+M04_1_arrayMic_0124,M04,dysarthric,test,data/torgo/audio/M04_1_arrayMic_0124.wav,no,2.55,CRITICAL_RESPONSE
+M04_2_headMic_0006,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0006.wav,jagged,3.275,GENERAL_SPEECH
+M04_2_headMic_0008,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0008.wav,sticks,3.045,GENERAL_SPEECH
+M04_2_headMic_0009,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0009.wav,slip,3.13,FALL
+M04_2_headMic_0010,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0010.wav,left,2.395,GENERAL_SPEECH
+M04_2_headMic_0011,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0011.wav,right,2.365,GENERAL_SPEECH
+M04_2_headMic_0012,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0012.wav,feet,2.575,GENERAL_SPEECH
+M04_2_headMic_0013,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0013.wav,form,2.3,GENERAL_SPEECH
+M04_2_headMic_0014,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0014.wav,She had your dark suit in greasy wash water all year,12.82,GENERAL_SPEECH
+M04_2_headMic_0016,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0016.wav,jacket,3.115,GENERAL_SPEECH
+M04_2_headMic_0017,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0017.wav,storm,3.13,GENERAL_SPEECH
+M04_2_headMic_0018,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0018.wav,go,2.725,CRITICAL_RESPONSE
+M04_2_headMic_0019,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0019.wav,sheet,3.1,GENERAL_SPEECH
+M04_2_headMic_0021,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0021.wav,yes,2.435,CRITICAL_RESPONSE
+M04_2_headMic_0022,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0022.wav,fee,2.75,GENERAL_SPEECH
+M04_2_headMic_0023,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0023.wav,swarm,3.0,GENERAL_SPEECH
+M04_2_headMic_0024,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0024.wav,giving those who observe him a pronounced feeling of the utmost respect,17.37,GENERAL_SPEECH
+M04_2_headMic_0026,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0026.wav,stubble,3.065,GENERAL_SPEECH
+M04_2_headMic_0029,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0029.wav,When he speaks his voice is just a bit cracked and quivers a trifle,19.545,GENERAL_SPEECH
+M04_2_headMic_0030,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0030.wav,park,2.95,GENERAL_SPEECH
+M04_2_headMic_0031,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0031.wav,hair,2.86,GENERAL_SPEECH
+M04_2_headMic_0032,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0032.wav,Don't ask me to carry an oily rag like that,10.34,GENERAL_SPEECH
+M04_2_headMic_0033,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0033.wav,Except in the winter when the ooze or snow or ice prevents,17.255,GENERAL_SPEECH
+M04_2_headMic_0035,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0035.wav,sip,2.29,GENERAL_SPEECH
+M04_2_headMic_0036,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0036.wav,knew,2.515,GENERAL_SPEECH
+M04_2_headMic_0037,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0037.wav,sip,2.745,GENERAL_SPEECH
+M04_2_headMic_0038,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0038.wav,The quick brown fox jumps over the lazy dog,10.57,GENERAL_SPEECH
+M04_2_headMic_0040,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0040.wav,read,2.395,GENERAL_SPEECH
+M04_2_headMic_0041,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0041.wav,trade,2.93,GENERAL_SPEECH
+M04_2_headMic_0042,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0042.wav,rate,2.85,GENERAL_SPEECH
+M04_2_headMic_0043,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0043.wav,meat,2.245,GENERAL_SPEECH
+M04_2_headMic_0044,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0044.wav,yet he still thinks as swiftly as ever,10.145,GENERAL_SPEECH
+M04_2_headMic_0046,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0046.wav,We have often urged him to walk more and smoke less,11.145,GENERAL_SPEECH
+M04_2_headMic_0047,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0047.wav,train,2.675,GENERAL_SPEECH
+M04_2_headMic_0048,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0048.wav,A long flowing beard clings to his chin,14.085,GENERAL_SPEECH
+M04_2_headMic_0049,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0049.wav,feed,2.185,GENERAL_SPEECH
+M04_2_headMic_0051,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0051.wav,farm,2.61,GENERAL_SPEECH
+M04_2_headMic_0052,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0052.wav,usually minus several buttons,6.835,GENERAL_SPEECH
+M04_2_headMic_0053,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0053.wav,dug,2.425,GENERAL_SPEECH
+M04_2_headMic_0054,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0054.wav,bit,2.265,GENERAL_SPEECH
+M04_2_headMic_0055,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0055.wav,race,2.685,GENERAL_SPEECH
+M04_2_headMic_0056,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0056.wav,sip,2.22,GENERAL_SPEECH
+M04_2_headMic_0057,M04,dysarthric,test,data/torgo/audio/M04_2_headMic_0057.wav,range,2.55,GENERAL_SPEECH
+M05_1_headMic_0060,M05,dysarthric,adaptation,data/torgo/audio/M05_1_headMic_0060.wav,swarm,3.63,GENERAL_SPEECH
+M05_2_headMic_0020,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0020.wav,no,2.37,CRITICAL_RESPONSE
+M05_2_headMic_0021,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0021.wav,knot,2.545,GENERAL_SPEECH
+M05_2_headMic_0031,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0031.wav,suit,2.47,GENERAL_SPEECH
+M05_2_headMic_0046,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0046.wav,sigh,2.955,GENERAL_SPEECH
+M05_2_headMic_0051,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0051.wav,Both figures would go higher in later years,11.44,GENERAL_SPEECH
+M05_2_headMic_0056,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0056.wav,Why yell or worry over silly items,9.215,GENERAL_SPEECH
+M05_2_headMic_0068,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0068.wav,I tried to tell people in the community,9.5,GENERAL_SPEECH
+M05_2_headMic_0078,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0078.wav,They carried me off on the stretcher,9.27,GENERAL_SPEECH
+M05_2_headMic_0082,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0082.wav,Their house is grey and white,7.225,GENERAL_SPEECH
+M05_2_headMic_0095,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0095.wav,tie,2.15,GENERAL_SPEECH
+M05_2_headMic_0096,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0096.wav,lip,2.71,GENERAL_SPEECH
+M05_2_headMic_0116,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0116.wav,side,3.375,GENERAL_SPEECH
+M05_2_headMic_0118,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0118.wav,tear,2.56,GENERAL_SPEECH
+M05_2_headMic_0119,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0119.wav,slip,2.05,FALL
+M05_2_headMic_0121,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0121.wav,troop,3.565,GENERAL_SPEECH
+M05_2_headMic_0123,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0123.wav,play,2.555,GENERAL_SPEECH
+M05_2_headMic_0143,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0143.wav,pitting,3.56,GENERAL_SPEECH
+M05_2_headMic_0146,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0146.wav,He further proposed grants of an unspecified sum for experimental hospitals,19.235,GENERAL_SPEECH
+M05_2_headMic_0147,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0147.wav,Alfalfa is healthy for you,6.25,GENERAL_SPEECH
+M05_2_headMic_0159,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0159.wav,bitten,3.655,GENERAL_SPEECH
+M05_2_headMic_0163,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0163.wav,The little schoolhouse stood empty,9.16,GENERAL_SPEECH
+M05_2_headMic_0168,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0168.wav,mush,3.51,GENERAL_SPEECH
+M05_2_headMic_0169,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0169.wav,leak,2.785,GENERAL_SPEECH
+M05_2_headMic_0179,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0179.wav,This is a period of transition for me,10.35,GENERAL_SPEECH
+M05_2_headMic_0190,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0190.wav,juliet,4.81,GENERAL_SPEECH
+M05_2_headMic_0202,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0202.wav,sign,2.16,GENERAL_SPEECH
+M05_2_headMic_0210,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0210.wav,hark,2.715,GENERAL_SPEECH
+M05_2_headMic_0224,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0224.wav,chop,3.23,GENERAL_SPEECH
+M05_2_headMic_0228,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0228.wav,seven,2.78,GENERAL_SPEECH
+M05_2_headMic_0229,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0229.wav,seed,2.59,GENERAL_SPEECH
+M05_2_headMic_0233,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0233.wav,and,2.41,GENERAL_SPEECH
+M05_2_headMic_0238,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0238.wav,Students watched as he got out,8.325,GENERAL_SPEECH
+M05_2_headMic_0240,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0240.wav,hotel,3.11,GENERAL_SPEECH
+M05_2_headMic_0256,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0256.wav,She wore warm fleecy woolen overalls,10.49,GENERAL_SPEECH
+M05_2_headMic_0274,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0274.wav,The prospect of cutting back spending is an unpleasant one for any governor,17.33,GENERAL_SPEECH
+M05_2_headMic_0281,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0281.wav,and,2.635,GENERAL_SPEECH
+M05_2_headMic_0287,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0287.wav,Whitecapped waves covered the entire bay,10.26,GENERAL_SPEECH
+M05_2_headMic_0294,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0294.wav,sierra,3.1,GENERAL_SPEECH
+M05_2_headMic_0297,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0297.wav,uniform,3.225,GENERAL_SPEECH
+M05_2_headMic_0310,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0310.wav,sit,1.99,GENERAL_SPEECH
+M05_2_headMic_0318,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0318.wav,tango,2.59,GENERAL_SPEECH
+M05_2_headMic_0322,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0322.wav,knot,3.745,GENERAL_SPEECH
+M05_2_headMic_0325,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0325.wav,Ned,2.665,GENERAL_SPEECH
+M05_2_headMic_0326,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0326.wav,chip,3.42,GENERAL_SPEECH
+M05_2_headMic_0328,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0328.wav,said,2.695,GENERAL_SPEECH
+M05_2_headMic_0372,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0372.wav,witch,1.915,GENERAL_SPEECH
+M05_2_headMic_0378,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0378.wav,knot,2.335,GENERAL_SPEECH
+M05_2_headMic_0380,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0380.wav,dead,2.065,GENERAL_SPEECH
+M05_2_headMic_0393,M05,dysarthric,adaptation,data/torgo/audio/M05_2_headMic_0393.wav,the pair of shoes was new,5.44,GENERAL_SPEECH
+M05_1_headMic_0015,M05,dysarthric,test,data/torgo/audio/M05_1_headMic_0015.wav,Well he is nearly ninetythree years old,10.82,GENERAL_SPEECH
+M05_1_headMic_0036,M05,dysarthric,test,data/torgo/audio/M05_1_headMic_0036.wav,feed,3.34,GENERAL_SPEECH
+M05_1_headMic_0080,M05,dysarthric,test,data/torgo/audio/M05_1_headMic_0080.wav,for,2.325,GENERAL_SPEECH
+M05_1_headMic_0093,M05,dysarthric,test,data/torgo/audio/M05_1_headMic_0093.wav,no,2.435,CRITICAL_RESPONSE
+M05_1_headMic_0094,M05,dysarthric,test,data/torgo/audio/M05_1_headMic_0094.wav,but he always answers Banana oil,8.145,GENERAL_SPEECH
+M05_2_headMic_0001,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0001.wav,Today's date February 13th,10.755,GENERAL_SPEECH
+M05_2_headMic_0002,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0002.wav,Where were you while we were away,7.635,GENERAL_SPEECH
+M05_2_headMic_0003,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0003.wav,boot,1.955,GENERAL_SPEECH
+M05_2_headMic_0004,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0004.wav,sleep,2.575,GENERAL_SPEECH
+M05_2_headMic_0005,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0005.wav,explore,3.17,GENERAL_SPEECH
+M05_2_headMic_0006,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0006.wav,sway,2.39,GENERAL_SPEECH
+M05_2_headMic_0007,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0007.wav,sigh,2.1,GENERAL_SPEECH
+M05_2_headMic_0008,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0008.wav,I feel I can play this weekend,8.93,GENERAL_SPEECH
+M05_2_headMic_0009,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0009.wav,root,2.47,GENERAL_SPEECH
+M05_2_headMic_0010,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0010.wav,light,2.33,GENERAL_SPEECH
+M05_2_headMic_0011,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0011.wav,charlie,2.34,GENERAL_SPEECH
+M05_2_headMic_0012,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0012.wav,know,2.605,GENERAL_SPEECH
+M05_2_headMic_0013,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0013.wav,He will allow a rare lie,6.87,GENERAL_SPEECH
+M05_2_headMic_0014,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0014.wav,suit,2.985,GENERAL_SPEECH
+M05_2_headMic_0016,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0016.wav,whoop,2.36,GENERAL_SPEECH
+M05_2_headMic_0017,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0017.wav,prior,3.12,GENERAL_SPEECH
+M05_2_headMic_0018,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0018.wav,prior,3.71,GENERAL_SPEECH
+M05_2_headMic_0019,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0019.wav,This was easy for us,6.035,GENERAL_SPEECH
+M05_2_headMic_0022,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0022.wav,coupe,2.425,GENERAL_SPEECH
+M05_2_headMic_0023,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0023.wav,rocks,2.655,GENERAL_SPEECH
+M05_2_headMic_0024,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0024.wav,air,2.905,BREATHING_MEDICAL
+M05_2_headMic_0025,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0025.wav,galore,2.855,GENERAL_SPEECH
+M05_2_headMic_0026,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0026.wav,My sister made the flowered curtains,9.34,GENERAL_SPEECH
+M05_2_headMic_0027,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0027.wav,One validated acts of school districts,11.495,GENERAL_SPEECH
+M05_2_headMic_0028,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0028.wav,You're used to being on the field,7.195,GENERAL_SPEECH
+M05_2_headMic_0029,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0029.wav,pat,2.775,GENERAL_SPEECH
+M05_2_headMic_0030,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0030.wav,bad,3.13,PAIN
+M05_2_headMic_0032,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0032.wav,deer,2.89,GENERAL_SPEECH
+M05_2_headMic_0033,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0033.wav,shear,2.355,GENERAL_SPEECH
+M05_2_headMic_0034,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0034.wav,single,2.53,GENERAL_SPEECH
+M05_2_headMic_0035,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0035.wav,much,2.46,GENERAL_SPEECH
+M05_2_headMic_0037,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0037.wav,group,2.175,GENERAL_SPEECH
+M05_2_headMic_0038,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0038.wav,If you destroy confidence in banks you do something to the economy he said,15.865,GENERAL_SPEECH
+M05_2_headMic_0039,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0039.wav,fate,3.39,GENERAL_SPEECH
+M05_2_headMic_0040,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0040.wav,sprinkle,3.01,GENERAL_SPEECH
+M05_2_headMic_0041,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0041.wav,pile,3.39,GENERAL_SPEECH
+M05_2_headMic_0042,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0042.wav,Mother sews yellow gingham aprons,13.86,GENERAL_SPEECH
+M05_2_headMic_0043,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0043.wav,Mother sews yellow gingham aprons,8.37,GENERAL_SPEECH
+M05_2_headMic_0044,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0044.wav,four,3.195,GENERAL_SPEECH
+M05_2_headMic_0045,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0045.wav,urgent,3.205,GENERAL_SPEECH
+M05_2_headMic_0047,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0047.wav,rock,2.885,GENERAL_SPEECH
+M05_2_headMic_0048,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0048.wav,pay,2.585,GENERAL_SPEECH
+M05_2_headMic_0049,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0049.wav,The islands are sparsely populated,8.885,GENERAL_SPEECH
+M05_2_headMic_0050,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0050.wav,error,4.185,GENERAL_SPEECH
+M05_2_headMic_0052,M05,dysarthric,test,data/torgo/audio/M05_2_headMic_0052.wav,area,1.885,GENERAL_SPEECH
+MC01_2_headMic_0007,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0007.wav,city,1.209,GENERAL_SPEECH
+MC01_2_headMic_0021,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0021.wav,mush,1.238,GENERAL_SPEECH
+MC01_2_headMic_0031,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0031.wav,five,1.54,GENERAL_SPEECH
+MC01_2_headMic_0032,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0032.wav,fitting,1.67,GENERAL_SPEECH
+MC01_2_headMic_0035,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0035.wav,seed,1.267,GENERAL_SPEECH
+MC01_2_headMic_0040,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0040.wav,dart,1.382,GENERAL_SPEECH
+MC01_2_headMic_0043,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0043.wav,brawn,1.411,GENERAL_SPEECH
+MC01_2_headMic_0060,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0060.wav,zulu,1.569,GENERAL_SPEECH
+MC01_2_headMic_0065,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0065.wav,sip,1.728,GENERAL_SPEECH
+MC01_2_headMic_0073,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0073.wav,a,1.238,GENERAL_SPEECH
+MC01_2_headMic_0089,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0089.wav,rock,1.857,GENERAL_SPEECH
+MC01_2_headMic_0104,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0104.wav,dead,1.728,GENERAL_SPEECH
+MC01_2_headMic_0108,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0108.wav,sitter,2.073,GENERAL_SPEECH
+MC01_2_headMic_0121,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0121.wav,xray,1.54,GENERAL_SPEECH
+MC01_2_headMic_0123,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0123.wav,The pair of shoes was new,3.254,GENERAL_SPEECH
+MC01_2_headMic_0129,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0129.wav,victor,1.627,GENERAL_SPEECH
+MC01_2_headMic_0134,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0134.wav,litter,1.641,GENERAL_SPEECH
+MC01_2_headMic_0146,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0146.wav,him,2.721,GENERAL_SPEECH
+MC01_2_headMic_0147,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0147.wav,said,1.627,GENERAL_SPEECH
+MC01_2_headMic_0151,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0151.wav,He is definitely a notch above us,3.772,GENERAL_SPEECH
+MC01_2_headMic_0167,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0167.wav,We bought a brown chair,3.239,GENERAL_SPEECH
+MC01_2_headMic_0184,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0184.wav,tug,2.203,GENERAL_SPEECH
+MC01_2_headMic_0193,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0193.wav,I think I'm full of this stuff,2.836,GENERAL_SPEECH
+MC01_2_headMic_0204,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0204.wav,bill,2.519,GENERAL_SPEECH
+MC01_2_headMic_0207,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0207.wav,rake,1.771,GENERAL_SPEECH
+MC01_2_headMic_0209,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0209.wav,Young people participate in athletic activities,4.564,GENERAL_SPEECH
+MC01_2_headMic_0218,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0218.wav,dread,2.519,GENERAL_SPEECH
+MC01_2_headMic_0220,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0220.wav,boot,2.001,GENERAL_SPEECH
+MC01_2_headMic_0222,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0222.wav,Barb's gold bracelet was a graduation present,3.916,GENERAL_SPEECH
+MC01_2_headMic_0244,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0244.wav,toe,2.779,GENERAL_SPEECH
+MC01_2_headMic_0251,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0251.wav,no,2.404,CRITICAL_RESPONSE
+MC01_2_headMic_0258,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0258.wav,foe,1.656,GENERAL_SPEECH
+MC01_2_headMic_0262,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0262.wav,shred,1.641,GENERAL_SPEECH
+MC01_2_headMic_0274,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0274.wav,fork,1.771,GENERAL_SPEECH
+MC01_2_headMic_0286,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0286.wav,She doesn't like to have it hanging around,3.498,GENERAL_SPEECH
+MC01_2_headMic_0303,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0303.wav,dead,2.145,GENERAL_SPEECH
+MC01_2_headMic_0309,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0309.wav,rise,2.016,GENERAL_SPEECH
+MC01_2_headMic_0324,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0324.wav,I loved every minute of it,2.548,GENERAL_SPEECH
+MC01_2_headMic_0330,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0330.wav,zero,1.9,GENERAL_SPEECH
+MC01_2_headMic_0332,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0332.wav,sender,1.771,GENERAL_SPEECH
+MC01_2_headMic_0335,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0335.wav,five,2.16,GENERAL_SPEECH
+MC01_2_headMic_0344,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0344.wav,They will take a wedding trip later,2.865,GENERAL_SPEECH
+MC01_2_headMic_0352,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0352.wav,Gold can be found anywhere,2.807,GENERAL_SPEECH
+MC01_2_headMic_0355,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0355.wav,It was very popular with our fans,3.542,GENERAL_SPEECH
+MC01_2_headMic_0356,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0356.wav,renter,2.232,GENERAL_SPEECH
+MC01_2_headMic_0357,MC01,control,adaptation,data/torgo/audio/MC01_2_headMic_0357.wav,Mom strongly dislikes appetizers,4.233,GENERAL_SPEECH
+MC01_3_headMic_0366,MC01,control,adaptation,data/torgo/audio/MC01_3_headMic_0366.wav,I soon found myself muttering to the walls,4.41,GENERAL_SPEECH
+MC01_3_headMic_0385,MC01,control,adaptation,data/torgo/audio/MC01_3_headMic_0385.wav,funnel,2.29,GENERAL_SPEECH
+MC01_3_headMic_0387,MC01,control,adaptation,data/torgo/audio/MC01_3_headMic_0387.wav,full,2.585,GENERAL_SPEECH
+MC01_3_headMic_0396,MC01,control,adaptation,data/torgo/audio/MC01_3_headMic_0396.wav,ramp,1.965,GENERAL_SPEECH
+MC01_2_headMic_0001,MC01,control,test,data/torgo/audio/MC01_2_headMic_0001.wav,echo,1.512,GENERAL_SPEECH
+MC01_2_headMic_0002,MC01,control,test,data/torgo/audio/MC01_2_headMic_0002.wav,much,0.921,GENERAL_SPEECH
+MC01_2_headMic_0003,MC01,control,test,data/torgo/audio/MC01_2_headMic_0003.wav,him,1.166,GENERAL_SPEECH
+MC01_2_headMic_0004,MC01,control,test,data/torgo/audio/MC01_2_headMic_0004.wav,hark,1.425,GENERAL_SPEECH
+MC01_2_headMic_0005,MC01,control,test,data/torgo/audio/MC01_2_headMic_0005.wav,sitting,1.267,GENERAL_SPEECH
+MC01_2_headMic_0006,MC01,control,test,data/torgo/audio/MC01_2_headMic_0006.wav,Night after night they received annoying phone calls,4.261,GENERAL_SPEECH
+MC01_2_headMic_0008,MC01,control,test,data/torgo/audio/MC01_2_headMic_0008.wav,lick,2.016,GENERAL_SPEECH
+MC01_2_headMic_0011,MC01,control,test,data/torgo/audio/MC01_2_headMic_0011.wav,bit,1.526,GENERAL_SPEECH
+MC01_2_headMic_0012,MC01,control,test,data/torgo/audio/MC01_2_headMic_0012.wav,side,1.512,GENERAL_SPEECH
+MC01_2_headMic_0013,MC01,control,test,data/torgo/audio/MC01_2_headMic_0013.wav,league,1.8,GENERAL_SPEECH
+MC01_2_headMic_0014,MC01,control,test,data/torgo/audio/MC01_2_headMic_0014.wav,We rode horseback to the farm,2.635,GENERAL_SPEECH
+MC01_2_headMic_0015,MC01,control,test,data/torgo/audio/MC01_2_headMic_0015.wav,barn,1.109,GENERAL_SPEECH
+MC01_2_headMic_0016,MC01,control,test,data/torgo/audio/MC01_2_headMic_0016.wav,vat,1.425,GENERAL_SPEECH
+MC01_2_headMic_0017,MC01,control,test,data/torgo/audio/MC01_2_headMic_0017.wav,leak,1.699,GENERAL_SPEECH
+MC01_2_headMic_0018,MC01,control,test,data/torgo/audio/MC01_2_headMic_0018.wav,There is a treehouse up above,2.332,GENERAL_SPEECH
+MC01_2_headMic_0019,MC01,control,test,data/torgo/audio/MC01_2_headMic_0019.wav,november,1.699,GENERAL_SPEECH
+MC01_2_headMic_0020,MC01,control,test,data/torgo/audio/MC01_2_headMic_0020.wav,pitting,1.339,GENERAL_SPEECH
+MC01_2_headMic_0023,MC01,control,test,data/torgo/audio/MC01_2_headMic_0023.wav,pretty,0.95,GENERAL_SPEECH
+MC01_2_headMic_0024,MC01,control,test,data/torgo/audio/MC01_2_headMic_0024.wav,Carl lives in a lively home,3.023,GENERAL_SPEECH
+MC01_2_headMic_0025,MC01,control,test,data/torgo/audio/MC01_2_headMic_0025.wav,This is not a program of socialized medicine,3.369,BREATHING_MEDICAL
+MC01_2_headMic_0026,MC01,control,test,data/torgo/audio/MC01_2_headMic_0026.wav,brought,1.512,GENERAL_SPEECH
+MC01_2_headMic_0027,MC01,control,test,data/torgo/audio/MC01_2_headMic_0027.wav,juliet,1.612,GENERAL_SPEECH
+MC01_2_headMic_0028,MC01,control,test,data/torgo/audio/MC01_2_headMic_0028.wav,quebec,1.44,GENERAL_SPEECH
+MC01_2_headMic_0029,MC01,control,test,data/torgo/audio/MC01_2_headMic_0029.wav,part,1.526,GENERAL_SPEECH
+MC01_2_headMic_0030,MC01,control,test,data/torgo/audio/MC01_2_headMic_0030.wav,Both injuries were to the same leg,2.865,GENERAL_SPEECH
+MC01_2_headMic_0033,MC01,control,test,data/torgo/audio/MC01_2_headMic_0033.wav,cart,0.979,GENERAL_SPEECH
+MC01_2_headMic_0034,MC01,control,test,data/torgo/audio/MC01_2_headMic_0034.wav,The misguided souls have lost their way,3.023,GENERAL_SPEECH
+MC01_2_headMic_0036,MC01,control,test,data/torgo/audio/MC01_2_headMic_0036.wav,bloat,1.137,GENERAL_SPEECH
+MC01_2_headMic_0037,MC01,control,test,data/torgo/audio/MC01_2_headMic_0037.wav,golf,0.821,GENERAL_SPEECH
+MC01_2_headMic_0038,MC01,control,test,data/torgo/audio/MC01_2_headMic_0038.wav,This is a period of transition for me,2.836,GENERAL_SPEECH
+MC01_2_headMic_0039,MC01,control,test,data/torgo/audio/MC01_2_headMic_0039.wav,This is a period of transition for me,2.807,GENERAL_SPEECH
+MC01_2_headMic_0042,MC01,control,test,data/torgo/audio/MC01_2_headMic_0042.wav,fat,1.253,GENERAL_SPEECH
+MC01_2_headMic_0044,MC01,control,test,data/torgo/audio/MC01_2_headMic_0044.wav,lair,1.958,GENERAL_SPEECH
+MC01_2_headMic_0045,MC01,control,test,data/torgo/audio/MC01_2_headMic_0045.wav,I expect we'll bounce back this week,2.966,GENERAL_SPEECH
+MC01_2_headMic_0046,MC01,control,test,data/torgo/audio/MC01_2_headMic_0046.wav,sign,1.44,GENERAL_SPEECH
+MC01_2_headMic_0047,MC01,control,test,data/torgo/audio/MC01_2_headMic_0047.wav,shy,0.979,GENERAL_SPEECH
+MC01_2_headMic_0048,MC01,control,test,data/torgo/audio/MC01_2_headMic_0048.wav,kitten,1.224,GENERAL_SPEECH
+MC01_2_headMic_0049,MC01,control,test,data/torgo/audio/MC01_2_headMic_0049.wav,pit,1.209,GENERAL_SPEECH
+MC01_2_headMic_0050,MC01,control,test,data/torgo/audio/MC01_2_headMic_0050.wav,blow,0.965,GENERAL_SPEECH
+MC01_2_headMic_0051,MC01,control,test,data/torgo/audio/MC01_2_headMic_0051.wav,hitting,1.627,GENERAL_SPEECH
+MC01_2_headMic_0052,MC01,control,test,data/torgo/audio/MC01_2_headMic_0052.wav,Students watched as he got out,3.326,GENERAL_SPEECH
+MC01_2_headMic_0053,MC01,control,test,data/torgo/audio/MC01_2_headMic_0053.wav,left,1.152,GENERAL_SPEECH
+MC01_2_headMic_0054,MC01,control,test,data/torgo/audio/MC01_2_headMic_0054.wav,Most young rise early every morning,2.75,GENERAL_SPEECH
+MC01_2_headMic_0055,MC01,control,test,data/torgo/audio/MC01_2_headMic_0055.wav,bed,1.613,LOCATION
+MC01_2_headMic_0056,MC01,control,test,data/torgo/audio/MC01_2_headMic_0056.wav,nut,3.095,GENERAL_SPEECH
+MC01_2_headMic_0057,MC01,control,test,data/torgo/audio/MC01_2_headMic_0057.wav,The owners regularly look for plumbing leaks,4.607,GENERAL_SPEECH
+MC01_2_headMic_0058,MC01,control,test,data/torgo/audio/MC01_2_headMic_0058.wav,nest,1.224,GENERAL_SPEECH
+MC01_2_headMic_0059,MC01,control,test,data/torgo/audio/MC01_2_headMic_0059.wav,The wait for work can be very long,3.47,GENERAL_SPEECH
+MC01_2_headMic_0061,MC01,control,test,data/torgo/audio/MC01_2_headMic_0061.wav,yes,2.447,CRITICAL_RESPONSE
+MC01_2_headMic_0062,MC01,control,test,data/torgo/audio/MC01_2_headMic_0062.wav,wicker,1.713,GENERAL_SPEECH
+MC02_1_headMic_0088,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0088.wav,Well he is nearly ninetythree years old,4.29,GENERAL_SPEECH
+MC02_1_headMic_0090,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0090.wav,tip,2.56,GENERAL_SPEECH
+MC02_1_headMic_0091,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0091.wav,for,3.385,GENERAL_SPEECH
+MC02_1_headMic_0096,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0096.wav,We have often urged him to walk more and smoke less,5.375,GENERAL_SPEECH
+MC02_1_headMic_0102,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0102.wav,air,2.775,BREATHING_MEDICAL
+MC02_1_headMic_0129,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0129.wav,Are your grades higher or lower than Nancy's,4.87,GENERAL_SPEECH
+MC02_1_headMic_0135,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0135.wav,toot,3.11,GENERAL_SPEECH
+MC02_1_headMic_0147,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0147.wav,back,2.815,GENERAL_SPEECH
+MC02_1_headMic_0154,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0154.wav,rock,2.965,GENERAL_SPEECH
+MC02_1_headMic_0167,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0167.wav,sigh,2.845,GENERAL_SPEECH
+MC02_1_headMic_0171,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0171.wav,knot,2.76,GENERAL_SPEECH
+MC02_1_headMic_0172,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0172.wav,tie,3.205,GENERAL_SPEECH
+MC02_1_headMic_0182,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0182.wav,mere,2.71,GENERAL_SPEECH
+MC02_1_headMic_0183,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0183.wav,slip,3.61,FALL
+MC02_1_headMic_0185,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0185.wav,thigh,3.26,GENERAL_SPEECH
+MC02_1_headMic_0190,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0190.wav,wish,2.785,GENERAL_SPEECH
+MC02_1_headMic_0192,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0192.wav,pad,2.645,GENERAL_SPEECH
+MC02_1_headMic_0201,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0201.wav,pay,2.85,GENERAL_SPEECH
+MC02_1_headMic_0204,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0204.wav,bad,2.345,PAIN
+MC02_1_headMic_0211,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0211.wav,knew,4.015,GENERAL_SPEECH
+MC02_1_headMic_0213,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0213.wav,I tried to tell people in the community,3.83,GENERAL_SPEECH
+MC02_1_headMic_0219,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0219.wav,bear,2.59,GENERAL_SPEECH
+MC02_1_headMic_0229,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0229.wav,side,3.295,GENERAL_SPEECH
+MC02_1_headMic_0255,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0255.wav,shy,3.335,GENERAL_SPEECH
+MC02_1_headMic_0257,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0257.wav,rich,2.46,GENERAL_SPEECH
+MC02_1_headMic_0273,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0273.wav,sergeant,2.865,GENERAL_SPEECH
+MC02_1_headMic_0276,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0276.wav,take,3.055,GENERAL_SPEECH
+MC02_1_headMic_0285,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0285.wav,It eventually became a rather proud claim,4.82,GENERAL_SPEECH
+MC02_1_headMic_0288,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0288.wav,Day after day some new episode is reported,4.73,GENERAL_SPEECH
+MC02_1_headMic_0303,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0303.wav,hill,3.55,GENERAL_SPEECH
+MC02_1_headMic_0305,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0305.wav,lick,3.115,GENERAL_SPEECH
+MC02_1_headMic_0323,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0323.wav,blow,2.705,GENERAL_SPEECH
+MC02_1_headMic_0324,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0324.wav,tell,3.03,GENERAL_SPEECH
+MC02_1_headMic_0325,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0325.wav,written,3.135,GENERAL_SPEECH
+MC02_1_headMic_0327,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0327.wav,fill,2.69,GENERAL_SPEECH
+MC02_1_headMic_0332,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0332.wav,I have had my bell rung,3.775,GENERAL_SPEECH
+MC02_1_headMic_0353,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0353.wav,him,2.52,GENERAL_SPEECH
+MC02_1_headMic_0356,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0356.wav,We rode horseback to the farm,3.36,GENERAL_SPEECH
+MC02_1_headMic_0358,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0358.wav,start,2.44,GENERAL_SPEECH
+MC02_1_headMic_0360,MC02,control,adaptation,data/torgo/audio/MC02_1_headMic_0360.wav,hem,2.125,GENERAL_SPEECH
+MC02_2_headMic_0004,MC02,control,adaptation,data/torgo/audio/MC02_2_headMic_0004.wav,sip,2.715,GENERAL_SPEECH
+MC02_2_headMic_0014,MC02,control,adaptation,data/torgo/audio/MC02_2_headMic_0014.wav,best,3.06,GENERAL_SPEECH
+MC02_2_headMic_0018,MC02,control,adaptation,data/torgo/audio/MC02_2_headMic_0018.wav,Those musicians harmonize marvelously,5.165,GENERAL_SPEECH
+MC02_2_headMic_0027,MC02,control,adaptation,data/torgo/audio/MC02_2_headMic_0027.wav,neat,2.975,GENERAL_SPEECH
+MC02_2_headMic_0029,MC02,control,adaptation,data/torgo/audio/MC02_2_headMic_0029.wav,ham,2.775,GENERAL_SPEECH
+MC02_2_headMic_0036,MC02,control,adaptation,data/torgo/audio/MC02_2_headMic_0036.wav,shell,2.67,GENERAL_SPEECH
+MC02_2_headMic_0052,MC02,control,adaptation,data/torgo/audio/MC02_2_headMic_0052.wav,sell,2.92,GENERAL_SPEECH
+MC02_2_headMic_0059,MC02,control,adaptation,data/torgo/audio/MC02_2_headMic_0059.wav,Nobody really expects to evacuate,5.67,GENERAL_SPEECH
+MC02_2_headMic_0065,MC02,control,adaptation,data/torgo/audio/MC02_2_headMic_0065.wav,uniform,2.835,GENERAL_SPEECH
+MC02_2_headMic_0071,MC02,control,adaptation,data/torgo/audio/MC02_2_headMic_0071.wav,him,2.78,GENERAL_SPEECH
+MC02_1_headMic_0080,MC02,control,test,data/torgo/audio/MC02_1_headMic_0080.wav,jacket,2.9,GENERAL_SPEECH
+MC02_1_headMic_0081,MC02,control,test,data/torgo/audio/MC02_1_headMic_0081.wav,range,2.575,GENERAL_SPEECH
+MC02_1_headMic_0082,MC02,control,test,data/torgo/audio/MC02_1_headMic_0082.wav,You wished to know all about my grandfather,4.115,GENERAL_SPEECH
+MC02_1_headMic_0083,MC02,control,test,data/torgo/audio/MC02_1_headMic_0083.wav,feed,2.905,GENERAL_SPEECH
+MC02_1_headMic_0084,MC02,control,test,data/torgo/audio/MC02_1_headMic_0084.wav,swarm,2.88,GENERAL_SPEECH
+MC02_1_headMic_0085,MC02,control,test,data/torgo/audio/MC02_1_headMic_0085.wav,park,2.865,GENERAL_SPEECH
+MC02_1_headMic_0086,MC02,control,test,data/torgo/audio/MC02_1_headMic_0086.wav,rage,2.745,GENERAL_SPEECH
+MC02_1_headMic_0087,MC02,control,test,data/torgo/audio/MC02_1_headMic_0087.wav,When he speaks his voice is just a bit cracked and quivers a trifle,6.25,GENERAL_SPEECH
+MC02_1_headMic_0089,MC02,control,test,data/torgo/audio/MC02_1_headMic_0089.wav,dagger,3.07,GENERAL_SPEECH
+MC02_1_headMic_0092,MC02,control,test,data/torgo/audio/MC02_1_headMic_0092.wav,torn,3.245,GENERAL_SPEECH
+MC02_1_headMic_0093,MC02,control,test,data/torgo/audio/MC02_1_headMic_0093.wav,race,2.83,GENERAL_SPEECH
+MC02_1_headMic_0094,MC02,control,test,data/torgo/audio/MC02_1_headMic_0094.wav,rate,2.88,GENERAL_SPEECH
+MC02_1_headMic_0095,MC02,control,test,data/torgo/audio/MC02_1_headMic_0095.wav,ship,2.85,GENERAL_SPEECH
+MC02_1_headMic_0097,MC02,control,test,data/torgo/audio/MC02_1_headMic_0097.wav,beat,3.015,GENERAL_SPEECH
+MC02_1_headMic_0098,MC02,control,test,data/torgo/audio/MC02_1_headMic_0098.wav,share,2.885,GENERAL_SPEECH
+MC02_1_headMic_0099,MC02,control,test,data/torgo/audio/MC02_1_headMic_0099.wav,form,3.07,GENERAL_SPEECH
+MC02_1_headMic_0100,MC02,control,test,data/torgo/audio/MC02_1_headMic_0100.wav,sip,3.0,GENERAL_SPEECH
+MC02_1_headMic_0101,MC02,control,test,data/torgo/audio/MC02_1_headMic_0101.wav,right,2.48,GENERAL_SPEECH
+MC02_1_headMic_0103,MC02,control,test,data/torgo/audio/MC02_1_headMic_0103.wav,bubble,2.415,GENERAL_SPEECH
+MC02_1_headMic_0104,MC02,control,test,data/torgo/audio/MC02_1_headMic_0104.wav,beat,2.625,GENERAL_SPEECH
+MC02_1_headMic_0105,MC02,control,test,data/torgo/audio/MC02_1_headMic_0105.wav,feed,2.81,GENERAL_SPEECH
+MC02_1_headMic_0106,MC02,control,test,data/torgo/audio/MC02_1_headMic_0106.wav,know,2.8,GENERAL_SPEECH
+MC02_1_headMic_0107,MC02,control,test,data/torgo/audio/MC02_1_headMic_0107.wav,spark,2.665,GENERAL_SPEECH
+MC02_1_headMic_0108,MC02,control,test,data/torgo/audio/MC02_1_headMic_0108.wav,read,2.425,GENERAL_SPEECH
+MC02_1_headMic_0109,MC02,control,test,data/torgo/audio/MC02_1_headMic_0109.wav,rain,2.5,GENERAL_SPEECH
+MC02_1_headMic_0110,MC02,control,test,data/torgo/audio/MC02_1_headMic_0110.wav,trace,2.76,GENERAL_SPEECH
+MC02_1_headMic_0112,MC02,control,test,data/torgo/audio/MC02_1_headMic_0112.wav,Except in the winter when the ooze or snow or ice prevents,5.825,GENERAL_SPEECH
+MC02_1_headMic_0113,MC02,control,test,data/torgo/audio/MC02_1_headMic_0113.wav,bit,3.715,GENERAL_SPEECH
+MC02_1_headMic_0114,MC02,control,test,data/torgo/audio/MC02_1_headMic_0114.wav,two,2.645,GENERAL_SPEECH
+MC02_1_headMic_0115,MC02,control,test,data/torgo/audio/MC02_1_headMic_0115.wav,car,3.17,GENERAL_SPEECH
+MC02_1_headMic_0116,MC02,control,test,data/torgo/audio/MC02_1_headMic_0116.wav,sip,3.025,GENERAL_SPEECH
+MC02_1_headMic_0117,MC02,control,test,data/torgo/audio/MC02_1_headMic_0117.wav,air,2.385,BREATHING_MEDICAL
+MC02_1_headMic_0118,MC02,control,test,data/torgo/audio/MC02_1_headMic_0118.wav,storm,2.95,GENERAL_SPEECH
+MC02_1_headMic_0119,MC02,control,test,data/torgo/audio/MC02_1_headMic_0119.wav,slip,2.875,FALL
+MC02_1_headMic_0120,MC02,control,test,data/torgo/audio/MC02_1_headMic_0120.wav,stick,2.77,GENERAL_SPEECH
+MC02_1_headMic_0121,MC02,control,test,data/torgo/audio/MC02_1_headMic_0121.wav,store,2.395,GENERAL_SPEECH
+MC02_1_headMic_0122,MC02,control,test,data/torgo/audio/MC02_1_headMic_0122.wav,white,2.76,GENERAL_SPEECH
+MC02_1_headMic_0123,MC02,control,test,data/torgo/audio/MC02_1_headMic_0123.wav,single,2.995,GENERAL_SPEECH
+MC02_1_headMic_0124,MC02,control,test,data/torgo/audio/MC02_1_headMic_0124.wav,lip,3.065,GENERAL_SPEECH
+MC02_1_headMic_0125,MC02,control,test,data/torgo/audio/MC02_1_headMic_0125.wav,droop,3.36,GENERAL_SPEECH
+MC02_1_headMic_0126,MC02,control,test,data/torgo/audio/MC02_1_headMic_0126.wav,cheer,3.33,GENERAL_SPEECH
+MC02_1_headMic_0127,MC02,control,test,data/torgo/audio/MC02_1_headMic_0127.wav,Everything went real smooth the sheriff said,4.69,GENERAL_SPEECH
+MC02_1_headMic_0128,MC02,control,test,data/torgo/audio/MC02_1_headMic_0128.wav,Just one side got wet,3.995,GENERAL_SPEECH
+MC02_1_headMic_0130,MC02,control,test,data/torgo/audio/MC02_1_headMic_0130.wav,Two other cases also were under advisement,4.87,GENERAL_SPEECH
+MC02_1_headMic_0131,MC02,control,test,data/torgo/audio/MC02_1_headMic_0131.wav,Two other cases also were under advisement,4.31,GENERAL_SPEECH
+MC02_1_headMic_0132,MC02,control,test,data/torgo/audio/MC02_1_headMic_0132.wav,slay,2.995,GENERAL_SPEECH
+MC02_1_headMic_0133,MC02,control,test,data/torgo/audio/MC02_1_headMic_0133.wav,peer,2.595,GENERAL_SPEECH
+MC02_1_headMic_0134,MC02,control,test,data/torgo/audio/MC02_1_headMic_0134.wav,four,3.04,GENERAL_SPEECH
+MC02_1_headMic_0136,MC02,control,test,data/torgo/audio/MC02_1_headMic_0136.wav,though,2.97,GENERAL_SPEECH
+MC02_1_headMic_0137,MC02,control,test,data/torgo/audio/MC02_1_headMic_0137.wav,Why yell or worry over silly items,4.255,GENERAL_SPEECH
+MC03_1_headMic_0076,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0076.wav,he slowly takes a short walk in the open air each day,5.055,BREATHING_MEDICAL
+MC03_1_headMic_0166,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0166.wav,wish,1.42,GENERAL_SPEECH
+MC03_1_headMic_0189,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0189.wav,root,1.52,GENERAL_SPEECH
+MC03_1_headMic_0243,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0243.wav,toot,1.575,GENERAL_SPEECH
+MC03_1_headMic_0253,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0253.wav,deer,1.71,GENERAL_SPEECH
+MC03_1_headMic_0265,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0265.wav,spit,1.73,GENERAL_SPEECH
+MC03_1_headMic_0274,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0274.wav,I have had my bell rung,3.67,GENERAL_SPEECH
+MC03_1_headMic_0277,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0277.wav,The box contained three sweaters,3.15,GENERAL_SPEECH
+MC03_1_headMic_0285,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0285.wav,tell,1.565,GENERAL_SPEECH
+MC03_1_headMic_0315,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0315.wav,five,1.545,GENERAL_SPEECH
+MC03_1_headMic_0320,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0320.wav,loyal,1.555,GENERAL_SPEECH
+MC03_1_headMic_0352,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0352.wav,The little schoolhouse stood empty,3.07,GENERAL_SPEECH
+MC03_1_headMic_0367,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0367.wav,brought,1.39,GENERAL_SPEECH
+MC03_1_headMic_0368,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0368.wav,mitten,1.525,GENERAL_SPEECH
+MC03_1_headMic_0425,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0425.wav,You want him to do well,2.725,GENERAL_SPEECH
+MC03_1_headMic_0457,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0457.wav,Whitecapped waves covered the entire bay,3.795,GENERAL_SPEECH
+MC03_1_headMic_0466,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0466.wav,him,1.54,GENERAL_SPEECH
+MC03_1_headMic_0505,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0505.wav,bed,1.575,LOCATION
+MC03_1_headMic_0511,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0511.wav,night,1.735,GENERAL_SPEECH
+MC03_1_headMic_0512,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0512.wav,boot,1.495,GENERAL_SPEECH
+MC03_1_headMic_0513,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0513.wav,rise,1.775,GENERAL_SPEECH
+MC03_1_headMic_0545,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0545.wav,sew,1.595,GENERAL_SPEECH
+MC03_1_headMic_0548,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0548.wav,stretch,1.975,GENERAL_SPEECH
+MC03_1_headMic_0549,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0549.wav,I scream to warm up my voice,3.39,GENERAL_SPEECH
+MC03_1_headMic_0553,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0553.wav,blend,2.065,GENERAL_SPEECH
+MC03_1_headMic_0561,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0561.wav,ride,1.865,GENERAL_SPEECH
+MC03_1_headMic_0596,MC03,control,adaptation,data/torgo/audio/MC03_1_headMic_0596.wav,lip,1.76,GENERAL_SPEECH
+MC03_2_headMic_0007,MC03,control,adaptation,data/torgo/audio/MC03_2_headMic_0007.wav,quart,2.202,GENERAL_SPEECH
+MC03_2_headMic_0008,MC03,control,adaptation,data/torgo/audio/MC03_2_headMic_0008.wav,eat,1.716,GENERAL_SPEECH
+MC03_2_headMic_0024,MC03,control,adaptation,data/torgo/audio/MC03_2_headMic_0024.wav,goat,1.89,GENERAL_SPEECH
+MC03_2_headMic_0031,MC03,control,adaptation,data/torgo/audio/MC03_2_headMic_0031.wav,he,1.5,GENERAL_SPEECH
+MC03_2_headMic_0037,MC03,control,adaptation,data/torgo/audio/MC03_2_headMic_0037.wav,Critical equipment needs proper maintenance,3.505,GENERAL_SPEECH
+MC03_2_headMic_0052,MC03,control,adaptation,data/torgo/audio/MC03_2_headMic_0052.wav,We just didn't look good,2.749,GENERAL_SPEECH
+MC03_2_headMic_0078,MC03,control,adaptation,data/torgo/audio/MC03_2_headMic_0078.wav,reap,1.51,GENERAL_SPEECH
+MC03_2_headMic_0082,MC03,control,adaptation,data/torgo/audio/MC03_2_headMic_0082.wav,Ambidextrous pickpockets accomplish more,3.454,GENERAL_SPEECH
+MC03_2_headMic_0086,MC03,control,adaptation,data/torgo/audio/MC03_2_headMic_0086.wav,Her position covers a number of daily tasks common to any social director,5.215,GENERAL_SPEECH
+MC03_2_headMic_0089,MC03,control,adaptation,data/torgo/audio/MC03_2_headMic_0089.wav,The sun died at night,2.345,GENERAL_SPEECH
+MC03_2_headMic_0118,MC03,control,adaptation,data/torgo/audio/MC03_2_headMic_0118.wav,meat,1.348,GENERAL_SPEECH
+MC03_2_headMic_0120,MC03,control,adaptation,data/torgo/audio/MC03_2_headMic_0120.wav,The marriage went well from the start,3.259,GENERAL_SPEECH
+MC03_2_headMic_0139,MC03,control,adaptation,data/torgo/audio/MC03_2_headMic_0139.wav,forks,2.101,GENERAL_SPEECH
+MC03_2_headMic_0146,MC03,control,adaptation,data/torgo/audio/MC03_2_headMic_0146.wav,seven,2.337,GENERAL_SPEECH
+MC03_2_headMic_0153,MC03,control,adaptation,data/torgo/audio/MC03_2_headMic_0153.wav,fender,1.966,GENERAL_SPEECH
+MC03_2_headMic_0157,MC03,control,adaptation,data/torgo/audio/MC03_2_headMic_0157.wav,reap,2.169,GENERAL_SPEECH
+MC03_2_headMic_0161,MC03,control,adaptation,data/torgo/audio/MC03_2_headMic_0161.wav,nine,1.584,GENERAL_SPEECH
+MC03_2_headMic_0173,MC03,control,adaptation,data/torgo/audio/MC03_2_headMic_0173.wav,air,1.485,BREATHING_MEDICAL
+MC03_2_headMic_0175,MC03,control,adaptation,data/torgo/audio/MC03_2_headMic_0175.wav,seed,1.682,GENERAL_SPEECH
+MC03_2_headMic_0210,MC03,control,adaptation,data/torgo/audio/MC03_2_headMic_0210.wav,sake,1.651,GENERAL_SPEECH
+MC03_2_headMic_0216,MC03,control,adaptation,data/torgo/audio/MC03_2_headMic_0216.wav,fat,1.661,GENERAL_SPEECH
+MC03_2_headMic_0218,MC03,control,adaptation,data/torgo/audio/MC03_2_headMic_0218.wav,We all sat down and relaxed,3.073,FALL
+MC03_2_headMic_0220,MC03,control,adaptation,data/torgo/audio/MC03_2_headMic_0220.wav,steak,1.464,GENERAL_SPEECH
+MC03_1_headMic_0165,MC03,control,test,data/torgo/audio/MC03_1_headMic_0165.wav,sigh,1.32,GENERAL_SPEECH
+MC03_1_headMic_0221,MC03,control,test,data/torgo/audio/MC03_1_headMic_0221.wav,She is thinner than I am,2.675,GENERAL_SPEECH
+MC03_1_headMic_0229,MC03,control,test,data/torgo/audio/MC03_1_headMic_0229.wav,charlie,1.725,GENERAL_SPEECH
+MC03_1_headMic_0230,MC03,control,test,data/torgo/audio/MC03_1_headMic_0230.wav,near,1.585,GENERAL_SPEECH
+MC03_1_headMic_0231,MC03,control,test,data/torgo/audio/MC03_1_headMic_0231.wav,urgent,1.835,GENERAL_SPEECH
+MC03_1_headMic_0232,MC03,control,test,data/torgo/audio/MC03_1_headMic_0232.wav,four,1.575,GENERAL_SPEECH
+MC03_1_headMic_0233,MC03,control,test,data/torgo/audio/MC03_1_headMic_0233.wav,menu,1.625,GENERAL_SPEECH
+MC03_1_headMic_0234,MC03,control,test,data/torgo/audio/MC03_1_headMic_0234.wav,pat,1.465,GENERAL_SPEECH
+MC03_1_headMic_0235,MC03,control,test,data/torgo/audio/MC03_1_headMic_0235.wav,though,1.515,GENERAL_SPEECH
+MC03_1_headMic_0236,MC03,control,test,data/torgo/audio/MC03_1_headMic_0236.wav,boot,1.445,GENERAL_SPEECH
+MC03_1_headMic_0237,MC03,control,test,data/torgo/audio/MC03_1_headMic_0237.wav,sway,1.47,GENERAL_SPEECH
+MC03_1_headMic_0238,MC03,control,test,data/torgo/audio/MC03_1_headMic_0238.wav,The train approached the depot slowly,3.495,GENERAL_SPEECH
+MC03_1_headMic_0239,MC03,control,test,data/torgo/audio/MC03_1_headMic_0239.wav,much,1.5,GENERAL_SPEECH
+MC03_1_headMic_0240,MC03,control,test,data/torgo/audio/MC03_1_headMic_0240.wav,shear,1.24,GENERAL_SPEECH
+MC03_1_headMic_0241,MC03,control,test,data/torgo/audio/MC03_1_headMic_0241.wav,explore,1.73,GENERAL_SPEECH
+MC03_1_headMic_0242,MC03,control,test,data/torgo/audio/MC03_1_headMic_0242.wav,suit,1.445,GENERAL_SPEECH
+MC03_1_headMic_0244,MC03,control,test,data/torgo/audio/MC03_1_headMic_0244.wav,forward,1.535,GENERAL_SPEECH
+MC03_1_headMic_0245,MC03,control,test,data/torgo/audio/MC03_1_headMic_0245.wav,yes,1.475,CRITICAL_RESPONSE
+MC03_1_headMic_0246,MC03,control,test,data/torgo/audio/MC03_1_headMic_0246.wav,I scrubbed the floors thoroughly,3.19,GENERAL_SPEECH
+MC03_1_headMic_0247,MC03,control,test,data/torgo/audio/MC03_1_headMic_0247.wav,bad,1.735,PAIN
+MC03_1_headMic_0248,MC03,control,test,data/torgo/audio/MC03_1_headMic_0248.wav,whoop,1.46,GENERAL_SPEECH
+MC03_1_headMic_0249,MC03,control,test,data/torgo/audio/MC03_1_headMic_0249.wav,sprinkle,1.81,GENERAL_SPEECH
+MC03_1_headMic_0250,MC03,control,test,data/torgo/audio/MC03_1_headMic_0250.wav,lip,1.62,GENERAL_SPEECH
+MC03_1_headMic_0251,MC03,control,test,data/torgo/audio/MC03_1_headMic_0251.wav,write,1.395,GENERAL_SPEECH
+MC03_1_headMic_0252,MC03,control,test,data/torgo/audio/MC03_1_headMic_0252.wav,This was easy for us,2.395,GENERAL_SPEECH
+MC03_1_headMic_0254,MC03,control,test,data/torgo/audio/MC03_1_headMic_0254.wav,side,1.54,GENERAL_SPEECH
+MC03_1_headMic_0255,MC03,control,test,data/torgo/audio/MC03_1_headMic_0255.wav,Why yell or worry over silly items,3.46,GENERAL_SPEECH
+MC03_1_headMic_0256,MC03,control,test,data/torgo/audio/MC03_1_headMic_0256.wav,ate,1.345,GENERAL_SPEECH
+MC03_1_headMic_0257,MC03,control,test,data/torgo/audio/MC03_1_headMic_0257.wav,mike,1.6,GENERAL_SPEECH
+MC03_1_headMic_0258,MC03,control,test,data/torgo/audio/MC03_1_headMic_0258.wav,spain,1.575,GENERAL_SPEECH
+MC03_1_headMic_0259,MC03,control,test,data/torgo/audio/MC03_1_headMic_0259.wav,hotel,1.795,GENERAL_SPEECH
+MC03_1_headMic_0260,MC03,control,test,data/torgo/audio/MC03_1_headMic_0260.wav,rich,1.53,GENERAL_SPEECH
+MC03_1_headMic_0261,MC03,control,test,data/torgo/audio/MC03_1_headMic_0261.wav,him,1.59,GENERAL_SPEECH
+MC03_1_headMic_0262,MC03,control,test,data/torgo/audio/MC03_1_headMic_0262.wav,Students watched as he got out,3.015,GENERAL_SPEECH
+MC03_1_headMic_0264,MC03,control,test,data/torgo/audio/MC03_1_headMic_0264.wav,leak,2.21,GENERAL_SPEECH
+MC03_1_headMic_0266,MC03,control,test,data/torgo/audio/MC03_1_headMic_0266.wav,mush,1.555,GENERAL_SPEECH
+MC03_1_headMic_0267,MC03,control,test,data/torgo/audio/MC03_1_headMic_0267.wav,sign,1.69,GENERAL_SPEECH
+MC03_1_headMic_0268,MC03,control,test,data/torgo/audio/MC03_1_headMic_0268.wav,seven,1.485,GENERAL_SPEECH
+MC03_1_headMic_0269,MC03,control,test,data/torgo/audio/MC03_1_headMic_0269.wav,leak,1.325,GENERAL_SPEECH
+MC03_1_headMic_0270,MC03,control,test,data/torgo/audio/MC03_1_headMic_0270.wav,dart,1.575,GENERAL_SPEECH
+MC03_1_headMic_0271,MC03,control,test,data/torgo/audio/MC03_1_headMic_0271.wav,hark,1.475,GENERAL_SPEECH
+MC03_1_headMic_0272,MC03,control,test,data/torgo/audio/MC03_1_headMic_0272.wav,hum,1.515,GENERAL_SPEECH
+MC03_1_headMic_0273,MC03,control,test,data/torgo/audio/MC03_1_headMic_0273.wav,He wrapped the package hastily,3.135,GENERAL_SPEECH
+MC03_1_headMic_0275,MC03,control,test,data/torgo/audio/MC03_1_headMic_0275.wav,pitting,1.56,GENERAL_SPEECH
+MC03_1_headMic_0276,MC03,control,test,data/torgo/audio/MC03_1_headMic_0276.wav,pretty,1.59,GENERAL_SPEECH
+MC03_1_headMic_0278,MC03,control,test,data/torgo/audio/MC03_1_headMic_0278.wav,fat,1.54,GENERAL_SPEECH
+MC03_1_headMic_0279,MC03,control,test,data/torgo/audio/MC03_1_headMic_0279.wav,thorn,1.615,GENERAL_SPEECH
+MC03_1_headMic_0280,MC03,control,test,data/torgo/audio/MC03_1_headMic_0280.wav,Both injuries were to the same leg,3.19,GENERAL_SPEECH
+MC03_1_headMic_0281,MC03,control,test,data/torgo/audio/MC03_1_headMic_0281.wav,Both injuries were to the same leg,3.21,GENERAL_SPEECH
+MC03_1_headMic_0282,MC03,control,test,data/torgo/audio/MC03_1_headMic_0282.wav,Both injuries were to the same leg,3.325,GENERAL_SPEECH
+MC04_1_headMic_0019,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0019.wav,park,1.84,GENERAL_SPEECH
+MC04_1_headMic_0030,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0030.wav,Grandfather likes to be modern in his language,3.97,GENERAL_SPEECH
+MC04_1_headMic_0047,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0047.wav,bug,1.915,GENERAL_SPEECH
+MC04_1_headMic_0048,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0048.wav,knew,1.8,GENERAL_SPEECH
+MC04_1_headMic_0065,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0065.wav,air,1.665,BREATHING_MEDICAL
+MC04_1_headMic_0173,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0173.wav,tile,1.71,GENERAL_SPEECH
+MC04_1_headMic_0190,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0190.wav,know,2.275,GENERAL_SPEECH
+MC04_1_headMic_0203,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0203.wav,fear,1.645,GENERAL_SPEECH
+MC04_1_headMic_0205,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0205.wav,boot,1.63,GENERAL_SPEECH
+MC04_1_headMic_0216,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0216.wav,Both figures would go higher in later years,3.755,GENERAL_SPEECH
+MC04_1_headMic_0251,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0251.wav,All the big baseball players get traded,3.3,GENERAL_SPEECH
+MC04_1_headMic_0282,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0282.wav,sergeant,1.92,GENERAL_SPEECH
+MC04_1_headMic_0296,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0296.wav,and,1.785,GENERAL_SPEECH
+MC04_1_headMic_0301,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0301.wav,top,1.635,GENERAL_SPEECH
+MC04_1_headMic_0332,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0332.wav,fat,1.37,GENERAL_SPEECH
+MC04_1_headMic_0363,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0363.wav,sell,1.24,GENERAL_SPEECH
+MC04_1_headMic_0404,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0404.wav,walk,1.61,GENERAL_SPEECH
+MC04_1_headMic_0431,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0431.wav,sing,1.57,GENERAL_SPEECH
+MC04_1_headMic_0461,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0461.wav,rock,1.555,GENERAL_SPEECH
+MC04_1_headMic_0462,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0462.wav,left,1.71,GENERAL_SPEECH
+MC04_1_headMic_0475,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0475.wav,sink,1.415,GENERAL_SPEECH
+MC04_1_headMic_0508,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0508.wav,dice,1.535,GENERAL_SPEECH
+MC04_1_headMic_0529,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0529.wav,fork,1.38,GENERAL_SPEECH
+MC04_1_headMic_0536,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0536.wav,tort,1.315,GENERAL_SPEECH
+MC04_1_headMic_0588,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0588.wav,catch,1.485,GENERAL_SPEECH
+MC04_1_headMic_0633,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0633.wav,old,1.605,GENERAL_SPEECH
+MC04_1_headMic_0649,MC04,control,adaptation,data/torgo/audio/MC04_1_headMic_0649.wav,quart,1.575,GENERAL_SPEECH
+MC04_2_arrayMic_0662,MC04,control,adaptation,data/torgo/audio/MC04_2_arrayMic_0662.wav,eight,1.65,GENERAL_SPEECH
+MC04_2_arrayMic_0674,MC04,control,adaptation,data/torgo/audio/MC04_2_arrayMic_0674.wav,nice,1.5,GENERAL_SPEECH
+MC04_2_arrayMic_0675,MC04,control,adaptation,data/torgo/audio/MC04_2_arrayMic_0675.wav,forks,1.35,GENERAL_SPEECH
+MC04_2_arrayMic_0680,MC04,control,adaptation,data/torgo/audio/MC04_2_arrayMic_0680.wav,Mom strongly dislikes appetizers,3.6,GENERAL_SPEECH
+MC04_2_arrayMic_0689,MC04,control,adaptation,data/torgo/audio/MC04_2_arrayMic_0689.wav,Her classical performance gained critical acclaim,4.05,GENERAL_SPEECH
+MC04_2_arrayMic_0750,MC04,control,adaptation,data/torgo/audio/MC04_2_arrayMic_0750.wav,center,1.2,GENERAL_SPEECH
+MC04_2_arrayMic_0770,MC04,control,adaptation,data/torgo/audio/MC04_2_arrayMic_0770.wav,three,1.35,GENERAL_SPEECH
+MC04_2_arrayMic_0790,MC04,control,adaptation,data/torgo/audio/MC04_2_arrayMic_0790.wav,dial,1.35,GENERAL_SPEECH
+MC04_2_arrayMic_0793,MC04,control,adaptation,data/torgo/audio/MC04_2_arrayMic_0793.wav,lip,1.2,GENERAL_SPEECH
+MC04_2_arrayMic_0801,MC04,control,adaptation,data/torgo/audio/MC04_2_arrayMic_0801.wav,hat,0.9,GENERAL_SPEECH
+MC04_2_arrayMic_0849,MC04,control,adaptation,data/torgo/audio/MC04_2_arrayMic_0849.wav,ticks,1.2,GENERAL_SPEECH
+MC04_2_arrayMic_0875,MC04,control,adaptation,data/torgo/audio/MC04_2_arrayMic_0875.wav,are,1.2,GENERAL_SPEECH
+MC04_2_arrayMic_0894,MC04,control,adaptation,data/torgo/audio/MC04_2_arrayMic_0894.wav,ease,1.35,GENERAL_SPEECH
+MC04_2_arrayMic_0917,MC04,control,adaptation,data/torgo/audio/MC04_2_arrayMic_0917.wav,pad,1.05,GENERAL_SPEECH
+MC04_2_arrayMic_0924,MC04,control,adaptation,data/torgo/audio/MC04_2_arrayMic_0924.wav,pink,1.05,GENERAL_SPEECH
+MC04_2_arrayMic_0937,MC04,control,adaptation,data/torgo/audio/MC04_2_arrayMic_0937.wav,dash,1.2,GENERAL_SPEECH
+MC04_2_arrayMic_0945,MC04,control,adaptation,data/torgo/audio/MC04_2_arrayMic_0945.wav,wipe,1.2,GENERAL_SPEECH
+MC04_2_arrayMic_0951,MC04,control,adaptation,data/torgo/audio/MC04_2_arrayMic_0951.wav,hail,1.5,GENERAL_SPEECH
+MC04_2_arrayMic_0952,MC04,control,adaptation,data/torgo/audio/MC04_2_arrayMic_0952.wav,pat,1.05,GENERAL_SPEECH
+MC04_2_arrayMic_0996,MC04,control,adaptation,data/torgo/audio/MC04_2_arrayMic_0996.wav,We got drenched from the uninterrupted rain,3.45,GENERAL_SPEECH
+MC04_2_arrayMic_1000,MC04,control,adaptation,data/torgo/audio/MC04_2_arrayMic_1000.wav,cake,1.2,GENERAL_SPEECH
+MC04_2_arrayMic_1016,MC04,control,adaptation,data/torgo/audio/MC04_2_arrayMic_1016.wav,hate,1.2,GENERAL_SPEECH
+MC04_2_arrayMic_1017,MC04,control,adaptation,data/torgo/audio/MC04_2_arrayMic_1017.wav,hall,1.2,GENERAL_SPEECH
+MC04_1_headMic_0005,MC04,control,test,data/torgo/audio/MC04_1_headMic_0005.wav,jacket,2.165,GENERAL_SPEECH
+MC04_1_headMic_0006,MC04,control,test,data/torgo/audio/MC04_1_headMic_0006.wav,swarm,2.125,GENERAL_SPEECH
+MC04_1_headMic_0007,MC04,control,test,data/torgo/audio/MC04_1_headMic_0007.wav,trade,1.96,GENERAL_SPEECH
+MC04_1_headMic_0008,MC04,control,test,data/torgo/audio/MC04_1_headMic_0008.wav,train,2.085,GENERAL_SPEECH
+MC04_1_headMic_0010,MC04,control,test,data/torgo/audio/MC04_1_headMic_0010.wav,stubble,1.78,GENERAL_SPEECH
+MC04_1_headMic_0011,MC04,control,test,data/torgo/audio/MC04_1_headMic_0011.wav,yes,1.915,CRITICAL_RESPONSE
+MC04_1_headMic_0012,MC04,control,test,data/torgo/audio/MC04_1_headMic_0012.wav,Don't ask me to carry an oily rag like that,4.12,GENERAL_SPEECH
+MC04_1_headMic_0013,MC04,control,test,data/torgo/audio/MC04_1_headMic_0013.wav,born,2.34,GENERAL_SPEECH
+MC04_1_headMic_0014,MC04,control,test,data/torgo/audio/MC04_1_headMic_0014.wav,beat,2.075,GENERAL_SPEECH
+MC04_1_headMic_0015,MC04,control,test,data/torgo/audio/MC04_1_headMic_0015.wav,rake,2.165,GENERAL_SPEECH
+MC04_1_headMic_0016,MC04,control,test,data/torgo/audio/MC04_1_headMic_0016.wav,but he always answers Banana oil,4.14,GENERAL_SPEECH
+MC04_1_headMic_0017,MC04,control,test,data/torgo/audio/MC04_1_headMic_0017.wav,hair,1.78,GENERAL_SPEECH
+MC04_1_headMic_0018,MC04,control,test,data/torgo/audio/MC04_1_headMic_0018.wav,jagged,1.995,GENERAL_SPEECH
+MC04_1_headMic_0020,MC04,control,test,data/torgo/audio/MC04_1_headMic_0020.wav,rain,2.03,GENERAL_SPEECH
+MC04_1_headMic_0021,MC04,control,test,data/torgo/audio/MC04_1_headMic_0021.wav,chair,1.915,GENERAL_SPEECH
+MC04_1_headMic_0022,MC04,control,test,data/torgo/audio/MC04_1_headMic_0022.wav,chair,2.5,GENERAL_SPEECH
+MC04_1_headMic_0023,MC04,control,test,data/torgo/audio/MC04_1_headMic_0023.wav,She had your dark suit in greasy wash water all year,4.955,GENERAL_SPEECH
+MC04_1_headMic_0024,MC04,control,test,data/torgo/audio/MC04_1_headMic_0024.wav,trait,1.995,GENERAL_SPEECH
+MC04_1_headMic_0025,MC04,control,test,data/torgo/audio/MC04_1_headMic_0025.wav,range,2.1,GENERAL_SPEECH
+MC04_1_headMic_0026,MC04,control,test,data/torgo/audio/MC04_1_headMic_0026.wav,When he speaks his voice is just a bit cracked and quivers a trifle,5.705,GENERAL_SPEECH
+MC04_1_headMic_0027,MC04,control,test,data/torgo/audio/MC04_1_headMic_0027.wav,When he speaks his voice is just a bit cracked and quivers a trifle,5.46,GENERAL_SPEECH
+MC04_1_headMic_0028,MC04,control,test,data/torgo/audio/MC04_1_headMic_0028.wav,glow,1.93,GENERAL_SPEECH
+MC04_1_headMic_0029,MC04,control,test,data/torgo/audio/MC04_1_headMic_0029.wav,fee,1.965,GENERAL_SPEECH
+MC04_1_headMic_0031,MC04,control,test,data/torgo/audio/MC04_1_headMic_0031.wav,Except in the winter when the ooze or snow or ice prevents,5.03,GENERAL_SPEECH
+MC04_1_headMic_0032,MC04,control,test,data/torgo/audio/MC04_1_headMic_0032.wav,right,1.855,GENERAL_SPEECH
+MC04_1_headMic_0033,MC04,control,test,data/torgo/audio/MC04_1_headMic_0033.wav,We have often urged him to walk more and smoke less,4.41,GENERAL_SPEECH
+MC04_1_headMic_0034,MC04,control,test,data/torgo/audio/MC04_1_headMic_0034.wav,store,2.1,GENERAL_SPEECH
+MC04_1_headMic_0035,MC04,control,test,data/torgo/audio/MC04_1_headMic_0035.wav,feet,1.605,GENERAL_SPEECH
+MC04_1_headMic_0036,MC04,control,test,data/torgo/audio/MC04_1_headMic_0036.wav,The quick brown fox jumps over the lazy dog,4.645,GENERAL_SPEECH
+MC04_1_headMic_0037,MC04,control,test,data/torgo/audio/MC04_1_headMic_0037.wav,bat,1.825,GENERAL_SPEECH
+MC04_1_headMic_0038,MC04,control,test,data/torgo/audio/MC04_1_headMic_0038.wav,dug,1.605,GENERAL_SPEECH
+MC04_1_headMic_0039,MC04,control,test,data/torgo/audio/MC04_1_headMic_0039.wav,trace,1.815,GENERAL_SPEECH
+MC04_1_headMic_0040,MC04,control,test,data/torgo/audio/MC04_1_headMic_0040.wav,corn,1.74,GENERAL_SPEECH
+MC04_1_headMic_0041,MC04,control,test,data/torgo/audio/MC04_1_headMic_0041.wav,air,1.595,BREATHING_MEDICAL
+MC04_1_headMic_0042,MC04,control,test,data/torgo/audio/MC04_1_headMic_0042.wav,warm,1.845,GENERAL_SPEECH
+MC04_1_headMic_0043,MC04,control,test,data/torgo/audio/MC04_1_headMic_0043.wav,tip,1.615,GENERAL_SPEECH
+MC04_1_headMic_0044,MC04,control,test,data/torgo/audio/MC04_1_headMic_0044.wav,feed,1.975,GENERAL_SPEECH
+MC04_1_headMic_0045,MC04,control,test,data/torgo/audio/MC04_1_headMic_0045.wav,warm,2.01,GENERAL_SPEECH
+MC04_1_headMic_0046,MC04,control,test,data/torgo/audio/MC04_1_headMic_0046.wav,rave,2.17,GENERAL_SPEECH
+MC04_1_headMic_0049,MC04,control,test,data/torgo/audio/MC04_1_headMic_0049.wav,grow,2.04,GENERAL_SPEECH
+MC04_1_headMic_0051,MC04,control,test,data/torgo/audio/MC04_1_headMic_0051.wav,slip,2.4,FALL
+MC04_1_headMic_0052,MC04,control,test,data/torgo/audio/MC04_1_headMic_0052.wav,dagger,2.13,GENERAL_SPEECH
+MC04_1_headMic_0053,MC04,control,test,data/torgo/audio/MC04_1_headMic_0053.wav,knew,1.725,GENERAL_SPEECH
+MC04_1_headMic_0054,MC04,control,test,data/torgo/audio/MC04_1_headMic_0054.wav,swore,1.955,GENERAL_SPEECH
+MC04_1_headMic_0055,MC04,control,test,data/torgo/audio/MC04_1_headMic_0055.wav,gadget,1.905,GENERAL_SPEECH
+MC04_1_headMic_0056,MC04,control,test,data/torgo/audio/MC04_1_headMic_0056.wav,torn,1.745,GENERAL_SPEECH
+MC04_1_headMic_0057,MC04,control,test,data/torgo/audio/MC04_1_headMic_0057.wav,dark,1.745,GENERAL_SPEECH
+MC04_1_headMic_0058,MC04,control,test,data/torgo/audio/MC04_1_headMic_0058.wav,fair,1.655,GENERAL_SPEECH
+MC04_1_headMic_0059,MC04,control,test,data/torgo/audio/MC04_1_headMic_0059.wav,sip,1.565,GENERAL_SPEECH
+MC04_1_headMic_0060,MC04,control,test,data/torgo/audio/MC04_1_headMic_0060.wav,sticks,1.7,GENERAL_SPEECH

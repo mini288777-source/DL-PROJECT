@@ -1,0 +1,20 @@
+{
+  "track": "Track_B_Quantum",
+  "status": "complete",
+  "timestamp": "2026-10-10T05:55:59Z",
+  "manifest_fingerprint": "16c1304221900a8ca5a278adc2528ba2807881e9c526a322b7a649135bc80a58",
+  "total_test_predictions": 1215,
+  "global_metrics": {
+    "accuracy": 0.842798353909465,
+    "macro_f1": 0.16942373602439606,
+    "emergency_recall": 0.18333333333333332,
+    "emergency_precision": 0.07432432432432433,
+    "false_emergency_rate": 0.11861471861471862,
+    "intent_preservation_rate": 0.8813852813852814
+  },
+  "predictions_hash": "78afed76229aef4930c68f4a5c6ea9c760c52b24513dc4ff8c2cbf7ac276f407",
+  "results_hash": "7fc7fc1c2740b13d039d6072e8496a2080e3aa771cbb7e44df3f3281a7dd3e89",
+  "per_speaker_hash": "ad3e1541d8c37bf648fd7db042fb5924d552e038b8b7ee8839b33511794aceec",
+  "ablation_hash": "ca78bfdd412fb1ddf16d367f3c14fe353ed1b4ecd48842606fca6da75b7659ef",
+  "quantum_participation_verified": true
+}

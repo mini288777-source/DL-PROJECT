@@ -1,0 +1,142 @@
+{
+  "config/research_protocol.yaml": {
+    "exists": true,
+    "sha256": "70fd7608e03b2c54299fb102e639585cd49a43d4d48d4b0989df1a65888665e7",
+    "size_bytes": 4155
+  },
+  "config/taxonomy.yaml": {
+    "exists": true,
+    "sha256": "3664d8689df0f30bc987cd4de5ddeb80f11f1e3b5fb672243e902f6959e92bec",
+    "size_bytes": 3248
+  },
+  "config/continual/app_config.yaml": {
+    "exists": true,
+    "sha256": "86c4bca0d82fe4196f791e7bc9e10035a89d74923e6d7710c5d0aacca386b666",
+    "size_bytes": 1680
+  },
+  "config/phase8_1/safety_recovery_protocol.yaml": {
+    "exists": true,
+    "sha256": "71a06d9514de44c651be7d63ec4cacabb97ccaf94977bde742efc21389423f52",
+    "size_bytes": 3508
+  },
+  "config/phase8_2/confirmation_protocol.yaml": {
+    "exists": true,
+    "sha256": "de2434dcb1cee100f3ffc49160b8acab5151c97de7b31c618222c8389bac1f93",
+    "size_bytes": 3989
+  },
+  "config/phase8_2_1/confirmation_protocol_v2.yaml": {
+    "exists": true,
+    "sha256": "1aee62c9464185a9cfb79f60884861ba98e2adc73953d44d692cafa8c0a38fd9",
+    "size_bytes": 11144
+  },
+  "data/manifests/torgo_manifest.csv": {
+    "exists": true,
+    "sha256": "59708252a7cced0139803bff8824a37eddb760e8a0bb98e84a32512df91de075",
+    "size_bytes": 2584483
+  },
+  "results/phase8_80_20/split_manifest.csv": {
+    "exists": true,
+    "sha256": "4193a62ffb29d44347d1c0260affb3593f6267b8081737cf79a0bf2e149fe0df",
+    "size_bytes": 728452
+  },
+  "results/phase8_1/threshold_registry.json": {
+    "exists": true,
+    "sha256": "d6fc0173d138cd57bfa84ac4cdaa03edc175ce23428d494f2d1ad5b129ed9d49",
+    "size_bytes": 135081
+  },
+  "results/phase8_1/safety_operating_points.csv": {
+    "exists": true,
+    "sha256": "b81c06166b130ca01d0ee1459bd84f60cc18ae4cdfe3b8336e1cfafb0b6211ad",
+    "size_bytes": 5095
+  },
+  "results/phase8_1/oof_predictions.csv": {
+    "exists": true,
+    "sha256": "09f91a62e39b8de866a5d814d6b001e3cae10cda614bea79b9f0af2ddfea3366",
+    "size_bytes": 3882342
+  },
+  "results/phase8_2/confirmation_dataset_inventory.csv": {
+    "exists": true,
+    "sha256": "4e2967faffd6657e6a47e66443586b11bfada50e51b13bdcc6641eb8f6dd5747",
+    "size_bytes": 1967
+  },
+  "results/phase8_2/confirmation_overlap_audit.json": {
+    "exists": true,
+    "sha256": "573bd286a3dac72d5bea2f32034af1a9900adaab0de16ff44cf8420a1a7b5300",
+    "size_bytes": 2765
+  },
+  "results/phase8_2_1/threshold_protocol_audit.json": {
+    "exists": true,
+    "sha256": "e8e6c760ec8392defa850ff2ab3e91b6a2bb4ee07cb4624e696fd86d5ddb2a3d",
+    "size_bytes": 5463
+  },
+  "results/phase8_2_1/protocol_integrity.json": {
+    "exists": true,
+    "sha256": "4f3786b864cf7778bc6321f76c968f2934d38ca4bf5437a0039fe2e6825d3496",
+    "size_bytes": 3708
+  },
+  "reports/FINAL_CLAIM_CORRECTIONS.md": {
+    "exists": true,
+    "sha256": "c869f4d7563172f75747a8593be773319cd7b063bd5e86e1019acf76ecf18e7c",
+    "size_bytes": 9253
+  },
+  "reports/FINAL_METRIC_DEFINITIONS.md": {
+    "exists": true,
+    "sha256": "b14b7b59fa5f0a4ec25ede6bea5eefb5e2860bb763e11c734d001f0e29144ed0",
+    "size_bytes": 7036
+  },
+  "reports/FINAL_RESEARCH_WORDING.md": {
+    "exists": true,
+    "sha256": "5d51c5169e6f09d3fd9e423db04a995efadc24e060513dab4b628bbffdaeb9d2",
+    "size_bytes": 6792
+  },
+  "reports/FINAL_SCIENTIFIC_INTEGRITY_AUDIT.md": {
+    "exists": true,
+    "sha256": "29b340913ef9e0d174126f8f1a7c0c5d6a80bba3233441c30de2234d7c2cd722",
+    "size_bytes": 14351
+  },
+  "reports/COMPLETE_RESEARCH_RESULTS.md": {
+    "exists": true,
+    "sha256": "1bbd9a309f849c54edcb278e0f62a61c1aa262211d935fd0207e5b40dd860f47",
+    "size_bytes": 27309
+  },
+  "reports/phase8_1/FINAL_SAFETY_DECISION.md": {
+    "exists": true,
+    "sha256": "778e7209bc6724f8d4d6bb420c209d5c5dda4e607253f5149df3cfeaaa904062",
+    "size_bytes": 3184
+  },
+  "reports/phase8_1/PHASE8_1_SAFETY_RECOVERY_REPORT.md": {
+    "exists": true,
+    "sha256": "eb3e4b7637924e33b06532758817c40bbb1f3cabc7c5b242b7450907a33194ea",
+    "size_bytes": 14005
+  },
+  "reports/phase8_2/PHASE8_2_INDEPENDENT_CONFIRMATION_REPORT.md": {
+    "exists": true,
+    "sha256": "bccf93e47a20a549aac4806f4ca7dc39c4f27e4a14f2346eb0fb6fb9329fffb7",
+    "size_bytes": 12123
+  },
+  "reports/phase8_2_1/THRESHOLD_PROTOCOL_CORRECTION_REPORT.md": {
+    "exists": true,
+    "sha256": "66d68ea251e483ca9796a6c6e4bbca7740f08187ff0e71171d01ef5b7f0b75f7",
+    "size_bytes": 9122
+  },
+  "research/phase8_2_1/THRESHOLD_PROTOCOL_FORENSIC_AUDIT.md": {
+    "exists": true,
+    "sha256": "03f5a9aae0ff267e4a1f1ae11f1d477aaa3a36406326f67cb079a844074946e2",
+    "size_bytes": 20605
+  },
+  "src/continual/app_pipeline.py": {
+    "exists": true,
+    "sha256": "5476e3d143170efb81dd5ff98ee7dcabf64d056111809cd608396e61b9023215",
+    "size_bytes": 13592
+  },
+  "src/phase8_separated/phase8_separated_models.py": {
+    "exists": true,
+    "sha256": "d9b773c719ed7316827bde0f9c6aee813600d479a5b442451797f95959a8e234",
+    "size_bytes": 14054
+  },
+  "scripts/run_app_demo.py": {
+    "exists": true,
+    "sha256": "2390791e807d44d24b6e30d8a36b5115cf1f978ca59d3246749024cf1bb46e57",
+    "size_bytes": 36985
+  }
+}

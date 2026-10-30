@@ -1,0 +1,127 @@
+# Subphase 6.5.3 — Hierarchical Emergency Recognition Configuration
+# Two-Stage Emergency Gate + Conditional Intent Routing
+
+project:
+  name: "Low-Resource Personalized Atypical Speech Recognition Using Hybrid Quantum-Classical Deep Learning"
+  phase: "Subphase 6.5.3 — Hierarchical Emergency Recognition"
+  dataset: "TORGO"
+
+data:
+  splits_track_b_path: "phase6_5/splits/recovery_splits_hierarchical_ready.json"
+  manifest_path: "data/manifests/torgo_manifest.csv"
+  intent_taxonomy_path: "configs/intent_taxonomy.yaml"
+  whisper_cache_dir: "embeddings/torgo/whisper"
+  embedding_dim: 384
+  feature_type: "whisper"
+
+cohort:
+  speakers:
+    - "F01"
+    - "F03"
+    - "F04"
+    - "FC01"
+    - "FC02"
+    - "FC03"
+    - "M01"
+    - "M02"
+    - "M03"
+    - "M04"
+    - "M05"
+    - "MC01"
+    - "MC02"
+    - "MC03"
+    - "MC04"
+  sample_sizes:
+    - 20
+    - 30
+    - 40
+    - 50
+  seed: 42
+
+pilot:
+  speakers:
+    - "M04"   # Dysarthric strong-support
+    - "F01"   # Dysarthric difficult-support
+    - "FC02"  # Control speaker
+  sample_sizes:
+    - 20
+    - 40
+  models:
+    - "hierarchical_adapter"
+    - "hierarchical_rbf_svm"
+
+models:
+  - name: "hierarchical_adapter"
+    type: "hierarchical"
+    stage1:
+      model_type: "adapter"
+      input_dim: 384
+      hidden_dim: 64
+      dropout: 0.1
+      learning_rate: 0.005
+      weight_decay: 0.0001
+      epochs: 60
+      batch_size: 8
+      class_weight: "balanced"
+      optimizer: "adamw"
+    stage2:
+      model_type: "adapter"
+      input_dim: 384
+      hidden_dim: 64
+      dropout: 0.1
+      learning_rate: 0.005
+      weight_decay: 0.0001
+      epochs: 60
+      batch_size: 8
+      class_weight: "balanced"
+      optimizer: "adamw"
+
+  - name: "hierarchical_rbf_svm"
+    type: "hierarchical"
+    stage1:
+      model_type: "rbf_svm"
+      C: 1.0
+      gamma: "scale"
+      class_weight: "balanced"
+      standardize: false
+      probability: true
+    stage2:
+      model_type: "rbf_svm"
+      C: 1.0
+      gamma: "scale"
+      class_weight: "balanced"
+      standardize: false
+      probability: false
+
+inference:
+  primary_threshold: 0.50
+  thresholds:
+    - 0.30
+    - 0.40
+    - 0.50
+    - 0.60
+    - 0.70
+
+evaluation:
+  canonical_classes:
+    - "GENERAL_SPEECH"
+    - "SOS_HELP"
+    - "FALL"
+    - "BREATHING_MEDICAL"
+    - "PAIN"
+    - "LOCATION"
+    - "CRITICAL_RESPONSE"
+  emergency_classes:
+    - "SOS_HELP"
+    - "FALL"
+    - "BREATHING_MEDICAL"
+    - "PAIN"
+    - "LOCATION"
+    - "CRITICAL_RESPONSE"
+
+output:
+  base_dir: "phase6_5/hierarchical"
+  results_dir: "phase6_5/hierarchical/results"
+  analysis_dir: "phase6_5/hierarchical/analysis"
+  figures_dir: "phase6_5/hierarchical/figures"
+  reports_dir: "phase6_5/hierarchical/reports"

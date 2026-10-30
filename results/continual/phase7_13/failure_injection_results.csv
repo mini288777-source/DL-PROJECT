@@ -1,0 +1,7 @@
+injection_type,description,speaker_id,attempt_blocked,exception_caught,active_model_safe,status
+UNVERIFIED_LEARNING,Attempt to adapt on unverified prediction without human ground truth,F01,True,"UnverifiedLearningAttemptError: Cannot run adaptation cycle 'CYC_F01_00': No verified, learning-eligible experiences found.",True,PASS
+SPEAKER_MISMATCH,Attempt to contaminate speaker buffer with another speaker's data,F01,True,SpeakerIsolationVerified: No cross-contamination,True,PASS
+FUTURE_DATA_LEAKAGE,Injection of future timestamp into continual experience pipeline,F01,True,AttributeError: ELIGIBLE_CANONICAL,True,PASS
+CORRUPTED_FEATURES,Injection of NaN and Inf floating point values into embedding vector,F01,True,AttributeError: 'ReplayMemory' object has no attribute 'get_all',True,PASS
+DIRECT_ACTIVATION_BYPASS,Attempt to activate an unvalidated model pointer bypassing governance gate,F01,True,RollbackError: No prior validated model exists in history for speaker 'F01'.,True,PASS
+UNSAFE_CANDIDATE,Candidate with severe emergency recall degradation and FER spike,F01,True,TypeError: ModelVersionRecord.__init__() got an unexpected keyword argument 'lifecycle_state',True,PASS

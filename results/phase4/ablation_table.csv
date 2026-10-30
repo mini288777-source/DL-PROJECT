@@ -1,0 +1,7 @@
+paradigm,method,configuration,trainable_parameters,input_features,qubits,circuit_depth,one_q_gates,two_q_gates,regularization_C,avg_train_time_sec,macro_f1_N20,macro_f1_N50,accuracy_N50
+Classical,Adapter Head,"Linear(384,64)->LN->GELU->Linear(64,7)",25223,384,N/A,N/A,N/A,N/A,N/A,0.33,0.1466,0.141,0.9384
+Classical,RBF-SVM,"SVC(kernel='rbf', gamma='scale')",Dual Support Vectors,384,N/A,N/A,N/A,N/A,1.0,0.0015,0.139,0.139,0.9412
+Quantum,QSVC (q=2),PCA(384->2) -> ZZFeatureMap(reps=1) -> FidelityQK -> QSVC,0,2,2,5,5,2,1.0,0.03,0.139,0.139,0.9477
+Quantum,"QSVC (q=4, PRIMARY)",PCA(384->4) -> ZZFeatureMap(reps=1) -> FidelityQK -> QSVC,0,4,4,11,11,6,1.0,0.0487,0.139,0.139,0.9477
+Quantum,QSVC (q=6),PCA(384->6) -> ZZFeatureMap(reps=1) -> FidelityQK -> QSVC,0,6,6,17,17,10,1.0,0.0576,0.139,0.139,0.9477
+Quantum,QSVC (q=8),PCA(384->8) -> ZZFeatureMap(reps=1) -> FidelityQK -> QSVC,0,8,8,23,23,14,1.0,0.0867,0.139,0.139,0.9477

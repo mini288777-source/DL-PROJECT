@@ -1,0 +1,8 @@
+comparison,metric_type,model_A_time_sec,model_B_time_sec,ratio_A_to_B,ratio_percentage,interpretation
+QSVC Q8-R1 vs. RBF-SVM d=8,Per-Evaluation Test Inference Time,1.0816,0.0014,772.57,77257.1,QSVC Q8-R1 is 772.6x slower per test evaluation than classical RBF-SVM
+QSVC Q8-R1 vs. RBF-SVM d=8,Total 60-Condition Experiment Wall Time,70.22,0.33,212.79,21278.8,QSVC Q8-R1 total experiment wall time is 212.8x slower than classical RBF-SVM
+QSVC Q8-R2 vs. RBF-SVM d=8,Per-Evaluation Test Inference Time,1.9761,0.0014,1411.5,141150.0,QSVC Q8-R2 is 1411.5x slower per test evaluation than classical RBF-SVM
+QSVC Q8-R2 vs. RBF-SVM d=8,Total 60-Condition Experiment Wall Time,128.04,0.33,388.0,38800.0,QSVC Q8-R2 total experiment wall time is 388.0x slower than classical RBF-SVM
+QSVC Q8-R2 vs. QSVC Q8-R1,Circuit Depth Scaling (Reps=2 vs Reps=1),128.04,70.22,1.82,182.3,Doubling circuit depth from reps=1 to reps=2 increases total runtime by 1.82x
+QSVC Q8-R1 vs. Classical Adapter d=8,Total 60-Condition Experiment Wall Time,70.22,15.79,4.45,444.7,QSVC Q8-R1 total runtime is 4.45x slower than Classical Adapter d=8
+QSVC Q4-R1 vs. RBF-SVM d=4,Total 60-Condition Experiment Wall Time,26.64,0.31,85.94,8593.5,QSVC Q4-R1 total experiment wall time is 85.94x slower than classical RBF-SVM d=4

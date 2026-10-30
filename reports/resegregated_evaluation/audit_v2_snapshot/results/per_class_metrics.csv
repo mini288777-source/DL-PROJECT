@@ -1,0 +1,8 @@
+Intent Class,Class Category,Test Set Support,Support Percentage (%),QSVC Q8 Precision,QSVC Q8 Recall,QSVC Q8 F1,RBF-SVM Precision,RBF-SVM Recall,RBF-SVM F1,Track B Quantum Precision,Track B Quantum Recall,Track B Quantum F1
+GENERAL_SPEECH,Non-Emergency (Background),5219,98.16,0.9777,0.648,0.7794,0.9774,0.6461,0.7779,0.9796,0.6432,0.7765
+CRITICAL_RESPONSE,Emergency (Proxy),35,0.66,0.007,0.0857,0.013,0.0071,0.0857,0.0132,0.0118,0.0857,0.0207
+FALL,Emergency (Proxy),21,0.39,0.0043,0.0476,0.0078,0.0,0.0,0.0,0.0072,0.1429,0.0136
+BREATHING_MEDICAL,Emergency (Proxy),18,0.34,0.0,0.0,0.0,0.0,0.0,0.0,0.0041,0.0556,0.0076
+PAIN,Emergency (Proxy),13,0.24,0.0021,0.0769,0.004,0.002,0.0769,0.004,0.0,0.0,0.0
+SOS_HELP,Emergency (Proxy),11,0.21,0.0035,0.0909,0.0067,0.0035,0.0909,0.0067,0.006,0.2727,0.0117
+LOCATION,"Emergency (Proxy, Ultra-Sparse)",0,0.0,N/A (0 support),N/A (0 support),N/A (0 support),N/A (0 support),N/A (0 support),N/A (0 support),N/A (0 support),N/A (0 support),N/A (0 support)

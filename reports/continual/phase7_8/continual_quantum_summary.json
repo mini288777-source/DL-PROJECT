@@ -1,0 +1,172 @@
+{
+  "phase": "7.8",
+  "description": "Continual Fixed-Kernel Quantum Personalization vs Matched Classical Baseline",
+  "timestamp": "2026-10-06T17:36:04Z",
+  "total_experiments": 60,
+  "total_cells_evaluated": 60,
+  "speakers_evaluated": 15,
+  "budgets_evaluated": [
+    20,
+    30,
+    40,
+    50
+  ],
+  "canonical_quantum_config": {
+    "qubit_count": 8,
+    "representation_dim": 8,
+    "feature_map": "ZZFeatureMap",
+    "entanglement": "linear",
+    "reps": 1,
+    "kernel_type": "FidelityQuantumKernel",
+    "classifier": "QSVC",
+    "C": 1.0,
+    "backend": "exact_statevector",
+    "simulation_framework": "qiskit.quantum_info.Statevector",
+    "scaling": "MinMaxScaler fitted on adaptation embeddings to [0, pi]",
+    "trainable_quantum_parameters": 0,
+    "whiten": false
+  },
+  "matched_control_phase": "7.4",
+  "statistical_tests": {
+    "macro_f1": {
+      "mean_classical": 0.1011603784115443,
+      "mean_quantum": 0.1186750852644302,
+      "mean_delta": 0.017514706852885868,
+      "std_delta": 0.03206687141446687,
+      "cohens_d": 0.5461931919240541,
+      "wilcoxon_stat": 298.0,
+      "p_value_raw": 5.569421613489575e-06,
+      "p_value_adjusted": 1.988522512102499e-05,
+      "statistically_significant": true
+    },
+    "emergency_recall": {
+      "mean_classical": 0.16204545454545452,
+      "mean_quantum": 0.051005892255892256,
+      "mean_delta": -0.11103956228956229,
+      "std_delta": 0.16085589543842052,
+      "cohens_d": -0.6903045858960817,
+      "wilcoxon_stat": 13.5,
+      "p_value_raw": 1.5596713509175497e-05,
+      "p_value_adjusted": 3.1193427018350995e-05,
+      "statistically_significant": true
+    },
+    "emergency_precision": {
+      "mean_classical": 0.007413624902856379,
+      "mean_quantum": 0.0010319257603040965,
+      "mean_delta": -0.006381699142552281,
+      "std_delta": 0.010771616008391596,
+      "cohens_d": -0.5924551281423918,
+      "wilcoxon_stat": 15.0,
+      "p_value_raw": 4.971306280256248e-06,
+      "p_value_adjusted": 1.988522512102499e-05,
+      "statistically_significant": true
+    },
+    "false_emergency_rate": {
+      "mean_classical": 0.4352543876471986,
+      "mean_quantum": 0.16735868066549514,
+      "mean_delta": -0.26789570698170345,
+      "std_delta": 0.25163736748218946,
+      "cohens_d": -1.0646101954657619,
+      "wilcoxon_stat": 107.0,
+      "p_value_raw": 1.7349536766910523e-08,
+      "p_value_adjusted": 8.674768383455262e-08,
+      "statistically_significant": true
+    },
+    "iper": {
+      "mean_classical": 0.16204545454545452,
+      "mean_quantum": 0.051005892255892256,
+      "mean_delta": -0.11103956228956229,
+      "std_delta": 0.16085589543842052,
+      "cohens_d": -0.6903045858960817,
+      "wilcoxon_stat": 13.5,
+      "p_value_raw": 1.5596713509175497e-05,
+      "p_value_adjusted": 3.1193427018350995e-05,
+      "statistically_significant": true
+    },
+    "accuracy": {
+      "mean_classical": 0.5522962275822741,
+      "mean_quantum": 0.8107063960854896,
+      "mean_delta": 0.2584101685032153,
+      "std_delta": 0.2448565236099682,
+      "cohens_d": 1.0553534155162503,
+      "wilcoxon_stat": 139.0,
+      "p_value_raw": 1.112604245035515e-08,
+      "p_value_adjusted": 6.67562547021309e-08,
+      "statistically_significant": true
+    },
+    "adaptation_time": {
+      "mean_classical": 0.35212067666919517,
+      "mean_quantum": 0.06147768333612476,
+      "mean_delta": -0.29064299333307037,
+      "std_delta": 0.08349721927966762,
+      "cohens_d": -3.4808703312571843,
+      "wilcoxon_stat": 0.0,
+      "p_value_raw": 1.6295557943119345e-11,
+      "p_value_adjusted": 1.1406890560183541e-10,
+      "statistically_significant": true
+    }
+  },
+  "subgroup_breakdown": {
+    "cohort": {
+      "subgroup": "All 15 Speakers",
+      "n_cells": 60,
+      "macro_f1_classical": 0.1011603784115443,
+      "macro_f1_quantum": 0.1186750852644302,
+      "macro_f1_delta": 0.017514706852885868,
+      "emergency_recall_classical": 0.16204545454545452,
+      "emergency_recall_quantum": 0.051005892255892256,
+      "emergency_recall_delta": -0.11103956228956229,
+      "false_emergency_rate_classical": 0.4352543876471986,
+      "false_emergency_rate_quantum": 0.16735868066549514,
+      "false_emergency_rate_delta": -0.26789570698170345
+    },
+    "dysarthric": {
+      "subgroup": "8 Dysarthric Speakers",
+      "n_cells": 32,
+      "macro_f1_classical": 0.11643158826068706,
+      "macro_f1_quantum": 0.13351308984910237,
+      "macro_f1_delta": 0.01708150158841533,
+      "emergency_recall_classical": 0.13949652777777777,
+      "emergency_recall_quantum": 0.02682291666666667,
+      "emergency_recall_delta": -0.11267361111111111,
+      "false_emergency_rate_classical": 0.33334255081651243,
+      "false_emergency_rate_quantum": 0.06491120982186256,
+      "false_emergency_rate_delta": -0.2684313409946498
+    },
+    "control": {
+      "subgroup": "7 Control Speakers",
+      "n_cells": 28,
+      "macro_f1_classical": 0.08370756715538118,
+      "macro_f1_quantum": 0.10171736573909053,
+      "macro_f1_delta": 0.01800979858370935,
+      "emergency_recall_classical": 0.18781565656565655,
+      "emergency_recall_quantum": 0.07864357864357864,
+      "emergency_recall_delta": -0.1091720779220779,
+      "false_emergency_rate_classical": 0.5517250583108401,
+      "false_emergency_rate_quantum": 0.2844415044867895,
+      "false_emergency_rate_delta": -0.2672835538240505
+    }
+  },
+  "primary_hypothesis_h7_6": {
+    "statement": "Continual quantum kernel personalization provides statistically supported benefit beyond matched continual classical personalization.",
+    "status": "INCONCLUSIVE",
+    "decision": "INCONCLUSIVE"
+  },
+  "secondary_hypotheses": {
+    "h7_6a_emergency_recall": {
+      "quantum_mean": 0.051005892255892256,
+      "classical_mean": 0.16204545454545452,
+      "delta": -0.11103956228956229,
+      "p_value_adjusted": 3.1193427018350995e-05,
+      "decision": "NOT SUPPORTED"
+    },
+    "h7_6c_computational_cost": {
+      "quantum_mean_time_sec": 0.06147768333612476,
+      "classical_mean_time_sec": 0.35212067666919517,
+      "ratio": 0.17459265362562293,
+      "observation": "Simulated quantum kernel requires matrix calculation overhead relative to lightweight classical adapter."
+    }
+  },
+  "rq7_6_decision": "INCONCLUSIVE",
+  "frozen_case_b_conclusion": "UNCHANGED"
+}

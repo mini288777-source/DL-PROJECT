@@ -1,0 +1,5 @@
+model,cohort_group,macro_f1,IPER,emergency_recall,emergency_precision,false_emergency_rate
+hierarchical_adapter,control,0.0848,0.1509,0.1509,0.0039,0.5206
+hierarchical_adapter,dysarthric,0.1107,0.0989,0.0989,0.005,0.3542
+hierarchical_rbf_svm,control,0.0938,0.1165,0.1165,0.0045,0.3581
+hierarchical_rbf_svm,dysarthric,0.1003,0.1312,0.1312,0.0033,0.3279

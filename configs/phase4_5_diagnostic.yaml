@@ -1,0 +1,20 @@
+# Phase 4.5 Research Diagnostic Configuration & Feasibility Specification
+diagnostic:
+  purpose: "Controlled minority-intent evaluation to assess quantum vs RBF-SVM behavior under non-collapsed margin conditions."
+  predeclared_parameters:
+    models: ["rbf_svm", "qsvc_q4"]
+    regularization_C: 1.0
+    quantum_qubits: 4
+    feature_map: "zz"
+    reps: 1
+    entanglement: "linear"
+    seed: 42
+  feasibility_assessment:
+    seven_class_balance_status: "NOT_FEASIBLE"
+    common_emergency_intent_status: "NOT_FEASIBLE"
+    prohibited_actions:
+      - "No synthetic data generation (SMOTE, Gaussian noise jitter, generative audio)"
+      - "No sample relabeling or intent collapsing"
+      - "No cross-speaker data borrowing or test-set leakage"
+    feasibility_decision: "NOT_FEASIBLE"
+    rationale: "Zero emergency intent classes are uniformly present across the 15-speaker adaptation pools. In every speaker split, 3 to 6 emergency classes have 0 samples. Constructing a balanced set without violating scientific rules is mathematically impossible."

@@ -1,0 +1,23 @@
+{
+  "speaker_id": "FC03",
+  "sample_n": 40,
+  "qubit_count": 2,
+  "reps": 1,
+  "train_shape": [
+    40,
+    40
+  ],
+  "test_shape": [
+    355,
+    40
+  ],
+  "timestamp": 1790736192.2421665,
+  "pca_explained_variance_ratio": [
+    0.42913317715381316,
+    0.16379263323584722
+  ],
+  "pca_cumulative_explained_variance": 0.5929258103896604,
+  "support_vector_count": 5,
+  "seed": 42,
+  "C": 1.0
+}

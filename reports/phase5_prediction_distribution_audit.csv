@@ -1,0 +1,13 @@
+model,snr_tag,BREATHING_MEDICAL,CRITICAL_RESPONSE,FALL,GENERAL_SPEECH,LOCATION,PAIN
+adapter,clean,0.0012,0.0005,0.0028,0.9936,0.0,0.0018
+adapter,snr10,0.0039,0.0001,0.0478,0.948,0.0001,0.0
+adapter,snr15,0.0038,0.0002,0.033,0.9629,0.0,0.0001
+adapter,snr5,0.0036,0.0002,0.0657,0.9304,0.0001,0.0
+qsvc,clean,0.0,0.0,0.0,1.0,0.0,0.0
+qsvc,snr10,0.0,0.0,0.0,1.0,0.0,0.0
+qsvc,snr15,0.0,0.0,0.0,1.0,0.0,0.0
+qsvc,snr5,0.0,0.0,0.0,1.0,0.0,0.0
+rbf_svm,clean,0.0,0.0,0.0,1.0,0.0,0.0
+rbf_svm,snr10,0.0,0.0,0.0,1.0,0.0,0.0
+rbf_svm,snr15,0.0,0.0,0.0,1.0,0.0,0.0
+rbf_svm,snr5,0.0,0.0,0.0,1.0,0.0,0.0

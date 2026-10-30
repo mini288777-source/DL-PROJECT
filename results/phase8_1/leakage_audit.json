@@ -1,0 +1,19 @@
+{
+  "phase": "Phase 8.1",
+  "timestamp": "2026-10-10T09:00:49Z",
+  "checks": {
+    "test_set_access": {
+      "status": "PASS",
+      "details": "Locked 20% test partition (1,215 utterances) was NEVER accessed for training, calibration, or candidate selection."
+    },
+    "nested_cv_isolation": {
+      "status": "PASS",
+      "details": "Thresholds and models were selected strictly via inner folds; evaluated strictly on outer held-out folds."
+    },
+    "recording_group_integrity": {
+      "status": "PASS",
+      "details": "Prompt-level recording IDs verified; no duplicate or paired microphone cross-fold contamination."
+    }
+  },
+  "overall_status": "PASS"
+}

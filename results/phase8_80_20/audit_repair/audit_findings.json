@@ -1,0 +1,34 @@
+{
+  "benchmark": "Phase 8 Supplementary 80/20 Benchmark",
+  "timestamp": "2026-10-10T06:14:47Z",
+  "issue_1_threshold_selection": {
+    "status": "CORRECTED",
+    "root_cause": "Original implementation used in-sample training predictions in _calibrate_threshold_on_train.",
+    "correction": "Generated 5-fold Stratified Out-of-Fold cross-validation predictions strictly on training pool to select threshold tau.",
+    "leakage_verification": "ZERO test data accessed during threshold selection."
+  },
+  "issue_2_before_after_comparison": {
+    "status": "AUDITED_AND_INVALIDATED",
+    "root_cause": "218 of 1,215 test samples (17.94%) were present in the historical Phase 6.5/8 few-shot adaptation pool.",
+    "verdict": "BEFORE COMPARISON: INVALID \u2014 TEST SET APPEARED IN PREVIOUS TRAINING",
+    "correction": "Comparison figure and narrative updated to flag historical baseline as contaminated and prevent false improvement claims."
+  },
+  "issue_3_zero_support_classes": {
+    "status": "AUDITED_AND_STANDARDIZED",
+    "root_cause": "LOCATION class has 0 true examples in locked 20% test partition due to total corpus sparsity (9 samples total across 15 speakers).",
+    "reporting_policy": "Support = 0, Recall = N/A \u2014 no true examples in test set, Precision = N/A, F1 = N/A.",
+    "macro_f1_policy": "Canonical Macro-F1 averages across all 7 classes (/7) with zero_division=0. Supported-class Macro-F1 averages across 6 supported classes (/6)."
+  },
+  "issue_4_emergency_metric_definitions": {
+    "status": "RECONCILED_AND_PROVEN",
+    "definitions": {
+      "emergency_recall": "TP / (TP + FN)",
+      "emergency_precision": "TP / (TP + FP)",
+      "false_emergency_rate": "FP / (FP + TN) = FP / Total_General_Speech",
+      "canonical_iper": "TP / (TP + FN) (emergency utterances preserved as any emergency)",
+      "general_speech_preservation": "TN / (FP + TN) = 1 - FER"
+    },
+    "discrepancy_explanation": "Low precision (7.43%) and low FER (11.86%) naturally coexist due to extreme class imbalance: 4.94% emergency prevalence means 137 false alarms over 1,155 general speech samples overpower 11 true alarms over 60 emergencies."
+  },
+  "final_scientific_verdict": "CASE B CONFIRMED: NO STATISTICALLY SUPPORTED QUANTUM ADVANTAGE."
+}

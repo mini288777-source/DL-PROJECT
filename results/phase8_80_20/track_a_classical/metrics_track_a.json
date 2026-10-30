@@ -1,0 +1,156 @@
+{
+  "track_id": "Track_A_Classical",
+  "benchmark": "Phase8_80_20",
+  "total_train_samples": 4852,
+  "total_test_samples": 1215,
+  "total_emergency_test_samples": 60,
+  "accuracy": 0.8386831275720165,
+  "macro_f1": 0.16767681790063602,
+  "emergency_recall": 0.16666666666666666,
+  "emergency_precision": 0.06578947368421052,
+  "false_emergency_rate": 0.12294372294372294,
+  "intent_preservation_rate": 0.8770562770562771,
+  "dysarthric_accuracy": 0.8093023255813954,
+  "dysarthric_macro_f1": 0.14921731502042382,
+  "dysarthric_emergency_recall": 0.14814814814814814,
+  "dysarthric_emergency_precision": 0.06557377049180328,
+  "dysarthric_fer": 0.141439205955335,
+  "control_accuracy": 0.8547770700636943,
+  "control_macro_f1": 0.18245240004715577,
+  "control_emergency_recall": 0.18181818181818182,
+  "control_emergency_precision": 0.06593406593406594,
+  "control_fer": 0.11303191489361702,
+  "total_train_time_sec": 28.46930060000068,
+  "total_eval_time_sec": 0.0140464999994947,
+  "per_class_report": {
+    "GENERAL_SPEECH": {
+      "precision": 0.9529633113828786,
+      "recall": 0.8770562770562771,
+      "f1-score": 0.9134355275022543,
+      "support": 1155.0
+    },
+    "CRITICAL_RESPONSE": {
+      "precision": 0.06557377049180328,
+      "recall": 0.23529411764705882,
+      "f1-score": 0.10256410256410256,
+      "support": 17.0
+    },
+    "FALL": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 14.0
+    },
+    "BREATHING_MEDICAL": {
+      "precision": 0.047619047619047616,
+      "recall": 0.09090909090909091,
+      "f1-score": 0.0625,
+      "support": 11.0
+    },
+    "PAIN": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 9.0
+    },
+    "SOS_HELP": {
+      "precision": 0.08333333333333333,
+      "recall": 0.1111111111111111,
+      "f1-score": 0.09523809523809523,
+      "support": 9.0
+    },
+    "LOCATION": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "accuracy": 0.8386831275720165,
+    "macro avg": {
+      "precision": 0.16421278040386614,
+      "recall": 0.18776722810336258,
+      "f1-score": 0.16767681790063602,
+      "support": 1215.0
+    },
+    "weighted avg": {
+      "precision": 0.9078692907567039,
+      "recall": 0.8386831275720165,
+      "f1-score": 0.8710339644986309,
+      "support": 1215.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1013,
+      55,
+      42,
+      19,
+      12,
+      11,
+      3
+    ],
+    [
+      11,
+      4,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      13,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      9,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      9,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      8,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "canonical_classes": [
+    "GENERAL_SPEECH",
+    "CRITICAL_RESPONSE",
+    "FALL",
+    "BREATHING_MEDICAL",
+    "PAIN",
+    "SOS_HELP",
+    "LOCATION"
+  ]
+}

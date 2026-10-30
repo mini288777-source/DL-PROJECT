@@ -1,0 +1,2 @@
+qubits,reps,entanglement,feature_map,kernel,pca_dim,C,simulator,shots,source
+4,1,linear,zz,FidelityQuantumKernel,4,1.0,Qiskit Aer Statevector,Exact (no sampling noise),src/models/quantum_kernel.py + src/quantum/fidelity_kernel.py

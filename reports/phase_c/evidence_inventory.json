@@ -1,0 +1,124 @@
+{
+  "gate": "GATE_C",
+  "audit_phase": "GATE_C_REMEDIATION_WORKSTREAM",
+  "audit_timestamp": "2026-10-10T23:30:00+05:30",
+  "workstream_status": "REMEDIATION_PACKAGE_READY_EXTERNAL_PREREQUISITES_OPEN",
+  "recommended_status": "BLOCKED_NO_INDEPENDENT_CONFIRMATION_COHORT",
+  "governance_status": "BLOCKED_GOVERNANCE_OR_PROTOCOL_PREREQUISITES",
+  "summary": {
+    "total_prerequisites_evaluated": 10,
+    "prerequisites_verified": 2,
+    "prerequisites_partially_verified": 1,
+    "prerequisites_blocked_or_missing": 7,
+    "blocking_issues_count": 9,
+    "open_blockers_file": "reports/phase_c/OPEN_BLOCKERS.csv",
+    "remediation_plan_file": "reports/phase_c/GATE_C_REMEDIATION_PLAN.md",
+    "acquisition_plan_file": "reports/phase_c/INDEPENDENT_COHORT_ACQUISITION_PLAN.md",
+    "submission_package_file": "reports/phase_c/ETHICS_DUA_AND_CLINICAL_OVERSIGHT_SUBMISSION_PACKAGE.md"
+  },
+  "prerequisite_evaluations": {
+    "PREREQ-01_independent_cohort": {
+      "name": "Independent Atypical Speech Confirmation Cohort",
+      "status": "UNAVAILABLE",
+      "evidence_location": "results/phase8_2/confirmation_dataset_inventory.csv",
+      "observed_evidence": "Inventory points exclusively to synthetic mock data (100 rows, 10 synthetic speakers). No real external atypical cohort (e.g., UASpeech) is present. TORGO is repeatedly inspected diagnostic data.",
+      "remediation": "Acquire or collect external prospective atypical cohort under approved DUA with zero TORGO speaker overlap. Plan established in reports/phase_c/INDEPENDENT_COHORT_ACQUISITION_PLAN.md."
+    },
+    "PREREQ-02_research_ethics": {
+      "name": "Institutional Ethics / IRB Approval",
+      "status": "NOT_PROVIDED",
+      "evidence_location": null,
+      "observed_evidence": "No IRB approval documentation, determination letter, or ethical committee identifier exists in repository.",
+      "remediation": "Submit formal pilot study protocol to institutional IRB; receive documented approval prior to subject recruitment. Submission package prepared in reports/phase_c/ETHICS_DUA_AND_CLINICAL_OVERSIGHT_SUBMISSION_PACKAGE.md."
+    },
+    "PREREQ-03_data_governance": {
+      "name": "Data Governance, Consent, and DUA",
+      "status": "NOT_PROVIDED",
+      "evidence_location": null,
+      "observed_evidence": "No participant consent forms, withdrawal policies, or institutional data use agreements exist in repository.",
+      "remediation": "Execute institutional DUA and finalize participant consent procedures including audio de-identification/erasure. Templates prepared in submission package."
+    },
+    "PREREQ-04_clinical_oversight": {
+      "name": "Named Clinical and Research Oversight",
+      "status": "NOT_PROVIDED",
+      "evidence_location": null,
+      "observed_evidence": "No designated clinical investigator, speech-language pathologist, or emergency physician is named with formal sign-off.",
+      "remediation": "Formally designate qualified clinical lead and SLP advisor with non-interventional protocol oversight."
+    },
+    "PREREQ-05_frozen_protocol": {
+      "name": "Cryptographically Frozen Evaluation Protocol",
+      "status": "DRAFT_UNFROZEN",
+      "evidence_location": "reports/phase_c/CONTROLLED_PILOT_PROTOCOL_DRAFT.md",
+      "observed_evidence": "Review-ready draft protocol prepared but marked DRAFT - NOT APPROVED and not yet cryptographically locked.",
+      "remediation": "Obtain clinical and biostatistical sign-offs, lock parameter YAML, compute SHA-256, and preregister on OSF."
+    },
+    "PREREQ-06_statistical_plan": {
+      "name": "Justified Statistical Analysis Plan",
+      "status": "PARTIALLY_VERIFIED",
+      "evidence_location": "reports/phase_c/STATISTICAL_ANALYSIS_PLAN.md",
+      "observed_evidence": "Statistical analysis plan prepared with clustered variance handling, Wilson score intervals, and power calculations. Power targets explicitly designated as provisional planning estimates.",
+      "remediation": "Formal sign-off by credentialed biostatistician prior to data unlocking."
+    },
+    "PREREQ-07_threshold_discipline": {
+      "name": "Threshold Provenance and Development-Only Calibration",
+      "status": "CONTRADICTED",
+      "evidence_location": "results/phase8_1/threshold_registry.json",
+      "observed_evidence": "Phase 7.5 served model default tau=0.6000 remains THRESHOLD_PROVENANCE_UNVERIFIED. Prior Phase 8.2 accidentally reused FER ceiling 0.1500 as decision threshold. No dev-only calibration exists for served model.",
+      "remediation": "Calibrate threshold exclusively on a distinct atypical speech development split; preserve uncalibrated disclaimer until completed."
+    },
+    "PREREQ-08_participant_safety": {
+      "name": "Participant Safety and Shadow-Mode Constraints",
+      "status": "VERIFIED",
+      "evidence_location": "src/app/core/orchestrator.py, src/app/main.py",
+      "observed_evidence": "Application operates in strict research demonstration mode on loopback 127.0.0.1. No live dispatch endpoints, 911 connectors, or external alerts exist. Raw audio is not persisted to disk.",
+      "remediation": "Maintain strict isolation and prevent any upstream/downstream operational integration."
+    },
+    "PREREQ-09_reproducibility": {
+      "name": "Reproducibility and Offline Runner Infrastructure",
+      "status": "VERIFIED",
+      "evidence_location": "src/evaluation/confirmatory_runner.py, src/data/external_dataset_validator.py, tests/gate_c/test_gate_c_infrastructure.py",
+      "observed_evidence": "Guarded offline runner implemented with strict pre-flight assertions blocking unauthenticated, synthetic, or unmaterialized evaluation. 12 automated unit tests pass.",
+      "remediation": "Keep runner in dry-run mode until all prerequisite approvals exist."
+    },
+    "PREREQ-10_access_and_coverage": {
+      "name": "Acoustic and Population Coverage Scoping",
+      "status": "UNVERIFIED",
+      "evidence_location": "data/manifests/torgo_manifest.csv",
+      "observed_evidence": "Current data restricted to 15 English speakers (8 dysarthric, 7 control) recorded in acoustic booth / head-mounted mic. Real-world acoustic coverage and diverse etiologies are unverified.",
+      "remediation": "Explicitly restrict claim scope to English dysarthria under controlled acoustic conditions."
+    }
+  },
+  "scientific_constraints_verification": {
+    "corpus_denominators": {
+      "training_split_utterances": 4852,
+      "test_split_utterances": 1215,
+      "total_active_utterances": 6067,
+      "speakers_count": 15,
+      "manifest_source": "results/phase8_80_20/split_manifest.csv",
+      "verified": true
+    },
+    "phase8_1_safety_performance": {
+      "emergency_recall_range": "10.13% - 19.83%",
+      "emergency_precision_range": "7.45% - 8.98%",
+      "evidence_source": "results/phase8_1/safety_operating_points.csv",
+      "verified": true
+    },
+    "per_speaker_disparities": {
+      "f01_fer_phase7_5": "20.31%",
+      "evidence_source": "results/continual/phase7_5/continual_evaluation_results.csv",
+      "verified": true
+    },
+    "quantum_advantage_verdict": {
+      "verdict": "NO_STATISTICALLY_SUPPORTED_QUANTUM_ADVANTAGE",
+      "evidence_source": "reports/phase6_5_6_research_conclusion.md",
+      "runtime_penalty": "772x",
+      "verified": true
+    },
+    "candidate_checkpoints": {
+      "phase8_1_and_8_2_count": 6,
+      "status_on_disk": "UNMATERIALIZED",
+      "runtime_behavior": "HTTP 503 MODEL_NOT_READY",
+      "verified": true
+    }
+  }
+}

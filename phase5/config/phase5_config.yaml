@@ -1,0 +1,101 @@
+# =====================================================================
+# PHASE 5 CONFIGURATION: NOISE ROBUSTNESS & ACOUSTIC GENERALIZATION
+# =====================================================================
+#
+# Protocol B: Clean Calibration -> Noisy Evaluation
+# 720 Experimental Cells: 15 speakers x 4 budgets x 3 models x 4 SNR levels
+# =====================================================================
+
+protocol:
+  name: "Protocol B"
+  description: "Clean Calibration -> Noisy Evaluation (Acoustic Generalization)"
+  clean_training_only: true
+  test_noise_injection_only: true
+
+cohort:
+  speakers:
+    - "F01"
+    - "F03"
+    - "F04"
+    - "M01"
+    - "M02"
+    - "M03"
+    - "M04"
+    - "M05"
+    - "FC01"
+    - "FC02"
+    - "FC03"
+    - "MC01"
+    - "MC02"
+    - "MC03"
+    - "MC04"
+  dysarthric_speakers: ["F01", "F03", "F04", "M01", "M02", "M03", "M04", "M05"]
+  control_speakers: ["FC01", "FC02", "FC03", "MC01", "MC02", "MC03", "MC04"]
+  sample_sizes: [20, 30, 40, 50]
+  seed: 42
+
+noise_conditions:
+  - name: "clean"
+    snr_db: null
+    tag: "clean"
+  - name: "15dB"
+    snr_db: 15.0
+    tag: "snr15"
+  - name: "10dB"
+    snr_db: 10.0
+    tag: "snr10"
+  - name: "5dB"
+    snr_db: 5.0
+    tag: "snr5"
+
+models:
+  - name: "adapter"
+    display_name: "Classical Adapter"
+    input_dim: 384
+    hidden_dim: 64
+    num_classes: 7
+    dropout: 0.1
+    learning_rate: 0.005
+    weight_decay: 0.0001
+    epochs: 60
+    batch_size: 8
+    seed: 42
+  - name: "rbf_svm"
+    display_name: "Classical RBF-SVM"
+    C: 1.0
+    gamma: "scale"
+    probability: false
+    standardize: false
+    seed: 42
+  - name: "qsvc"
+    display_name: "Primary Quantum QSVC (q=4)"
+    qubits: 4
+    reps: 1
+    entanglement: "linear"
+    feature_map: "zz"
+    kernel: "FidelityQuantumKernel"
+    C: 1.0
+    whiten: false
+    pca_dim: 4
+    seed: 42
+
+taxonomy:
+  all_classes:
+    - "SOS_HELP"
+    - "FALL"
+    - "BREATHING_MEDICAL"
+    - "PAIN"
+    - "LOCATION"
+    - "CRITICAL_RESPONSE"
+    - "GENERAL_SPEECH"
+
+paths:
+  manifest_path: "data/manifests/torgo_manifest.csv"
+  splits_json_path: "splits/torgo_splits.json"
+  clean_audio_dir: "data/torgo/audio"
+  clean_embedding_dir: "embeddings/torgo/whisper"
+  noisy_embedding_base_dir: "embeddings/torgo/whisper_noisy"
+  phase3_curves_csv: "results/phase3/baseline_curves.csv"
+  phase4_curves_csv: "results/phase4/quantum_curves.csv"
+  output_results_dir: "results/phase5"
+  phase5_manifest_dir: "phase5/manifests"

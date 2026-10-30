@@ -1,0 +1,295 @@
+{
+  "timestamp_utc": "2026-10-10T15:59:17Z",
+  "server_url": "http://127.0.0.1:8000",
+  "overall_pass": true,
+  "tests": [
+    {
+      "name": "GET /health",
+      "passed": true,
+      "status_code": 200,
+      "detail": {
+        "status": "healthy",
+        "service_name": "Atypical Speech Emergency Assistant \u2014 Gate B Engineering Prototype",
+        "version": "1.0.0-gate-b",
+        "timestamp_utc": "2026-10-10T15:59:04.737340+00:00",
+        "disclaimer": "This application is an experimental research prototype. It is not validated for clinical use or real-world emergency response. Predictions can be incorrect, including failure to detect emergencies (False Negatives) and false emergency alerts (False Positives). Do not rely on this application for emergency decisions."
+      }
+    },
+    {
+      "name": "GET /ready",
+      "passed": true,
+      "status_code": 200,
+      "detail": {
+        "ready": true,
+        "whisper_encoder_ready": true,
+        "whisper_asr_ready": true,
+        "checkpoints_summary": {
+          "materialized_and_verified": 61,
+          "model_not_ready": 6,
+          "total_catalogued": 67
+        },
+        "active_default_speaker": "F01",
+        "active_default_model": "continual_classical_adapter",
+        "unmaterialized_blockers": [
+          "phase8_1_track_a_baseline (checkpoints/phase8_1/track_a_fold_models.pt)",
+          "phase8_1_int1_calib (checkpoints/phase8_1/int1_calib_models.pt)",
+          "phase8_1_int2_cost (checkpoints/phase8_1/int2_cost_models.pt)",
+          "phase8_1_int3_samp (checkpoints/phase8_1/int3_samp_models.pt)",
+          "phase8_1_track_b_quantum (checkpoints/phase8_1/track_b_quantum_models.pt)",
+          "phase8_1_track_c_shadow (checkpoints/phase8_1/track_c_shadow_models.pt)"
+        ],
+        "scientific_verdict": "Research Findings Status: CASE B AFFIRMED \u2014 No statistically supported quantum advantage was demonstrated over matched classical models under evaluated conditions. Emergency deployment status: SAFETY-INFEASIBLE due to severe class imbalance and dysarthric acoustic distortion.",
+        "disclaimer": "This application is an experimental research prototype. It is not validated for clinical use or real-world emergency response. Predictions can be incorrect, including failure to detect emergencies (False Negatives) and false emergency alerts (False Positives). Do not rely on this application for emergency decisions.",
+        "timestamp_utc": "2026-10-10T15:59:08.736964+00:00"
+      }
+    },
+    {
+      "name": "GET /model-info (materialized)",
+      "passed": true,
+      "status_code": 200,
+      "detail": {
+        "model_id": "continual_classical_adapter",
+        "model_name": "Continual Classical Adapter (Speaker: F01)",
+        "speaker_id": "F01",
+        "architecture": "ClassicalAdapterNet (Linear 384->64, LayerNorm, GELU, Dropout 0.1, Linear 64->7)",
+        "parameter_count": "25,223 trainable parameters",
+        "input_shape": [
+          384
+        ],
+        "taxonomy": [
+          "GENERAL_SPEECH",
+          "CRITICAL_RESPONSE",
+          "FALL",
+          "BREATHING_MEDICAL",
+          "PAIN",
+          "SOS_HELP",
+          "LOCATION"
+        ],
+        "decision_policy": {
+          "score_scale": "probability_unit_interval_[0,1]",
+          "decision_cutoff_tau": 0.6,
+          "comparator": "greater_than_or_equal",
+          "decoupled_from_fer": true
+        },
+        "safety_constraints": {
+          "fer_maximum_fraction": 0.15,
+          "fer_maximum_percent": 15.0,
+          "formula": "FP / (FP + TN) = FP / Total_General_Speech"
+        },
+        "checkpoint_provenance": {
+          "path": "models/continual/phase7_5/F01/classical_adapter/vF01_b50_replay_seed2209/model_checkpoint.pt",
+          "version": "vF01_b50_replay_seed2209",
+          "exists": true,
+          "file_size_bytes": 104065,
+          "sha256": "4c1466cbcc101c7e63ef779fcbdb721d67e63eac1b04d3bdcde7d8b4ed4efc10",
+          "status": "MATERIALIZED_AND_VERIFIED"
+        },
+        "status": "MATERIALIZED_AND_VERIFIED",
+        "quantum_verdict": "CASE B \u2014 NO STATISTICALLY SUPPORTED QUANTUM ADVANTAGE",
+        "clinical_safety_verdict": "SAFETY-INFEASIBLE (Recall 10-20% under FER <= 15% ceiling)",
+        "disclaimer": "This application is an experimental research prototype. It is not validated for clinical use or real-world emergency response. Predictions can be incorrect, including failure to detect emergencies (False Negatives) and false emergency alerts (False Positives). Do not rely on this application for emergency decisions.",
+        "timestamp_utc": "2026-10-10T15:59:08.746228+00:00"
+      }
+    },
+    {
+      "name": "GET /model-info (unmaterialized)",
+      "passed": true,
+      "status_code": 200,
+      "detail": {
+        "model_id": "phase8_1_track_a_baseline",
+        "model_name": "Phase 8.1 Candidate (phase8_1_track_a_baseline)",
+        "speaker_id": "F01",
+        "architecture": "Stage 1 Logistic Gate + Classical/Quantum Residual MLP",
+        "parameter_count": "Unmaterialized",
+        "input_shape": [
+          384
+        ],
+        "taxonomy": [
+          "GENERAL_SPEECH",
+          "CRITICAL_RESPONSE",
+          "FALL",
+          "BREATHING_MEDICAL",
+          "PAIN",
+          "SOS_HELP",
+          "LOCATION"
+        ],
+        "decision_policy": {
+          "score_scale": "probability_unit_interval_[0,1]",
+          "decision_cutoff_tau": 0.6,
+          "comparator": "greater_than_or_equal",
+          "decoupled_from_fer": true
+        },
+        "safety_constraints": {
+          "fer_maximum_fraction": 0.15,
+          "fer_maximum_percent": 15.0,
+          "formula": "FP / (FP + TN) = FP / Total_General_Speech"
+        },
+        "checkpoint_provenance": {
+          "path": "checkpoints/phase8_1/phase8_1_track_a_baseline.pt",
+          "exists": false,
+          "sha256": null,
+          "status": "MODEL_NOT_READY"
+        },
+        "status": "MODEL_NOT_READY",
+        "quantum_verdict": "CASE B \u2014 NO STATISTICALLY SUPPORTED QUANTUM ADVANTAGE",
+        "clinical_safety_verdict": "SAFETY-INFEASIBLE (Recall 10-20% under FER <= 15% ceiling)",
+        "disclaimer": "This application is an experimental research prototype. It is not validated for clinical use or real-world emergency response. Predictions can be incorrect, including failure to detect emergencies (False Negatives) and false emergency alerts (False Positives). Do not rely on this application for emergency decisions.",
+        "timestamp_utc": "2026-10-10T15:59:08.749468+00:00"
+      }
+    },
+    {
+      "name": "GET /api/v1/models & /speakers",
+      "passed": true,
+      "status_code": 200,
+      "detail": {
+        "models": 67,
+        "speakers": 15
+      }
+    },
+    {
+      "name": "POST /api/v1/audio/transcribe",
+      "passed": true,
+      "status_code": 200,
+      "detail": {
+        "text": "He's slowly getting sad with what and he will be very gay",
+        "language": "en",
+        "audio_duration_seconds": 6.562,
+        "acoustic_quality": 0.2757,
+        "timestamp_utc": "2026-10-10T15:59:12.937647+00:00",
+        "disclaimer": "This application is an experimental research prototype. It is not validated for clinical use or real-world emergency response. Predictions can be incorrect, including failure to detect emergencies (False Negatives) and false emergency alerts (False Positives). Do not rely on this application for emergency decisions."
+      }
+    },
+    {
+      "name": "POST /api/v1/audio/extract-embedding",
+      "passed": true,
+      "status_code": 200,
+      "detail": {
+        "embedding_dimension": 384,
+        "l2_norm": 1.0,
+        "audio_duration_seconds": 6.562,
+        "timestamp_utc": "2026-10-10T15:59:13.086009+00:00"
+      }
+    },
+    {
+      "name": "POST /api/v1/predict (unmaterialized 503 guard)",
+      "passed": true,
+      "status_code": 503,
+      "detail": {
+        "detail": {
+          "error_code": "MODEL_NOT_READY",
+          "model_id": "phase8_1_track_a_baseline",
+          "message": "Candidate model 'phase8_1_track_a_baseline' cannot be loaded because its checkpoint ('checkpoints/phase8_1/phase8_1_track_a_baseline.pt') is unmaterialized on disk. As verified in the Phase 8.2.1 forensic audit, candidate weights were evaluated in nested cross-validation without serializing checkpoint binaries. In accordance with Gate B non-negotiable scientific constraints, model weights cannot be fabricated or silently retrained without explicit owner authorization.",
+          "remediation": "Use the verified 'continual_classical_adapter' model for demonstration, or obtain explicit owner authorization to materialize candidate checkpoints under an authorized development protocol.",
+          "disclaimer": "This application is an experimental research prototype. It is not validated for clinical use or real-world emergency response. Predictions can be incorrect, including failure to detect emergencies (False Negatives) and false emergency alerts (False Positives). Do not rely on this application for emergency decisions."
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/predict (materialized 200)",
+      "passed": true,
+      "status_code": 200,
+      "detail": {
+        "session_id": "3938ef30",
+        "speaker_id": "F01",
+        "model_id": "continual_classical_adapter",
+        "model_version": "vF01_b50_replay_seed2209",
+        "predicted_intent": "CRITICAL_RESPONSE",
+        "is_emergency": true,
+        "confidence_score": 0.49407902359962463,
+        "confidence_band": "LOW",
+        "suggested_action": "REQUEST_CONFIRMATION",
+        "class_probabilities": {
+          "GENERAL_SPEECH": 0.06858382374048233,
+          "CRITICAL_RESPONSE": 0.49407902359962463,
+          "FALL": 0.4158419072628021,
+          "BREATHING_MEDICAL": 0.001289044856093824,
+          "PAIN": 0.011617985554039478,
+          "SOS_HELP": 0.006298398599028587,
+          "LOCATION": 0.0022897019516676664
+        },
+        "decision_cutoff_tau": 0.6,
+        "fer_safety_bound": 0.15,
+        "transcription": null,
+        "processing_latency_ms": 3.2521000011911383,
+        "timestamp_utc": "2026-10-10T15:59:13.096535+00:00",
+        "disclaimer": "This application is an experimental research prototype. It is not validated for clinical use or real-world emergency response. Predictions can be incorrect, including failure to detect emergencies (False Negatives) and false emergency alerts (False Positives). Do not rely on this application for emergency decisions."
+      }
+    },
+    {
+      "name": "POST /api/v1/predict/file",
+      "passed": true,
+      "status_code": 200,
+      "detail": {
+        "session_id": "77de2b49",
+        "speaker_id": "F01",
+        "model_id": "continual_classical_adapter",
+        "model_version": "F01_abstained_low_quality",
+        "predicted_intent": "UNKNOWN",
+        "is_emergency": false,
+        "confidence_score": 0.0,
+        "confidence_band": "LOW",
+        "suggested_action": "ABSTAIN",
+        "class_probabilities": {
+          "GENERAL_SPEECH": 0.0,
+          "CRITICAL_RESPONSE": 0.0,
+          "FALL": 0.0,
+          "BREATHING_MEDICAL": 0.0,
+          "PAIN": 0.0,
+          "SOS_HELP": 0.0,
+          "LOCATION": 0.0
+        },
+        "decision_cutoff_tau": 0.6,
+        "fer_safety_bound": 0.15,
+        "transcription": "he's slowly king absolute warm in the open air in your ears",
+        "processing_latency_ms": 0.03389999983482994,
+        "timestamp_utc": "2026-10-10T15:59:15.083177+00:00",
+        "disclaimer": "This application is an experimental research prototype. It is not validated for clinical use or real-world emergency response. Predictions can be incorrect, including failure to detect emergencies (False Negatives) and false emergency alerts (False Positives). Do not rely on this application for emergency decisions."
+      }
+    },
+    {
+      "name": "GET /demo (HTML UI)",
+      "passed": true,
+      "status_code": 200,
+      "detail": {
+        "disclaimer": true
+      }
+    },
+    {
+      "name": "WebSocket /ws/audio (Streaming lifecycle)",
+      "passed": true,
+      "status_code": 101,
+      "detail": {
+        "type": "final_result",
+        "session_id": "b5213137",
+        "audio_duration_seconds": 6.562,
+        "acoustic_quality": 0.2757,
+        "transcription": "He's our king to sweat warm in the half of the dayRue.",
+        "prediction": {
+          "session_id": "8aff8d63",
+          "speaker_id": "F01",
+          "model_id": "continual_classical_adapter",
+          "predicted_intent": "UNKNOWN",
+          "is_emergency": false,
+          "confidence_score": 0.0,
+          "confidence_band": "LOW",
+          "suggested_action": "ABSTAIN",
+          "class_probabilities": {
+            "GENERAL_SPEECH": 0.0,
+            "CRITICAL_RESPONSE": 0.0,
+            "FALL": 0.0,
+            "BREATHING_MEDICAL": 0.0,
+            "PAIN": 0.0,
+            "SOS_HELP": 0.0,
+            "LOCATION": 0.0
+          },
+          "decision_cutoff_tau": 0.6,
+          "model_version": "F01_abstained_low_quality",
+          "processing_latency_ms": 0.03739999920071568,
+          "transcription": "He's our king to sweat warm in the half of the dayRue."
+        },
+        "disclaimer": "This application is an experimental research prototype. It is not validated for clinical use or real-world emergency response. Predictions can be incorrect, including failure to detect emergencies (False Negatives) and false emergency alerts (False Positives). Do not rely on this application for emergency decisions.",
+        "timestamp_utc": "2026-10-10T15:59:17.336960+00:00"
+      }
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+# ==============================================================================
+# PHASE 8 RESEARCH PROTOCOL: TARGETED QUANTUM RECOVERY & CONFIRMATORY BENCHMARK
+# ==============================================================================
+# Pre-registered and canonically frozen before confirmatory evaluation.
+
+metadata:
+  protocol_name: "Phase8_Targeted_Quantum_Recovery_Protocol"
+  version: "1.0.0-frozen"
+  date: "October 2026"
+  target_question: "H8.1 - H8.4: Targeted Quantum Residual Recovery for Minority Emergency Intent"
+  clinical_disclaimer: "RESEARCH DEMO PROTOTYPE ONLY — NOT CLINICALLY VALIDATED"
+
+dataset_and_cohort:
+  dataset_name: "TORGO Database of Dysarthric Speech"
+  total_speakers: 15
+  dysarthric_speakers:
+    - "F01"
+    - "F03"
+    - "F04"
+    - "M01"
+    - "M02"
+    - "M03"
+    - "M04"
+    - "M05"
+  control_speakers:
+    - "FC01"
+    - "FC02"
+    - "FC03"
+    - "MC01"
+    - "MC02"
+    - "MC03"
+    - "MC04"
+  audio_sampling_rate: 16000
+  feature_extractor: "openai/whisper-tiny"
+  embedding_dimension: 384
+  embedding_normalization: "unit_l2"
+
+taxonomy:
+  canonical_classes:
+    - "GENERAL_SPEECH"
+    - "CRITICAL_RESPONSE"
+    - "FALL"
+    - "BREATHING_MEDICAL"
+    - "PAIN"
+    - "SOS_HELP"
+    - "LOCATION"
+  general_speech_class: "GENERAL_SPEECH"
+  emergency_classes:
+    - "CRITICAL_RESPONSE"
+    - "FALL"
+    - "BREATHING_MEDICAL"
+    - "PAIN"
+    - "SOS_HELP"
+    - "LOCATION"
+
+experimental_matrix:
+  budgets: [20, 30, 40, 50]
+  canonical_cells: 60  # 15 speakers x 4 budgets
+  master_seed: 42
+  eval_conditions:
+    - "clean"
+
+tracks_and_architectures:
+  track_a_strengthened_classical:
+    name: "Hierarchical Emergency-Aware Classical Baseline"
+    stage1_binary_gate:
+      architecture: "Linear(384, 64) -> LayerNorm(64) -> GELU() -> Dropout(0.1) -> Linear(64, 2)"
+      trainable_params: 24962
+      loss: "Weighted_CrossEntropy"
+      pos_weight: 3.0  # Calibrated for adaptation set ratio (~3:1 General:Emergency)
+      optimizer: "AdamW"
+      lr: 0.005
+      epochs: 50
+    stage2_subtype_classifier:
+      architecture: "Linear(384, 64) -> LayerNorm(64) -> GELU() -> Dropout(0.1) -> Linear(64, 6)"
+      trainable_params: 25222
+      loss: "ClassBalanced_CrossEntropy"
+      optimizer: "AdamW"
+      lr: 0.005
+      epochs: 50
+
+  track_b_quantum_residual:
+    name: "Quantum Residual Emergency Subtype Module"
+    stage1_binary_gate:
+      architecture: "Identical to Track A (Linear 384->64->2)"
+      frozen_weights: "Trained on Stage 1"
+    bottleneck_projection:
+      dim: 8
+      method: "Supervised LDA/PCA fitted strictly on train emergency samples"
+    stage2_quantum_vqc:
+      qubits: 8
+      circuit_depth: 2
+      feature_map: "AngleEmbedding(8)"
+      ansatz: "BasicEntanglerLayers(weights, wires=8)"
+      trainable_params: 16  # 2 layers x 8 rotation angles
+      measurement: "Expectation(PauliZ) on wires 0..5 -> Softmax(6 classes)"
+      loss: "Emergency_Subtype_CrossEntropy"
+      optimizer: "Adam"
+      lr: 0.01
+      epochs: 40
+
+  track_c_matched_classical_shadow:
+    name: "Matched Classical Shadow Model"
+    stage1_binary_gate:
+      architecture: "Identical to Track A and B"
+    bottleneck_projection:
+      dim: 8
+      method: "Identical to Track B (8-D bottleneck representation)"
+    stage2_classical_mlp:
+      architecture: "Linear(8, 16) -> GELU() -> Linear(16, 6)"
+      trainable_params: 246  # Compact capacity-matched shadow
+      loss: "Emergency_Subtype_CrossEntropy"
+      optimizer: "Adam"
+      lr: 0.01
+      epochs: 40
+
+replay_and_continual_policy:
+  replay_capacity: 100
+  protected_emergency_quota: 40  # 40% reserved for emergency classes
+  general_speech_quota: 60
+  forgetting_bound_epsilon: 0.015
+
+statistical_testing:
+  method: "Paired Wilcoxon Signed-Rank Test & Paired Two-Tailed t-test"
+  multiple_comparison_correction: "Benjamini-Hochberg (FDR q=0.05)"
+  primary_metric: "Emergency_Recall"
+  secondary_metrics:
+    - "False_Emergency_Rate"
+    - "Macro_F1"
+    - "Emergency_Precision"
+    - "Dysarthric_Emergency_Recall"
+
+safety_governance:
+  validation_gate: "Phase 7.6 Multi-Metric Validation Gate"
+  safety_veto:
+    emergency_recall_regression_veto: true
+    fer_spike_veto: true
+    max_acceptable_fer_delta: 0.05

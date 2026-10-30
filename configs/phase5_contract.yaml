@@ -1,0 +1,79 @@
+# =====================================================================
+# PHASE 5 INPUT & EXPERIMENTAL CONTRACT SPECIFICATION
+# =====================================================================
+#
+# Project:
+# Low-Resource Personalized Atypical Speech Recognition Using
+# Hybrid Quantum-Classical Deep Learning for Reliable Emergency Communication
+#
+# Phase: 5 — Noise Robustness Evaluation
+# Status: SPECIFICATION ONLY (NOT EXECUTED IN PHASE 4.5)
+# =====================================================================
+
+phase5_contract:
+  version: "1.0.0"
+  status: "FROZEN_SPECIFICATION"
+  
+  # 1. Acoustic Perturbation Conditions
+  noise_conditions:
+    - name: "clean"
+      snr_db: null
+      description: "Unperturbed baseline audio (Phase 4 baseline reference)"
+    - name: "snr_15db"
+      snr_db: 15.0
+      description: "Mild acoustic perturbation (moderate indoor ambient noise)"
+    - name: "snr_10db"
+      snr_db: 10.0
+      description: "Moderate acoustic perturbation (traffic, background speech)"
+    - name: "snr_5db"
+      snr_db: 5.0
+      description: "Severe acoustic perturbation (sirens, emergency vehicle interior)"
+
+  # 2. Experimental Grid
+  experimental_grid:
+    models:
+      - name: "adapter"
+        paradigm: "classical_parametric"
+        parameters: 25223
+        loss: "cross_entropy"
+      - name: "rbf_svm"
+        paradigm: "classical_kernel"
+        parameters: "dual_support_vectors"
+        regularization_C: 1.0
+        kernel: "rbf"
+        gamma: "scale"
+      - name: "quantum_qsvc_q4_primary"
+        paradigm: "quantum_kernel"
+        parameters: 0
+        qubits: 4
+        pca_dim: 4
+        feature_map: "zz"
+        reps: 1
+        entanglement: "linear"
+        regularization_C: 1.0
+
+    sample_budgets: [20, 30, 40, 50]
+    speakers:
+      dysarthric: ["F01", "F03", "F04", "M01", "M02", "M03", "M04", "M05"]
+      control: ["FC01", "FC02", "FC03", "MC01", "MC02", "MC03", "MC04"]
+      total_count: 15
+
+  # 3. Total Experimental Conditions in Phase 5:
+  # 3 models x 4 budgets x 4 noise levels x 15 speakers = 720 runs
+  expected_run_count: 720
+
+  # 4. Mandatory Execution Ordering Rules
+  execution_invariants:
+    order_of_operations:
+      1: "Original clean audio from data/torgo/audio/"
+      2: "Phase-1 fixed split assignment from splits/torgo_splits.json"
+      3: "Train/test recording identities frozen (NO SPLIT REGENERATION)"
+      4: "Deterministic noise injection via src.utils.noise.add_noise_at_snr"
+      5: "Whisper-tiny embedding extraction (unit-L2 normalized, 384-D FP32)"
+      6: "Model adaptation and held-out test evaluation using exact Phase 3/4 protocol"
+    
+    random_seed: 42
+    sample_rate: 16000
+    noise_type: "additive_white_gaussian_noise"
+    snr_tolerance_db: 0.5
+    leakage_control: "Noise applied strictly sample-by-sample without cross-utterance normalization"

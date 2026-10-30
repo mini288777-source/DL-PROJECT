@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "quantum_participation_verified": true,
+  "mean_absolute_logit_shift": 0.1001640265772679,
+  "total_test_samples": 21268,
+  "zero_residual_ablation": {
+    "scores_changed": 21264,
+    "scores_changed_pct": 99.9811924017303,
+    "labels_changed": 710,
+    "labels_changed_pct": 3.33834869287192
+  },
+  "shuffled_residual_diagnostic": {
+    "scores_changed": 21194,
+    "scores_changed_pct": 99.65205943201053,
+    "labels_changed": 1065,
+    "labels_changed_pct": 5.0075230393078805
+  },
+  "mean_quantum_weight_delta_norm": 1.1398796250422796,
+  "circuit_specification": {
+    "n_qubits": 8,
+    "layers": 2,
+    "trainable_parameters": 16,
+    "ansatz": "AngleEmbedding(8) + BasicEntanglerLayers(2, 8)",
+    "measurement": "PauliZ(0) scaled + bias",
+    "fusion_alpha": 0.5
+  }
+}

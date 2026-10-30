@@ -1,0 +1,156 @@
+# FINAL RESEARCH PROTOCOL SPECIFICATION
+## Single Source of Truth for Experimental Execution & Evaluation
+
+This document constitutes the authoritative protocol contract for the research project:
+**Low-Resource Personalized Atypical Speech Recognition Using Hybrid Quantum-Classical Deep Learning for Reliable Emergency Communication** (Team: `kernal`).
+
+```yaml
+# ==============================================================================
+# CANONICAL RESEARCH PROTOCOL SPECIFICATION
+# SINGLE SOURCE OF TRUTH (SSOT) FOR EXPERIMENT CONFIGURATION & REPORTING
+# ==============================================================================
+
+project:
+  title: "Low-Resource Personalized Atypical Speech Recognition Using Hybrid Quantum-Classical Deep Learning for Reliable Emergency Communication"
+  team: "kernal"
+  status: "COMPLETE_FROZEN"
+  deployment_readiness: "NOT READY"
+  clinical_validation: "NOT PERFORMED"
+  hardware_execution: "NOT TESTED"
+  real_world_emergency_reliability: "NOT ESTABLISHED"
+
+dataset:
+  name: "TORGO"
+  description: "TORGO database of acoustic and articulatory speech from speakers with dysarthria and age/gender-matched control speakers"
+  sample_rate_hz: 16000
+  channels: 1
+  total_annotated_recordings: 6067
+  majority_class: "GENERAL_SPEECH"
+  majority_prevalence_count: 5770
+  majority_prevalence_pct: 95.1055
+
+cohort:
+  total_speakers: 15
+  dysarthric:
+    count: 8
+    speakers:
+      - "F01"
+      - "F03"
+      - "F04"
+      - "M01"
+      - "M02"
+      - "M03"
+      - "M04"
+      - "M05"
+  control:
+    count: 7
+    speakers:
+      - "FC01"
+      - "FC02"
+      - "FC03"
+      - "MC01"
+      - "MC02"
+      - "MC03"
+      - "MC04"
+
+encoder:
+  name: "openai/whisper-tiny"
+  embedding_dim: 384
+  pooling: "mean_bottleneck"
+  dtype: "float32"
+  normalization: "unit_L2"
+  trainable: false
+
+taxonomy:
+  classes:
+    - "GENERAL_SPEECH"
+    - "CRITICAL_RESPONSE"
+    - "FALL"
+    - "BREATHING_MEDICAL"
+    - "PAIN"
+    - "SOS_HELP"
+    - "LOCATION"
+  emergency_classes:
+    - "CRITICAL_RESPONSE"
+    - "FALL"
+    - "BREATHING_MEDICAL"
+    - "PAIN"
+    - "SOS_HELP"
+    - "LOCATION"
+  general_classes:
+    - "GENERAL_SPEECH"
+
+calibration_budgets:
+  N:
+    - 20
+    - 30
+    - 40
+    - 50
+
+original_protocol:
+  name: "Track 1: Original Benchmark (Phases 3-6)"
+  formulation: "flat_7_class"
+  split_type: "original_random_stratified"
+  class_weighting: false
+  emergency_guarantee: false
+  observed_behavior: "majority_collapse_to_general_speech"
+  primary_finding: "Identified severe few-shot minority-class support deficit shared by classical and quantum models"
+
+recovery_track:
+  name: "Track 2: Recovery Protocol (Phase 6.5)"
+  split_protocol:
+    name: "speaker_stratified_prompt_isolated"
+    track_b_path: "phase6_5/splits/recovery_splits_hierarchical_ready.json"
+    per_speaker_emergency_minimum: 2
+  formulation:
+    architecture: "two_stage_hierarchical"
+    stage1: "GENERAL_SPEECH_vs_EMERGENCY"
+    stage2: "emergency_subtype_router"
+  class_weighting: true
+  cost_sensitive: true
+
+recovery_feasibility:
+  description: "Per-speaker class feasibility determined empirically from individual prompt distribution; not all emergency classes are guaranteed for every speaker."
+  common_emergency_classes:
+    - "CRITICAL_RESPONSE"
+    - "FALL"
+    - "BREATHING_MEDICAL"
+    - "SOS_HELP"
+  data_limited_classes:
+    - "PAIN"
+    - "LOCATION"
+
+representation_contract:
+  embedding: "Whisper-tiny 384-D float32 unit-L2"
+  train_only_fitting: true
+  primary_quantum_dimension: 8
+  primary_quantum_variance_mean_pct: 89.73
+  primary_quantum_variance_std_pct: 2.99
+  secondary_quantum_dimension: 4
+  secondary_quantum_variance_mean_pct: 80.66
+  secondary_quantum_variance_std_pct: 4.37
+  scaling: "MinMaxScaler to [0, pi] on adaptation data only"
+  leakage_contract: "Zero test sample information in PCA or feature scaling"
+
+noise_perturbation_protocol:
+  name: "Phase 5 Controlled AWGN Sweep"
+  snr_levels_db:
+    - "clean"
+    - 15
+    - 10
+    - 5
+  perturbation_type: "controlled synthetic additive white Gaussian noise (AWGN)"
+  injection_point: "waveform level before feature extraction"
+  sample_rate_hz: 16000
+  deterministic_seed: "speaker_prompt_md5"
+
+statistical_contract:
+  primary_matched_comparison: "QSVC Q8-R1 vs. Matched Classical RBF-SVM (d=8)"
+  matched_units: 60
+  speakers: 15
+  budgets: 4
+  alpha: 0.05
+  correction_method: "Holm-Bonferroni family-wise error rate control"
+  primary_quantum_decision: "CASE B — NO STATISTICALLY SUPPORTED QUANTUM ADVANTAGE"
+
+```

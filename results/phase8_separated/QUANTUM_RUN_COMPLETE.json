@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "track": "Track_B_Quantum",
+  "total_cells": 60,
+  "total_predictions": 21268,
+  "results_csv": "results_track_b.csv",
+  "results_hash": "e0b878a1c5b368a1b9d23532c11239f6cf3e09d263ae49b26962cf5b092702ed",
+  "predictions_csv": "predictions_track_b.csv",
+  "predictions_hash": "5b02e85cf11ac55b486034a19348466f00bba6636b1732998973462535f80984",
+  "mean_emergency_recall": 0.3759427609427609,
+  "mean_false_emergency_rate": 0.4519579081861379,
+  "mean_macro_f1": 0.09706715170319388,
+  "mean_quantum_influence": 0.1001640265772679,
+  "quantum_participation": "PASS",
+  "timestamp": 1791609926.0823205,
+  "manifest_version": "2.0-repaired-separated"
+}

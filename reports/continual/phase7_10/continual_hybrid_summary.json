@@ -1,0 +1,199 @@
+{
+  "phase": "7.10",
+  "description": "Continual Hybrid Classical + Quantum Personalization Benchmark",
+  "timestamp": "2026-10-06T18:47:15Z",
+  "total_experiments": 60,
+  "total_cells_evaluated": 60,
+  "speakers_evaluated": 15,
+  "budgets_evaluated": [
+    20,
+    30,
+    40,
+    50
+  ],
+  "canonical_hybrid_config": {
+    "architecture_name": "hybrid_adapter_vqfm_calibrated_fusion",
+    "classical_branch": "classical_adapter_mlp_25223",
+    "quantum_branch": "vqfm_q8_p16_linear_reuploading",
+    "fusion_method": "calibrated_probability_fusion",
+    "fusion_alpha": 0.5,
+    "classical_trainable_parameters": 25223,
+    "quantum_trainable_parameters": 16,
+    "total_trainable_parameters": 25239,
+    "qubit_count": 8,
+    "quantum_input_dimension": 8,
+    "classical_input_dimension": 384,
+    "circuit_depth": 37,
+    "quantum_optimizer": "COBYLA",
+    "classical_optimizer": "AdamW",
+    "classical_epochs": 20,
+    "classical_lr": 0.001,
+    "qsvc_C": 1.0
+  },
+  "statistical_tests": {
+    "hybrid_vs_classical": {
+      "macro_f1": {
+        "mean_hybrid": 0.11837811733225315,
+        "mean_classical": 0.1011603784115443,
+        "mean_delta": 0.017217738920708832,
+        "cohens_d": 0.6053756725205148,
+        "wilcoxon_stat": 190.0,
+        "p_value_raw": 9.441258782647494e-08,
+        "p_value_adjusted": 3.7765035130589975e-07,
+        "statistically_significant": true
+      },
+      "emergency_recall": {
+        "mean_hybrid": 0.0707449494949495,
+        "mean_classical": 0.16204545454545452,
+        "mean_delta": -0.09130050505050505,
+        "cohens_d": -0.5738017750138036,
+        "wilcoxon_stat": 29.0,
+        "p_value_raw": 0.00019565652204251005,
+        "p_value_adjusted": 0.0007826260881700402,
+        "statistically_significant": true
+      },
+      "false_emergency_rate": {
+        "mean_hybrid": 0.19453250624312768,
+        "mean_classical": 0.4352543876471986,
+        "mean_delta": -0.24072188140407086,
+        "cohens_d": -1.0629280616703185,
+        "wilcoxon_stat": 108.0,
+        "p_value_raw": 1.8187660152754757e-08,
+        "p_value_adjusted": 7.275064061101903e-08,
+        "statistically_significant": true
+      },
+      "accuracy": {
+        "mean_hybrid": 0.7844102332669248,
+        "mean_classical": 0.5522962275822741,
+        "mean_delta": 0.2321140056846507,
+        "cohens_d": 1.0566127408242056,
+        "wilcoxon_stat": 135.0,
+        "p_value_raw": 9.35262584342799e-09,
+        "p_value_adjusted": 3.741050337371196e-08,
+        "statistically_significant": true
+      }
+    },
+    "hybrid_vs_fixed_q": {},
+    "hybrid_vs_trainable_q": {
+      "macro_f1": {
+        "mean_hybrid": 0.11837811733225315,
+        "mean_trainable_q": 0.11873740557045195,
+        "mean_delta": -0.0003592882381988239,
+        "cohens_d": -0.045372174702486674,
+        "wilcoxon_stat": 553.0,
+        "p_value_raw": 0.06876654683189394,
+        "p_value_adjusted": 0.27506618732757576,
+        "statistically_significant": false
+      },
+      "emergency_recall": {
+        "mean_hybrid": 0.0707449494949495,
+        "mean_trainable_q": 0.05807659932659933,
+        "mean_delta": 0.012668350168350169,
+        "cohens_d": 0.23784912238102363,
+        "wilcoxon_stat": 3.0,
+        "p_value_raw": 0.0625089161964483,
+        "p_value_adjusted": 0.2500356647857932,
+        "statistically_significant": false
+      },
+      "false_emergency_rate": {
+        "mean_hybrid": 0.19453250624312768,
+        "mean_trainable_q": 0.1719538217425102,
+        "mean_delta": 0.02257868450061753,
+        "cohens_d": 0.36443954376030624,
+        "wilcoxon_stat": 70.0,
+        "p_value_raw": 0.00010040987476261574,
+        "p_value_adjusted": 0.000401639499050463,
+        "statistically_significant": true
+      },
+      "accuracy": {
+        "mean_hybrid": 0.7844102332669248,
+        "mean_trainable_q": 0.8062872624736838,
+        "mean_delta": -0.02187702920675895,
+        "cohens_d": -0.36132327417503424,
+        "wilcoxon_stat": 308.5,
+        "p_value_raw": 0.0014724376868205304,
+        "p_value_adjusted": 0.005889750747282122,
+        "statistically_significant": true
+      }
+    }
+  },
+  "subgroup_breakdown": {
+    "cohort": {
+      "subgroup": "All 15 Speakers",
+      "n_cells": 60,
+      "macro_f1": {
+        "classical": 0.1011603784115443,
+        "trainable_q": 0.11873740557045195,
+        "hybrid": 0.11837811733225315,
+        "delta_hyb_vs_c": 0.017217738920708832,
+        "delta_hyb_vs_tq": -0.0003592882381988239
+      },
+      "emergency_recall": {
+        "classical": 0.16204545454545452,
+        "trainable_q": 0.05807659932659933,
+        "hybrid": 0.0707449494949495,
+        "delta_hyb_vs_c": -0.09130050505050505,
+        "delta_hyb_vs_tq": 0.012668350168350169
+      },
+      "false_emergency_rate": {
+        "classical": 0.4352543876471986,
+        "trainable_q": 0.1719538217425102,
+        "hybrid": 0.19453250624312768,
+        "delta_hyb_vs_c": -0.24072188140407086,
+        "delta_hyb_vs_tq": 0.02257868450061753
+      }
+    },
+    "dysarthric": {
+      "subgroup": "8 Dysarthric Speakers",
+      "n_cells": 32,
+      "macro_f1": {
+        "classical": 0.11643158826068706,
+        "trainable_q": 0.1322208278363916,
+        "hybrid": 0.13196426432681538,
+        "delta_hyb_vs_c": 0.015532676066128319,
+        "delta_hyb_vs_tq": -0.00025656350957621045
+      },
+      "emergency_recall": {
+        "classical": 0.13949652777777777,
+        "trainable_q": 0.02682291666666667,
+        "hybrid": 0.03463541666666667,
+        "delta_hyb_vs_c": -0.10486111111111111,
+        "delta_hyb_vs_tq": 0.0078125
+      },
+      "false_emergency_rate": {
+        "classical": 0.33334255081651243,
+        "trainable_q": 0.07208553281178794,
+        "hybrid": 0.08530510024493453,
+        "delta_hyb_vs_c": -0.24803745057157786,
+        "delta_hyb_vs_tq": 0.013219567433146586
+      }
+    },
+    "control": {
+      "subgroup": "7 Control Speakers",
+      "n_cells": 28,
+      "macro_f1": {
+        "classical": 0.08370756715538118,
+        "trainable_q": 0.10332778012366384,
+        "hybrid": 0.1028510921956106,
+        "delta_hyb_vs_c": 0.019143525040229425,
+        "delta_hyb_vs_tq": -0.0004766879280532396
+      },
+      "emergency_recall": {
+        "classical": 0.18781565656565655,
+        "trainable_q": 0.09379509379509379,
+        "hybrid": 0.11201298701298701,
+        "delta_hyb_vs_c": -0.07580266955266954,
+        "delta_hyb_vs_tq": 0.01821789321789322
+      },
+      "false_emergency_rate": {
+        "classical": 0.5517250583108401,
+        "trainable_q": 0.286089009091907,
+        "hybrid": 0.31936382738391994,
+        "delta_hyb_vs_c": -0.2323612309269201,
+        "delta_hyb_vs_tq": 0.033274818292012905
+      }
+    }
+  },
+  "hybrid_verdict": "PARTIALLY SUPPORTED",
+  "frozen_case_b_conclusion": "UNCHANGED"
+}

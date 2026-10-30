@@ -1,0 +1,80 @@
+{
+  "audit_name": "Phase 8.2 Confirmation Data Overlap and Independence Audit",
+  "timestamp": "2026-10-10T15:35:00Z",
+  "authoritative_status": "BLOCKED \u2014 INDEPENDENT CONFIRMATION DATA UNAVAILABLE",
+  "repository_speech_data_census": {
+    "total_audio_corpora_present": 1,
+    "corpus_name": "TORGO Atypical Speech Database",
+    "audio_directory": "data/torgo/audio",
+    "total_active_utterances": 6067,
+    "speaker_count": 15,
+    "speakers": [
+      "F01",
+      "F03",
+      "F04",
+      "FC01",
+      "FC02",
+      "FC03",
+      "M01",
+      "M02",
+      "M03",
+      "M04",
+      "M05",
+      "MC01",
+      "MC02",
+      "MC03",
+      "MC04"
+    ],
+    "allocation": {
+      "phase8_1_development_pool": {
+        "count": 4852,
+        "percentage": "79.97%",
+        "purpose": "Nested cross-validation training, calibration, and inner threshold selection",
+        "independence_status": "COMPLETELY_OVERLAPPING_WITH_DEVELOPMENT"
+      },
+      "phase8_locked_test_partition": {
+        "count": 1215,
+        "percentage": "20.03%",
+        "purpose": "Historical diagnostic benchmark; contaminated by repeated audit inspection",
+        "independence_status": "COMPLETELY_OVERLAPPING_WITH_HISTORICAL_EVALUATIONS",
+        "governance_classification": "DIAGNOSTIC_ONLY \u2014 STRICTLY DISQUALIFIED FOR CONFIRMATION"
+      }
+    }
+  },
+  "search_for_external_data": {
+    "search_paths_scanned": [
+      "data/",
+      "data/manifests/",
+      "data/embeddings/",
+      "embeddings/",
+      "external/"
+    ],
+    "uninspected_samples_found": 0,
+    "external_corpora_found": 0,
+    "synthetic_samples_found": 0,
+    "summary": "Exhaustive recursive filesystem search located zero uninspected, prospective, or external atypical speech samples."
+  },
+  "independence_evaluation": {
+    "criterion_1_no_training_overlap": {
+      "met": false,
+      "notes": "All available repository data overlap with Phase 1-8 training or diagnostic splits."
+    },
+    "criterion_2_no_threshold_selection_overlap": {
+      "met": false,
+      "notes": "Development pool was used for Platt calibration and threshold searching; test partition was inspected."
+    },
+    "criterion_3_independent_speaker_cohort": {
+      "met": false,
+      "notes": "All 6,067 recordings derive from the same 15 TORGO speakers (8 dysarthric, 7 control)."
+    },
+    "criterion_4_sufficient_emergency_support": {
+      "met": false,
+      "notes": "Zero external emergency samples exist in the repository."
+    }
+  },
+  "verdict": {
+    "eligible_independent_datasets_count": 0,
+    "determination": "NOT_AVAILABLE",
+    "evaluation_gate_action": "BLOCK_EVALUATION_AND_ENTER_PROSPECTIVE_READINESS"
+  }
+}

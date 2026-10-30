@@ -1,0 +1,74 @@
+protocol_version: 1.0.0-phase8.2-preregistered-readiness
+creation_timestamp: '2026-10-10T15:35:00Z'
+status: FROZEN_READINESS_SPECIFICATION
+purpose: Preregistered confirmatory validation protocol for prospective atypical emergency
+  speech evaluation
+governance_gate: "BLOCKED \u2014 PENDING PROSPECTIVE DATA ACQUISITION"
+preregistered_candidate_models:
+  Track_A_Baseline:
+    architecture: Stage 1 Logistic Gate + Classical Residual MLP (384-D)
+    checkpoint_reference: checkpoints/phase8_1/track_a_fold_models.pt
+    frozen_threshold_source: Phase 8.1 Inner-Fold Cross-Validation (tau=0.1500)
+    expected_safety_rule: FER <= 0.1500 on confirmed unseen population
+  INT-1-CALIB:
+    architecture: Stage 1 Logistic Gate + Platt-Calibrated Residual (384-D)
+    checkpoint_reference: checkpoints/phase8_1/int1_calib_models.pt
+    frozen_threshold_source: Phase 8.1 Inner-Fold Cross-Validation (tau=0.1500)
+    expected_safety_rule: FER <= 0.1500 on confirmed unseen population
+  INT-2-COST:
+    architecture: Stage 1 Logistic Gate + Cost-Sensitive Residual (5:1 penalty)
+    checkpoint_reference: checkpoints/phase8_1/int2_cost_models.pt
+    frozen_threshold_source: Phase 8.1 Inner-Fold Cross-Validation (tau=0.1500)
+    expected_safety_rule: FER <= 0.1500 on confirmed unseen population
+  INT-3-SAMP:
+    architecture: Stage 1 Logistic Gate + Balanced-Sampled Residual (1:1 emergency:general)
+    checkpoint_reference: checkpoints/phase8_1/int3_samp_models.pt
+    frozen_threshold_source: Phase 8.1 Inner-Fold Cross-Validation (tau=0.1500)
+    expected_safety_rule: FER <= 0.1500 on confirmed unseen population
+  Track_B_Quantum:
+    architecture: Stage 1 Logistic Gate + 8-Qubit VQC Quantum Residual
+    checkpoint_reference: checkpoints/phase8_1/track_b_quantum_models.pt
+    frozen_threshold_source: Phase 8.1 Inner-Fold Cross-Validation (tau=0.1500)
+    expected_safety_rule: FER <= 0.1500 on confirmed unseen population
+  Track_C_Shadow:
+    architecture: Stage 1 Logistic Gate + Parameter-Matched Classical MLP Shadow
+    checkpoint_reference: checkpoints/phase8_1/track_c_shadow_models.pt
+    frozen_threshold_source: Phase 8.1 Inner-Fold Cross-Validation (tau=0.1500)
+    expected_safety_rule: FER <= 0.1500 on confirmed unseen population
+canonical_taxonomy:
+- GENERAL_SPEECH
+- CRITICAL_RESPONSE
+- FALL
+- BREATHING_MEDICAL
+- PAIN
+- SOS_HELP
+- LOCATION
+zero_support_policy: Classes with zero true instances in confirmation set reported
+  as N/A for F1/Recall/Precision. Canonical 7-class Macro-F1 retains zero in numerator
+  with denominator=7.
+safety_constraints:
+  primary_safety_metric: False Emergency Rate (FER) = FP / (FP + TN)
+  safety_bound_limit: 0.15
+  enforcement_rule: Both pooled FER AND speaker-specific FER must not exceed 0.1500.
+    A pooled FER <= 15% does not establish individual speaker compliance.
+  post_hoc_threshold_adjustment: "STRICTLY_PROHIBITED \u2014 Thresholds are frozen\
+    \ before confirmation evaluation."
+statistical_testing_framework:
+  sample_unit: Utterance with speaker-clustered bootstrap standard errors
+  comparisons:
+  - Track B (Quantum) vs Track A (Classical)
+  - Track B (Quantum) vs Track C (Classical Shadow)
+  multiplicity_correction: Holm-Bonferroni step-down correction across primary hypotheses
+  alpha_level: 0.05
+  power_planning_method: Wilson score confidence width targeting FER margin of error
+    <= 0.02 at 95% confidence level
+  required_sample_size: TO BE DETERMINED (formal prospective power calculation required
+    prior to recruitment)
+data_locking_contract:
+  manifest_hash_verification: SHA-256 fingerprint required before reading
+  eval_execution: Single-shot inference. Zero training, fine-tuning, or PCA recalibration
+    permitted on confirmation data.
+  stop_criteria:
+  - Provenance gap or missing session metadata
+  - Detection of historical TORGO audio hashing matches
+  - Emergency class support under 30 true positive events

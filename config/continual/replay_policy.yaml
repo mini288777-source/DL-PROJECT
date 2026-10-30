@@ -1,0 +1,53 @@
+# ==============================================================================
+# PHASE 7.5: REPLAY MEMORY & CATASTROPHIC FORGETTING PROTECTION POLICY
+# PRE-REGISTERED RESEARCH CONFIGURATION CONTRACT (FROZEN PRIOR TO EXPERIMENT)
+# ==============================================================================
+
+policy_metadata:
+  policy_id: "phase7_5_canonical_balanced_replay"
+  policy_version: "v1.0.0_frozen"
+  effective_phase: "7.5"
+  status: "FROZEN"
+  immutable: true
+  description: >
+    Governs memory replay sampling and catastrophic forgetting mitigation in continual
+    atypical speech personalization, matching PHASE7_DATA_CONTRACT.md Section 3.
+
+primary_strategy: "BALANCED_CLASS_AWARE"
+
+modes_supported:
+  - "NO_REPLAY"
+  - "BALANCED_REPLAY"
+
+anchor_policy:
+  description: "Initial seed calibration instances are permanently retained and cannot be evicted."
+  anchor_seed_budget: 20  # B0 baseline
+  eviction_allowed: false
+
+quota_policy:
+  description: "Enforces class balancing to prevent emergency intent swamping by general speech."
+  max_general_to_emergency_ratio: 4.0  # 4:1 max general-to-emergency ratio
+  protect_all_emergency_instances: true
+  general_speech_eviction_strategy: "FIFO_OR_RANDOM"
+
+capacity:
+  max_capacity_per_speaker: 50
+  speaker_isolation_strict: true
+
+eligibility_firewall:
+  require_verified: true
+  allowed_verification_statuses:
+    - "USER_VERIFIED"
+    - "SYSTEM_VERIFIED"
+  forbidden_verification_statuses:
+    - "UNVERIFIED"
+    - "REJECTED"
+    - "INVALID"
+  require_learning_eligible: true
+  exclude_quarantined: true
+  min_quality_score: 0.5
+
+evaluation_contract:
+  primary_forgetting_metric: "EMERGENCY_FORGETTING"
+  directionality: "LOWER_IS_BETTER"
+  paired_treatment: "NO_REPLAY vs BALANCED_REPLAY"

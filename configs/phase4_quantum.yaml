@@ -1,0 +1,60 @@
+# Phase 4 Quantum Kernel Few-Shot Personalization Configuration
+# Low-Resource Personalized Atypical Speech Recognition
+
+pca:
+  dimensions:
+    - 2
+    - 4
+    - 6
+    - 8
+  whiten: false
+  random_state: 42
+
+scaling:
+  method: "minmax"
+  feature_range: [0.0, 3.141592653589793]  # [0, pi]
+  fit_on_adaptation_only: true
+
+primary:
+  qubits: 4
+  reps: 1
+  entanglement: "linear"
+  feature_map: "zz"
+  kernel: "FidelityQuantumKernel"
+  classifier: "QSVC"
+  C: 1.0
+  simulator: "statevector"
+  seed: 42
+
+ablation:
+  qubits:
+    - 2
+    - 4
+    - 6
+    - 8
+  depth_reps:
+    - 1
+    - 2
+
+paths:
+  splits_json: "splits/torgo_splits.json"
+  manifest_csv: "data/manifests/torgo_manifest.csv"
+  whisper_dir: "embeddings/torgo/whisper"
+  cache_dir: "results/phase4/kernel_cache"
+  curves_csv: "results/phase4/quantum_curves.csv"
+  predictions_csv: "results/phase4/quantum_predictions.csv"
+  aggregated_csv: "results/phase4/quantum_aggregated.csv"
+  ablation_csv: "results/phase4/ablation_table.csv"
+  comparison_csv: "results/phase4/classical_vs_quantum_comparison.csv"
+  confusion_dir: "results/phase4/confusion_matrices"
+  figures_dir: "results/phase4/figures"
+  kernel_quality_csv: "reports/phase4_kernel_quality.csv"
+  complete_results_md: "reports/phase4_complete_results.md"
+
+protocol:
+  target_speakers: 15
+  sample_sizes:
+    - 20
+    - 30
+    - 40
+    - 50

@@ -1,0 +1,18 @@
+{
+  "track": "Track_A_Classical",
+  "status": "frozen",
+  "timestamp": "2026-10-10T05:49:58Z",
+  "manifest_fingerprint": "16c1304221900a8ca5a278adc2528ba2807881e9c526a322b7a649135bc80a58",
+  "total_test_predictions": 1215,
+  "global_metrics": {
+    "accuracy": 0.8386831275720165,
+    "macro_f1": 0.16767681790063602,
+    "emergency_recall": 0.16666666666666666,
+    "emergency_precision": 0.06578947368421052,
+    "false_emergency_rate": 0.12294372294372294,
+    "intent_preservation_rate": 0.8770562770562771
+  },
+  "predictions_hash": "d0cbf13d0d133d2374ef537ee52073d8a598b83b374974f131def412013bf160",
+  "results_hash": "a6b6f4ee0bee4d6aaf7c67837690c3652915a46e002a2312e8f1ab4f26c1f348",
+  "per_speaker_hash": "77cd1ee85064b51d91894aba25dbbb2f6ae6a6ad4a86a31063c8b19118dfa58d"
+}

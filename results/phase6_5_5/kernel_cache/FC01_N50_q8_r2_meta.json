@@ -1,0 +1,28 @@
+{
+  "speaker_id": "FC01",
+  "cohort_group": "control",
+  "N": 50,
+  "qubit_count": 8,
+  "reps": 2,
+  "train_shape": [
+    50,
+    50
+  ],
+  "test_shape": [
+    101,
+    50
+  ],
+  "is_finite": true,
+  "symmetry_error": 0.0,
+  "diagonal_error": 0.0,
+  "min_eigenvalue": 0.8142348040210546,
+  "max_eigenvalue": 1.3207848691685924,
+  "condition_number": 1.6221179230437799,
+  "trace": 50.0,
+  "mean_off_diagonal": 0.0058443102015969485,
+  "std_off_diagonal": 0.010214755049664969,
+  "pca_cumulative_variance": 0.8533425782386002,
+  "psd_status": "STRICTLY_PSD",
+  "kernel_train_time_sec": 0.0,
+  "kernel_test_time_sec": 0.0
+}

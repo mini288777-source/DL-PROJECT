@@ -1,0 +1,115 @@
+# Subphase 6.5.2 — Classical Rescue Baseline Configuration
+# Emergency-Class Learning Recovery under Controlled Clean-Speech Conditions
+
+project:
+  name: "Low-Resource Personalized Atypical Speech Recognition Using Hybrid Quantum-Classical Deep Learning"
+  phase: "Subphase 6.5.2 — Classical Rescue Baseline"
+  dataset: "TORGO"
+
+data:
+  splits_track_a_path: "phase6_5/splits/recovery_splits_stratified.json"
+  manifest_path: "data/manifests/torgo_manifest.csv"
+  intent_taxonomy_path: "configs/intent_taxonomy.yaml"
+  whisper_cache_dir: "embeddings/torgo/whisper"
+  embedding_dim: 384
+  feature_type: "whisper"
+
+cohort:
+  speakers:
+    - "F01"
+    - "F03"
+    - "F04"
+    - "FC01"
+    - "FC02"
+    - "FC03"
+    - "M01"
+    - "M02"
+    - "M03"
+    - "M04"
+    - "M05"
+    - "MC01"
+    - "MC02"
+    - "MC03"
+    - "MC04"
+  sample_sizes:
+    - 20
+    - 30
+    - 40
+    - 50
+  seed: 42
+
+pilot:
+  speakers:
+    - "M04" # Dysarthric with strong emergency coverage
+    - "F01" # Dysarthric with difficult support
+    - "FC02" # Control speaker
+  sample_sizes:
+    - 20
+    - 40
+
+models:
+  - name: "unweighted_adapter"
+    family: "adapter"
+    class_weight: null
+    input_dim: 384
+    hidden_dim: 64
+    dropout: 0.1
+    num_classes: 7
+    learning_rate: 0.005
+    weight_decay: 0.0001
+    epochs: 60
+    batch_size: 8
+    optimizer: "adamw"
+
+  - name: "weighted_adapter"
+    family: "adapter"
+    class_weight: "balanced"
+    input_dim: 384
+    hidden_dim: 64
+    dropout: 0.1
+    num_classes: 7
+    learning_rate: 0.005
+    weight_decay: 0.0001
+    epochs: 60
+    batch_size: 8
+    optimizer: "adamw"
+
+  - name: "unweighted_rbf_svm"
+    family: "rbf_svm"
+    class_weight: null
+    C: 1.0
+    gamma: "scale"
+    standardize: false
+    probability: false
+
+  - name: "weighted_rbf_svm"
+    family: "rbf_svm"
+    class_weight: "balanced"
+    C: 1.0
+    gamma: "scale"
+    standardize: false
+    probability: false
+
+evaluation:
+  canonical_classes:
+    - "GENERAL_SPEECH"
+    - "SOS_HELP"
+    - "FALL"
+    - "BREATHING_MEDICAL"
+    - "PAIN"
+    - "LOCATION"
+    - "CRITICAL_RESPONSE"
+  emergency_classes:
+    - "SOS_HELP"
+    - "FALL"
+    - "BREATHING_MEDICAL"
+    - "PAIN"
+    - "LOCATION"
+    - "CRITICAL_RESPONSE"
+
+output:
+  base_dir: "phase6_5/classical_rescue"
+  results_dir: "phase6_5/classical_rescue/results"
+  analysis_dir: "phase6_5/classical_rescue/analysis"
+  figures_dir: "phase6_5/classical_rescue/figures"
+  reports_dir: "phase6_5/classical_rescue/reports"

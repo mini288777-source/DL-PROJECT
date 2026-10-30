@@ -1,0 +1,32 @@
+path,type,phase,purpose,exists,status
+data/manifests/torgo_manifest.csv,CSV Manifest,Data / Phase 1,"Raw audio dataset manifest across 15 TORGO speakers (16,552 recording channels)",True,Historical / Frozen
+results/phase8_80_20/split_manifest.csv,CSV Manifest,Phase 8 / 8.1,"Authoritative 80/20 train/test split manifest across 6,067 prompt utterances",True,Historical / Frozen
+embeddings/torgo/whisper/,NPY Directory,Representation,"6,067 Whisper-Base frozen 384-dimensional utterance representations",True,Historical / Frozen
+embeddings/torgo/mfcc/,NPY Directory,Representation,"6,067 MFCC 78-dimensional static/delta representations",True,Historical / Frozen
+src/continual/app_pipeline.py,Python Module,Phase 7.14,"Application integration pipeline with confidence, HITL verification, governance",True,Current / Prototype
+src/continual/self_improvement.py,Python Module,Phase 7.11,Continual self-improvement engine connecting experience review and model adaptation,True,Current / Prototype
+src/continual/governance.py,Python Module,Phase 7.6,"Multi-metric validation gate, safety veto, and model rollback manager",True,Current / Prototype
+src/continual/continual_classical.py,Python Module,Phase 7.4,"Personalized classical adapter (25,223 parameters) for few-shot adaptation",True,Current / Prototype
+src/continual/trainable_quantum.py,Python Module,Phase 7.9,"Trainable VQC quantum circuit (PennyLane default.qubit, 8 qubits, 18 params)",True,Current / Prototype
+src/phase8_separated/phase8_separated_models.py,Python Module,Phase 8 / 8.1,"Two-stage hierarchical classifier models (Track A Classical, Track B Quantum, Track C Shadow)",True,Current / Validated
+scripts/run_app_demo.py,Python Script,Phase 7.14,Interactive web demo HTTP server and automated UI testing script,True,Current / Prototype
+config/continual/app_config.yaml,YAML Config,Phase 7.14,"Application operational thresholds, confidence bands, governance policies",True,Current / Prototype
+config/phase8_1/safety_recovery_protocol.yaml,YAML Config,Phase 8.1,Frozen nested 5-fold cross-validation protocol and FER <= 15% constraint,True,Historical / Frozen
+config/phase8_2/confirmation_protocol.yaml,YAML Config,Phase 8.2,Historical readiness protocol (contained tau=0.1500 transcription defect),True,Historical / Frozen
+config/phase8_2_1/confirmation_protocol_v2.yaml,YAML Config,Phase 8.2.1,Corrected confirmation protocol separating decision thresholds from FER bound,True,Current / Frozen
+results/phase6_5_5_statistical_tests.csv,CSV Result,Phase 6.5.5,Statistical closure tests establishing Case B (quantum vs classical parity),True,Historical / Frozen
+results/phase8_80_20/audit_repair/metric_reconciliation.csv,CSV Result,Phase 8 80/20,Forensic reconciliation of prompt isolation and test evaluation,True,Historical / Frozen
+results/phase8_1/threshold_registry.json,JSON Registry,Phase 8.1,"450 calibrated thresholds across 5 folds, 15 speakers, 6 candidate tracks",True,Historical / Frozen
+results/phase8_1/safety_operating_points.csv,CSV Result,Phase 8.1,"Operating point trade-off curve across tau in [0.20, 0.90]",True,Historical / Frozen
+results/phase8_1/oof_predictions.csv,CSV Predictions,Phase 8.1,"29,112 out-of-fold outer validation prediction probabilities",True,Historical / Frozen
+results/phase8_2/confirmation_dataset_inventory.csv,CSV Inventory,Phase 8.2,Dataset candidate census establishing NOT_AVAILABLE status,True,Historical / Frozen
+results/phase8_2/confirmation_overlap_audit.json,JSON Audit,Phase 8.2,Overlap audit establishing 100% development contamination of historical data,True,Historical / Frozen
+results/phase8_2_1/threshold_protocol_audit.json,JSON Audit,Phase 8.2.1,Forensic audit resolving tau=0.1500 conflation and unmaterialized checkpoints,True,Current / Verified
+results/phase8_2_1/protocol_integrity.json,JSON Integrity,Phase 8.2.1,Checksum audit and integrity assertions for Phase 8.2.1 repair,True,Current / Verified
+checkpoints/phase8_1/track_a_fold_models.pt,PyTorch Checkpoint,Phase 8.1,Preregistered candidate weights (Unmaterialized placeholder),False,Unmaterialized Missing
+checkpoints/phase8_1/track_b_quantum_models.pt,PyTorch Checkpoint,Phase 8.1,Preregistered candidate weights (Unmaterialized placeholder),False,Unmaterialized Missing
+reports/FINAL_SCIENTIFIC_INTEGRITY_AUDIT.md,Markdown Report,Phase 6.5.6,Complete repository-wide scientific integrity and bias audit,True,Historical / Frozen
+reports/phase8_1/FINAL_SAFETY_DECISION.md,Markdown Report,Phase 8.1,Clinical operating-point verdict: SAFETY-INFEASIBLE under current features,True,Historical / Frozen
+reports/phase8_2/PHASE8_2_STATUS.md,Markdown Report,Phase 8.2,Readiness status: BLOCKED — PENDING PROSPECTIVE DATA ACQUISITION,True,Historical / Frozen
+reports/phase8_2_1/THRESHOLD_PROTOCOL_CORRECTION_REPORT.md,Markdown Report,Phase 8.2.1,Authoritative resolution of decision-threshold conflation and protocol repair,True,Current / Verified
+research/phase8_2_1/THRESHOLD_PROTOCOL_FORENSIC_AUDIT.md,Markdown Audit,Phase 8.2.1,Exhaustive forensic investigation answering 11 protocol questions,True,Current / Verified

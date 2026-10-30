@@ -1,0 +1,7 @@
+emergency_class,speakers_ge_1,speakers_ge_2,speakers_ge_3,speakers_ge_5,total_recordings,min_per_speaker,max_per_speaker,median_per_speaker
+SOS_HELP,15,11,9,1,40,1,5,3.0
+FALL,15,13,12,4,67,1,10,4.0
+BREATHING_MEDICAL,15,13,10,2,51,1,8,4.0
+PAIN,11,8,7,2,43,0,12,2.0
+LOCATION,7,2,0,0,9,0,2,0.0
+CRITICAL_RESPONSE,15,15,15,10,87,3,11,5.0

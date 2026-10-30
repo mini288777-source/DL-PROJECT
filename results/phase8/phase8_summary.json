@@ -1,0 +1,105 @@
+{
+  "benchmark_metadata": {
+    "total_cells": 60,
+    "models_trained": 180,
+    "speakers_evaluated": 15,
+    "dysarthric_speakers": 8,
+    "control_speakers": 7,
+    "budgets": [
+      20,
+      30,
+      40,
+      50
+    ],
+    "total_runtime_seconds": 600.4879220000003
+  },
+  "aggregate_metrics": {
+    "Track_A_Classical": {
+      "mean_emergency_recall": 0.4683465608465608,
+      "std_emergency_recall": 0.39576358052912847,
+      "mean_emergency_precision": 0.01604082187630006,
+      "mean_false_emergency_rate": 0.5252518148068819,
+      "std_false_emergency_rate": 0.36614910479334495,
+      "mean_macro_f1": 0.08171237147878031,
+      "std_macro_f1": 0.051386972948356945,
+      "mean_train_time_sec": 0.31252603833563625,
+      "mean_eval_time_sec": 0.0013775283325230703,
+      "mean_latency_ms": 0.005108825010997839
+    },
+    "Track_B_Quantum": {
+      "mean_emergency_recall": 0.4683465608465608,
+      "std_emergency_recall": 0.39576358052912847,
+      "mean_emergency_precision": 0.01604082187630006,
+      "mean_false_emergency_rate": 0.5252518148068819,
+      "std_false_emergency_rate": 0.36614910479334495,
+      "mean_macro_f1": 0.08096662700909565,
+      "std_macro_f1": 0.053303396893690555,
+      "mean_train_time_sec": 7.102360740000344,
+      "mean_eval_time_sec": 2.308335639999617,
+      "mean_latency_ms": 4.804058953045437
+    },
+    "Track_C_Shadow": {
+      "mean_emergency_recall": 0.4683465608465608,
+      "std_emergency_recall": 0.39576358052912847,
+      "mean_emergency_precision": 0.01604082187630006,
+      "mean_false_emergency_rate": 0.5252518148068819,
+      "std_false_emergency_rate": 0.36614910479334495,
+      "mean_macro_f1": 0.08234601360094532,
+      "std_macro_f1": 0.054215392190080834,
+      "mean_train_time_sec": 0.2698860633376171,
+      "mean_eval_time_sec": 0.002460543330137928,
+      "mean_latency_ms": 0.008238326012791928
+    }
+  },
+  "dysarthric_subgroup": {
+    "Track_A_Classical": {
+      "mean_emergency_recall": 0.38090277777777776,
+      "mean_false_emergency_rate": 0.4348242951928555,
+      "mean_macro_f1": 0.0951891405273727
+    },
+    "Track_B_Quantum": {
+      "mean_emergency_recall": 0.38090277777777776,
+      "mean_false_emergency_rate": 0.4348242951928555,
+      "mean_macro_f1": 0.09435041802893672
+    },
+    "Track_C_Shadow": {
+      "mean_emergency_recall": 0.38090277777777776,
+      "mean_false_emergency_rate": 0.4348242951928555,
+      "mean_macro_f1": 0.0972027762782551
+    }
+  },
+  "control_subgroup": {
+    "Track_A_Classical": {
+      "mean_emergency_recall": 0.5682823129251701,
+      "mean_false_emergency_rate": 0.6285975515086263,
+      "mean_macro_f1": 0.0663103497089604
+    },
+    "Track_B_Quantum": {
+      "mean_emergency_recall": 0.5682823129251701,
+      "mean_false_emergency_rate": 0.6285975515086263,
+      "mean_macro_f1": 0.06567086584356299
+    },
+    "Track_C_Shadow": {
+      "mean_emergency_recall": 0.5682823129251701,
+      "mean_false_emergency_rate": 0.6285975515086263,
+      "mean_macro_f1": 0.06536685625544841
+    }
+  },
+  "safety_gate_summary": {
+    "Track_A_Classical": {
+      "pass_count": 2,
+      "fail_count": 58,
+      "pass_rate": 0.03333333333333333
+    },
+    "Track_B_Quantum": {
+      "pass_count": 2,
+      "fail_count": 58,
+      "pass_rate": 0.03333333333333333
+    },
+    "Track_C_Shadow": {
+      "pass_count": 2,
+      "fail_count": 58,
+      "pass_rate": 0.03333333333333333
+    }
+  }
+}

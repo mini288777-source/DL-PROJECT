@@ -1,0 +1,48 @@
+{
+  "issue": "Issue Two \u2014 Invalid Before/After Comparison",
+  "historical_adaptation_manifest": "phase6_5/manifests/recovery_adaptation_manifest.csv",
+  "historical_adaptation_sample_count": 1037,
+  "benchmark_test_sample_count": 1215,
+  "overlapping_sample_count": 218,
+  "overlap_percentage_of_test_set": 17.94238683127572,
+  "overlap_by_speaker": {
+    "FC02": 20,
+    "F03": 18,
+    "M03": 18,
+    "MC03": 18,
+    "FC01": 16,
+    "FC03": 16,
+    "M04": 16,
+    "M05": 15,
+    "MC01": 14,
+    "F01": 13,
+    "M01": 13,
+    "MC02": 13,
+    "MC04": 12,
+    "F04": 8,
+    "M02": 8
+  },
+  "overlap_by_intent": {
+    "GENERAL_SPEECH": 166,
+    "CRITICAL_RESPONSE": 14,
+    "FALL": 14,
+    "BREATHING_MEDICAL": 10,
+    "SOS_HELP": 9,
+    "PAIN": 5
+  },
+  "sample_ids_first_10": [
+    "F01_1_headMic_0010",
+    "F01_1_headMic_0014",
+    "F01_1_headMic_0019",
+    "F01_1_headMic_0028",
+    "F01_1_headMic_0058",
+    "F01_1_headMic_0066",
+    "F01_1_headMic_0086",
+    "F01_1_headMic_0089",
+    "F01_1_headMic_0092",
+    "F01_1_headMic_0094"
+  ],
+  "audit_finding": "VERIFIED: 218 test samples appeared in the historical adaptation pool used to train prior models.",
+  "official_determination": "BEFORE COMPARISON: INVALID \u2014 TEST SET APPEARED IN PREVIOUS TRAINING",
+  "action_taken": "Historical comparison marked INVALID. Corrected figure generated without representing historical few-shot values as a valid baseline."
+}

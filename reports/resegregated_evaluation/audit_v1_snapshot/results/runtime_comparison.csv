@@ -1,0 +1,8 @@
+Model,Feature Dim,Per-Sample Latency (s),Latency Ratio vs RBF,Total Experiment Wall-Clock (s),Wall-Clock Ratio vs RBF,Execution Platform
+QSVC Q8-R1 (Statevector CPU),8,1.0816,772.6x slower,70.22,212.8x slower,13th Gen Intel Core i9-13900H (CPU Statevector Simulation)
+Matched RBF-SVM (d=8),8,0.0014,1.0x (Baseline),0.33,1.0x (Baseline),13th Gen Intel Core i9-13900H (Scikit-Learn CPU)
+Weighted MLP Adapter (d=8),8,0.0038,2.7x slower,1.25,3.8x slower,13th Gen Intel Core i9-13900H (PyTorch CPU)
+Linear SVM (d=8),8,0.0009,0.6x (faster),0.21,0.6x (faster),13th Gen Intel Core i9-13900H (Scikit-Learn CPU)
+K-Nearest Neighbors (d=8),8,0.0021,1.5x slower,0.45,1.4x slower,13th Gen Intel Core i9-13900H (Scikit-Learn CPU)
+QSVC Q4-R1 (Compact 4-Qubit),4,0.0824,58.9x slower,5.34,16.2x slower,13th Gen Intel Core i9-13900H (CPU Statevector Simulation)
+QSVC Q8-R2 (2 Repetitions),8,2.154,"1,538.6x slower",142.1,430.6x slower,13th Gen Intel Core i9-13900H (CPU Statevector Simulation)

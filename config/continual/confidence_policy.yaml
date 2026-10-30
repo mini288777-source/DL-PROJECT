@@ -1,0 +1,49 @@
+# ==============================================================================
+# PHASE 7 CONTINUAL PERSONALIZATION: CONFIDENCE & ELIGIBILITY POLICY
+# CONFIGURATION-DRIVEN THRESHOLDS, DECISION BANDS & SAFETY INVARIANTS
+# ==============================================================================
+
+policy_metadata:
+  policy_id: "continual_confidence_policy_default"
+  policy_version: "v1.0.0_research_draft"
+  description: "Standard research thresholds for confidence assessment, abstention, and learning eligibility."
+  status: "active_research_policy"
+  immutable: true
+
+confidence_bands:
+  # General confidence categorization thresholds for validated probabilities [0.0, 1.0]
+  high_threshold: 0.85
+  medium_threshold: 0.65
+  # Any score below medium_threshold is categorized as LOW_CONFIDENCE
+  # Any score NaN, Inf, or <0/>1 is categorized as INVALID_CONFIDENCE
+
+abstention_policy:
+  # Action decision policy based on predicted intent class
+  general_speech:
+    accept_threshold: 0.70
+    confirm_threshold: 0.50
+    # < 0.50 -> ABSTAIN
+
+  emergency_speech:
+    # High-stakes emergency routing enforces strictly conservative acceptance thresholds
+    accept_threshold: 0.85
+    confirm_threshold: 0.65
+    # < 0.65 -> ABSTAIN / ESCALATE_EMERGENCY
+
+uncertainty_policy:
+  # Multi-class probability distribution uncertainty boundaries
+  min_top1_top2_margin: 0.15
+  max_normalized_entropy: 0.75
+
+safety_invariants:
+  # CRITICAL INVARIANT: Confidence can NEVER create ground truth or verify a prediction
+  allow_self_training_without_verification: false
+  emergency_requires_user_confirmation: true
+  quarantine_degraded_acoustic_quality: true
+  min_acoustic_quality_score: 0.50
+
+prioritization_policy:
+  # Diagnostic tagging for future human-in-the-loop active learning (Phase 7.3)
+  low_confidence_tag_threshold: 0.65
+  high_uncertainty_margin_threshold: 0.15
+  emergency_intent_tag: true

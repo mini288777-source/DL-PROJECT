@@ -1,0 +1,124 @@
+{
+  "run_id": "phase3_F04_adapter_N40_s42",
+  "speaker_id": "F04",
+  "method": "adapter",
+  "sample_n": 40,
+  "confusion_matrix": [
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3
+    ],
+    [
+      0,
+      0,
+      11,
+      5,
+      0,
+      0,
+      178
+    ]
+  ],
+  "classes": [
+    "SOS_HELP",
+    "FALL",
+    "BREATHING_MEDICAL",
+    "PAIN",
+    "LOCATION",
+    "CRITICAL_RESPONSE",
+    "GENERAL_SPEECH"
+  ],
+  "per_class": {
+    "SOS_HELP": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1
+    },
+    "FALL": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1
+    },
+    "BREATHING_MEDICAL": {
+      "precision": 0.07692307692307693,
+      "recall": 1.0,
+      "f1": 0.14285714285714285,
+      "support": 1
+    },
+    "PAIN": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "LOCATION": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "CRITICAL_RESPONSE": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 3
+    },
+    "GENERAL_SPEECH": {
+      "precision": 0.978021978021978,
+      "recall": 0.9175257731958762,
+      "f1": 0.9468085106382979,
+      "support": 194
+    }
+  }
+}

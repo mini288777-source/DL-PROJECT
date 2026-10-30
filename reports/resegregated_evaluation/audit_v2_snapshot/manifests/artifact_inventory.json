@@ -1,0 +1,265 @@
+{
+  "report_package": "TORGO Resegregated Evaluation Package (Reconciled v2)",
+  "created_at": "2026-10-12T11:45:00Z",
+  "total_artifacts": 43,
+  "artifacts": [
+    {
+      "relative_path": "README_RESULTS.md",
+      "size_bytes": 9048,
+      "sha256": "2dc970c83b88d3ef189ffd44eab2c231771b43963224d3940760baa96db84da3",
+      "file_type": "MD"
+    },
+    {
+      "relative_path": "RESEGREGATED_MODEL_COMPARISON_REPORT.docx",
+      "size_bytes": 1056880,
+      "sha256": "10dfae694bcd8b24e4d5bc40030fbf86b0e355bcdffcdb69311c233c1f010c4c",
+      "file_type": "DOCX"
+    },
+    {
+      "relative_path": "RESEGREGATED_MODEL_COMPARISON_REPORT.md",
+      "size_bytes": 28174,
+      "sha256": "4ef3a46b6d7fa0a5e453884ce6a0534f9b94c6b3d68380e32218f90080b24d85",
+      "file_type": "MD"
+    },
+    {
+      "relative_path": "RESEGREGATED_MODEL_COMPARISON_REPORT.pdf",
+      "size_bytes": 1296329,
+      "sha256": "0813d55b00b155655b3b05978d3a8430ad9864abaa15bebd77352a6f5d03571a",
+      "file_type": "PDF"
+    },
+    {
+      "relative_path": "figures/fig10_confusion_matrices.png",
+      "size_bytes": 207187,
+      "sha256": "a4546980dc5d209f7fb2cb100d7aa9b8e628ed92ded22b3e958a29c498f455d5",
+      "file_type": "PNG"
+    },
+    {
+      "relative_path": "figures/fig10_confusion_matrices.svg",
+      "size_bytes": 121189,
+      "sha256": "892ae323dd9c6969546f013c4fe3d1bf4dd2323633744b1e07fd5d907de06c1a",
+      "file_type": "SVG"
+    },
+    {
+      "relative_path": "figures/fig11_per_class_performance.png",
+      "size_bytes": 179575,
+      "sha256": "8f7a1c82f233adc4b67015acbf458e92ca3d45f11ffbb7228a043e794975cb9e",
+      "file_type": "PNG"
+    },
+    {
+      "relative_path": "figures/fig11_per_class_performance.svg",
+      "size_bytes": 79397,
+      "sha256": "5781a7bb75f3beb0ea63074b8f8ad4661a249e76d09f325c63991e830b6b6e6d",
+      "file_type": "SVG"
+    },
+    {
+      "relative_path": "figures/fig12_runtime_latency.png",
+      "size_bytes": 138394,
+      "sha256": "3e769d279f76c27fb0bd22caaeba764d83d6998a26b462e2626ebd75f7bc1e11",
+      "file_type": "PNG"
+    },
+    {
+      "relative_path": "figures/fig12_runtime_latency.svg",
+      "size_bytes": 75493,
+      "sha256": "1fd76a303ae3f8d0239b92b5e54c8593fc8dfdff3f87c4bc26cb9de406b63dfa",
+      "file_type": "SVG"
+    },
+    {
+      "relative_path": "figures/fig1_dataset_distribution.png",
+      "size_bytes": 257486,
+      "sha256": "9a45ad986b6cf525495cf07228ffd968c047cb9e689c2024c338a4fb0ce9f84a",
+      "file_type": "PNG"
+    },
+    {
+      "relative_path": "figures/fig1_dataset_distribution.svg",
+      "size_bytes": 162309,
+      "sha256": "39c4bde14c8507caa2a5467e1d592a2032a3e3fcd91376eaaacce6ffd000b83f",
+      "file_type": "SVG"
+    },
+    {
+      "relative_path": "figures/fig2_overall_accuracy.png",
+      "size_bytes": 316687,
+      "sha256": "123c13f517c709cb28ab0f7645401ef8cbeb65260e80fa8f834f5cf60546f7ef",
+      "file_type": "PNG"
+    },
+    {
+      "relative_path": "figures/fig2_overall_accuracy.svg",
+      "size_bytes": 109135,
+      "sha256": "4eb5eecb406e4c2cbae2c54d1a361a4fb3dc9a9f4af20d761cd243eb74251abf",
+      "file_type": "SVG"
+    },
+    {
+      "relative_path": "figures/fig3_macro_f1_comparison.png",
+      "size_bytes": 290705,
+      "sha256": "ea57ca6088e74738e1ac236c21809e1fb89cea8f1a12693f323b4669adccd2fa",
+      "file_type": "PNG"
+    },
+    {
+      "relative_path": "figures/fig3_macro_f1_comparison.svg",
+      "size_bytes": 100579,
+      "sha256": "4cca863029c24a263897f3fa74e5c3331ce49bcfe9e84290219740c8e8cfb5a3",
+      "file_type": "SVG"
+    },
+    {
+      "relative_path": "figures/fig4_emergency_recall_vs_precision.png",
+      "size_bytes": 207039,
+      "sha256": "ad15ce20037eb68067f0301f9edab57eec39c051423378120c2574a5ff985ff3",
+      "file_type": "PNG"
+    },
+    {
+      "relative_path": "figures/fig4_emergency_recall_vs_precision.svg",
+      "size_bytes": 97126,
+      "sha256": "b4e0aa602b1093619b8c75025d5de41e0407ea4c9ac3293b29e71bf87397d157",
+      "file_type": "SVG"
+    },
+    {
+      "relative_path": "figures/fig5_false_emergency_rate.png",
+      "size_bytes": 257880,
+      "sha256": "c4f3eed0716debea60214256a9202dcebc5f6ffbe85ea74a40fbd2e09133a60f",
+      "file_type": "PNG"
+    },
+    {
+      "relative_path": "figures/fig5_false_emergency_rate.svg",
+      "size_bytes": 87689,
+      "sha256": "0ab10d1f1ea7dbab2bfe524e77e3fa72d6a3e1d0c21fdb325bb11acc90c92d78",
+      "file_type": "SVG"
+    },
+    {
+      "relative_path": "figures/fig6_balanced_accuracy.png",
+      "size_bytes": 227083,
+      "sha256": "30fb87f7bedef5c9bed1e00b090bad9b59608da622e9d33dc5ca720b990ecdae",
+      "file_type": "PNG"
+    },
+    {
+      "relative_path": "figures/fig6_balanced_accuracy.svg",
+      "size_bytes": 83563,
+      "sha256": "130fa5673ed693850786ad1a5ea434507d4021fa6645a762b6251ca9e8dbb3e6",
+      "file_type": "SVG"
+    },
+    {
+      "relative_path": "figures/fig7_sample_budget_scaling.png",
+      "size_bytes": 281205,
+      "sha256": "b128462e023958f1a9348f37e39e14f3132c87c9dae918b954edcb801ca87608",
+      "file_type": "PNG"
+    },
+    {
+      "relative_path": "figures/fig7_sample_budget_scaling.svg",
+      "size_bytes": 109423,
+      "sha256": "dd426705e6db83ef257b2f5af51101fe8ac27759caf2f5f00b9838094e595608",
+      "file_type": "SVG"
+    },
+    {
+      "relative_path": "figures/fig8_speaker_variation.png",
+      "size_bytes": 262062,
+      "sha256": "0a7f2fea53cc8c3913a8f5813894ffb1e23817fd14203892064ea3fc112a4a67",
+      "file_type": "PNG"
+    },
+    {
+      "relative_path": "figures/fig8_speaker_variation.svg",
+      "size_bytes": 90331,
+      "sha256": "d7cc055329ebd29454d0313b7dcfd5a6e10b0c28af86bf3b8e4d6099047a2a33",
+      "file_type": "SVG"
+    },
+    {
+      "relative_path": "figures/fig9_quantum_vs_rbf_matched.png",
+      "size_bytes": 249159,
+      "sha256": "d84d7169f8219f4d148dea5db0dd7acd39f68eba3cd2ad1706ba0dc7e795a39b",
+      "file_type": "PNG"
+    },
+    {
+      "relative_path": "figures/fig9_quantum_vs_rbf_matched.svg",
+      "size_bytes": 105184,
+      "sha256": "a88ee1070c80560e7d533904adbc8736749f1de69e7e5de92f40ac5b60ef9a34",
+      "file_type": "SVG"
+    },
+    {
+      "relative_path": "manifests/evaluation_manifest.json",
+      "size_bytes": 799448,
+      "sha256": "c40c4c309c5294244a8dcb38e4f6893e3f7ae2cab0622016fb5d937e8e857403",
+      "file_type": "JSON"
+    },
+    {
+      "relative_path": "results/condition_level_results.csv",
+      "size_bytes": 39947,
+      "sha256": "35376cf5fe87d1da4b700e6f703ece3f906a85aeab422ba6559142b54431510c",
+      "file_type": "CSV"
+    },
+    {
+      "relative_path": "results/model_comparison_summary.csv",
+      "size_bytes": 2331,
+      "sha256": "c0f020c54dc0ddbafe5bbb735c7f27de04300d98e6566f04c6829ad401f9da25",
+      "file_type": "CSV"
+    },
+    {
+      "relative_path": "results/pca_explained_variance_by_condition.csv",
+      "size_bytes": 3729,
+      "sha256": "74909d944592b5761a3bab318d5f1cffdca2cc9f6294c6cc367419737cea7151",
+      "file_type": "CSV"
+    },
+    {
+      "relative_path": "results/per_class_metrics.csv",
+      "size_bytes": 998,
+      "sha256": "8d424bbf33bd6ced816468a7e9ce68989733014173182efca3f6c46493fa584c",
+      "file_type": "CSV"
+    },
+    {
+      "relative_path": "results/predictions_resegregated_evaluation.csv",
+      "size_bytes": 16438079,
+      "sha256": "9860a4b7b21628508b41937af62f42be4ff525ee9cf9e05c24ebfb51abcdbd48",
+      "file_type": "CSV"
+    },
+    {
+      "relative_path": "results/runtime_comparison.csv",
+      "size_bytes": 983,
+      "sha256": "a0283e2f05d613e012c919db323e23b1e2e37d4d79aa75cb95754ada8400c398",
+      "file_type": "CSV"
+    },
+    {
+      "relative_path": "results/speaker_level_results.csv",
+      "size_bytes": 1384,
+      "sha256": "4a14975178aa3c43a135043d6fb6c60a88764dc1127d62d3e31d0d3d8d57696d",
+      "file_type": "CSV"
+    },
+    {
+      "relative_path": "results/statistical_comparisons.csv",
+      "size_bytes": 1642,
+      "sha256": "9fe4e1b992ab2f2af969268e00825889a390fbe09dec77dc7ced9e55a7ca3e23",
+      "file_type": "CSV"
+    },
+    {
+      "relative_path": "results/confusion_matrices/confusion_matrix_qsvc_q8_r1.csv",
+      "size_bytes": 283,
+      "sha256": "9a411a0585fc63ffc6b27b3971a1b40101f89b4dd46a52b39f5796169862562b",
+      "file_type": "CSV"
+    },
+    {
+      "relative_path": "results/confusion_matrices/confusion_matrix_rbf_svm8.csv",
+      "size_bytes": 283,
+      "sha256": "721195e220ebffcc97640769a77636f60a5a26dff8e7032021418de6effe7f5a",
+      "file_type": "CSV"
+    },
+    {
+      "relative_path": "results/confusion_matrices/confusion_matrix_track_a_classical.csv",
+      "size_bytes": 284,
+      "sha256": "fac30bf6d61cff087b4fa7dae6d22682476048f3c498ba2139dbc862788adf35",
+      "file_type": "CSV"
+    },
+    {
+      "relative_path": "results/confusion_matrices/confusion_matrix_track_b_quantum.csv",
+      "size_bytes": 283,
+      "sha256": "eda03a921d1f55b45a32edb7d9eef1a681c629a39c2f9efee751cf6707c36621",
+      "file_type": "CSV"
+    },
+    {
+      "relative_path": "results/confusion_matrices/confusion_matrix_track_c_shadow.csv",
+      "size_bytes": 282,
+      "sha256": "4a5e4e6641ea39ab61ccd992386200626e4a9afdaeb78b29847a9d7348a3a5c3",
+      "file_type": "CSV"
+    },
+    {
+      "relative_path": "results/confusion_matrices/confusion_matrix_weighted_adapter8.csv",
+      "size_bytes": 288,
+      "sha256": "f5021ee2e69aafc29336a0c2c33cc271a8aa6a2314c66fae216ff727413c0ae5",
+      "file_type": "CSV"
+    }
+  ]
+}

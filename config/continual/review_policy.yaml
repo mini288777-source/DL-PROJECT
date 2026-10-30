@@ -1,0 +1,52 @@
+# ==============================================================================
+# PHASE 7 CONTINUAL PERSONALIZATION: HUMAN-IN-THE-LOOP REVIEW POLICY (PHASE 7.3)
+# CONFIGURATION-DRIVEN REVIEW STATES, PRIORITIZATION & SAFETY INVARIANTS
+# ==============================================================================
+
+policy_metadata:
+  policy_id: "continual_review_policy_default"
+  policy_version: "v1.0.0_research_draft"
+  description: "Standard research configuration for human-in-the-loop review, active-learning queuing, and verification gating."
+  status: "active_research_policy"
+  immutable: true
+
+review_states:
+  - "PENDING_REVIEW"
+  - "ACCEPTED"
+  - "CORRECTED"
+  - "REJECTED"
+  - "EXPIRED"
+
+review_actions:
+  - "ACCEPT"
+  - "CORRECT"
+  - "REJECT"
+  - "INVALID"
+
+prioritization_policy:
+  # Priority tier assignments: HIGH, MEDIUM, LOW
+  default_priority: "MEDIUM"
+  high_priority_tags:
+    - "HIGH_EMERGENCY_RISK"
+    - "HIGH_UNCERTAINTY"
+    - "LOW_CONFIDENCE"
+    - "NOVEL_SPEAKER_PATTERN"
+    - "DISTRIBUTIONALLY_UNUSUAL"
+  high_priority_decisions:
+    - "ABSTAIN"
+  low_priority_decisions:
+    - "ACCEPT"
+  emergency_always_high_if_unconfirmed: true
+
+expiration_policy:
+  timeout_seconds: 604800  # 7 days default retention for pending reviews
+  allow_expired_review_resubmission: false
+
+safety_invariants:
+  # CRITICAL INVARIANT: Model confidence or uncertainty NEVER creates ground truth
+  ground_truth_requires_explicit_verification: true
+  allow_automatic_label_promotion: false
+  enforce_canonical_taxonomy: true
+  enforce_speaker_isolation: true
+  preserve_original_prediction_immutability: true
+  allow_self_training_without_human_audit: false

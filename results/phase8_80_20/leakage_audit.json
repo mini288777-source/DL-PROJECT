@@ -1,0 +1,44 @@
+{
+  "benchmark": "Phase8_80_20",
+  "timestamp": "2026-10-10T05:59:47Z",
+  "dataset_fingerprint": "16c1304221900a8ca5a278adc2528ba2807881e9c526a322b7a649135bc80a58",
+  "checks": {
+    "sample_id_disjointness": {
+      "status": "PASS",
+      "train_samples": 4852,
+      "test_samples": 1215,
+      "intersection_size": 0
+    },
+    "audio_hash_disjointness": {
+      "status": "PASS",
+      "unique_train_hashes": 4852,
+      "unique_test_hashes": 1215,
+      "hash_intersection_size": 0
+    },
+    "preprocessing_fit_on_train_only": {
+      "status": "PASS",
+      "details": "TrainOnlyPCAPipeline fitted strictly on X_train for each speaker. Test X_test only transformed."
+    },
+    "class_weights_on_train_only": {
+      "status": "PASS",
+      "details": "pos_weight computed solely from y_train binary emergency balance."
+    },
+    "decision_threshold_calibration": {
+      "status": "PASS",
+      "details": "Threshold tau grid search evaluated on train probabilities only under FER bound <= 0.15."
+    },
+    "no_test_samples_in_training": {
+      "status": "PASS",
+      "details": "Zero test samples accessed during fitting, tuning, calibration, or model selection."
+    },
+    "track_pipeline_isolation": {
+      "status": "PASS",
+      "details": "Track A, B, and C maintained separate model instances, distinct random states, and emit separate prediction CSVs."
+    },
+    "historical_contamination_audit": {
+      "status": "FLAGGED_IN_BEFORE_AFTER",
+      "details": "218 test samples were present in Phase 6.5/8 few-shot adaptation set. As required, before_after.csv marks comparison INVALID."
+    }
+  },
+  "overall_audit_status": "PASS"
+}

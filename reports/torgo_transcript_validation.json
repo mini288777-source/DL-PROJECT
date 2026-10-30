@@ -1,0 +1,9 @@
+{
+  "total_audio_files": 16552,
+  "valid_audio_files": 16550,
+  "corrupted_audio_files": 2,
+  "audio_files_with_transcripts": 16552,
+  "audio_files_without_transcripts": 0,
+  "unique_transcripts": 966,
+  "elapsed_sec": 71.58
+}

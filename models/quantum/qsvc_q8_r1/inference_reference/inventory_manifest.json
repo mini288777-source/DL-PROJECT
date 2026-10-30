@@ -1,0 +1,24 @@
+{
+  "model_id": "qsvc_q8_r1",
+  "total_speakers": 15,
+  "speakers": [
+    "F01",
+    "F03",
+    "F04",
+    "FC01",
+    "FC02",
+    "FC03",
+    "M01",
+    "M02",
+    "M03",
+    "M04",
+    "M05",
+    "MC01",
+    "MC02",
+    "MC03",
+    "MC04"
+  ],
+  "budget": 50,
+  "partition": "TRAINING_REFERENCE_ONLY",
+  "created_at_utc": "2026-10-11T07:05:17.618065+00:00"
+}

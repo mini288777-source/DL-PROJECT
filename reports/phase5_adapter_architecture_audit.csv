@@ -1,0 +1,7 @@
+param_name,shape,numel,requires_grad
+net.0.weight,"[64, 384]",24576,True
+net.0.bias,[64],64,True
+net.1.weight,[64],64,True
+net.1.bias,[64],64,True
+net.4.weight,"[7, 64]",448,True
+net.4.bias,[7],7,True

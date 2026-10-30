@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "train_test_disjoint": true,
+  "train_val_disjoint": true,
+  "val_test_disjoint": true,
+  "pca_fitted_strictly_on_train": true,
+  "threshold_calibrated_strictly_on_train": true,
+  "zero_test_leakage_verified": true,
+  "details": "Pre-registered policy: threshold selected on train only. Test data accessed exactly once at locked inference."
+}

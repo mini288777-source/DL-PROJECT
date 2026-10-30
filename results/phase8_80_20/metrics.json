@@ -1,0 +1,574 @@
+{
+  "benchmark": "Phase8_80_20",
+  "dataset_fingerprint": "16c1304221900a8ca5a278adc2528ba2807881e9c526a322b7a649135bc80a58",
+  "models": {
+    "Track_A": {
+      "track_id": "Track_A_Classical",
+      "benchmark": "Phase8_80_20",
+      "total_train_samples": 4852,
+      "total_test_samples": 1215,
+      "total_emergency_test_samples": 60,
+      "accuracy": 0.8386831275720165,
+      "macro_f1": 0.16767681790063602,
+      "emergency_recall": 0.16666666666666666,
+      "emergency_precision": 0.06578947368421052,
+      "false_emergency_rate": 0.12294372294372294,
+      "intent_preservation_rate": 0.8770562770562771,
+      "dysarthric_accuracy": 0.8093023255813954,
+      "dysarthric_macro_f1": 0.14921731502042382,
+      "dysarthric_emergency_recall": 0.14814814814814814,
+      "dysarthric_emergency_precision": 0.06557377049180328,
+      "dysarthric_fer": 0.141439205955335,
+      "control_accuracy": 0.8547770700636943,
+      "control_macro_f1": 0.18245240004715577,
+      "control_emergency_recall": 0.18181818181818182,
+      "control_emergency_precision": 0.06593406593406594,
+      "control_fer": 0.11303191489361702,
+      "total_train_time_sec": 28.46930060000068,
+      "total_eval_time_sec": 0.0140464999994947,
+      "per_class_report": {
+        "GENERAL_SPEECH": {
+          "precision": 0.9529633113828786,
+          "recall": 0.8770562770562771,
+          "f1-score": 0.9134355275022543,
+          "support": 1155.0
+        },
+        "CRITICAL_RESPONSE": {
+          "precision": 0.06557377049180328,
+          "recall": 0.23529411764705882,
+          "f1-score": 0.10256410256410256,
+          "support": 17.0
+        },
+        "FALL": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 14.0
+        },
+        "BREATHING_MEDICAL": {
+          "precision": 0.047619047619047616,
+          "recall": 0.09090909090909091,
+          "f1-score": 0.0625,
+          "support": 11.0
+        },
+        "PAIN": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 9.0
+        },
+        "SOS_HELP": {
+          "precision": 0.08333333333333333,
+          "recall": 0.1111111111111111,
+          "f1-score": 0.09523809523809523,
+          "support": 9.0
+        },
+        "LOCATION": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.8386831275720165,
+        "macro avg": {
+          "precision": 0.16421278040386614,
+          "recall": 0.18776722810336258,
+          "f1-score": 0.16767681790063602,
+          "support": 1215.0
+        },
+        "weighted avg": {
+          "precision": 0.9078692907567039,
+          "recall": 0.8386831275720165,
+          "f1-score": 0.8710339644986309,
+          "support": 1215.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1013,
+          55,
+          42,
+          19,
+          12,
+          11,
+          3
+        ],
+        [
+          11,
+          4,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          13,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          9,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "canonical_classes": [
+        "GENERAL_SPEECH",
+        "CRITICAL_RESPONSE",
+        "FALL",
+        "BREATHING_MEDICAL",
+        "PAIN",
+        "SOS_HELP",
+        "LOCATION"
+      ]
+    },
+    "Track_B": {
+      "track_id": "Track_B_Quantum",
+      "benchmark": "Phase8_80_20",
+      "quantum_configuration": {
+        "qubits": 8,
+        "circuit": "AngleEmbedding + BasicEntanglerLayers",
+        "layers": 2,
+        "trainable_parameters": 18,
+        "simulator": "PennyLane default.qubit",
+        "interface": "torch",
+        "diff_method": "backprop"
+      },
+      "total_train_samples": 4852,
+      "total_test_samples": 1215,
+      "total_emergency_test_samples": 60,
+      "accuracy": 0.842798353909465,
+      "macro_f1": 0.16942373602439606,
+      "emergency_recall": 0.18333333333333332,
+      "emergency_precision": 0.07432432432432433,
+      "false_emergency_rate": 0.11861471861471862,
+      "intent_preservation_rate": 0.8813852813852814,
+      "dysarthric_accuracy": 0.8069767441860465,
+      "dysarthric_macro_f1": 0.1468964239392255,
+      "dysarthric_emergency_recall": 0.14814814814814814,
+      "dysarthric_emergency_precision": 0.06451612903225806,
+      "dysarthric_fer": 0.14392059553349876,
+      "control_accuracy": 0.8624203821656051,
+      "control_macro_f1": 0.19134297412969323,
+      "control_emergency_recall": 0.21212121212121213,
+      "control_emergency_precision": 0.08139534883720931,
+      "control_fer": 0.10505319148936171,
+      "total_train_time_sec": 280.82740999999896,
+      "total_eval_time_sec": 0.26957949999996345,
+      "mean_weight_delta_norm": 1.837162717183431,
+      "per_class_report": {
+        "GENERAL_SPEECH": {
+          "precision": 0.9540768509840675,
+          "recall": 0.8813852813852814,
+          "f1-score": 0.9162916291629163,
+          "support": 1155.0
+        },
+        "CRITICAL_RESPONSE": {
+          "precision": 0.0625,
+          "recall": 0.23529411764705882,
+          "f1-score": 0.09876543209876543,
+          "support": 17.0
+        },
+        "FALL": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 14.0
+        },
+        "BREATHING_MEDICAL": {
+          "precision": 0.07142857142857142,
+          "recall": 0.09090909090909091,
+          "f1-score": 0.08,
+          "support": 11.0
+        },
+        "PAIN": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 9.0
+        },
+        "SOS_HELP": {
+          "precision": 0.07692307692307693,
+          "recall": 0.1111111111111111,
+          "f1-score": 0.09090909090909091,
+          "support": 9.0
+        },
+        "LOCATION": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.842798353909465,
+        "macro avg": {
+          "precision": 0.16641835704795938,
+          "recall": 0.18838565729322032,
+          "f1-score": 0.16942373602439606,
+          "support": 1215.0
+        },
+        "weighted avg": {
+          "precision": 0.9090529093535965,
+          "recall": 0.842798353909465,
+          "f1-score": 0.8738222434954973,
+          "support": 1215.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1018,
+          59,
+          38,
+          12,
+          12,
+          12,
+          4
+        ],
+        [
+          10,
+          4,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          13,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          10,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          8,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "canonical_classes": [
+        "GENERAL_SPEECH",
+        "CRITICAL_RESPONSE",
+        "FALL",
+        "BREATHING_MEDICAL",
+        "PAIN",
+        "SOS_HELP",
+        "LOCATION"
+      ]
+    },
+    "Track_C": {
+      "track_id": "Track_C_Classical_Shadow",
+      "benchmark": "Phase8_80_20",
+      "shadow_configuration": {
+        "input_dimension": 8,
+        "hidden_dimension": 16,
+        "activation": "GELU",
+        "trainable_parameters": 161,
+        "matched_to": "Track B 8-Qubit VQC"
+      },
+      "total_train_samples": 4852,
+      "total_test_samples": 1215,
+      "total_emergency_test_samples": 60,
+      "accuracy": 0.8082304526748971,
+      "macro_f1": 0.1499634821527116,
+      "emergency_recall": 0.11666666666666667,
+      "emergency_precision": 0.03825136612021858,
+      "false_emergency_rate": 0.1523809523809524,
+      "intent_preservation_rate": 0.8476190476190476,
+      "dysarthric_accuracy": 0.8186046511627907,
+      "dysarthric_macro_f1": 0.12893772893772895,
+      "dysarthric_emergency_recall": 0.07407407407407407,
+      "dysarthric_emergency_precision": 0.03773584905660377,
+      "dysarthric_fer": 0.12655086848635236,
+      "control_accuracy": 0.802547770700637,
+      "control_macro_f1": 0.16219902139960465,
+      "control_emergency_recall": 0.15151515151515152,
+      "control_emergency_precision": 0.038461538461538464,
+      "control_fer": 0.16622340425531915,
+      "total_train_time_sec": 32.89190569999846,
+      "total_eval_time_sec": 0.029822800000147254,
+      "per_class_report": {
+        "GENERAL_SPEECH": {
+          "precision": 0.9486434108527132,
+          "recall": 0.8476190476190476,
+          "f1-score": 0.8952903520804756,
+          "support": 1155.0
+        },
+        "CRITICAL_RESPONSE": {
+          "precision": 0.014285714285714285,
+          "recall": 0.058823529411764705,
+          "f1-score": 0.022988505747126436,
+          "support": 17.0
+        },
+        "FALL": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 14.0
+        },
+        "BREATHING_MEDICAL": {
+          "precision": 0.047619047619047616,
+          "recall": 0.09090909090909091,
+          "f1-score": 0.0625,
+          "support": 11.0
+        },
+        "PAIN": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 9.0
+        },
+        "SOS_HELP": {
+          "precision": 0.05,
+          "recall": 0.1111111111111111,
+          "f1-score": 0.06896551724137931,
+          "support": 9.0
+        },
+        "LOCATION": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "accuracy": 0.8082304526748971,
+        "macro avg": {
+          "precision": 0.15150688182249644,
+          "recall": 0.15835182557871635,
+          "f1-score": 0.1499634821527116,
+          "support": 1215.0
+        },
+        "weighted avg": {
+          "precision": 0.9027981944045685,
+          "recall": 0.8082304526748971,
+          "f1-score": 0.8524768320212534,
+          "support": 1215.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          979,
+          67,
+          51,
+          19,
+          16,
+          19,
+          4
+        ],
+        [
+          14,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          13,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          9,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "canonical_classes": [
+        "GENERAL_SPEECH",
+        "CRITICAL_RESPONSE",
+        "FALL",
+        "BREATHING_MEDICAL",
+        "PAIN",
+        "SOS_HELP",
+        "LOCATION"
+      ]
+    }
+  },
+  "statistical_tests": {
+    "benchmark": "Phase8_80_20",
+    "sample_unit": "Speaker-level paired observations (N=15) and sample-level matched emergency test set (N=60)",
+    "pairwise_wilcoxon": {
+      "Track_B_vs_Track_A_recall": {
+        "p_value": 0.3963327614616553,
+        "statistic": 9.0,
+        "significant_at_05": false
+      },
+      "Track_B_vs_Track_C_recall": {
+        "p_value": 0.16820413904818,
+        "statistic": 4.0,
+        "significant_at_05": false
+      },
+      "Track_A_vs_Track_C_recall": {
+        "p_value": 0.10880943004054569,
+        "statistic": 0.0,
+        "significant_at_05": false
+      },
+      "Track_B_vs_Track_A_macro_f1": {
+        "p_value": 0.683239071626591,
+        "statistic": 46.0,
+        "significant_at_05": false
+      },
+      "Track_B_vs_Track_C_macro_f1": {
+        "p_value": 0.03533935546875,
+        "statistic": 23.0,
+        "significant_at_05": true
+      }
+    },
+    "mcnemar_emergency_test_60": {
+      "discordant_b1_a0": 4,
+      "discordant_b0_a1": 3,
+      "chi2_statistic": 0.0,
+      "p_value": 1.0,
+      "significant_at_05": false
+    },
+    "scientific_verdict": "CASE B CONFIRMED: NO STATISTICALLY SUPPORTED QUANTUM ADVANTAGE. Track B achieves 11/60 vs Track A 10/60 emergency recalls (p > 0.05)."
+  },
+  "leakage_audit": {
+    "benchmark": "Phase8_80_20",
+    "timestamp": "2026-10-10T05:59:47Z",
+    "dataset_fingerprint": "16c1304221900a8ca5a278adc2528ba2807881e9c526a322b7a649135bc80a58",
+    "checks": {
+      "sample_id_disjointness": {
+        "status": "PASS",
+        "train_samples": 4852,
+        "test_samples": 1215,
+        "intersection_size": 0
+      },
+      "audio_hash_disjointness": {
+        "status": "PASS",
+        "unique_train_hashes": 4852,
+        "unique_test_hashes": 1215,
+        "hash_intersection_size": 0
+      },
+      "preprocessing_fit_on_train_only": {
+        "status": "PASS",
+        "details": "TrainOnlyPCAPipeline fitted strictly on X_train for each speaker. Test X_test only transformed."
+      },
+      "class_weights_on_train_only": {
+        "status": "PASS",
+        "details": "pos_weight computed solely from y_train binary emergency balance."
+      },
+      "decision_threshold_calibration": {
+        "status": "PASS",
+        "details": "Threshold tau grid search evaluated on train probabilities only under FER bound <= 0.15."
+      },
+      "no_test_samples_in_training": {
+        "status": "PASS",
+        "details": "Zero test samples accessed during fitting, tuning, calibration, or model selection."
+      },
+      "track_pipeline_isolation": {
+        "status": "PASS",
+        "details": "Track A, B, and C maintained separate model instances, distinct random states, and emit separate prediction CSVs."
+      },
+      "historical_contamination_audit": {
+        "status": "FLAGGED_IN_BEFORE_AFTER",
+        "details": "218 test samples were present in Phase 6.5/8 few-shot adaptation set. As required, before_after.csv marks comparison INVALID."
+      }
+    },
+    "overall_audit_status": "PASS"
+  }
+}

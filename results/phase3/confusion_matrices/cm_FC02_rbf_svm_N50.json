@@ -1,0 +1,124 @@
+{
+  "run_id": "phase3_FC02_rbf_svm_N50_s42",
+  "speaker_id": "FC02",
+  "method": "rbf_svm",
+  "sample_n": 50,
+  "confusion_matrix": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      8
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      12
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      890
+    ]
+  ],
+  "classes": [
+    "SOS_HELP",
+    "FALL",
+    "BREATHING_MEDICAL",
+    "PAIN",
+    "LOCATION",
+    "CRITICAL_RESPONSE",
+    "GENERAL_SPEECH"
+  ],
+  "per_class": {
+    "SOS_HELP": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 4
+    },
+    "FALL": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 8
+    },
+    "BREATHING_MEDICAL": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 4
+    },
+    "PAIN": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 12
+    },
+    "LOCATION": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 2
+    },
+    "CRITICAL_RESPONSE": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 5
+    },
+    "GENERAL_SPEECH": {
+      "precision": 0.9621621621621622,
+      "recall": 1.0,
+      "f1": 0.9807162534435262,
+      "support": 890
+    }
+  }
+}

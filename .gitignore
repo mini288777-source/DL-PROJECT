@@ -1,0 +1,71 @@
+# ==============================================================================
+# Git Ignore Configuration
+# Hybrid Quantum-Classical Atypical Speech Recognition Project
+# ==============================================================================
+
+# --- Local Archival Directory (Excluded from Git) ---
+NO NEED/
+
+# --- Bytecode & Python Cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# --- Virtual Environments ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Testing & Test Caches ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+
+# --- Runtime Temporary Directories & Caches ---
+.cache/
+cache/
+tmp/
+temp/
+*.tmp
+
+# --- Environment & Sensitive Credentials ---
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.pfx
+*.cert
+credentials.json
+client_secrets.json
+
+# --- Large Raw Datasets & Audio Archives (Exceeds GitHub 100MB Limits) ---
+# Raw TORGO multi-hundred-megabyte Parquet source archives
+TORGO DATASET/
+*.parquet
+
+# Extracted multi-gigabyte raw audio waveforms (regenerable from manifest/pipeline)
+data/torgo/audio/
+
+# --- IDE & OS Artifacts ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# --- Build & Distribution ---
+build/
+dist/
+*.egg-info/
+*.egg

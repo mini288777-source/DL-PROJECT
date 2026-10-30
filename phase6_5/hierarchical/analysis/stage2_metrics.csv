@@ -1,0 +1,9 @@
+model,N,stage2_macro_f1,stage2_balanced_accuracy,stage2_weighted_f1
+hierarchical_adapter,20,0.1914,0.3597,0.2871
+hierarchical_adapter,30,0.2048,0.3752,0.3084
+hierarchical_adapter,40,0.1904,0.3657,0.2971
+hierarchical_adapter,50,0.1904,0.3657,0.2971
+hierarchical_rbf_svm,20,0.1383,0.3112,0.2438
+hierarchical_rbf_svm,30,0.1321,0.3097,0.241
+hierarchical_rbf_svm,40,0.1262,0.3001,0.2414
+hierarchical_rbf_svm,50,0.1262,0.3001,0.2414

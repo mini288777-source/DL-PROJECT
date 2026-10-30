@@ -1,0 +1,45 @@
+# Phase 6 Configuration: Statistical Analysis & Intent-Preserving Evaluation
+
+project:
+  title: "Low-Resource Personalized Atypical Speech Recognition Using Hybrid Quantum-Classical Deep Learning"
+  phase: "Phase 6 — Statistical Evaluation & Master Reporting"
+  dataset: "TORGO"
+
+inputs:
+  results_csv: "results/phase5/phase5_results.csv"
+  summary_csv: "results/phase5/phase5_summary.csv"
+  per_class_csv: "results/phase5/phase5_per_class.csv"
+  predictions_csv: "results/phase5/phase5_predictions.csv"
+  canonical_spec: "reports/phase5_canonical_specification.md"
+
+outputs:
+  analysis_dir: "phase6/analysis"
+  figures_dir: "phase6/figures"
+  reports_dir: "phase6/reports"
+
+cohort:
+  speakers:
+    dysarthric: ["F01", "F03", "F04", "M01", "M02", "M03", "M04", "M05"]
+    control: ["FC01", "FC02", "FC03", "MC01", "MC02", "MC03", "MC04"]
+  sample_sizes: [20, 30, 40, 50]
+  models: ["adapter", "rbf_svm", "qsvc"]
+  snr_conditions: ["clean", "snr15", "snr10", "snr5"]
+
+statistical_analysis:
+  alpha: 0.05
+  confidence_level: 0.95
+  bootstrap_iterations: 2000
+  random_seed: 42
+  multiple_testing_correction: "holm" # Holm-Bonferroni correction
+  normality_test: "shapiro"
+  paired_test_normal: "paired_ttest"
+  paired_test_non_normal: "wilcoxon"
+  effect_size_metric_parametric: "cohens_d"
+  effect_size_metric_non_parametric: "wilcoxon_r"
+
+research_questions:
+  - "RQ6.1: How does emergency-intent preservation vary across model, calibration budget, and acoustic condition?"
+  - "RQ6.2: How does Macro-F1 vary as test-time SNR degrades under clean calibration?"
+  - "RQ6.3: Does increasing calibration budget from N=20 to N=50 produce measurable improvement in emergency-intent recognition?"
+  - "RQ6.4: Does the quantum-kernel configuration provide measurable benefit over the matched classical baselines under Protocol B?"
+  - "RQ6.5: How consistent are the observed effects across speakers?"

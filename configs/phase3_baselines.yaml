@@ -1,0 +1,88 @@
+# Classical Baselines & Few-Shot Sample-Efficiency Configuration
+# Phase 3: Adapter & Classical RBF-Kernel Baselines on Frozen Whisper Embeddings
+
+project:
+  name: "Low-Resource Personalized Atypical Speech Recognition Using Hybrid Quantum-Classical Deep Learning"
+  phase: "Phase 3 — Classical Baselines & Few-Shot Sample-Efficiency Experiment"
+  dataset: "TORGO"
+
+data:
+  manifest_path: "data/manifests/torgo_manifest.csv"
+  splits_json_path: "splits/torgo_splits.json"
+  intent_taxonomy_path: "configs/intent_taxonomy.yaml"
+  whisper_cache_dir: "embeddings/torgo/whisper"
+  mfcc_cache_dir: "embeddings/torgo/mfcc"
+  embedding_manifest_path: "embeddings/metadata/embedding_manifest.csv"
+  embedding_dim: 384
+  feature_type: "whisper"
+
+cohort:
+  speakers:
+    - "F01"
+    - "F03"
+    - "F04"
+    - "FC01"
+    - "FC02"
+    - "FC03"
+    - "M01"
+    - "M02"
+    - "M03"
+    - "M04"
+    - "M05"
+    - "MC01"
+    - "MC02"
+    - "MC03"
+    - "MC04"
+  sample_sizes:
+    - 20
+    - 30
+    - 40
+    - 50
+  seed: 42
+
+methods:
+  - "adapter"
+  - "rbf_svm"
+
+adapter:
+  input_dim: 384
+  hidden_dim: 64
+  dropout: 0.1
+  num_classes: 7
+  learning_rate: 0.005
+  weight_decay: 0.0001
+  epochs: 60
+  batch_size: 8
+  optimizer: "adamw"
+  class_weight: null
+  seed: 42
+
+rbf_svm:
+  C: 1.0
+  gamma: "scale"
+  class_weight: null
+  standardize: false # Embeddings are already unit-L2 normalized
+  probability: false
+  seed: 42
+  single_class_fallback: "constant_predictor"
+
+evaluation:
+  primary_metric: "macro_f1"
+  metrics:
+    - "accuracy"
+    - "macro_f1"
+    - "weighted_f1"
+    - "precision_macro"
+    - "recall_macro"
+
+output:
+  results_dir: "results/phase3"
+  baseline_curves_csv: "results/phase3/baseline_curves.csv"
+  predictions_csv: "results/phase3/predictions.csv"
+  run_log_csv: "results/phase3/run_log.csv"
+  confusion_matrices_dir: "results/phase3/confusion_matrices"
+  figures_dir: "results/phase3/figures"
+  class_distribution_csv: "reports/phase3_class_distribution.csv"
+  model_configuration_csv: "reports/phase3_model_configuration.csv"
+  fairness_audit_md: "reports/phase3_fairness_audit.md"
+  summary_report_md: "reports/phase3_classical_baselines_summary.md"

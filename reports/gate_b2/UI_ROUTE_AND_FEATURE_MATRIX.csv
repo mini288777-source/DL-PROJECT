@@ -1,0 +1,36 @@
+view_id,view_name,route_hash,ui_component,backend_endpoint,http_method,data_provenance_source,readiness_status,safety_or_limitation_notice
+overview,Overview Dashboard,#overview,Gate Status Tracker,/api/v1/provenance/summary,GET,reports/project_readiness/PROJECT_READINESS_AND_APPLICATION_ELIGIBILITY_AUDIT.md,ACTIVE,Gate C and Gate D strictly blocked
+overview,Overview Dashboard,#overview,Live System Vitals Card,/ready,GET,Live ModelManager and AudioService instances,ACTIVE,Whisper 384-D encoder and ASR ready
+overview,Overview Dashboard,#overview,Checkpoint Availability Counter,/api/v1/provenance/summary,GET,reports/gate_b_hardening/checkpoint_inventory.json,ACTIVE,61 Materialized and Verified; 6 Unmaterialized Blockers
+overview,Overview Dashboard,#overview,Regression Test Status Widget,/api/v1/provenance/summary,GET,reports/project_readiness/test_status.json,ACTIVE,588 / 588 Passed (100% Pass Rate)
+overview,Overview Dashboard,#overview,Cryptographic Integrity Indicator,/api/v1/provenance/summary,GET,reports/project_readiness/checksums.json,ACTIVE,28 / 28 Checksums Matched (100% Integrity)
+overview,Overview Dashboard,#overview,Authoritative Research Verdicts,/api/v1/research/phases,GET,results/phase6_5_6_final_comparison_table.csv,ACTIVE,Case B Affirmed: No statistically significant quantum advantage
+audiolab,Audio Lab,#audiolab,File Upload Dropzone,/api/v1/predict/file,POST,Ephemeral in-memory audio processing (Max 10 MB <=30s),ACTIVE,Zero raw audio persistence by default
+audiolab,Audio Lab,#audiolab,Browser Microphone Capture,/api/v1/predict/file,POST,Browser MediaRecorder API (16 kHz mono WAV conversion),ACTIVE,Zero raw audio persistence by default
+audiolab,Audio Lab,#audiolab,Benchmark Synthetic Audio,/api/v1/predict/file,POST,Client-side 1.5s 16kHz sine synthesis,ACTIVE,Client-generated zero-dependency demonstration audio
+audiolab,Audio Lab,#audiolab,Local Audio Player Preview,None,None,Client-side HTML5 Audio Element (<audio controls>),ACTIVE,Local browser playback only
+audiolab,Audio Lab,#audiolab,Whisper Speech Transcription,/api/v1/audio/transcribe,POST,Local offline Whisper-tiny speech recognition,ACTIVE,Offline local transcription only
+audiolab,Audio Lab,#audiolab,384-D Acoustic Feature Extraction,/api/v1/audio/extract-embedding,POST,Frozen Whisper-tiny encoder (L2 unit-norm normalized),ACTIVE,L2 norm = 1.000000 nominal check
+audiolab,Audio Lab,#audiolab,Vector Inspector Modal,/api/v1/audio/extract-embedding?include_vector=true,POST,Client-side opt-in technical preview modal,ACTIVE,Read-only inspection of 384 float coordinates
+audiolab,Audio Lab,#audiolab,Continual Adapter Classification,/api/v1/predict/file,POST,checkpoints/phase7_5/speaker_adapters/*.pt,ACTIVE,tau = 0.6000 uncalibrated demonstration default
+audiolab,Audio Lab,#audiolab,Unmaterialized Model 503 Guardrail,/api/v1/predict/file,POST,checkpoints/phase8_1/*.pt (Unmaterialized),HTTP_503_ENFORCED,MODEL_NOT_READY: No mock weights or fabricated confidence scores
+audiolab,Audio Lab,#audiolab,7-Class Probability Bar Chart,None,None,ModelManager Softmax Distribution Output,ACTIVE,Unit interval [0.0 - 1.0] across canonical taxonomy
+registry,Model & Speaker Registry,#registry,Searchable Model Catalog Table,/api/v1/models,GET,reports/gate_b_hardening/checkpoint_inventory.json,ACTIVE,All 67 catalogued models (61 materialized, 6 unmaterialized)
+registry,Model & Speaker Registry,#registry,Speaker Coverage Filter,/api/v1/speakers,GET,15 TORGO speakers (8 dysarthric, 7 control),ACTIVE,Nonexistent speaker yields clear error
+registry,Model & Speaker Registry,#registry,Model Details Modal,/model-info,GET,Live ModelManager architecture inspection,ACTIVE,Shortened and full SHA-256 provenance hashes
+results,Research Results Explorer,#results,Research Chronology Timeline,/api/v1/research/phases,GET,Chronological records of Phases 1 to 8.2.1,ACTIVE,Read-only historical phase milestones
+results,Research Results Explorer,#results,Phase 8.1 Model Comparison Table,/api/v1/research/metrics,GET,results/phase8_1/model_comparison.csv,ACTIVE,Hierarchical vs Flat under FER <= 15% ceiling
+results,Research Results Explorer,#results,Classical vs Quantum Paired Table,/api/v1/research/metrics,GET,results/phase6_5_6_final_comparison_table.csv,ACTIVE,8-Qubit QSVC vs Classical RBF-SVM (Case B Affirmed)
+results,Research Results Explorer,#results,Safety Operating Points Table,/api/v1/research/operating-points,GET,results/phase8_1/safety_operating_points.csv,ACTIVE,Trade-off curve across tau in [0.20, 0.90]
+results,Research Results Explorer,#results,Verified Figure Gallery,/api/v1/research/figures,GET,reports/project_readiness/figures/ & results/phase8_1/figures/,ACTIVE,On-disk verified figures with high-resolution lightbox
+provenance,Provenance & Reproducibility,#provenance,TORGO Dataset Provenance Card,/api/v1/provenance/summary,GET,data/manifests/torgo_manifest.csv (4,852 utterances),ACTIVE,Locked development partition metrics
+provenance,Provenance & Reproducibility,#provenance,Cryptographic Checksum Audit Table,/api/v1/provenance/summary,GET,reports/project_readiness/checksums.json,ACTIVE,28 / 28 SHA-256 verified matches
+provenance,Provenance & Reproducibility,#provenance,Regression Test Suite Registry,/api/v1/provenance/summary,GET,reports/project_readiness/test_status.json,ACTIVE,588 collected tests; 0 regressions
+provenance,Provenance & Reproducibility,#provenance,Evaluation Limitations Statement,/api/v1/provenance/summary,GET,Diagnostic test set inspection and absence of external cohort,ACTIVE,No clinical or emergency dispatch claims permitted
+diagnostics,Runtime Diagnostics,#diagnostics,Live Health & Latency Monitor,/health,GET,Live FastAPI process health,ACTIVE,Round-trip latency in ms
+diagnostics,Runtime Diagnostics,#diagnostics,WebSocket Stream Channel Tester,/ws/inference,WEBSOCKET,src/app/routes/websocket.py,ACTIVE,Real-time streaming test channel
+diagnostics,Runtime Diagnostics,#diagnostics,Ephemeral Session History Table,None,None,In-memory browser session table,ACTIVE,Zero raw audio or speech transcripts persisted
+help,Help & Limitations,#help,Accuracy Deception Guide,None,None,reports/project_readiness/PROJECT_READINESS_AND_APPLICATION_ELIGIBILITY_AUDIT.md,ACTIVE,Non-technical explanation of FER and recall collapse
+help,Help & Limitations,#help,Operational Guide & Limits,None,None,System documentation (16kHz mono, <=10MB, <=30s),ACTIVE,Input constraints and troubleshooting guide
+help,Help & Limitations,#help,Local CLI Commands,None,None,Repository execution documentation,ACTIVE,Exact commands for uvicorn, pytest, and termination
+help,Help & Limitations,#help,Non-Negotiable Research Disclaimer,None,None,Mandatory safety disclaimer notice,ACTIVE,Research prototype only; not validated for clinical or emergency response

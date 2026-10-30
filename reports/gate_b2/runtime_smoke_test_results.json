@@ -1,0 +1,52 @@
+{
+  "health_check": {
+    "status_code": 200,
+    "status": "healthy"
+  },
+  "ready_check": {
+    "status_code": 200,
+    "materialized_models": 61,
+    "unready_models": 6
+  },
+  "html_interface": {
+    "status_code": 200,
+    "bytes": 40533
+  },
+  "static_assets": {
+    "style_css_bytes": 19905,
+    "app_js_bytes": 39141
+  },
+  "mounted_figures": {
+    "status_code": 200,
+    "fig_bytes": 135030
+  },
+  "research_phases": {
+    "status_code": 200,
+    "phases_count": 9
+  },
+  "research_metrics": {
+    "status_code": 200,
+    "phase8_1_rows": 6
+  },
+  "provenance_summary": {
+    "status_code": 200,
+    "tracked_checksums": 28,
+    "gate_c_status": "STRICTLY_BLOCKED",
+    "gate_d_status": "STRICTLY_BLOCKED"
+  },
+  "websocket_inference": {
+    "status": "SUCCESS",
+    "response_received": true
+  },
+  "live_predict": {
+    "status_code": 200,
+    "predicted_intent": "FALL",
+    "confidence_score": 0.5323850512504578,
+    "processing_latency_ms": 11.589600000661449
+  },
+  "unmaterialized_model_503": {
+    "status_code": 503,
+    "error_code": "MODEL_NOT_READY",
+    "model_id": "phase8_1_track_a_baseline"
+  }
+}

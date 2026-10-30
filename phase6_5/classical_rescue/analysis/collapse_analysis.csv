@@ -1,0 +1,5 @@
+model,total_cells,collapsed_cells,collapse_rate,mean_gen_fraction,mean_emerg_fraction,mean_unique_classes,collapse_percentage
+unweighted_adapter,60,1,0.016666666666666666,0.6620166666666666,0.33798333333333336,4.95,1.67
+unweighted_rbf_svm,60,53,0.8833333333333333,0.8833333333333333,0.11666666666666667,1.0166666666666666,88.33
+weighted_adapter,60,0,0.0,0.52249,0.47751,5.616666666666666,0.0
+weighted_rbf_svm,60,3,0.05,0.15326,0.84674,3.6,5.0

@@ -1,0 +1,15 @@
+{
+  "mcnemar_accuracy_track_b_vs_track_a": {
+    "quantum_only_correct": 86,
+    "classical_only_correct": 80,
+    "p_value": 0.6980840547607374,
+    "is_significant": false
+  },
+  "mcnemar_emergency_recall_track_b_vs_track_a": {
+    "quantum_only_detected": 10,
+    "classical_only_detected": 5,
+    "p_value": 0.30175781249999994,
+    "is_significant": false
+  },
+  "formal_conclusion": "no statistically significant quantum advantage was demonstrated"
+}

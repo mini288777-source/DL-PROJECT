@@ -1,0 +1,16 @@
+speaker_id,total_manifest_recordings,valid_recordings,cohort_target_recordings,whisper_cached,mfcc_cached,failed,N20_available,N30_available,N40_available,N50_available
+F01,236,236,118,118,118,0,True,True,True,True
+F03,1087,1086,213,213,213,0,True,True,True,True
+F04,673,673,250,250,250,0,True,True,True,True
+FC01,302,302,151,151,151,0,True,True,True,True
+FC02,2187,2187,975,975,975,0,True,True,True,True
+FC03,1922,1922,405,405,405,0,True,True,True,True
+M01,743,742,285,285,285,0,True,True,True,True
+M02,772,772,232,232,232,0,True,True,True,True
+M03,810,810,406,406,406,0,True,True,True,True
+M04,666,666,286,286,286,0,True,True,True,True
+M05,587,587,357,357,357,0,True,True,True,True
+MC01,2155,2155,419,419,419,0,True,True,True,True
+MC02,1123,1123,383,383,383,0,True,True,True,True
+MC03,1669,1669,594,594,594,0,True,True,True,True
+MC04,1620,1620,993,993,993,0,True,True,True,True

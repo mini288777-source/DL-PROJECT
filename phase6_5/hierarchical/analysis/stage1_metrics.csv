@@ -1,0 +1,9 @@
+model,N,stage1_emergency_recall,stage1_emergency_precision,stage1_emergency_f1,stage1_specificity,stage1_false_positive_rate,stage1_pr_auc,stage1_roc_auc
+hierarchical_adapter,20,0.5098,0.0161,0.0308,0.426,0.574,0.0391,0.4259
+hierarchical_adapter,30,0.3557,0.014,0.0263,0.5544,0.4456,0.0261,0.4213
+hierarchical_adapter,40,0.2472,0.0112,0.0204,0.6368,0.3632,0.0318,0.4566
+hierarchical_adapter,50,0.3268,0.0119,0.0225,0.6555,0.3445,0.0262,0.4362
+hierarchical_rbf_svm,20,0.7567,0.0188,0.0367,0.2431,0.7569,0.0423,0.5538
+hierarchical_rbf_svm,30,0.1491,0.0399,0.0218,0.8494,0.1506,0.0542,0.5631
+hierarchical_rbf_svm,40,0.2593,0.0053,0.0103,0.7398,0.2602,0.0591,0.5697
+hierarchical_rbf_svm,50,0.2,0.0048,0.0094,0.7999,0.2001,0.0568,0.5768

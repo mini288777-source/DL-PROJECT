@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atypical Speech Emergency Assistant — Quantum Research Command Center</title>
+  <meta name="description" content="Quantum-only personalized atypical speech recognition research platform using hybrid quantum-classical statevector fidelity kernels.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css?v=2.1.0">
+</head>
+<body>
+
+  <!-- Interactive Quantum Background Lattice Engine -->
+  <canvas id="quantumBgCanvas" class="quantum-bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- Modern Toast Notification Stack -->
+  <div id="toastContainer" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Full Application Shell Layout -->
+  <div class="app-layout">
+
+    <!-- ====================================================================
+         LEFT WORKSPACE SIDEBAR
+         ==================================================================== -->
+    <aside class="app-sidebar" id="appSidebar" aria-label="Main Navigation">
+      <!-- Workspace Brand Banner -->
+      <div class="sidebar-brand">
+        <div class="brand-icon-wrap" aria-hidden="true">
+          <svg class="brand-icon-svg" width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="3.5" fill="#22D3EE" />
+            <ellipse cx="16" cy="16" rx="14" ry="5.5" stroke="#8B5CF6" stroke-width="1.5" stroke-dasharray="2 1" />
+            <ellipse cx="16" cy="16" rx="14" ry="5.5" stroke="#22D3EE" stroke-width="1.5" transform="rotate(60 16 16)" />
+            <ellipse cx="16" cy="16" rx="14" ry="5.5" stroke="#6366F1" stroke-width="1.5" transform="rotate(120 16 16)" />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Atypical Speech</span>
+          <span class="brand-subtitle">Quantum Research Lab</span>
+        </div>
+      </div>
+
+      <!-- Navigation Menu Groups -->
+      <nav class="sidebar-nav" role="tablist">
+        
+        <!-- Group 1: Workspace -->
+        <div class="nav-section">
+          <div class="nav-section-title">Workspace</div>
+          <button class="nav-tab-btn active" data-target="overview" role="tab" id="tab-overview" aria-controls="view-overview" aria-selected="true">
+            <span class="nav-btn-icon">📊</span>
+            <span>Overview Command</span>
+          </button>
+          <button class="nav-tab-btn" data-target="audiolab" role="tab" id="tab-audiolab" aria-controls="view-audiolab" aria-selected="false">
+            <span class="nav-btn-icon">⚛️</span>
+            <span>Quantum Audio Lab</span>
+            <span class="tab-badge" style="background: rgba(34, 211, 238, 0.15); color: #22D3EE; border-color: rgba(34, 211, 238, 0.3);">LIVE</span>
+          </button>
+          <button class="nav-tab-btn" data-target="registry" role="tab" id="tab-registry" aria-controls="view-registry" aria-selected="false">
+            <span class="nav-btn-icon">🗂️</span>
+            <span>Model Registry</span>
+            <span class="tab-badge">67</span>
+          </button>
+        </div>
+
+        <!-- Group 2: Analysis & Evidence -->
+        <div class="nav-section">
+          <div class="nav-section-title">Analysis &amp; Evidence</div>
+          <button class="nav-tab-btn" data-target="results" role="tab" id="tab-results" aria-controls="view-results" aria-selected="false">
+            <span class="nav-btn-icon">📈</span>
+            <span>Research Results</span>
+          </button>
+          <button class="nav-tab-btn" data-target="provenance" role="tab" id="tab-provenance" aria-controls="view-provenance" aria-selected="false">
+            <span class="nav-btn-icon">🔒</span>
+            <span>Provenance Audit</span>
+          </button>
+        </div>
+
+        <!-- Group 3: System & Governance -->
+        <div class="nav-section">
+          <div class="nav-section-title">System &amp; Governance</div>
+          <button class="nav-tab-btn" data-target="diagnostics" role="tab" id="tab-diagnostics" aria-controls="view-diagnostics" aria-selected="false">
+            <span class="nav-btn-icon">🛠️</span>
+            <span>Runtime Diagnostics</span>
+          </button>
+          <button class="nav-tab-btn" data-target="help" role="tab" id="tab-help" aria-controls="view-help" aria-selected="false">
+            <span class="nav-btn-icon">❓</span>
+            <span>Help &amp; Limitations</span>
+          </button>
+        </div>
+
+      </nav>
+
+      <!-- Sidebar Status Telemetry -->
+      <div class="sidebar-footer">
+        <div class="sidebar-status-card">
+          <div class="status-card-row">
+            <span style="color: var(--text-muted); font-weight: 500;">Active Predictor:</span>
+            <span style="color: var(--quantum-cyan); font-family: 'JetBrains Mono', monospace; font-weight: 600;">qsvc_q8_r1</span>
+          </div>
+          <div class="status-card-row">
+            <span style="display: flex; align-items: center; gap: 6px; color: var(--text-secondary);">
+              <span class="pulse-indicator"></span> Quantum Kernel
+            </span>
+            <span class="status-pill ready" style="padding: 2px 7px; font-size: 10px;">OPERATIONAL</span>
+          </div>
+          <div class="status-card-row" style="margin-top: 2px;">
+            <span style="color: var(--text-dim); font-size: 10.5px;">Gate B.2 Prototype</span>
+            <span style="color: var(--text-dim); font-family: 'JetBrains Mono', monospace; font-size: 10.5px;">127.0.0.1:8000</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ====================================================================
+         MAIN APP WORKSPACE
+         ==================================================================== -->
+    <div class="app-workspace">
+
+      <!-- Top Command Header -->
+      <header class="command-header">
+        <div class="header-meta-left">
+          <button id="mobileMenuBtn" class="mobile-menu-toggle" aria-label="Toggle navigation menu">☰</button>
+          <div class="breadcrumb-trail">
+            <span class="breadcrumb-root">Research Platform</span>
+            <span class="breadcrumb-sep">/</span>
+            <span id="activeViewBreadcrumb" class="breadcrumb-current">Overview Command</span>
+          </div>
+        </div>
+
+        <div class="header-meta-right">
+          <div class="header-chip quantum-active" title="Operational Quantum Model">
+            <span class="chip-icon">⚛</span>
+            <span>QSVC (8 Qubits, Reps=1)</span>
+          </div>
+          <div class="header-chip" title="Server Connection">
+            <span class="pulse-indicator"></span>
+            <span>Uvicorn 8000: Live</span>
+          </div>
+          <div class="header-chip" title="Offline Research Demonstration">
+            <span>🛡️ Local Demo</span>
+          </div>
+          <button id="safetyToggleBtn" class="header-chip safety-btn" aria-expanded="false" aria-controls="safetyDetailsDrawer">
+            <span>⚠️</span> Safety Notice
+          </button>
+        </div>
+      </header>
+
+      <!-- Refined Collapsible Research Disclaimer -->
+      <div class="safety-drawer-container" role="region" aria-label="Research Disclaimer & Safety Limitations">
+        <div class="safety-banner-compact">
+          <div class="safety-content-row">
+            <div class="safety-icon-badge">⚠️</div>
+            <div class="safety-summary-text">
+              <strong>Non-Negotiable Research Disclaimer:</strong>
+              This application is an experimental research prototype. It is not validated for clinical use or real-world emergency response. Predictions can be incorrect, including failure to detect emergencies and false emergency alerts. Do not rely on this application for emergency decisions.
+            </div>
+          </div>
+          <button id="safetyDetailsBtn" class="safety-expand-btn" aria-expanded="false" aria-controls="safetyDetailsDrawer">
+            <span>Governance &amp; Limits</span> ▾
+          </button>
+        </div>
+
+        <!-- Detailed Expandable Governance Drawer -->
+        <div id="safetyDetailsDrawer" class="safety-details-drawer">
+          <div class="safety-grid-pillars">
+            <div class="safety-pillar-card">
+              <div class="pillar-title">
+                <span style="color: #F87171;">Gate C: Controlled Pilot</span>
+                <span class="status-pill error" style="padding: 1px 6px; font-size: 10px;">LOCKED</span>
+              </div>
+              <div class="pillar-body">
+                STRICTLY BLOCKED: 10 external prerequisites unresolved (independent external cohort, IRB approval, executed DUA, and pre-registered clinical oversight).
+              </div>
+            </div>
+            <div class="safety-pillar-card">
+              <div class="pillar-title">
+                <span style="color: #F87171;">Gate D: Emergency 911/CAD</span>
+                <span class="status-pill error" style="padding: 1px 6px; font-size: 10px;">PROHIBITED</span>
+              </div>
+              <div class="pillar-body">
+                STRICTLY BLOCKED: Zero CAD/911 integrations. Observed Emergency Recall (10.13%–19.83%) falls below life-critical thresholds (target &ge; 90%). 0 FDA clearances.
+              </div>
+            </div>
+            <div class="safety-pillar-card">
+              <div class="pillar-title">
+                <span style="color: var(--quantum-cyan);">Quantum Advantage</span>
+                <span class="status-pill info" style="padding: 1px 6px; font-size: 10px;">CASE B</span>
+              </div>
+              <div class="pillar-body">
+                No statistically significant quantum advantage demonstrated. Classical RBF matched 8-qubit QSVC while running ~772&times; faster in statistical audits.
+              </div>
+            </div>
+            <div class="safety-pillar-card">
+              <div class="pillar-title">
+                <span style="color: var(--warning-amber);">Uncalibrated Decision Margins</span>
+                <span class="status-pill warning" style="padding: 1px 6px; font-size: 10px;">NOTICE</span>
+              </div>
+              <div class="pillar-body">
+                Decision scores represent uncalibrated SVM margins. Output scores must NOT be interpreted as certified clinical probabilities.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Scrollable App Container -->
+      <main class="app-container">
+
+        <!-- ====================================================================
+             VIEW 1: OVERVIEW DASHBOARD (Bento Grid Command Center)
+             ==================================================================== -->
+        <section id="view-overview" class="view-section active" role="tabpanel" aria-labelledby="tab-overview">
+          <div class="section-header">
+            <h2>Quantum Command Overview</h2>
+            <p>Real-time application vitals, deployment gate authorization, regression pass rates, and cryptographic provenance certification.</p>
+          </div>
+
+          <!-- Bento Grid Container -->
+          <div class="bento-grid">
+
+            <!-- Bento Row 1: Command Hero Card -->
+            <div class="bento-hero">
+              <div class="hero-text-content">
+                <div class="hero-badge-row">
+                  <span class="status-pill ready">GATE B.2 AUTHORIZED</span>
+                  <span class="status-pill info">QUANTUM-ONLY ARCHITECTURE</span>
+                  <span class="status-pill ready">ZERO CLASSICAL FALLBACK</span>
+                </div>
+                <h3 class="hero-title">Atypical Speech Emergency Assistant</h3>
+                <p class="hero-description">
+                  Controlled scientific research demonstration for personalized dysarthric speech recognition using frozen Whisper-tiny acoustic embeddings, 8-qubit <code style="color: var(--quantum-cyan);">ZZFeatureMap</code> quantum statevector fidelity kernels, and pre-trained support vector machines.
+                </p>
+                <div class="hero-cta-group">
+                  <button class="btn btn-primary" onclick="switchTab('audiolab')">
+                    <span>⚛️</span> Launch Quantum Audio Lab
+                  </button>
+                  <button class="btn btn-secondary" onclick="switchTab('results')">
+                    <span>📈</span> Explore Research Results
+                  </button>
+                  <button class="btn btn-secondary" onclick="switchTab('provenance')">
+                    <span>🔒</span> Inspect Provenance Audit
+                  </button>
+                </div>
+              </div>
+
+              <!-- Interactive Quantum Orbital Graphic -->
+              <div class="hero-quantum-viz" aria-hidden="true">
+                <div class="orbital-ring r1"></div>
+                <div class="orbital-ring r2"></div>
+                <div class="orbital-ring r3"></div>
+                <div class="orbital-nucleus">⚛</div>
+              </div>
+            </div>
+
+            <!-- Bento Row 2: Four Precision Metric Cards -->
+            <div class="bento-stat-card">
+              <div class="stat-header">
+                <span class="stat-title">Quantum Model Readiness</span>
+                <span class="stat-icon">⚛️</span>
+              </div>
+              <div class="stat-main-metric" style="color: #10B981;">OPERATIONAL</div>
+              <div class="stat-footer-text">
+                <span id="statQuantumStatus" class="status-pill ready" style="padding: 2px 8px; font-size: 11px;">QUANTUM ACTIVE</span>
+                <span style="color: var(--text-muted);">qsvc_q8_r1 (8 Qubits)</span>
+              </div>
+            </div>
+
+            <div class="bento-stat-card">
+              <div class="stat-header">
+                <span class="stat-title">Acoustic Pipeline (Whisper)</span>
+                <span class="stat-icon">🎙️</span>
+              </div>
+              <div class="stat-main-metric">384-D Ready</div>
+              <div class="stat-footer-text">
+                <span id="statWhisperEncoder" class="status-pill ready" style="padding: 2px 8px; font-size: 11px;">Operational</span>
+                <span style="color: var(--text-muted);">ASR: <span id="statWhisperAsr" style="color: #10B981; font-weight: 600;">Operational</span></span>
+              </div>
+            </div>
+
+            <div class="bento-stat-card">
+              <div class="stat-header">
+                <span class="stat-title">Cryptographic Integrity</span>
+                <span class="stat-icon">🛡️</span>
+              </div>
+              <div class="stat-main-metric" style="color: var(--quantum-cyan);">28 / 28</div>
+              <div class="stat-footer-text">
+                <span id="statChecksumStatus" class="status-pill ready" style="padding: 2px 8px; font-size: 11px;">Matched (100%)</span>
+                <span style="color: var(--text-dim);">Last: <span id="overviewLastAudit">2026-10-10</span></span>
+              </div>
+            </div>
+
+            <div class="bento-stat-card">
+              <div class="stat-header">
+                <span class="stat-title">Regression Test Suite</span>
+                <span class="stat-icon">🧪</span>
+              </div>
+              <div class="stat-main-metric" id="statTestPassRate" style="color: #10B981;">100.0%</div>
+              <div class="stat-footer-text">
+                <span class="status-pill ready" style="padding: 2px 8px; font-size: 11px;">PASS</span>
+                <span id="statTestCount" style="color: var(--text-muted); font-family: 'JetBrains Mono', monospace;">648 / 648 Passed</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bento Row 2.5: Interactive 8-Qubit Bloch Statevector Precession & Entanglement HUD -->
+          <div class="card quantum-qubit-hud-card" style="margin-bottom: 24px;">
+            <div class="card-header">
+              <div class="card-title">
+                <span>⚛️ 8-Qubit Statevector Precession &amp; Entanglement HUD (qsvc_q8_r1)</span>
+              </div>
+              <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+                <span class="status-pill ready">Fidelity Kernel: ZZFeatureMap</span>
+                <span id="qubitCoherencePill" class="status-pill info">Coherence: 99.98%</span>
+                <span id="qubitStatePill" class="status-pill ready">State: Ground |ψ₀⟩</span>
+              </div>
+            </div>
+            <div class="qubit-hud-grid">
+              <div class="qubit-canvas-wrap">
+                <canvas id="qubitPrecessionCanvas" height="190"></canvas>
+                <div class="qubit-canvas-overlay-note">Real-Time Phase Rotation &amp; Entanglement Topology (|q₀⟩...|q₇⟩)</div>
+              </div>
+              <div class="qubit-metrics-panel">
+                <div class="qubit-metric-box">
+                  <span class="q-metric-label">Operational Qubits</span>
+                  <span class="q-metric-num" style="color: var(--quantum-cyan);">8 Active</span>
+                  <span class="q-metric-sub">q₀, q₁, q₂, q₃, q₄, q₅, q₆, q₇</span>
+                </div>
+                <div class="qubit-metric-box">
+                  <span class="q-metric-label">Quantum Circuit Reps</span>
+                  <span class="q-metric-num" style="color: var(--quantum-violet-light);">Reps = 1</span>
+                  <span class="q-metric-sub">Full pairwise ZZ-coupling</span>
+                </div>
+                <div class="qubit-metric-box">
+                  <span class="q-metric-label">Statevector Dimension</span>
+                  <span class="q-metric-num" style="color: #38BDF8;">2⁸ = 256</span>
+                  <span class="q-metric-sub">Complex Hilbert space</span>
+                </div>
+                <div class="qubit-metric-box">
+                  <span class="q-metric-label">Execution Mode</span>
+                  <span class="q-metric-num" style="color: #10B981;">Statevector</span>
+                  <span class="q-metric-sub">Exact mathematical simulation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Row 3: Deployment & Governance Gates Matrix -->
+          <div class="card" style="margin-bottom: 24px;">
+            <div class="card-header">
+              <div class="card-title">
+                <span>Deployment &amp; Governance Gates Matrix</span>
+              </div>
+              <span class="status-pill ready">Gate B.2 Authorized</span>
+            </div>
+            <div class="grid-4">
+              <div class="safety-pillar-card" style="border-color: var(--border-light);">
+                <div class="pillar-title">
+                  <span>Gate A: Research</span>
+                  <span class="status-pill ready">COMPLETE</span>
+                </div>
+                <div class="pillar-body">
+                  Historical research phases (1 to 8.2.1) cryptographically frozen and audited.
+                </div>
+              </div>
+              <div class="safety-pillar-card" style="border-color: var(--border-violet-glow); background: rgba(139, 92, 246, 0.05);">
+                <div class="pillar-title">
+                  <span style="color: var(--quantum-violet-light);">Gate B.2: Prototype</span>
+                  <span class="status-pill ready">ACCEPTED</span>
+                </div>
+                <div class="pillar-body">
+                  Local engineering prototype active on loopback. Genuine quantum inference restored.
+                </div>
+              </div>
+              <div class="safety-pillar-card" style="border-color: var(--status-error-border); background: var(--status-error-bg);">
+                <div class="pillar-title">
+                  <span style="color: #F87171;">Gate C: Pilot</span>
+                  <span class="status-pill error">🔒 BLOCKED</span>
+                </div>
+                <div class="pillar-body">
+                  Requires independent prospective cohort, IRB ethics review, and clinical DUA.
+                </div>
+              </div>
+              <div class="safety-pillar-card" style="border-color: var(--status-error-border); background: var(--status-error-bg);">
+                <div class="pillar-title">
+                  <span style="color: #F87171;">Gate D: Emergency CAD</span>
+                  <span class="status-pill error">🔒 BLOCKED</span>
+                </div>
+                <div class="pillar-body">
+                  Stop rule: Recall &le; 20%. Zero clinical or emergency telephony integrations.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Row 4: Authoritative Scientific Verdicts -->
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">Authoritative Scientific Verdicts &amp; Threshold Policy</div>
+              <span class="info-val">Verified Historical Record</span>
+            </div>
+            <div class="grid-3">
+              <div class="safety-pillar-card">
+                <div class="pillar-title">
+                  <span>Quantum Advantage Claim</span>
+                  <span class="status-pill error">CASE B AFFIRMED</span>
+                </div>
+                <p style="font-size: 12.5px; color: var(--text-muted); line-height: 1.5;">
+                  No statistically significant quantum advantage demonstrated. Classical RBF matched 8-qubit QSVC while running ~772&times; faster in statistical audits.
+                </p>
+              </div>
+              <div class="safety-pillar-card">
+                <div class="pillar-title">
+                  <span>Clinical Emergency Safety</span>
+                  <span class="status-pill blocked">SAFETY-INFEASIBLE</span>
+                </div>
+                <p style="font-size: 12.5px; color: var(--text-muted); line-height: 1.5;">
+                  Enforcing the canonical FER &le; 15.0% ceiling collapses Emergency Recall to 10–20%, resulting in an unacceptable false-negative burden.
+                </p>
+              </div>
+              <div class="safety-pillar-card">
+                <div class="pillar-title">
+                  <span>Decision Threshold &tau;</span>
+                  <span class="status-pill warning">&tau; = 0.6000 (UNVERIFIED)</span>
+                </div>
+                <p style="font-size: 12.5px; color: var(--text-muted); line-height: 1.5;">
+                  Threshold provenance unverified for Continual Classical Adapters. Decoupled from the 15.0% FER safety bound.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====================================================================
+             VIEW 2: QUANTUM SPEECH INTENT LAB
+             ==================================================================== -->
+        <section id="view-audiolab" class="view-section" role="tabpanel" aria-labelledby="tab-audiolab">
+          <div class="section-header">
+            <h2>Quantum Speech Intent Lab</h2>
+            <p>Ephemeral acoustic processing workstation: Whisper-tiny feature extraction, 8-qubit statevector fidelity kernel evaluation, and QSVC intent recognition.</p>
+          </div>
+
+          <!-- 5-Stage Visual Processing Pipeline Stepper -->
+          <div class="pipeline-stepper" role="region" aria-label="Acoustic & Quantum Processing Pipeline">
+            <div class="pipeline-step active" id="stepAudioInput">
+              <div class="step-number-bubble">1</div>
+              <div class="step-text">
+                <span class="step-title">Audio Input</span>
+                <span class="step-status">Ephemeral Buffer</span>
+              </div>
+            </div>
+            <div class="pipeline-connector" id="conn1"></div>
+            <div class="pipeline-step" id="stepWhisper">
+              <div class="step-number-bubble">2</div>
+              <div class="step-text">
+                <span class="step-title">Whisper Encoder</span>
+                <span class="step-status">384-D Latent</span>
+              </div>
+            </div>
+            <div class="pipeline-connector" id="conn2"></div>
+            <div class="pipeline-step" id="stepPca">
+              <div class="step-number-bubble">3</div>
+              <div class="step-text">
+                <span class="step-title">PCA Projection</span>
+                <span class="step-status">8-D Component</span>
+              </div>
+            </div>
+            <div class="pipeline-connector" id="conn3"></div>
+            <div class="pipeline-step" id="stepQuantumKernel">
+              <div class="step-number-bubble">4</div>
+              <div class="step-text">
+                <span class="step-title">Fidelity Kernel</span>
+                <span class="step-status">ZZFeatureMap</span>
+              </div>
+            </div>
+            <div class="pipeline-connector" id="conn4"></div>
+            <div class="pipeline-step" id="stepQsvc">
+              <div class="step-number-bubble">5</div>
+              <div class="step-text">
+                <span class="step-title">QSVC Decision</span>
+                <span class="step-status">7-Class Margin</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Workstation 2-Column Grid -->
+          <div class="audiolab-grid">
+
+            <!-- Left Deck: Controls & Audio Ingestion -->
+            <aside class="sidebar" style="display: flex; flex-direction: column; gap: 20px;">
+
+              <!-- Model & Speaker Selection -->
+              <div class="card">
+                <div class="card-header">
+                  <div class="card-title">Quantum Model &amp; Speaker</div>
+                  <span class="status-pill ready">Operational</span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="speakerSelect">Dysarthric / Control Speaker</label>
+                  <select id="speakerSelect" class="form-select">
+                    <!-- Populated dynamically -->
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="modelSelect">Predictor Architecture</label>
+                  <select id="modelSelect" class="form-select">
+                    <option value="qsvc_q8_r1" selected>qsvc_q8_r1 (8-Qubit Quantum Kernel QSVC)</option>
+                  </select>
+                  <div style="font-size: 11.5px; color: var(--text-dim); margin-top: 5px;">
+                    Operational prediction is restricted exclusively to the quantum model. Classical models are strictly research-only.
+                  </div>
+                </div>
+
+                <div class="info-row">
+                  <span class="info-label">Decision Cutoff &tau;</span>
+                  <span class="info-val">0.6000 (Demonstration Default)</span>
+                </div>
+                <div style="font-size: 11px; color: var(--status-warning); margin-bottom: 8px;">
+                  ⚠️ Threshold provenance unverified for quantum model.
+                </div>
+
+                <div class="info-row">
+                  <span class="info-label">FER Ceiling</span>
+                  <span class="info-val">15.0% (Internal Research Limit)</span>
+                </div>
+              </div>
+
+              <!-- Feature Extraction Summary (Appears after extraction) -->
+              <div id="embeddingSummaryBox" class="card" style="display: none;">
+                <div class="card-header">
+                  <div class="card-title">384-D Acoustic Features</div>
+                  <span class="status-pill ready">Verified</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">Dimension</span>
+                  <span id="embedDimVal" class="info-val">384</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">L2 Normalization</span>
+                  <span id="embedNormVal" class="info-val">1.000000</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">Audio Duration</span>
+                  <span id="embedDurationVal" class="info-val">--</span>
+                </div>
+                <button id="inspectVectorBtn" class="btn btn-secondary btn-sm" style="width: 100%; margin-top: 12px;" disabled>
+                  <span>🔍</span> Inspect Numeric Vector Values
+                </button>
+              </div>
+
+            </aside>
+
+            <!-- Right Deck: Ingestion & Telemetry Output -->
+            <main class="main-content" style="display: flex; flex-direction: column; gap: 20px;">
+
+              <!-- Model Unready Warning Banner (HTTP 503) -->
+              <div id="modelUnreadyBanner" class="model-unready-banner" role="alert">
+                <div class="model-unready-header">
+                  <span>⚛️</span>
+                  <span id="modelUnreadyTitle">QUANTUM_MODEL_NOT_READY (HTTP 503)</span>
+                </div>
+                <div id="modelUnreadyMessage" class="model-unready-body">
+                  The operational quantum model (qsvc_q8_r1) cannot execute live prediction because required reference support vectors are unmaterialized.
+                </div>
+              </div>
+
+              <!-- Synthetic Benchmark Warning Banner -->
+              <div id="syntheticNoticeBanner" class="model-unready-banner" style="display: none; border-color: rgba(245, 158, 11, 0.4); background: rgba(245, 158, 11, 0.08);" role="alert">
+                <div class="model-unready-header" style="color: var(--status-warning);">
+                  <span>⚠️</span>
+                  <span>SYNTHETIC BENCHMARK INPUT ACTIVE</span>
+                </div>
+                <div class="model-unready-body" style="color: #FDE68A;">
+                  Synthesized acoustic test tone (16 kHz). Strictly prohibited from being interpreted as clinical speech evidence.
+                </div>
+              </div>
+
+              <!-- Audio Ingestion Zone -->
+              <div class="card">
+                <div class="card-header">
+                  <div class="card-title">Acoustic Ingestion (Ephemeral Processing)</div>
+                  <div style="display: flex; gap: 8px; align-items: center;">
+                    <span id="audioLabStateBadge" class="status-pill info" role="status" aria-live="polite">STATE: IDLE</span>
+                    <span id="audioStatusBadge" class="status-pill info">Awaiting Input</span>
+                  </div>
+                </div>
+
+                <div id="dropZone" class="ingest-box" tabindex="0" role="button" aria-label="Drop audio file or click to browse">
+                  <div class="ingest-icon">🎙️</div>
+                  <div class="ingest-title">Drop audio file here, or click to browse</div>
+                  <div class="ingest-sub">Supported formats: WAV, MP3, FLAC, OGG, WebM (Max 10 MB, &le; 30s)</div>
+                  <input type="file" id="fileInput" accept="audio/*" style="display:none;" aria-label="Select audio file">
+                </div>
+
+                <div class="btn-group">
+                  <button id="recordBtn" class="btn btn-secondary btn-record" aria-label="Record from microphone">
+                    <span id="recordIcon">⏺️</span> <span id="recordLabel">Record from Microphone</span>
+                  </button>
+                  <button id="sampleAudioBtn" class="btn btn-secondary" aria-label="Generate benchmark synthetic tone">
+                    <span>🔊</span> Benchmark Tone
+                  </button>
+                  <button id="clearAudioBtn" class="btn btn-secondary" aria-label="Discard and clear current audio" disabled>
+                    <span>🗑️</span> Clear Audio
+                  </button>
+                </div>
+
+                <!-- Synthetic Emergency Atypical Audio Benchmark Selector -->
+                <div class="form-group" style="margin-top: 14px; margin-bottom: 6px;">
+                  <label class="form-label" for="syntheticSampleSelect" style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-weight: 600; color: #E2E8F0;">🚨 Synthetic Emergency Audio Suite (10 Samples)</span>
+                    <span style="font-size: 11px; color: #22D3EE;">16 kHz Mono PCM</span>
+                  </label>
+                  <div style="display: flex; gap: 8px;">
+                    <select id="syntheticSampleSelect" class="form-select" style="flex: 1;">
+                      <option value="" disabled selected>-- Select an Emergency / Atypical Sample --</option>
+                      <option value="/samples/01_emergency_sos_help_atypical.wav">01. SOS / Help: "Help, please help me..." (Emergency)</option>
+                      <option value="/samples/02_emergency_fall_down_atypical.wav">02. Fall: "I fell down on the floor..." (Emergency)</option>
+                      <option value="/samples/03_emergency_breathing_medical_atypical.wav">03. Breathing: "I cannot breathe, chest pain..." (Emergency)</option>
+                      <option value="/samples/04_emergency_severe_pain_atypical.wav">04. Pain: "Extreme pain, hurts so bad..." (Emergency)</option>
+                      <option value="/samples/05_emergency_critical_response_atypical.wav">05. Critical Response: "Urgent emergency..." (Emergency)</option>
+                      <option value="/samples/06_emergency_location_stairs_atypical.wav">06. Location: "Trapped near stairs..." (Emergency)</option>
+                      <option value="/samples/07_emergency_choking_medical_atypical.wav">07. Choking / Medical: "Choking, cannot swallow..." (Emergency)</option>
+                      <option value="/samples/08_emergency_collapse_floor_atypical.wav">08. Collapse: "Collapsed on the ground..." (Emergency)</option>
+                      <option value="/samples/09_general_speech_flowers_nominal.wav">09. General Speech: "Flowers be omitted..." (Nominal)</option>
+                      <option value="/samples/10_general_speech_greeting_atypical.wav">10. General Speech: "Good morning..." (Atypical)</option>
+                    </select>
+                    <button id="loadSyntheticSampleBtn" type="button" class="btn btn-secondary" style="white-space: nowrap;">
+                      <span>⚡</span> Load Sample
+                    </button>
+                  </div>
+                </div>
+
+                <div class="visualizer-wrapper" id="visualizerWrapper" style="display: none; margin-top: 14px;">
+                  <div class="visualizer-hud-bar">
+                    <span class="viz-hud-tag"><span class="pulse-indicator"></span> Acoustic Quantum Spectrogram</span>
+                    <div class="viz-hud-actions">
+                      <button type="button" class="viz-mode-chip active" data-mode="dual" id="vizModeDual">Dual Spectrum</button>
+                      <button type="button" class="viz-mode-chip" data-mode="wave" id="vizModeWave">Oscilloscope</button>
+                      <button type="button" class="viz-mode-chip" data-mode="bars" id="vizModeBars">Bars</button>
+                    </div>
+                  </div>
+                  <canvas id="audioVisualizer" height="68"></canvas>
+                </div>
+                <audio id="audioPreview" controls style="width: 100%; margin-top: 12px; display: none;"></audio>
+
+                <!-- Action Pipeline Execution Buttons -->
+                <div class="btn-group" style="margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--border-default);">
+                  <button id="transcribeBtn" class="btn btn-secondary" style="flex: 1;" aria-label="Transcribe speech with Whisper">
+                    <span>🗣️</span> Transcribe Speech
+                  </button>
+                  <button id="extractEmbeddingBtn" class="btn btn-secondary" style="flex: 1;" aria-label="Extract 384-dimensional Whisper features">
+                    <span>📐</span> Extract 384-D Features
+                  </button>
+                  <button id="classifyBtn" class="btn btn-primary" style="flex: 1.5;" aria-label="Run operational quantum classification">
+                    <span>⚛️</span> Quantum Classify
+                  </button>
+                </div>
+              </div>
+
+              <!-- Prediction Results & Telemetry Output -->
+              <div class="card">
+                <div class="card-header">
+                  <div class="card-title">Inference Results &amp; Prediction Probabilities</div>
+                  <span id="latencyBadge" class="info-val" style="display:none; color: var(--quantum-cyan);">Latency: -- ms</span>
+                </div>
+
+                <div class="results-grid">
+                  <!-- Whisper Transcription Box -->
+                  <div class="result-box">
+                    <div class="result-header-label">Whisper Speech Transcription</div>
+                    <div id="transcriptionOutput" class="transcription-text">Awaiting audio input...</div>
+                    <div class="info-row" style="margin-top: 14px;">
+                      <span class="info-label">Signal Quality:</span>
+                      <span id="acousticQualityVal" class="info-val">--</span>
+                    </div>
+                  </div>
+
+                  <!-- Quantum Intent & Action Box -->
+                  <div class="result-box">
+                    <div class="result-header-label">Quantum Predicted Intent &amp; Action</div>
+                    <div class="intent-gauge-container">
+                      <div class="confidence-gauge-wrap">
+                        <svg class="radial-gauge-svg" width="94" height="94" viewBox="0 0 100 100" aria-hidden="true">
+                          <circle class="gauge-bg" cx="50" cy="50" r="40" />
+                          <circle id="radialGaugeBar" class="gauge-bar" cx="50" cy="50" r="40" />
+                        </svg>
+                        <div class="gauge-center-val">
+                          <span id="gaugePercentVal">0.0%</span>
+                          <span class="gauge-caption">MARGIN</span>
+                        </div>
+                      </div>
+                      <div class="intent-details-col">
+                        <div style="margin-bottom: 10px;">
+                          <span id="intentBadge" class="intent-badge general">NONE</span>
+                        </div>
+                        <div class="info-row">
+                          <span class="info-label">Decision Score:</span>
+                          <span id="confidenceVal" class="info-val">--</span>
+                        </div>
+                        <div class="info-row">
+                          <span class="info-label">Confidence Band:</span>
+                          <span id="confidenceBandVal" class="info-val">--</span>
+                        </div>
+                        <div class="info-row">
+                          <span class="info-label">Suggested Action:</span>
+                          <span id="suggestedActionVal" class="info-val">--</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 7-Class Distribution Meters -->
+                <div>
+                  <div class="result-header-label" style="display: flex; justify-content: space-between;">
+                    <span>7-Class Score Distribution (Uncalibrated Margins [0.0 &ndash; 1.0])</span>
+                    <span style="font-size: 11px; color: var(--text-dim); text-transform: none;">Heuristic margin, not clinical probability</span>
+                  </div>
+                  <div id="probBarsContainer">
+                    <!-- Populated dynamically -->
+                  </div>
+                </div>
+              </div>
+
+            </main>
+          </div>
+        </section>
+
+        <!-- ====================================================================
+             VIEW 3: MODEL & SPEAKER REGISTRY
+             ==================================================================== -->
+        <section id="view-registry" class="view-section" role="tabpanel" aria-labelledby="tab-registry">
+          <div class="section-header">
+            <h2>Model &amp; Speaker Registry</h2>
+            <p>Cryptographically verified inventory of 67 pre-trained models, continual adapter checkpoints, qubit specifications, and SHA-256 hashes.</p>
+          </div>
+
+          <div class="card" style="margin-bottom: 20px;">
+            <div style="display: flex; gap: 16px; align-items: center; flex-wrap: wrap;">
+              <input type="text" id="registrySearchInput" class="form-input" placeholder="Search by Model ID, Speaker, or Architecture..." style="flex: 2; min-width: 260px;">
+              <select id="registryStatusFilter" class="form-select" style="flex: 1; min-width: 200px;">
+                <option value="ALL">All Models (67 Catalogued)</option>
+                <option value="MATERIALIZED_AND_VERIFIED" selected>Materialized &amp; Verified Only (61)</option>
+                <option value="MODEL_NOT_READY">Unmaterialized Blockers Only (6)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="table-container">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Model Identifier</th>
+                  <th>Speaker Scope</th>
+                  <th>Readiness Status</th>
+                  <th>Architecture</th>
+                  <th>SHA-256 (Short)</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="registryTableBody">
+                <!-- Populated dynamically -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ====================================================================
+             VIEW 4: RESEARCH RESULTS EXPLORER
+             ==================================================================== -->
+        <section id="view-results" class="view-section" role="tabpanel" aria-labelledby="tab-results">
+          <div class="section-header">
+            <h2>Research Results Explorer</h2>
+            <p>Chronological phase timeline, matched paired statistical evaluations, empirical safety operating curves, and on-disk verified research figures.</p>
+          </div>
+
+          <!-- Chronological Research Timeline -->
+          <div class="card" style="margin-bottom: 24px;">
+            <div class="card-header">
+              <div class="card-title">Chronological Research Phases &amp; Milestones</div>
+              <span class="status-pill ready">All Phases Frozen</span>
+            </div>
+            <div id="phasesTimelineContainer">
+              <!-- Populated dynamically -->
+            </div>
+          </div>
+
+          <!-- Phase 8.1 Comparison Table -->
+          <div class="card" style="margin-bottom: 24px;">
+            <div class="card-header">
+              <div class="card-title">Phase 8.1 Hierarchical Recovery Comparison (FER &le; 15.0% Ceiling)</div>
+              <span class="mono-cell" style="font-size: 11px; color: var(--text-dim);">Source: results/phase8_1/model_comparison.csv</span>
+            </div>
+            <div class="table-container">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Model / Track</th>
+                    <th>Architecture</th>
+                    <th>Emergency Recall</th>
+                    <th>Emergency Precision</th>
+                    <th>FER</th>
+                    <th>False Negatives</th>
+                    <th>Safety Bound</th>
+                  </tr>
+                </thead>
+                <tbody id="metricsPhase81Body">
+                  <!-- Populated dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Phase 6.5.6 Statistical Comparison Table -->
+          <div class="card" style="margin-bottom: 24px;">
+            <div class="card-header">
+              <div class="card-title">Phase 6.5.6 Matched Paired Classical vs Quantum Comparison</div>
+              <span class="mono-cell" style="font-size: 11px; color: var(--text-dim);">Source: results/phase6_5_6_final_comparison_table.csv</span>
+            </div>
+            <div class="table-container">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Comparison Pair</th>
+                    <th>Classical F1</th>
+                    <th>Quantum F1</th>
+                    <th>Latency Ratio</th>
+                    <th>p-Value</th>
+                    <th>Statistical Verdict</th>
+                  </tr>
+                </thead>
+                <tbody id="metricsPhase6Body">
+                  <!-- Populated dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Phase 7.12 Four-Way Comparison Table (Hybrid Architecture Evidence) -->
+          <div class="card" style="margin-bottom: 24px;">
+            <div class="card-header">
+              <div class="card-title">Phase 7.12 Master 4-Way Comparison Matrix (Classical vs Fixed vs Trainable vs Hybrid)</div>
+              <span class="mono-cell" style="font-size: 11px; color: var(--text-dim);">Source: results/continual/phase7_12/final_evidence_matrix.csv</span>
+            </div>
+            <div class="table-container">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Model Architecture</th>
+                    <th>Trainable Params</th>
+                    <th>Macro-F1</th>
+                    <th>Emergency Recall</th>
+                    <th>FER</th>
+                    <th>Accuracy</th>
+                    <th>Safety Status</th>
+                    <th>Empirical Verdict</th>
+                  </tr>
+                </thead>
+                <tbody id="metricsPhase712Body">
+                  <!-- Populated dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Safety Operating Points Table -->
+          <div class="card" style="margin-bottom: 24px;">
+            <div class="card-header">
+              <div class="card-title">Empirical Safety Operating Points Across Decision Cutoff &tau;</div>
+              <span class="mono-cell" style="font-size: 11px; color: var(--text-dim);">Source: results/phase8_1/safety_operating_points.csv</span>
+            </div>
+            <div class="table-container">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Cutoff &tau;</th>
+                    <th>Recall</th>
+                    <th>Precision</th>
+                    <th>FER</th>
+                    <th>Safety Ceiling</th>
+                    <th>TP</th>
+                    <th>FP</th>
+                    <th>FN</th>
+                    <th>TN</th>
+                  </tr>
+                </thead>
+                <tbody id="operatingPointsBody">
+                  <!-- Populated dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Verified Research Figures Gallery -->
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">Verified Research Figures Gallery</div>
+              <span class="status-pill ready">Click to View High-Resolution</span>
+            </div>
+            <div id="figuresGalleryContainer" class="figures-grid">
+              <!-- Populated dynamically -->
+            </div>
+          </div>
+        </section>
+
+        <!-- ====================================================================
+             VIEW 5: PROVENANCE & REPRODUCIBILITY
+             ==================================================================== -->
+        <section id="view-provenance" class="view-section" role="tabpanel" aria-labelledby="tab-provenance">
+          <div class="section-header">
+            <h2>Provenance &amp; Reproducibility</h2>
+            <p>Complete auditable chain of custody: dataset split manifests, 28/28 cryptographic checksum matches, and recorded evaluation constraints.</p>
+          </div>
+
+          <div class="grid-2" style="margin-bottom: 24px;">
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">TORGO Dataset Provenance</div>
+                <span class="status-pill ready">Locked Partition</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Dataset Name</span>
+                <span id="provDatasetName" class="info-val">TORGO Speech Database</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Utterance Volume</span>
+                <span id="provUtteranceCount" class="info-val">4,852 Utterances</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Speaker Cohort</span>
+                <span id="provSpeakerCount" class="info-val">15 Speakers (8 Dysarthric, 7 Control)</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Data Manifest</span>
+                <span id="provManifestPath" class="mono-cell">data/manifests/torgo_manifest.csv</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">Cryptographic Integrity Audit</div>
+                <span class="status-pill ready">100% Pass</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Tracked Historical Artifacts</span>
+                <span id="provChecksumCount" class="info-val">28 Files</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">SHA-256 Verification</span>
+                <span id="provAuditResult" class="status-pill ready">28 / 28 MATCHED</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Last Independent Audit</span>
+                <span id="provLastAuditTimestamp" class="info-val">2026-10-10</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Regression Suite</span>
+                <span id="provRegressionVerdict" class="status-pill ready">648 / 648 Passed</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recorded Governance Limitations -->
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">Authoritative Evaluation Limitations &amp; Governance Constraints</div>
+              <span class="status-pill blocked">Recorded Limitations</span>
+            </div>
+            <div style="font-size: 13.5px; line-height: 1.6; color: var(--text-muted);">
+              <p style="margin-bottom: 12px;">
+                <strong>1. Absence of Independent Confirmatory Cohort:</strong> All historical evaluations were conducted on partitions of the TORGO dataset. No external dysarthric speech cohort was available for confirmatory validation. Gate C (Controlled Pilot) and Gate D (Clinical Deployment) remain strictly blocked until independent data is acquired.
+              </p>
+              <p style="margin-bottom: 12px;">
+                <strong>2. Diagnostic Inspection of Locked Test Set:</strong> As identified in the Gate B.1 acceptance audit, repeated diagnostic analyses were performed on development splits. Confirmatory claims cannot be established without an uninspected holdout cohort.
+              </p>
+              <p style="margin-bottom: 12px;">
+                <strong>3. Per-Speaker FER Ceiling Violation:</strong> Speaker F01 exhibited a False Emergency Rate of 20.31% under Phase 7.5 Continual Classical Adaptation, exceeding the 15.0% FER ceiling constraint. Clinical calibration claims are prohibited.
+              </p>
+              <p>
+                <strong>4. Threshold Provenance Decoupling:</strong> The demonstration default cutoff &tau; = 0.6000 was derived from Phase 8.1 hierarchical models and is not calibrated for the served Phase 7.5 adapter models.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====================================================================
+             VIEW 6: RUNTIME DIAGNOSTICS
+             ==================================================================== -->
+        <section id="view-diagnostics" class="view-section" role="tabpanel" aria-labelledby="tab-diagnostics">
+          <div class="section-header">
+            <h2>Runtime Diagnostics</h2>
+            <p>Real-time API latency monitoring, WebSocket streaming tester, and ephemeral in-browser session telemetry.</p>
+          </div>
+
+          <div class="grid-2" style="margin-bottom: 24px;">
+            <!-- Process & API Vitals -->
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">Process &amp; API Vitals</div>
+                <button id="pingDiagnosticsBtn" class="btn btn-secondary btn-sm">Ping Server</button>
+              </div>
+              <div class="info-row">
+                <span class="info-label">API Health Status</span>
+                <span id="diagApiStatus" class="status-pill ready">HEALTHY</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Round-Trip Latency</span>
+                <span id="diagApiLatency" class="mono-cell" style="color: var(--quantum-cyan);">-- ms</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Service Version</span>
+                <span id="diagAppVersion" class="mono-cell">1.0.0-gate-b-quantum</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Server Timestamp</span>
+                <span id="diagServerTimestamp" class="mono-cell">--</span>
+              </div>
+            </div>
+
+            <!-- WebSocket Stream Tester -->
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">WebSocket Inference Stream Tester (/ws/audio)</div>
+                <span id="wsStatusBadge" class="status-pill blocked">DISCONNECTED</span>
+              </div>
+              <div class="btn-group" style="margin-bottom: 12px;">
+                <button id="wsConnectBtn" class="btn btn-secondary btn-sm">Connect to WebSocket</button>
+                <button id="wsSendBtn" class="btn btn-primary btn-sm" disabled>Send Test Packet</button>
+              </div>
+              <div id="wsLogBox" style="background: var(--bg-input); border: 1px solid var(--border-default); border-radius: var(--radius-sm); padding: 12px; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--quantum-cyan); height: 120px; overflow-y: auto; white-space: pre-wrap;">Awaiting connection...</div>
+            </div>
+          </div>
+
+          <!-- Ephemeral Session Activity Table -->
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">Ephemeral Browser Session History (Zero Audio Persisted)</div>
+              <button id="clearSessionBtn" class="btn btn-secondary btn-sm">Clear History</button>
+            </div>
+            <div class="table-container">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Timestamp</th>
+                    <th>Speaker ID</th>
+                    <th>Model Candidate</th>
+                    <th>Latency</th>
+                    <th>Predicted Intent</th>
+                    <th>Outcome Status</th>
+                  </tr>
+                </thead>
+                <tbody id="sessionHistoryTableBody">
+                  <!-- Populated dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====================================================================
+             VIEW 7: HELP & LIMITATIONS
+             ==================================================================== -->
+        <section id="view-help" class="view-section" role="tabpanel" aria-labelledby="tab-help">
+          <div class="section-header">
+            <h2>Help, Limitations &amp; Documentation</h2>
+            <p>Operational instructions, clinical emergency safety trade-offs, class imbalance explanations, and local terminal commands.</p>
+          </div>
+
+          <div class="card" style="margin-bottom: 24px;">
+            <div class="card-header">
+              <div class="card-title">Why High Accuracy Is Deceptive in Emergency Speech Detection</div>
+            </div>
+            <div style="font-size: 14px; line-height: 1.6; color: var(--text-muted);">
+              <p style="margin-bottom: 12px;">
+                In natural speech databases for disabled individuals, emergency requests constitute only ~5% of all spoken utterances, with ~95% representing routine general speech.
+              </p>
+              <p style="margin-bottom: 12px;">
+                A naive or uncalibrated classifier that predicts "GENERAL_SPEECH" on every single audio sample achieves <strong>95% overall accuracy</strong> while possessing <strong>0% Emergency Recall</strong>—leaving every emergency unassisted.
+              </p>
+              <p>
+                Conversely, lowering the threshold to catch more emergencies triggers frequent false emergency alerts. The <strong>False Emergency Rate (FER)</strong> measures false alarms as a fraction of routine speech. In Phase 8.1, enforcing FER &le; 15.0% forced emergency recall down to only 10–20%, mathematically demonstrating the safety infeasibility of unconfirmed clinical deployment.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid-2" style="margin-bottom: 24px;">
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">Local Execution Commands</div>
+              </div>
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; line-height: 1.6; color: var(--quantum-cyan);">
+                <p style="color: var(--text-muted); margin-bottom: 4px;"># 1. Run local web server:</p>
+                <p style="margin-bottom: 12px;">uvicorn src.app.main:app --host 127.0.0.1 --port 8000</p>
+                <p style="color: var(--text-muted); margin-bottom: 4px;"># 2. Run full regression test suite:</p>
+                <p style="margin-bottom: 12px;">pytest tests/ -q</p>
+                <p style="color: var(--text-muted); margin-bottom: 4px;"># 3. Stop server:</p>
+                <p>Stop-Process -Name uvicorn</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">Ephemeral Audio &amp; Privacy Policy</div>
+              </div>
+              <div style="font-size: 13.5px; line-height: 1.5; color: var(--text-muted);">
+                <p style="margin-bottom: 8px;">
+                  • Audio files and microphone captures are processed strictly in-memory or in temporary scratch buffers.
+                </p>
+                <p style="margin-bottom: 8px;">
+                  • Raw audio buffers are deleted immediately upon completion or error.
+                </p>
+                <p style="margin-bottom: 8px;">
+                  • No audio recordings or speech transcripts are persisted to disk or sent to external cloud APIs.
+                </p>
+                <p>
+                  • The application executes entirely offline on your local host.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- Application Footer -->
+      <footer>
+        <div>Atypical Speech Emergency Assistant &bull; Quantum Research Command Center</div>
+        <div>Research Use Only &bull; Not Validated for Clinical or Emergency Dispatch Use</div>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODALS
+       ==================================================================== -->
+
+  <!-- Modal 1: 384-D Vector Inspector -->
+  <div id="vectorModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="vectorModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div id="vectorModalTitle" class="modal-title">384-D Acoustic Vector Inspector</div>
+        <button id="closeVectorModalBtn" class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 12px;">
+          First 16 normalized feature coordinates extracted by frozen Whisper-tiny acoustic encoder (L2 unit-norm verified):
+        </p>
+        <pre id="vectorPreviewBox" style="background: var(--bg-input); border: 1px solid var(--border-default); border-radius: var(--radius-sm); padding: 14px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--quantum-cyan); max-height: 280px; overflow-y: auto;"></pre>
+      </div>
+      <div class="modal-footer">
+        <button id="copyVectorBtn" class="btn btn-secondary btn-sm">Copy Full Vector (384-D)</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Model Checkpoint Details -->
+  <div id="modelDetailsModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modelDetailTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div id="modelDetailTitle" class="modal-title">Model Provenance &amp; Architecture Details</div>
+        <button id="closeModelDetailsModalBtn" class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="info-row">
+          <span class="info-label">Model Identifier:</span>
+          <span id="detailModalModelId" class="info-val">--</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Materialization Status:</span>
+          <span id="detailModalStatus" class="status-pill ready">--</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Architecture Specification:</span>
+          <span id="detailModalArchitecture" class="mono-cell">--</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Parameter Count:</span>
+          <span id="detailModalParams" class="info-val">--</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Relative Disk Path:</span>
+          <span id="detailModalPath" class="mono-cell">--</span>
+        </div>
+        <div class="info-row" style="flex-direction: column; align-items: flex-start; gap: 4px;">
+          <span class="info-label">SHA-256 Checksum Hash:</span>
+          <span id="detailModalSha256" class="mono-cell" style="word-break: break-all; color: var(--quantum-cyan);">--</span>
+        </div>
+        <div class="info-row" style="flex-direction: column; align-items: flex-start; gap: 4px;">
+          <span class="info-label">Scientific Remedy &amp; Governance Notice:</span>
+          <span id="detailModalRemedy" style="font-size: 12px; color: var(--text-muted);">--</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Figure Lightbox -->
+  <div id="figureLightboxModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+    <div class="modal-dialog" style="max-width: 1000px;">
+      <div class="modal-header">
+        <div id="lightboxTitle" class="modal-title">Research Artifact View</div>
+        <button id="closeFigureLightboxBtn" class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <img id="lightboxImage" src="" alt="Research Figure" style="max-width: 100%; max-height: 520px; border-radius: var(--radius-sm); border: 1px solid var(--border-default);">
+        <div id="lightboxProtocol" style="font-size: 12px; color: var(--quantum-cyan); margin-top: 12px; font-family: 'JetBrains Mono', monospace;"></div>
+        <div id="lightboxDescription" style="font-size: 13px; color: var(--text-muted); margin-top: 6px; text-align: left;"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/app.js?v=2.1.0"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+item_id,item_name,classification,current_status,action_required,verification_artifact
+1,Quantum implementation,COMPLETE,ZZ feature map with vectorized BLAS statevector fidelity kernel implemented and validated,None,src/quantum/fidelity_kernel.py
+2,Primary q=4 experiment,COMPLETE,60 conditions (15 speakers x 4 budgets) evaluated with 100% success rate,None,results/phase4/quantum_curves.csv
+3,q=2/4/6/8 ablation,COMPLETE,All 4 qubit counts evaluated across all 60 splits (240 total conditions),None,results/phase4/ablation_table.csv
+4,PCA leakage control,COMPLETE,PCA fit exclusively on adaptation training samples; transform-only on test,None,tests/test_phase4_5_no_transform_leakage.py
+5,Scaling leakage control,COMPLETE,MinMaxScaler fit exclusively on adaptation training PCA coordinates,None,tests/test_phase4_5_no_transform_leakage.py
+6,Fixed split usage,COMPLETE,All 60 Phase-1 stratified splits preserved identically without regeneration,None,reports/phase4_5_contract_audit.md
+7,Kernel caching,COMPLETE,Persistent .npy caches stored for all 212 multi-class conditions; hit rate 100%,None,results/phase4/kernel_cache/
+8,Kernel numerical validity,COMPLETE,All Gram matrices verified symmetric unit diagonal and positive semi-definite,None,reports/phase4_5_kernel_revalidation.md
+9,Prediction lineage,COMPLETE,All 85072 prediction rows mapped to manifest recording IDs and transcripts,None,tests/test_phase4_5_lineage.py
+10,Metric consistency,COMPLETE,Standardized IntentMetrics implementation shared across Phase 3 and Phase 4,None,reports/phase4_5_contract_audit.md
+11,Speaker-level aggregation,COMPLETE,Macro-averaging over speakers preserves equal speaker weighting across test set sizes,None,reports/phase4_5_statistics_revalidation.md
+12,Confidence intervals,COMPLETE,Two-sided 95% Student-t confidence intervals computed across the 15-speaker cohort,None,results/phase4/quantum_aggregated.csv
+13,Parameter/compute accounting,COMPLETE,Fixed quantum feature map has 0 trainable params; complexity quantified by qubits depth gates,None,results/phase4/ablation_table.csv
+14,Reproducibility,COMPLETE,Deterministic seed=42 and local ideal statevector simulator ensure exact reproducibility,None,tests/test_phase4_reproducibility.py
+15,Classical/quantum comparison,COMPLETE,Matched three-way comparison table generated across all sample budgets,None,results/phase4/classical_vs_quantum_comparison.csv
+16,Scientific interpretation,COMPLETE,Refined from excessive wording to strictly bounded condition-specific null finding,None,reports/phase4_5_null_result_statement.md
+17,Documentation,COMPLETE,Complete suite of audit and hardening reports generated in reports/,None,reports/phase4_5_complete_results.md
+18,Phase-5 input readiness,COMPLETE,Input contract defined deterministic noise utility validated and toy test passed,None,configs/phase5_contract.yaml
+19,Controlled minority-intent diagnostic,OPTIONAL,Feasibility analyzed; full 7-class balancing infeasible due to zero-sample classes in splits,Document feasibility constraints,reports/phase4_5_diagnostic.md

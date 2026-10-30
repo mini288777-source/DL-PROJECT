@@ -1,0 +1,87 @@
+# ==============================================================================
+# PHASE 7.7: SPEAKER DRIFT DETECTION & RECALIBRATION POLICY CONFIGURATION
+# FROZEN RESEARCH POLICY (v1.0.0_frozen)
+# ==============================================================================
+
+policy_metadata:
+  policy_id: "speaker_drift_recalibration_policy_v1"
+  policy_version: "v1.0.0_frozen"
+  frozen: true
+  freeze_date: "2026-10-06"
+  description: >
+    Deterministic speaker-local drift detection and recalibration governance policy.
+    Establishes frozen thresholds, persistence criteria, and validation gates
+    before primary experimental evaluation.
+
+window_policy:
+  reference_source: "initial_calibration_b0"
+  min_reference_samples: 10
+  min_current_samples: 10
+  allow_cross_speaker: false
+  sequential_monitoring: true
+
+drift_methods_and_thresholds:
+  representation_drift:
+    method: "mmd_rbf"
+    kernel: "rbf"
+    bandwidth_heuristic: "median"
+    statistic_threshold: 0.15
+    secondary_centroid_cosine_threshold: 0.10
+    description: "Kernel two-sample Maximum Mean Discrepancy on frozen 384-D Whisper embeddings."
+
+  prediction_drift:
+    method: "total_variation_distance"
+    statistic_threshold: 0.25
+    emergency_divergence_threshold: 0.20
+    description: "Total variation distance over empirical canonical 7-class prediction distributions."
+
+  confidence_drift:
+    method: "two_sample_ks"
+    statistic_threshold: 0.30
+    significance_alpha: 0.05
+    mean_confidence_delta_threshold: 0.10
+    description: "Two-sample Kolmogorov-Smirnov test and delta mean confidence over predicted max confidence."
+
+  calibration_drift:
+    method: "expected_calibration_error"
+    num_bins: 10
+    ece_delta_threshold: 0.08
+    brier_delta_threshold: 0.10
+    description: "Shift in Expected Calibration Error (ECE) and multi-class Brier score on verified evaluation sets."
+
+  class_frequency_drift:
+    method: "tvd_ground_truth"
+    statistic_threshold: 0.25
+    description: "Variation in ground truth experience class distribution relative to reference baseline."
+
+persistence_policy:
+  transient_drift_threshold_windows: 1
+  meaningful_drift_consecutive_windows: 2
+  description: "A single window crossing a threshold is transient; >=2 consecutive windows constitute meaningful drift."
+
+recalibration_trigger_policy:
+  require_verified_labels: true
+  recalibration_states:
+    - "NO_RECALIBRATION"
+    - "RECALIBRATION_RECOMMENDED"
+    - "RECALIBRATION_REQUIRED"
+    - "HOLD_INSUFFICIENT_EVIDENCE"
+  rules:
+    calibration_degradation: "RECALIBRATION_REQUIRED"
+    persistent_representation_and_confidence_drift: "RECALIBRATION_REQUIRED"
+    transient_drift_only: "RECALIBRATION_RECOMMENDED"
+    insufficient_samples: "HOLD_INSUFFICIENT_EVIDENCE"
+    no_drift: "NO_RECALIBRATION"
+
+recalibration_methods:
+  primary_method: "temperature_scaling"
+  temperature_range: [0.5, 3.0]
+  temperature_steps: 51
+  optimization_criterion: "negative_log_likelihood"
+  secondary_method: "threshold_tuning"
+
+governance_integration:
+  validation_gate_required: true
+  auto_promotion_forbidden: true
+  safety_veto_enforced: true
+  candidate_lifecycle_state: "CANDIDATE"

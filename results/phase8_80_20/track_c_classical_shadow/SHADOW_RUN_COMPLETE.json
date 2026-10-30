@@ -1,0 +1,18 @@
+{
+  "track": "Track_C_Classical_Shadow",
+  "status": "complete",
+  "timestamp": "2026-10-10T05:57:40Z",
+  "manifest_fingerprint": "16c1304221900a8ca5a278adc2528ba2807881e9c526a322b7a649135bc80a58",
+  "total_test_predictions": 1215,
+  "global_metrics": {
+    "accuracy": 0.8082304526748971,
+    "macro_f1": 0.1499634821527116,
+    "emergency_recall": 0.11666666666666667,
+    "emergency_precision": 0.03825136612021858,
+    "false_emergency_rate": 0.1523809523809524,
+    "intent_preservation_rate": 0.8476190476190476
+  },
+  "predictions_hash": "2392557fbdb0d32ffcf76da392941b0355c62c71a13f034e35f9539f3e2b6974",
+  "results_hash": "ad3ced4f126ce9217c77c06b0a386481ce7b5b82f7370a9eb2309acf4b9f9855",
+  "per_speaker_hash": "02b0a9720036a2152016f718a8d3b536fbc7c8c6a4f03288eada98e037986c4a"
+}

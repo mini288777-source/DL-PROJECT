@@ -1,0 +1,7 @@
+candidate_id,evaluation_population,TP,FN,emergency_support,emergency_recall,false_negative_rate,calculation_method,reconciliation_status
+Track_A_Baseline,"Phase 8.1 Outer-Fold Held-out (N=4,852)",24,213,237,0.1012658227848101,0.8987341772151899,FN / (TP + FN) = 1 - Emergency Recall,RECONCILED_EXACT
+INT-1-CALIB,"Phase 8.1 Outer-Fold Held-out (N=4,852)",12,225,237,0.050632911392405,0.9493670886075949,FN / (TP + FN) = 1 - Emergency Recall,RECONCILED_EXACT
+INT-2-COST,"Phase 8.1 Outer-Fold Held-out (N=4,852)",26,211,237,0.1097046413502109,0.890295358649789,FN / (TP + FN) = 1 - Emergency Recall,RECONCILED_EXACT
+INT-3-SAMP,"Phase 8.1 Outer-Fold Held-out (N=4,852)",47,190,237,0.1983122362869198,0.8016877637130801,FN / (TP + FN) = 1 - Emergency Recall,RECONCILED_EXACT
+Track_B_Quantum,"Phase 8.1 Outer-Fold Held-out (N=4,852)",29,208,237,0.1223628691983122,0.8776371308016878,FN / (TP + FN) = 1 - Emergency Recall,RECONCILED_EXACT
+Track_C_Shadow,"Phase 8.1 Outer-Fold Held-out (N=4,852)",25,212,237,0.1054852320675105,0.8945147679324894,FN / (TP + FN) = 1 - Emergency Recall,RECONCILED_EXACT

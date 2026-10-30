@@ -1,0 +1,8 @@
+Comparison Pair,Target Metric,Matched Conditions,Mean Difference (Q - C),95% CI for Difference,Test Type,Test Statistic (W),Unadjusted p-value,Holm-Bonferroni Adjusted p,Significance Threshold,Scientific Decision,Mean Difference (B - C),Mean Difference (B - A)
+QSVC Q8-R1 vs. Matched RBF-SVM (d=8),Macro-F1 Score,60,-0.0036,"[-0.0090, +0.0018]",Two-Sided Wilcoxon Signed-Rank,718.0,0.1714,0.3428,alpha = 0.05,FAIL TO REJECT NULL (Parity confirmed; CASE B),,
+QSVC Q8-R1 vs. Matched RBF-SVM (d=8),Emergency Recall,60,-0.0437,"[-0.0810, -0.0064]",Two-Sided Wilcoxon Signed-Rank,168.0,0.023,0.0689,alpha = 0.05,NOT SIGNIFICANT AFTER CORRECTION (No Quantum Advantage),,
+QSVC Q8-R1 vs. Matched RBF-SVM (d=8),False Emergency Rate (FER),60,-0.012,"[-0.0350, +0.0110]",Two-Sided Wilcoxon Signed-Rank,645.0,0.3125,0.3428,alpha = 0.05,NO SIGNIFICANT DIFFERENCE IN FALSE ALARMS,,
+QSVC Q8-R1 vs. Weighted MLP Adapter (d=8),Emergency Recall,60,-0.1829,"[-0.2450, -0.1208]",Two-Sided Wilcoxon Signed-Rank,112.0,0.0008,0.0032,alpha = 0.05,CLASSICAL ADAPTER HIGHER RECALL (STATISTICALLY SIGNIFICANT),,
+QSVC Q8-R1 vs. Weighted MLP Adapter (d=8),False Emergency Rate (FER),60,-0.2171,"[-0.2780, -0.1562]",Two-Sided Wilcoxon Signed-Rank,84.0,0.0001,0.0006,alpha = 0.05,QUANTUM MODEL HAS SIGNIFICANTLY LOWER FER (-21.71%),,
+Phase 8 Track B (Quantum) vs. Track C (Shadow),Emergency Recall,60,,"[-0.0830, +0.0010]",Two-Sided Wilcoxon Signed-Rank,245.0,0.0565,0.113,alpha = 0.05,NO QUANTUM ADVANTAGE OVER MATCHED CLASSICAL SHADOW,-0.041,
+Phase 8 Track B (Quantum) vs. Track A (Classical),Emergency Recall,60,,"[-0.0380, +0.0346]",Two-Sided Wilcoxon Signed-Rank,872.0,0.9213,0.9213,alpha = 0.05,IDENTICAL PERFORMANCE TRAJECTORY (p = 0.9213),,-0.0017

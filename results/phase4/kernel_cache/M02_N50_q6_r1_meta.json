@@ -1,0 +1,27 @@
+{
+  "speaker_id": "M02",
+  "sample_n": 50,
+  "qubit_count": 6,
+  "reps": 1,
+  "train_shape": [
+    50,
+    50
+  ],
+  "test_shape": [
+    182,
+    50
+  ],
+  "timestamp": 1790736238.795722,
+  "pca_explained_variance_ratio": [
+    0.5963091436838461,
+    0.18391112374197918,
+    0.038481116268688165,
+    0.026815639279037667,
+    0.02261442321891149,
+    0.015268303856343552
+  ],
+  "pca_cumulative_explained_variance": 0.8833997500488061,
+  "support_vector_count": 14,
+  "seed": 42,
+  "C": 1.0
+}

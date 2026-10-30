@@ -1,0 +1,49 @@
+# ==============================================================================
+# PHASE 7.14 — ATYPICAL SPEECH EMERGENCY APPLICATION CONFIGURATION
+# ==============================================================================
+app_metadata:
+  app_name: "AtypicalSpeechEmergencyAssistant"
+  version: "1.0.0-phase7"
+  deployment_status: "RESEARCH DEMO ONLY"
+  clinical_disclaimer: "NOT CLINICALLY VALIDATED — RESEARCH PROTOTYPE FOR SCIENTIFIC EVALUATION ONLY"
+
+model_selection:
+  # Empirically selected based on Phase 7.12 consolidated findings:
+  # Classical Adapter demonstrated superior Emergency Recall (16.20% vs <6% for pure quantum),
+  # passed Phase 7.6 safety validation, and demonstrated deterministic low-latency execution (0.024s).
+  canonical_model_family: "continual_classical_adapter"
+  embedding_dim: 384
+  num_classes: 7
+  adapter_hidden_dim: 64
+
+confidence_and_safety:
+  operational_confidence_threshold: 0.60
+  high_confidence_threshold: 0.85
+  abstention_policy:
+    low_confidence_action: "REQUEST_CONFIRMATION"
+    degraded_acoustic_action: "ABSTAIN_AND_ALERT"
+  min_acoustic_quality: 0.30
+
+emergency_handling:
+  emergency_classes:
+    - "CRITICAL_RESPONSE"
+    - "FALL"
+    - "BREATHING_MEDICAL"
+    - "PAIN"
+    - "SOS_HELP"
+    - "LOCATION"
+  general_speech_class: "GENERAL_SPEECH"
+  emergency_confirmation_required: true
+
+governance_and_adaptation:
+  min_adaptation_experiences: 5
+  balanced_replay_capacity: 100
+  validation_gate_enabled: true
+  safety_veto_enabled: true
+  zero_unverified_learning: true
+
+privacy_and_logging:
+  anonymize_speaker_metadata: true
+  store_raw_audio: false
+  store_embeddings_only: true
+  immutable_audit_logging: true

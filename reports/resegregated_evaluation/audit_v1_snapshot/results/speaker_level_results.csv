@@ -1,0 +1,16 @@
+Speaker,Group,Etiology,Severity,Samples,Q8_Macro_F1,RBF_Macro_F1,Adapter_Macro_F1,Q8_Recall,RBF_Recall,Adapter_Recall,Q8_FER,RBF_FER,Adapter_FER
+F01,Dysarthric,Cerebral Palsy,Moderate,148,0.0892,0.0914,0.0815,0.25,0.2857,0.4286,0.245,0.252,0.465
+F03,Dysarthric,Cerebral Palsy,Severe,122,0.0645,0.0688,0.0592,0.1667,0.2,0.35,0.312,0.325,0.542
+F04,Dysarthric,Cerebral Palsy,Moderate,156,0.1042,0.1095,0.0965,0.3,0.3333,0.4667,0.228,0.235,0.448
+FC01,Control,Neurotypical,None,210,0.1384,0.1412,0.125,0.375,0.4167,0.5417,0.185,0.192,0.385
+FC02,Control,Neurotypical,None,195,0.129,0.1325,0.118,0.35,0.375,0.525,0.198,0.205,0.412
+FC03,Control,Neurotypical,None,180,0.1312,0.134,0.121,0.3636,0.4,0.5182,0.192,0.201,0.398
+M01,Dysarthric,ALS,Severe,110,0.058,0.0612,0.0545,0.1429,0.1714,0.3143,0.345,0.358,0.585
+M02,Dysarthric,Cerebral Palsy,Severe,115,0.0615,0.065,0.057,0.15,0.1833,0.3333,0.335,0.348,0.565
+M03,Dysarthric,ALS,Moderate,142,0.0954,0.098,0.089,0.2667,0.3,0.4333,0.255,0.262,0.485
+M04,Dysarthric,Cerebral Palsy,Moderate,138,0.091,0.0945,0.084,0.2571,0.2857,0.4286,0.268,0.275,0.492
+M05,Dysarthric,Cerebral Palsy,Severe,108,0.052,0.057,0.0495,0.125,0.15,0.275,0.362,0.375,0.612
+MC01,Control,Neurotypical,None,225,0.145,0.148,0.131,0.4167,0.45,0.5833,0.172,0.181,0.365
+MC02,Control,Neurotypical,None,205,0.1375,0.1405,0.124,0.3889,0.4211,0.5556,0.181,0.189,0.378
+MC03,Control,Neurotypical,None,190,0.132,0.135,0.1205,0.36,0.3889,0.52,0.189,0.198,0.395
+MC04,Control,Neurotypical,None,218,0.1425,0.146,0.129,0.4,0.4375,0.575,0.175,0.184,0.371

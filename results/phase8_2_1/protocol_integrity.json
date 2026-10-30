@@ -1,0 +1,45 @@
+{
+  "protocol_integrity_metadata": {
+    "audit_phase": "Phase 8.2.1",
+    "timestamp": "2026-10-10T19:25:00Z",
+    "governance_standard": "PHASE8_2_1_THRESHOLD_PROTOCOL_REPAIR.md",
+    "status": "VERIFIED_INTEGRITY_WITH_ACTIVE_BLOCKERS"
+  },
+  "audited_artifacts_hashes": {
+    "config/phase8_2/confirmation_protocol.yaml": "de2434dcb1cee100f3ffc49160b8acab5151c97de7b31c618222c8389bac1f93",
+    "config/phase8_1/safety_recovery_protocol.yaml": "71a06d9514de44c651be7d63ec4cacabb97ccaf94977bde742efc21389423f52",
+    "results/phase8_1/threshold_registry.json": "d6fc0173d138cd57bfa84ac4cdaa03edc175ce23428d494f2d1ad5b129ed9d49",
+    "results/phase8_1/safety_operating_points.csv": "b81c06166b130ca01d0ee1459bd84f60cc18ae4cdfe3b8336e1cfafb0b6211ad",
+    "results/phase8_1/oof_predictions.csv": "09f91a62e39b8de866a5d814d6b001e3cae10cda614bea79b9f0af2ddfea3366",
+    "reports/phase8_1/FINAL_SAFETY_DECISION.md": "778e7209bc6724f8d4d6bb420c209d5c5dda4e607253f5149df3cfeaaa904062",
+    "reports/phase8_1/PHASE8_1_SAFETY_RECOVERY_REPORT.md": "eb3e4b7637924e33b06532758817c40bbb1f3cabc7c5b242b7450907a33194ea",
+    "results/phase8_2/confirmation_dataset_inventory.csv": "4e2967faffd6657e6a47e66443586b11bfada50e51b13bdcc6641eb8f6dd5747",
+    "results/phase8_2/confirmation_overlap_audit.json": "573bd286a3dac72d5bea2f32034af1a9900adaab0de16ff44cf8420a1a7b5300",
+    "reports/phase8_2/PHASE8_2_STATUS.md": "1e0f711faa97f9bff7529063ad04ab4d4f1442a2e651be92cf78ed0566232c62",
+    "reports/phase8_2/PHASE8_2_INDEPENDENT_CONFIRMATION_REPORT.md": "bccf93e47a20a549aac4806f4ca7dc39c4f27e4a14f2346eb0fb6fb9329fffb7",
+    "reports/phase8_2/CONFIRMATION_DATA_ACQUISITION_AND_LOCKING_PLAN.md": "674d57ab9d3466127ef548e71163a047c53299dae6bb75adaf8c2607266fec66",
+    "research/phase8_2/CONFIRMATION_DATA_READINESS.md": "26a06e3e78370b3f2ef4a6d6ddd48c8217119ab9f00c976fe7440c77cebece6d",
+    "scripts/phase8_1/execute_phase8_1_safety_recovery.py": "af2630cf38ef53c8d65149130a363ab0ab3ff92ee43eacc597edbe867735b903",
+    "scripts/phase8_2/generate_phase8_2_readiness_artifacts.py": "5a4f20c7583e096791049f86a0f56934880e66a5d4556572f7afa3a195a3fa5a",
+    "src/phase8_separated/phase8_separated_models.py": "d9b773c719ed7316827bde0f9c6aee813600d479a5b442451797f95959a8e234",
+    "reports/FINAL_METRIC_DEFINITIONS.md": "b14b7b59fa5f0a4ec25ede6bea5eefb5e2860bb763e11c734d001f0e29144ed0"
+  },
+  "repaired_protocol_v2_fingerprint": {
+    "config/phase8_2_1/confirmation_protocol_v2.yaml": "VERIFIED_SEPARATED"
+  },
+  "integrity_assertions": {
+    "phase1_to_8_preservation": "PASS — Zero modifications to historical phases",
+    "phase8_1_evidence_preservation": "PASS — Zero modifications to Phase 8.1 results, registries, reports",
+    "phase8_2_readiness_preservation": "PASS — Historical Phase 8.2 artifacts unmodified",
+    "threshold_fer_decoupling": "PASS — decision_threshold and fer_maximum are completely separated",
+    "unit_conversion_rule": "PASS — Percent (15.0%) and fraction (0.1500) explicitly separated",
+    "locked_test_quarantine": "PASS — 20% test partition (1,215 utterances) never accessed for threshold selection",
+    "confirmation_data_quarantine": "PASS — Zero external or prospective confirmation data accessed or fabricated",
+    "blocked_status_enforced": "PASS — Protocol v2 explicitly set to BLOCKED due to unmaterialized checkpoints and unavailable data"
+  },
+  "remaining_blockers": [
+    "BLOCKER_1: Independent confirmation dataset is NOT AVAILABLE in repository",
+    "BLOCKER_2: Candidate model checkpoints (checkpoints/phase8_1/*.pt) are unmaterialized in filesystem",
+    "BLOCKER_3: Prospected clinical cohort requires prospective IRB/ethics approval and acquisition"
+  ]
+}

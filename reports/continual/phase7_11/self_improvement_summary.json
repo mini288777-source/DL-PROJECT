@@ -1,0 +1,50 @@
+{
+  "phase": "7.11",
+  "description": "Continual Self-Improvement Evaluation Across 15 Speakers",
+  "timestamp": "2026-10-06T19:07:04.354900+00:00",
+  "total_speakers": 15,
+  "total_adaptation_cycles": 60,
+  "governance_decisions": {
+    "promoted": 0,
+    "rejected": 4,
+    "held": 56,
+    "promotion_rate": 0.0,
+    "rejection_rate": 0.06666666666666667
+  },
+  "learning_efficiency": {
+    "mean_human_burden_ratio": 1.0,
+    "mean_eligible_fraction": 1.0,
+    "macro_f1_trajectory": {
+      "N0": 0.1410272890407351,
+      "N50": 0.1410272890407351,
+      "delta": 0.0
+    },
+    "emergency_recall_trajectory": {
+      "N0": 0.0,
+      "N50": 0.0,
+      "delta": 0.0
+    },
+    "false_emergency_rate_trajectory": {
+      "N0": 0.0,
+      "N50": 0.0,
+      "delta": 0.0
+    }
+  },
+  "subgroup_performance_n50": {
+    "dysarthric": {
+      "n_speakers": 8,
+      "macro_f1": 0.14061555248299654,
+      "emergency_recall": 0.0,
+      "false_emergency_rate": 0.0
+    },
+    "control": {
+      "n_speakers": 7,
+      "macro_f1": 0.14149784510672203,
+      "emergency_recall": 0.0,
+      "false_emergency_rate": 0.0
+    }
+  },
+  "self_improvement_verdict": "PARTIALLY SUPPORTED",
+  "safety_governance_verdict": "PASS",
+  "frozen_case_b_conclusion": "UNCHANGED"
+}

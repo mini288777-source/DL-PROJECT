@@ -1,0 +1,28 @@
+{
+  "speaker_id": "M02",
+  "cohort_group": "dysarthric",
+  "N": 30,
+  "qubit_count": 4,
+  "reps": 1,
+  "train_shape": [
+    30,
+    30
+  ],
+  "test_shape": [
+    202,
+    30
+  ],
+  "is_finite": true,
+  "symmetry_error": 0.0,
+  "diagonal_error": 0.0,
+  "min_eigenvalue": 0.016246436895580033,
+  "max_eigenvalue": 4.543984125718442,
+  "condition_number": 279.6911196543451,
+  "trace": 30.0,
+  "mean_off_diagonal": 0.09826540255599588,
+  "std_off_diagonal": 0.1368424923172142,
+  "pca_cumulative_variance": 0.8612265729568791,
+  "psd_status": "STRICTLY_PSD",
+  "kernel_train_time_sec": 0.027318199994624592,
+  "kernel_test_time_sec": 0.20978739999554818
+}

@@ -1,0 +1,3 @@
+preset = "basic"
+python-interpreter-path = "C:/Users/lucky/AppData/Local/hermes/hermes-agent/venv/Scripts/python.exe"
+search-path = ["."]

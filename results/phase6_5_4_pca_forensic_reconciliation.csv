@@ -1,0 +1,5 @@
+artifact,location,pca_dims,input_dims,fit_data,scaling,variance_metric,result,status
+Phase 4/4.5 Report Tables,reports/phase4_complete_results.md:150,4,384,Claimed adaptation (hardcoded in scripts/generate_phase4_reports.py),"MinMaxScaler(0, pi)",Reported cumulative variance,27.4% +/- 3.9%,ERRONEOUS_REPORT_ARTIFACT
+Phase 4 Kernel Cache Metadata,results/phase4/kernel_cache/*_q4_r1_meta.json,4,384,Per-speaker adaptation (splits/torgo_splits.json),"MinMaxScaler(0, pi)",Empirical cumulative variance,79.15% +/- 5.21% (range 67.92%-89.53%),VERIFIED_EMPIRICAL_EXECUTION
+Phase 6.5.0 Diagnostic Report,phase6_5/reports/phase6_5_0_diagnostic_report.md:224,4,384,500 randomly sampled Whisper embeddings (corpus-wide pooled),None,Empirical cumulative variance,73.25%,VERIFIED_EMPIRICAL_POOLED
+Track B Adaptation Calibration,phase6_5/splits/recovery_splits_hierarchical_ready.json,4,384,Per-speaker adaptation (Track B recovery splits),None / L2-normalized inputs,Empirical cumulative variance,80.66% +/- 4.34% (range 71.64%-89.38%),VERIFIED_EMPIRICAL_TRACK_B

@@ -1,0 +1,166 @@
+{
+  "track_id": "Track_B_Quantum",
+  "benchmark": "Phase8_80_20",
+  "quantum_configuration": {
+    "qubits": 8,
+    "circuit": "AngleEmbedding + BasicEntanglerLayers",
+    "layers": 2,
+    "trainable_parameters": 18,
+    "simulator": "PennyLane default.qubit",
+    "interface": "torch",
+    "diff_method": "backprop"
+  },
+  "total_train_samples": 4852,
+  "total_test_samples": 1215,
+  "total_emergency_test_samples": 60,
+  "accuracy": 0.842798353909465,
+  "macro_f1": 0.16942373602439606,
+  "emergency_recall": 0.18333333333333332,
+  "emergency_precision": 0.07432432432432433,
+  "false_emergency_rate": 0.11861471861471862,
+  "intent_preservation_rate": 0.8813852813852814,
+  "dysarthric_accuracy": 0.8069767441860465,
+  "dysarthric_macro_f1": 0.1468964239392255,
+  "dysarthric_emergency_recall": 0.14814814814814814,
+  "dysarthric_emergency_precision": 0.06451612903225806,
+  "dysarthric_fer": 0.14392059553349876,
+  "control_accuracy": 0.8624203821656051,
+  "control_macro_f1": 0.19134297412969323,
+  "control_emergency_recall": 0.21212121212121213,
+  "control_emergency_precision": 0.08139534883720931,
+  "control_fer": 0.10505319148936171,
+  "total_train_time_sec": 280.82740999999896,
+  "total_eval_time_sec": 0.26957949999996345,
+  "mean_weight_delta_norm": 1.837162717183431,
+  "per_class_report": {
+    "GENERAL_SPEECH": {
+      "precision": 0.9540768509840675,
+      "recall": 0.8813852813852814,
+      "f1-score": 0.9162916291629163,
+      "support": 1155.0
+    },
+    "CRITICAL_RESPONSE": {
+      "precision": 0.0625,
+      "recall": 0.23529411764705882,
+      "f1-score": 0.09876543209876543,
+      "support": 17.0
+    },
+    "FALL": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 14.0
+    },
+    "BREATHING_MEDICAL": {
+      "precision": 0.07142857142857142,
+      "recall": 0.09090909090909091,
+      "f1-score": 0.08,
+      "support": 11.0
+    },
+    "PAIN": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 9.0
+    },
+    "SOS_HELP": {
+      "precision": 0.07692307692307693,
+      "recall": 0.1111111111111111,
+      "f1-score": 0.09090909090909091,
+      "support": 9.0
+    },
+    "LOCATION": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "accuracy": 0.842798353909465,
+    "macro avg": {
+      "precision": 0.16641835704795938,
+      "recall": 0.18838565729322032,
+      "f1-score": 0.16942373602439606,
+      "support": 1215.0
+    },
+    "weighted avg": {
+      "precision": 0.9090529093535965,
+      "recall": 0.842798353909465,
+      "f1-score": 0.8738222434954973,
+      "support": 1215.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1018,
+      59,
+      38,
+      12,
+      12,
+      12,
+      4
+    ],
+    [
+      10,
+      4,
+      2,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      13,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      8,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      8,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "canonical_classes": [
+    "GENERAL_SPEECH",
+    "CRITICAL_RESPONSE",
+    "FALL",
+    "BREATHING_MEDICAL",
+    "PAIN",
+    "SOS_HELP",
+    "LOCATION"
+  ]
+}

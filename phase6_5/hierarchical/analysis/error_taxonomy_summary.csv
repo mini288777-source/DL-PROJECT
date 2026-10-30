@@ -1,0 +1,15 @@
+grouping,model,N,cohort_group,total_samples,general_samples,emergency_samples,false_emergency_count,missed_emergency_count,wrong_emergency_type_count,correct_emergency_count,correct_general_count,false_emergency_rate,missed_emergency_rate,wrong_emergency_type_rate,correct_emergency_rate,correct_general_rate
+model_x_N,hierarchical_adapter,20,all,5767,5643,124,3982,40,58,26,1661,0.7057,0.3226,0.4677,0.2097,0.2943
+model_x_N,hierarchical_adapter,30,all,5617,5513,104,3159,56,28,20,2354,0.573,0.5385,0.2692,0.1923,0.427
+model_x_N,hierarchical_adapter,40,all,5467,5369,98,2643,67,20,11,2726,0.4923,0.6837,0.2041,0.1122,0.5077
+model_x_N,hierarchical_adapter,50,all,5317,5219,98,2213,61,27,10,3006,0.424,0.6224,0.2755,0.102,0.576
+model_x_N,hierarchical_rbf_svm,20,all,5767,5643,124,4630,17,71,36,1013,0.8205,0.1371,0.5726,0.2903,0.1795
+model_x_N,hierarchical_rbf_svm,30,all,5617,5513,104,1970,76,15,13,3543,0.3573,0.7308,0.1442,0.125,0.6427
+model_x_N,hierarchical_rbf_svm,40,all,5467,5369,98,2440,62,23,13,2929,0.4545,0.6327,0.2347,0.1327,0.5455
+model_x_N,hierarchical_rbf_svm,50,all,5317,5219,98,1509,70,16,12,3710,0.2891,0.7143,0.1633,0.1224,0.7109
+model_x_cohort,hierarchical_adapter,all,control,14700,14472,228,9310,86,97,45,5162,0.6433,0.3772,0.4254,0.1974,0.3567
+model_x_cohort,hierarchical_adapter,all,dysarthric,7468,7272,196,2687,138,36,22,4585,0.3695,0.7041,0.1837,0.1122,0.6305
+model_x_cohort,hierarchical_rbf_svm,all,control,14700,14472,228,7627,104,78,46,6845,0.527,0.4561,0.3421,0.2018,0.473
+model_x_cohort,hierarchical_rbf_svm,all,dysarthric,7468,7272,196,2922,121,47,28,4350,0.4018,0.6173,0.2398,0.1429,0.5982
+model_overall,hierarchical_adapter,all,all,22168,21744,424,11997,224,133,67,9747,0.5517,0.5283,0.3137,0.158,0.4483
+model_overall,hierarchical_rbf_svm,all,all,22168,21744,424,10549,225,125,74,11195,0.4851,0.5307,0.2948,0.1745,0.5149

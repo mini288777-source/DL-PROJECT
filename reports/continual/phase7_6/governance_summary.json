@@ -1,0 +1,115 @@
+{
+  "metadata": {
+    "policy_version": "v1.0.0_frozen",
+    "total_candidates_evaluated": 120,
+    "new_experiments_conducted": 0,
+    "models_trained": 0
+  },
+  "overall_cohort_summary": {
+    "dysarthric": {
+      "total_candidates_evaluated": 64,
+      "promoted_count": 28,
+      "rejected_count": 36,
+      "hold_count": 0,
+      "safety_veto_count": 36,
+      "promotion_rate": 0.4375,
+      "mean_emergency_recall_delta": -0.024305555555555556,
+      "mean_fer_delta": -0.10778133625027415,
+      "mean_macro_f1_delta": 0.013393101755129163
+    },
+    "control": {
+      "total_candidates_evaluated": 56,
+      "promoted_count": 25,
+      "rejected_count": 31,
+      "hold_count": 0,
+      "safety_veto_count": 31,
+      "promotion_rate": 0.44642857142857145,
+      "mean_emergency_recall_delta": -0.013588263588263589,
+      "mean_fer_delta": -0.11589902201454981,
+      "mean_macro_f1_delta": 0.01687952229501552
+    },
+    "overall": {
+      "total_candidates_evaluated": 120,
+      "promoted_count": 53,
+      "rejected_count": 67,
+      "hold_count": 0,
+      "safety_veto_count": 67,
+      "promotion_rate": 0.44166666666666665,
+      "mean_emergency_recall_delta": -0.019304152637485972,
+      "mean_fer_delta": -0.11156958960693611,
+      "mean_macro_f1_delta": 0.015020098007076132
+    }
+  },
+  "subphase_breakdown": {
+    "Phase_7.4_Classical": {
+      "dysarthric": {
+        "total_candidates_evaluated": 32,
+        "promoted_count": 15,
+        "rejected_count": 17,
+        "hold_count": 0,
+        "safety_veto_count": 17,
+        "promotion_rate": 0.46875,
+        "mean_emergency_recall_delta": -0.024305555555555556,
+        "mean_fer_delta": -0.11399383431734456,
+        "mean_macro_f1_delta": 0.013718383594555449
+      },
+      "control": {
+        "total_candidates_evaluated": 28,
+        "promoted_count": 12,
+        "rejected_count": 16,
+        "hold_count": 0,
+        "safety_veto_count": 16,
+        "promotion_rate": 0.42857142857142855,
+        "mean_emergency_recall_delta": -0.017556517556517555,
+        "mean_fer_delta": -0.12038995406230006,
+        "mean_macro_f1_delta": 0.017204913646520825
+      },
+      "overall": {
+        "total_candidates_evaluated": 60,
+        "promoted_count": 27,
+        "rejected_count": 33,
+        "hold_count": 0,
+        "safety_veto_count": 33,
+        "promotion_rate": 0.45,
+        "mean_emergency_recall_delta": -0.021156004489337823,
+        "mean_fer_delta": -0.11697869019832381,
+        "mean_macro_f1_delta": 0.015345430952139291
+      }
+    },
+    "Phase_7.5_Replay": {
+      "dysarthric": {
+        "total_candidates_evaluated": 32,
+        "promoted_count": 13,
+        "rejected_count": 19,
+        "hold_count": 0,
+        "safety_veto_count": 19,
+        "promotion_rate": 0.40625,
+        "mean_emergency_recall_delta": -0.024305555555555556,
+        "mean_fer_delta": -0.10156883818320377,
+        "mean_macro_f1_delta": 0.013067819915702878
+      },
+      "control": {
+        "total_candidates_evaluated": 28,
+        "promoted_count": 13,
+        "rejected_count": 15,
+        "hold_count": 0,
+        "safety_veto_count": 15,
+        "promotion_rate": 0.4642857142857143,
+        "mean_emergency_recall_delta": -0.00962000962000962,
+        "mean_fer_delta": -0.11140808996679959,
+        "mean_macro_f1_delta": 0.016554130943510215
+      },
+      "overall": {
+        "total_candidates_evaluated": 60,
+        "promoted_count": 26,
+        "rejected_count": 34,
+        "hold_count": 0,
+        "safety_veto_count": 34,
+        "promotion_rate": 0.43333333333333335,
+        "mean_emergency_recall_delta": -0.01745230078563412,
+        "mean_fer_delta": -0.10616048901554848,
+        "mean_macro_f1_delta": 0.014694765062012973
+      }
+    }
+  }
+}

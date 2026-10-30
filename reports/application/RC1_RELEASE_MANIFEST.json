@@ -1,0 +1,107 @@
+{
+  "release_metadata": {
+    "version": "1.1.0-gate-b2-rc1",
+    "release_tag": "RC1",
+    "release_name": "Release Candidate 1 — Quantum Research Command Center",
+    "created_at_utc": "2026-10-11T11:20:00Z",
+    "release_status": "FROZEN_FOR_OWNER_REVIEW",
+    "final_verdict": "RELEASE_READY_FOR_LOCAL_RESEARCH_DEMONSTRATION"
+  },
+  "governance_and_gate_authorizations": {
+    "gate_a_research": {
+      "status": "COMPLETE",
+      "scope": "Phases 1 through 8.2.1 cryptographically audited and frozen"
+    },
+    "gate_b_prototype": {
+      "status": "ACCEPTED_WITH_RECORDED_LIMITATIONS",
+      "scope": "Gate B.2 Pre-production local engineering prototype on loopback"
+    },
+    "gate_c_pilot": {
+      "status": "STRICTLY_BLOCKED",
+      "verdict": "BLOCKED_EXTERNAL_PREREQUISITES",
+      "open_blockers": 9,
+      "requirements": "Requires independent external prospective cohort, IRB ethics review, executed DUA, and qualified clinical oversight."
+    },
+    "gate_d_emergency_cad": {
+      "status": "STRICTLY_BLOCKED",
+      "verdict": "BLOCKED_SAFETY_EVIDENCE",
+      "open_blockers": 11,
+      "requirements": "Emergency safety not established. Observed emergency recall (10.13%-19.83%) and FER ceiling violate medical safety targets (Recall >= 90%, FER <= 1.0%). Zero FDA/CDSCO clearances."
+    }
+  },
+  "runtime_and_dependency_manifest": {
+    "target_os": "Windows 11 AMD64",
+    "python_version": "3.11.15",
+    "network_binding": "127.0.0.1:8000 (Loopback only)",
+    "public_network_exposure": false,
+    "packages": {
+      "fastapi": "0.115.8",
+      "uvicorn": "0.34.0",
+      "torch": "2.6.0+cpu",
+      "transformers": "4.49.0",
+      "qiskit": "1.3.2",
+      "qiskit-algorithms": "0.3.1",
+      "librosa": "0.10.2.post1",
+      "soundfile": "0.13.1",
+      "scikit-learn": "1.6.1",
+      "scipy": "1.15.2",
+      "numpy": "1.26.4",
+      "pytest": "8.4.1",
+      "pydantic": "2.10.6"
+    }
+  },
+  "quantum_model_specification": {
+    "operational_model_id": "qsvc_q8_r1",
+    "model_family": "quantum_kernel_qsvc",
+    "qubit_count": 8,
+    "ansatz": "ZZFeatureMap(reps=1, entanglement='linear')",
+    "kernel_type": "QuantumStatevectorFidelityKernel",
+    "acoustic_feature_dim": 384,
+    "acoustic_extractor": "openai/whisper-tiny",
+    "pca_components": 8,
+    "classifier": "scikit-learn Support Vector Classifier (precomputed fidelity kernel)",
+    "decision_cutoff_tau": 0.6000,
+    "threshold_status": "DEMONSTRATION_DEFAULT_UNCALIBRATED",
+    "classical_fallback_policy": "STRICTLY_PROHIBITED",
+    "classical_models_role": "HISTORICAL_RESEARCH_BASELINES_ONLY"
+  },
+  "test_suite_reconciliation": {
+    "total_tests_collected": 648,
+    "total_tests_passed": 648,
+    "total_tests_failed": 0,
+    "total_warnings": 16,
+    "reconciliation_baseline": {
+      "previous_report_count": 629,
+      "delta": "+19 tests",
+      "origin": "Added tests/gate_b2/test_quantum_only_application.py (18 tests) and tests/gate_b2/test_full_scale_application.py classical rejection assertion (1 test) during quantum-only enforcement."
+    }
+  },
+  "cryptographic_integrity_summary": {
+    "historical_research_checksums": {
+      "total_registered": 28,
+      "total_matched": 28,
+      "mismatches": 0,
+      "pass_rate_percent": 100.0
+    },
+    "canonical_quantum_checkpoints": {
+      "total_speakers": 15,
+      "total_checkpoints_verified": 15,
+      "mismatches": 0
+    },
+    "inference_reference_sidecars": {
+      "total_matrices_verified": 15,
+      "total_manifests_verified": 15,
+      "leakage_detected": false
+    }
+  },
+  "authoritative_scientific_findings": {
+    "quantum_advantage": "CASE_B_AFFIRMED — No statistically supported quantum advantage over matched classical RBF baseline under evaluated conditions.",
+    "clinical_emergency_safety": "SAFETY_INFEASIBLE — High overall accuracy is deceptive in extreme class imbalance (~95% routine vs ~5% emergency); enforcing FER <= 15% collapses emergency recall to 10-20%.",
+    "decision_threshold_decoupling": "Decision cutoff tau = 0.6000 is an uncalibrated demonstration parameter, strictly decoupled from the internal 15% FER research evaluation ceiling."
+  },
+  "release_limitations_and_disclaimer": {
+    "non_negotiable_disclaimer": "This application is an experimental research prototype. It is not validated for clinical use or real-world emergency response. Predictions can be incorrect, including failure to detect emergencies (False Negatives) and false emergency alerts (False Positives). Do not rely on this application for emergency decisions.",
+    "telemetry_policy": "ZERO_TELEMETRY — No external telemetry, remote analytics, tracking, or network dispatch.",
+    "audio_privacy_policy": "EPHEMERAL_IN_MEMORY — User audio is processed in volatile memory only and purged immediately upon request completion."
+  }
+}

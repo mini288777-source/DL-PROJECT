@@ -1,0 +1,48 @@
+# Acoustic Representation and Embedding Configuration
+# Phase 2: Whisper Feature Extraction & Caching
+
+model:
+  model_id: "openai/whisper-tiny" # Configurable: "openai/whisper-large-v2" or "openai/whisper-tiny"
+  sampling_rate: 16000
+  embedding_dim: 384             # 384 for tiny, 1280 for large-v2
+  max_audio_duration_sec: 30.0   # Standard Whisper 30s window
+  device: "cpu"                  # Auto-detect or explicit "cpu" / "cuda"
+
+extraction:
+  pooling: "mean"                # Temporal pooling: "mean", "max", or "first"
+  normalize: true                # Unit sphere L2 normalization
+  batch_size: 32                 # Inference batch size
+  seed: 42
+
+mfcc:
+  sampling_rate: 16000
+  n_mfcc: 13
+  n_fft: 400                     # 25ms window
+  hop_length: 160                # 10ms frame shift
+  aggregation: "mean_std"        # 13 * 3 * 2 = 78 dimensions
+  feature_dim: 78
+
+paths:
+  manifest_path: "data/manifests/torgo_manifest.csv"
+  splits_json_path: "splits/torgo_splits.json"
+  audio_dir: "data/torgo/audio"
+  cache_dir: "embeddings/torgo"
+  whisper_cache_dir: "embeddings/torgo/whisper"
+  mfcc_cache_dir: "embeddings/torgo/mfcc"
+  metadata_file: "embeddings/metadata/embedding_manifest.csv"
+  coverage_report: "reports/phase2_embedding_coverage.csv"
+  summary_report: "reports/phase2_embedding_summary.md"
+  audit_report: "reports/phase2_cache_audit.md"
+
+protocol:
+  # Experimental few-shot cohort extraction
+  # 50 adaptation samples + held-out test set per speaker
+  target_splits:
+    - "adaptation"
+    - "test"
+  total_target_speakers: 15
+  sample_sizes:
+    - 20
+    - 30
+    - 40
+    - 50

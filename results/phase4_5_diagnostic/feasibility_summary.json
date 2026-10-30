@@ -1,0 +1,10 @@
+{
+  "diagnostic_status": "NOT_FEASIBLE",
+  "reason": "Natural class distribution in TORGO adaptation splits contains 0 training samples for 3 to 6 emergency classes in every speaker. No common emergency intent exists across all 15 speakers. Construction of a balanced diagnostic without data synthesis or test leakage is impossible.",
+  "seven_class_balanced_possible": false,
+  "common_emergency_class_across_cohort": false,
+  "cohort_size": 15,
+  "adaptation_budget_inspected": 50,
+  "synthetic_data_prohibited": true,
+  "test_leakage_prohibited": true
+}

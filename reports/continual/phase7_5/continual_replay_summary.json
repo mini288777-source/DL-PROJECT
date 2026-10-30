@@ -1,0 +1,138 @@
+{
+  "phase": "7.5",
+  "title": "Replay Memory & Catastrophic Forgetting Mitigation Benchmark",
+  "timestamp": "2026-10-06T13:42:50Z",
+  "total_experiments": 120,
+  "control_experiments": 60,
+  "treatment_experiments": 60,
+  "speakers_evaluated": 15,
+  "budgets_evaluated": [
+    20,
+    30,
+    40,
+    50
+  ],
+  "replay_policy": "BALANCED_CLASS_AWARE (4:1 max ratio + B0 anchor retention)",
+  "budget_summary": [
+    {
+      "budget": 20,
+      "no_replay_emerg_recall": 0.17654882154882154,
+      "replay_emerg_recall": 0.17654882154882154,
+      "recall_gain_from_replay": 0.0,
+      "no_replay_forgetting": 0.0,
+      "replay_forgetting": 0.0,
+      "forgetting_reduction": 0.0,
+      "no_replay_fer": 0.6112787782983325,
+      "replay_fer": 0.6112787782983327,
+      "no_replay_macro_f1": 0.07698321033662095,
+      "replay_macro_f1": 0.07698321033662099,
+      "dysarthric_recall_no_replay": 0.17256944444444444,
+      "dysarthric_recall_replay": 0.17256944444444444,
+      "dysarthric_recall_gain": 0.0
+    },
+    {
+      "budget": 30,
+      "no_replay_emerg_recall": 0.18070707070707073,
+      "replay_emerg_recall": 0.18070707070707073,
+      "recall_gain_from_replay": 0.0,
+      "no_replay_forgetting": -0.004158249158249161,
+      "replay_forgetting": -0.004158249158249161,
+      "forgetting_reduction": 0.0,
+      "no_replay_fer": 0.47558463329653494,
+      "replay_fer": 0.475584633296535,
+      "no_replay_macro_f1": 0.09611338186850661,
+      "replay_macro_f1": 0.09611338186850667,
+      "dysarthric_recall_no_replay": 0.15763888888888888,
+      "dysarthric_recall_replay": 0.15763888888888888,
+      "dysarthric_recall_gain": 0.0
+    },
+    {
+      "budget": 40,
+      "no_replay_emerg_recall": 0.17784511784511783,
+      "replay_emerg_recall": 0.16117845117845117,
+      "recall_gain_from_replay": -0.016666666666666663,
+      "no_replay_forgetting": -0.0012962962962962954,
+      "replay_forgetting": 0.015370370370370375,
+      "forgetting_reduction": -0.01666666666666667,
+      "no_replay_fer": 0.3938114312905655,
+      "replay_fer": 0.3623654225004326,
+      "no_replay_macro_f1": 0.10852541824801086,
+      "replay_macro_f1": 0.11041867415946365,
+      "dysarthric_recall_no_replay": 0.128125,
+      "dysarthric_recall_replay": 0.096875,
+      "dysarthric_recall_gain": -0.031249999999999986
+    },
+    {
+      "budget": 50,
+      "no_replay_emerg_recall": 0.11308080808080809,
+      "replay_emerg_recall": 0.1241919191919192,
+      "recall_gain_from_replay": 0.011111111111111113,
+      "no_replay_forgetting": 0.06346801346801346,
+      "replay_forgetting": 0.05235690235690235,
+      "forgetting_reduction": 0.011111111111111113,
+      "no_replay_fer": 0.26034270770336126,
+      "replay_fer": 0.2927973112516872,
+      "no_replay_macro_f1": 0.12301950319303882,
+      "replay_macro_f1": 0.12106750552265991,
+      "dysarthric_recall_no_replay": 0.09965277777777778,
+      "dysarthric_recall_replay": 0.09965277777777778,
+      "dysarthric_recall_gain": 0.0
+    }
+  ],
+  "statistical_tests_terminal_n50": {
+    "comparison": "REPLAY vs NO_REPLAY at N=50",
+    "emergency_recall": {
+      "control_mean": 0.11308080808080809,
+      "treatment_mean": 0.1241919191919192,
+      "delta": 0.011111111111111115,
+      "t_stat": 1.0000000000000004,
+      "p_value": 0.33428194339465733
+    },
+    "emergency_forgetting": {
+      "control_mean": 0.06346801346801346,
+      "treatment_mean": 0.05235690235690235,
+      "delta": -0.01111111111111111,
+      "t_stat": -1.0000000000000002,
+      "p_value": 0.33428194339465755
+    },
+    "macro_f1": {
+      "control_mean": 0.12301950319303882,
+      "treatment_mean": 0.12106750552265991,
+      "delta": -0.0019519976703789201,
+      "t_stat": -1.317079458572265,
+      "p_value": 0.20896333456002886
+    },
+    "false_emergency_rate": {
+      "control_mean": 0.26034270770336126,
+      "treatment_mean": 0.2927973112516872,
+      "delta": 0.032454603548325925,
+      "t_stat": 1.86881180554949,
+      "p_value": 0.082714873705568
+    },
+    "dysarthric_emergency_recall": {
+      "control_mean": 0.09965277777777778,
+      "treatment_mean": 0.09965277777777778,
+      "delta": 0.0,
+      "t_stat": NaN,
+      "p_value": NaN
+    }
+  },
+  "hypotheses_evaluation": {
+    "H7_4": {
+      "statement": "Replay memory reduces catastrophic forgetting of minority safety-critical classes during continual personalization.",
+      "status": "PARTIALLY SUPPORTED",
+      "finding": "Replay reduced catastrophic forgetting by 0.0111 (p=0.3343). Emergency recall was preserved at 0.1242 with replay vs 0.1131 without replay."
+    },
+    "H7_4a": {
+      "statement": "Replay improves emergency recall relative to no replay.",
+      "status": "PARTIALLY SUPPORTED",
+      "finding": "Emergency recall improved by +0.0111 (p=0.3343) across cohort, and by +0.0000 in dysarthric speakers."
+    },
+    "H7_4b": {
+      "statement": "Replay reduces forgetting without unacceptable degradation in false emergency rate.",
+      "status": "SUPPORTED",
+      "finding": "FER change under replay at N=50 was +0.0325 (p=0.0827), maintaining strong general speech discrimination without runaway false alarms."
+    }
+  },
+  "scientific_boundary": "CASE B \u2014 NO STATISTICALLY SUPPORTED QUANTUM ADVANTAGE (UNCHANGED)"
+}

@@ -1,0 +1,21 @@
+Component,Identifier/Route,Subsystem,Operational_Role,Quantum_Status,Classical_Status,Runtime_Behavior,Gate_Constraints,Audit_Verdict
+Health Probe,/health,Infrastructure,System Liveness,OPERATIONAL,N/A,HTTP 200 {status: healthy},Gates C/D BLOCKED,PASS
+Readiness Probe,/ready,Infrastructure,Dependency Check,QUANTUM_MODEL_NOT_READY,RESEARCH_BASELINE_ONLY,HTTP 200 {quantum_model_ready: false},Gates C/D BLOCKED,PASS
+Model Metadata,/model-info,Metadata,Inspection,OPERATIONAL (Inspection Only),RESEARCH_BASELINE_ONLY,HTTP 200 with decoupled thresholds,Gates C/D BLOCKED,PASS
+Model Catalog,/api/v1/models,Metadata,Catalog,OPERATIONAL_PREDICTOR,RESEARCH_BASELINE_ONLY,HTTP 200 listing models & roles,Gates C/D BLOCKED,PASS
+Speaker Catalog,/api/v1/speakers,Metadata,Catalog,OPERATIONAL (15 speakers),N/A,HTTP 200 listing available speakers,Gates C/D BLOCKED,PASS
+Intent Inference (JSON),/api/v1/predict,Inference,Live Intent Prediction,QUANTUM_ONLY (qsvc_q8_r1),PROHIBITED (400 rejection),HTTP 503 (Quantum Unready) / HTTP 400 (Classical),Gates C/D BLOCKED,PASS
+Intent Inference (File),/api/v1/predict/file,Inference,Live Audio Intent Prediction,QUANTUM_ONLY (qsvc_q8_r1),PROHIBITED (400 rejection),HTTP 503 (Quantum Unready) / HTTP 400 (Classical),Gates C/D BLOCKED,PASS
+Audio Transcription,/api/v1/audio/transcribe,ASR,Speech-to-Text,OPERATIONAL (Whisper),N/A,HTTP 200 verbatim text,Gates C/D BLOCKED,PASS
+Embedding Extraction,/api/v1/audio/extract-embedding,Feature Extraction,384-D Vector Extraction,OPERATIONAL (Whisper Encoder),N/A,HTTP 200 384-D L2-normalized vector,Gates C/D BLOCKED,PASS
+Live WebSocket,/ws/v1/live-transcription,Streaming,Streaming ASR & Intent,QUANTUM_ONLY (qsvc_q8_r1),PROHIBITED (rejection),Streaming ASR operational; intent 503,Gates C/D BLOCKED,PASS
+Research Phases,/api/v1/research/phases,Research Archive,Historical Phase Results,N/A,RESEARCH_BASELINE_ONLY,HTTP 200 frozen phase metrics,Gates C/D BLOCKED,PASS
+Research Metrics,/api/v1/research/metrics,Research Archive,Model Benchmark Tables,N/A,RESEARCH_BASELINE_ONLY,HTTP 200 Case B comparisons,Gates C/D BLOCKED,PASS
+Operating Points,/api/v1/research/operating-points,Research Archive,Safety Boundary Curve,N/A,RESEARCH_BASELINE_ONLY,HTTP 200 with tau=0.60 vs FER<=0.1500,Gates C/D BLOCKED,PASS
+Research Figures,/api/v1/research/figures,Research Archive,Figure Catalog,N/A,RESEARCH_BASELINE_ONLY,HTTP 200 figure metadata,Gates C/D BLOCKED,PASS
+Static Figures Mount,/figures/*,Static Serving,Figure PNG Artifacts,N/A,N/A,HTTP 200 static image/png,Gates C/D BLOCKED,PASS
+Provenance Summary,/api/v1/provenance/summary,Integrity,Cryptographic Summary,N/A,N/A,HTTP 200 28/28 SHA-256 verified,Gates C/D BLOCKED,PASS
+Web User Interface,/,Frontend,Operator Dashboard,QUANTUM_SPEECH_INTENT_LAB,RESEARCH_BASELINE_ONLY,HTTP 200 HTML5/Vanilla JS UI,Gates C/D BLOCKED,PASS
+Classical Model Adapter,continual_classical_adapter,Inference Engine,Historical Baseline,N/A,REJECTED ON LIVE PREDICTION,HTTP 400 MODEL_NOT_ALLOWED,Gates C/D BLOCKED,PASS
+Quantum Model Manager,src/app/quantum_model_manager.py,Core Logic,Model Management,SINGLETON DISCOVERY,ISOLATED (SPY-VERIFIED),Fail-closed 503 enforcement,Gates C/D BLOCKED,PASS
+Emergency Dispatch Hook,External CAD/911,Emergency Services,DISALLOWED,BLOCKED,BLOCKED,No network sockets / no CAD integration,Gates C/D BLOCKED,PASS

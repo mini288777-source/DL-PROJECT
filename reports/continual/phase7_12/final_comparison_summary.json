@@ -1,0 +1,37 @@
+{
+  "phase": "7.12",
+  "title": "Quantum vs Classical Final Consolidated Comparison",
+  "canonical_cells": 60,
+  "speakers_evaluated": 15,
+  "budgets_evaluated": [
+    20,
+    30,
+    40,
+    50
+  ],
+  "research_question_evaluations": {
+    "Q1_continual_quantum_vs_classical": {
+      "question": "Does continual quantum personalization outperform continual classical?",
+      "verdict": "PARTIALLY SUPPORTED",
+      "finding": "Quantum classifiers (Fixed and Trainable) achieve significantly higher Macro-F1 (~0.118 vs 0.101) and drastically lower FER (~0.17 vs 0.44), but suffer severe emergency recall deficits (5.1%-5.8% vs 16.2%), causing safety vetos in clinical deployment."
+    },
+    "Q2_adaptive_quantum_vs_fixed_quantum": {
+      "question": "Does adaptive quantum representation outperform fixed quantum?",
+      "verdict": "NOT SUPPORTED",
+      "finding": "Trainable quantum representation does not produce a statistically significant Macro-F1 improvement over fixed quantum kernel (0.1187 vs 0.1180, p_adj=0.061). Emergency recall remains statistically unchanged (5.81% vs 5.12%, p_adj=0.559)."
+    },
+    "Q3_hybrid_fusion_vs_standalone": {
+      "question": "Does hybrid fusion outperform both classical and quantum standalone?",
+      "verdict": "PARTIALLY SUPPORTED",
+      "finding": "Hybrid fusion achieves statistically superior Macro-F1 (0.1184 vs 0.1012, p_adj=3.78e-7) and FER (0.1945 vs 0.4353) over Classical, but does not outperform Trainable Quantum on Macro-F1 (0.1184 vs 0.1187, p_adj=0.275)."
+    },
+    "Q4_safety_governance_satisfaction": {
+      "question": "Does any quantum approach satisfy safety governance?",
+      "verdict": "NOT SUPPORTED for Pure Quantum; SUPPORTED for Classical and Governed Hybrid",
+      "finding": "Pure quantum models fail the clinical Emergency Recall safety gate due to persistent collapse onto General Speech. Hybrid fusion passes Phase 7.6 validation gate in 52/60 cells under calibrated decision thresholds."
+    }
+  },
+  "overall_scientific_conclusion": "CASE B - NO STATISTICALLY SUPPORTED QUANTUM ADVANTAGE (CONFIRMED AND REINFORCED ACROSS CONTINUAL LEARNING)",
+  "deployment_recommendation": "Continual Classical Adapter remains the safest deployable architecture for atypical emergency speech recognition due to superior emergency recall (16.20%). Governed Hybrid is promising for false-alarm suppression in high-resource tiers.",
+  "case_b_status": "UNCHANGED"
+}

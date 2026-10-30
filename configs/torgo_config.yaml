@@ -1,0 +1,53 @@
+# TORGO Dataset Central Configuration
+# Phase 1: Data Foundation and Deterministic Splits
+
+dataset:
+  name: "TORGO"
+  raw_dir: "TORGO DATASET"
+  parquet_glob: "TORGO DATASET/*.parquet"
+  extracted_audio_dir: "data/torgo/audio"
+  audio_format: "wav"
+
+paths:
+  manifest: "data/manifests/torgo_manifest.csv"
+  speaker_shortlist: "data/manifests/torgo_speaker_shortlist.csv"
+  intent_taxonomy: "configs/intent_taxonomy.yaml"
+  intent_mapping: "data/manifests/torgo_intent_mapping.csv"
+  splits_json: "splits/torgo_splits.json"
+  splits_csv: "splits/torgo_split_indices.csv"
+  inventory_json: "reports/torgo_dataset_inventory.json"
+  inventory_md: "reports/torgo_dataset_inventory.md"
+  audio_validation_csv: "reports/torgo_audio_validation.csv"
+  fewshot_feasibility_csv: "reports/torgo_fewshot_feasibility.csv"
+  leakage_report_md: "reports/torgo_leakage_check.md"
+  summary_report_md: "reports/torgo_summary.md"
+
+protocol:
+  seed: 42
+  sample_sizes:
+    - 20
+    - 30
+    - 40
+    - 50
+  nested_sampling: true # 20 subset of 30 subset of 40 subset of 50
+  leakage_prevention:
+    group_by: "prompt_id" # Group channels (arrayMic + headMic) of the same speech event together
+    strict_split_isolation: true
+  microphone_priority:
+    preferred: "headMic"
+    secondary: "arrayMic"
+
+audio_validation:
+  min_duration_sec: 0.1
+  max_duration_sec: 60.0
+  expected_sample_rate: 16000
+  expected_channels: 1
+  disallow_nan: true
+  disallow_inf: true
+
+eligibility_rules:
+  min_adaptation_samples: 50
+  min_test_samples: 20
+  min_total_unique_prompts: 70
+  require_valid_audio: true
+  require_valid_transcript: true

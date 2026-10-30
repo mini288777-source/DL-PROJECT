@@ -1,0 +1,25 @@
+{
+  "experiment_id": "phase8_80_20_benchmark",
+  "project": "Low-Resource Personalized Atypical Speech Recognition Using Hybrid Quantum-Classical Deep Learning for Reliable Emergency Communication",
+  "execution_date": "2026-10-10",
+  "dataset": "TORGO Database of Dysarthric Speech (Active HeadMic/Selected Channels)",
+  "split_manifest": "results/phase8_80_20/split_manifest.json",
+  "manifest_fingerprint": "16c1304221900a8ca5a278adc2528ba2807881e9c526a322b7a649135bc80a58",
+  "total_active_utterances": 6067,
+  "train_pool_samples": 4852,
+  "locked_test_samples": 1215,
+  "speakers": 15,
+  "dysarthric_speakers": 8,
+  "control_speakers": 7,
+  "tracks_evaluated": [
+    "Track_A_Classical",
+    "Track_B_Quantum",
+    "Track_C_Classical_Shadow"
+  ],
+  "sentinels_verified": {
+    "Track_A": true,
+    "Track_B": true,
+    "Track_C": true
+  },
+  "verdict": "BENCHMARK EXECUTION COMPLETE; CASE B CONFIRMED"
+}

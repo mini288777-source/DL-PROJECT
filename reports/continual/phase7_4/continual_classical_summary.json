@@ -1,0 +1,95 @@
+{
+  "phase": "7.4",
+  "title": "Continual Classical Personalization Baseline",
+  "timestamp": "2026-10-06T13:28:39Z",
+  "total_experiments": 60,
+  "speakers_evaluated": 15,
+  "budgets_evaluated": [
+    20,
+    30,
+    40,
+    50
+  ],
+  "encoder": "openai/whisper-tiny (384-D unit L2)",
+  "model_architecture": "ClassicalAdapterNet (Linear 384->64, LayerNorm, GELU, Dropout 0.1, Linear 64->7; 25,223 params)",
+  "trajectory_summary": [
+    {
+      "budget": 20,
+      "cohort_macro_f1_mean": 0.07698321033662099,
+      "cohort_macro_f1_std": 0.037870440252116874,
+      "cohort_emerg_recall_mean": 0.17654882154882154,
+      "cohort_emerg_recall_std": 0.2017808120478707,
+      "cohort_emerg_prec_mean": 0.005181657176656049,
+      "cohort_fer_mean": 0.6112787782983327,
+      "cohort_iper_mean": 0.17654882154882154,
+      "dysarthric_macro_f1_mean": 0.09152869570193285,
+      "dysarthric_emerg_recall_mean": 0.17256944444444444,
+      "control_macro_f1_mean": 0.06035979849055029,
+      "control_emerg_recall_mean": 0.18109668109668112
+    },
+    {
+      "budget": 30,
+      "cohort_macro_f1_mean": 0.09611338186850667,
+      "cohort_macro_f1_std": 0.039262673569087116,
+      "cohort_emerg_recall_mean": 0.18070707070707073,
+      "cohort_emerg_recall_std": 0.22554968137108544,
+      "cohort_emerg_prec_mean": 0.005903399870697491,
+      "cohort_fer_mean": 0.475584633296535,
+      "cohort_iper_mean": 0.18070707070707073,
+      "dysarthric_macro_f1_mean": 0.11615223744888084,
+      "dysarthric_emerg_recall_mean": 0.15763888888888888,
+      "control_macro_f1_mean": 0.07321183263379331,
+      "control_emerg_recall_mean": 0.20707070707070704
+    },
+    {
+      "budget": 40,
+      "cohort_macro_f1_mean": 0.10852541824801092,
+      "cohort_macro_f1_std": 0.0321277994021375,
+      "cohort_emerg_recall_mean": 0.17784511784511786,
+      "cohort_emerg_recall_std": 0.1918163141011917,
+      "cohort_emerg_prec_mean": 0.009049384614764662,
+      "cohort_fer_mean": 0.3938114312905655,
+      "cohort_iper_mean": 0.17784511784511786,
+      "dysarthric_macro_f1_mean": 0.12536157340633552,
+      "dysarthric_emerg_recall_mean": 0.128125,
+      "control_macro_f1_mean": 0.0892840980670685,
+      "control_emerg_recall_mean": 0.23466810966810966
+    },
+    {
+      "budget": 50,
+      "cohort_macro_f1_mean": 0.12301950319303885,
+      "cohort_macro_f1_std": 0.024461032016103765,
+      "cohort_emerg_recall_mean": 0.11308080808080809,
+      "cohort_emerg_recall_std": 0.14778532671162037,
+      "cohort_emerg_prec_mean": 0.009520057949307407,
+      "cohort_fer_mean": 0.2603427077033613,
+      "cohort_iper_mean": 0.11308080808080809,
+      "dysarthric_macro_f1_mean": 0.13268384648559922,
+      "dysarthric_emerg_recall_mean": 0.09965277777777778,
+      "control_macro_f1_mean": 0.11197453943011275,
+      "control_emerg_recall_mean": 0.12842712842712842
+    }
+  ],
+  "statistical_tests": {
+    "comparison": "B3 (N=50) vs B0 (N=20)",
+    "macro_f1_delta_mean": 0.04603629285641787,
+    "macro_f1_p_value": 2.4129058852057212e-05,
+    "emergency_recall_delta_mean": -0.06346801346801346,
+    "emergency_recall_p_value": 0.0382017388301045,
+    "false_emergency_delta_mean": -0.3509360705949714,
+    "false_emergency_p_value": 1.445192648929289e-06
+  },
+  "hypotheses_evaluation": {
+    "H7_1": {
+      "statement": "Verified experience accumulation improves speaker-specific atypical speech recognition.",
+      "status": "SUPPORTED",
+      "finding": "Macro-F1 delta = +0.0460 (p=0.0000). Naive experience accumulation without replay suffers from minority emergency forgetting due to severe natural class imbalance."
+    },
+    "H7_2": {
+      "statement": "Performance changes systematically as verified personalized experience accumulates.",
+      "status": "SUPPORTED",
+      "finding": "Performance changes monotonically with increasing general speech dominance: FER decreases as general speech expands, while emergency recall shifts based on imbalance pressure."
+    }
+  },
+  "scientific_boundary": "CASE B \u2014 NO STATISTICALLY SUPPORTED QUANTUM ADVANTAGE (UNCHANGED)"
+}

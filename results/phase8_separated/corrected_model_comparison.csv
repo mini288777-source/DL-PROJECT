@@ -1,0 +1,4 @@
+Track,Emergency Recall,Emergency Precision,FER,Macro-F1,Dysarthric Recall,Dysarthric FER,Control Recall,Control FER,Mean Threshold,Train Time (s),Inference Time (ms),Safety Passes
+Classical Baseline (Track A),37.77% ± 34.62%,1.44% ± 1.28%,44.19% ± 28.58%,9.80% ± 3.79%,28.06%,35.16%,48.85%,54.51%,0.47,0.37s,1.46ms,1 / 60
+Quantum Residual (Track B),37.59% ± 34.35%,1.49% ± 1.35%,45.20% ± 27.92%,9.71% ± 3.88%,27.07%,36.46%,49.62%,55.18%,0.45,12.40s,2722.37ms,2 / 60
+Matched Classical Shadow (Track C),41.70% ± 35.47%,1.74% ± 2.30%,48.98% ± 26.56%,9.29% ± 3.73%,29.77%,39.37%,55.33%,59.96%,0.42,0.37s,2.79ms,0 / 60

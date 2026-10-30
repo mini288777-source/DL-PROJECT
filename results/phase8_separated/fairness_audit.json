@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "total_cells": 60,
+  "matched_speakers": 15,
+  "matched_budgets": [
+    20,
+    30,
+    40,
+    50
+  ],
+  "identical_train_ids_across_tracks": true,
+  "identical_test_ids_across_tracks": true,
+  "identical_taxonomy_mapping": true,
+  "details": "All 3 tracks evaluated on identical locked train/validation/test sample IDs for every condition."
+}

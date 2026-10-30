@@ -1,0 +1,74 @@
+{
+  "audit_metadata": {
+    "audit_name": "Phase 8.2.1 Decision-Threshold and FER Safety Policy Forensic Audit",
+    "execution_timestamp": "2026-10-10T19:20:00Z",
+    "specification_authority": "PHASE8_2_1_THRESHOLD_PROTOCOL_REPAIR.md",
+    "preservation_status": "Phase 1-8 Historical Results and Phase 8.2 Artifacts 100% Preserved"
+  },
+  "forensic_classification": {
+    "verdict": "FER_LIMIT_MISUSED_AS_DECISION_THRESHOLD",
+    "original_tau": 0.15,
+    "original_tau_meaning": "Accidental transcription of FER <= 15% safety limit into classifier threshold field",
+    "fer_maximum_canonical": 0.15,
+    "fer_unit": "fraction (equivalent to 15.0%)",
+    "threshold_validity": false,
+    "conflation_proven": true
+  },
+  "eleven_forensic_questions": {
+    "q1_tau_code_meaning": "In code (src/phase8_separated/phase8_separated_models.py:L133), tau is the binary emergency decision boundary: is_emergency = probs >= tau. In config/phase8_2/confirmation_protocol.yaml, tau=0.1500 was an accidental textual copy of the 15% FER safety limit.",
+    "q2_score_scale_comparison": "tau is compared to calibrated or bounded emergency probabilities in [0.0, 1.0], not unconstrained raw logits.",
+    "q3_definition_and_consumption": "Defined in config/phase8_2/confirmation_protocol.yaml (L11, L16, L21, L26, L31, L36) and scripts/phase8_2/generate_phase8_2_readiness_artifacts.py (L205). Consumed only by readiness test tests/phase8_2/test_phase8_2_readiness.py:L84. Never consumed in inference.",
+    "q4_provenance_source": "COPIED FROM FER LIMIT. Phase 8.1 search grid was np.arange(0.40, 0.90, 0.05). tau=0.1500 was never in the search grid, never calibrated, and never selected.",
+    "q5_candidate_model_version": "Belongs to NO MODEL. It was uniformly copied across all 6 candidate models (Track A, INT-1, INT-2, INT-3, Track B, Track C) without model-specific derivation.",
+    "q6_scope_specificity": "Written as a flat global scalar in Phase 8.2 YAML, whereas actual Phase 8.1 thresholds in results/phase8_1/threshold_registry.json are fold-specific and speaker-specific (mean=0.762, range [0.40, 0.85]).",
+    "q7_score_calibration": "Track A, Track B, Track C used uncalibrated ensemble averages; INT-1 used Platt logistic scaling; INT-2 used cost-reweighting; INT-3 used balanced oversampling.",
+    "q8_phase8_1_comparison": "Phase 8.1 thresholds in threshold_registry.json average 0.762 (0.745 Track A, 0.728 Track B, 0.733 Track C). In safety_operating_points.csv, pooled feasible threshold is tau=0.60. None are comparable to 0.1500.",
+    "q9_oof_traceability": "YES. Phase 8.1 nested inner-CV selected thresholds strictly on inner OOF predictions without fitting on those samples, completely documented in results/phase8_1/threshold_registry.json.",
+    "q10_effect_of_changing_tau": "Changing tau affects ONLY the classifier operating point (Recall vs FER). It DOES NOT alter the FER safety bound itself, which is an independent policy constraint (FER <= 15.0%).",
+    "q11_test_data_leakage": "NO. The locked 20% test partition was quarantined as diagnostic-only in Phase 8.1. The error was purely a textual conflation of the policy limit."
+  },
+  "empirical_operating_point_analysis": {
+    "score_distribution_general_speech_mean": 0.4557,
+    "consequence_at_tau_0_15": "At tau=0.20, FER is 82.32% (Track A) and 83.84% (Track B). At tau=0.1500, FER > 90%, causing catastrophic false alarms (over 900 false alarms per 1,000 utterances).",
+    "minimum_pooled_feasible_tau": 0.6,
+    "pooled_metrics_at_tau_0_60": {
+      "Track_A_Baseline": { "FER": 0.1393, "Recall": 0.2068, "Precision": 0.0708, "safety_pass": true },
+      "Track_B_Quantum": { "FER": 0.122, "Recall": 0.1899, "Precision": 0.074, "safety_pass": true },
+      "Track_C_Shadow": { "FER": 0.1244, "Recall": 0.2405, "Precision": 0.0903, "safety_pass": true }
+    }
+  },
+  "candidate_threshold_registry_summary": {
+    "total_records": 450,
+    "folds_count": 5,
+    "speakers_count": 15,
+    "tracks": {
+      "Track_A_Baseline": { "count": 75, "min": 0.5, "mean": 0.7453, "median": 0.75, "max": 0.85 },
+      "INT-1-CALIB": { "count": 75, "min": 0.7, "mean": 0.796, "median": 0.8, "max": 0.85 },
+      "INT-2-COST": { "count": 75, "min": 0.4, "mean": 0.7027, "median": 0.7, "max": 0.85 },
+      "INT-3-SAMP": { "count": 75, "min": 0.4, "mean": 0.7093, "median": 0.7, "max": 0.85 },
+      "Track_B_Quantum": { "count": 75, "min": 0.5, "mean": 0.728, "median": 0.7, "max": 0.85 },
+      "Track_C_Shadow": { "count": 75, "min": 0.4, "mean": 0.7333, "median": 0.75, "max": 0.85 }
+    }
+  },
+  "checkpoint_materialization_audit": {
+    "checkpoints_directory_exists": false,
+    "checkpoints_path_checked": "d:/DL/checkpoints",
+    "materialized_weights_found": 0,
+    "determination": "UNMATERIALIZED_PLACEHOLDERS",
+    "governance_action": "BLOCK_EVALUATION"
+  },
+  "confirmation_dataset_audit": {
+    "eligible_independent_datasets_count": 0,
+    "determination": "NOT_AVAILABLE",
+    "status": "BLOCKED — INDEPENDENT CONFIRMATION DATA UNAVAILABLE"
+  },
+  "protocol_repair_summary": {
+    "v2_protocol_path": "config/phase8_2_1/confirmation_protocol_v2.yaml",
+    "v2_status": "BLOCKED",
+    "decoupling_enforced": true,
+    "separate_fields": {
+      "decision_policy": "Explicit model-specific score_name, comparator, and development operating points",
+      "safety_constraints": "Explicit canonical FER metric definition, formula, fraction 0.1500, percent 15.0%"
+    }
+  }
+}

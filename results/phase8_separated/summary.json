@@ -1,0 +1,42 @@
+{
+  "benchmark": "Phase 8 Separated Pipeline Confirmatory Benchmark",
+  "total_cells": 60,
+  "speakers": 15,
+  "budgets": [
+    20,
+    30,
+    40,
+    50
+  ],
+  "tracks": {
+    "Track_A_Classical": {
+      "mean_emergency_recall": 0.37766414141414134,
+      "std_emergency_recall": 0.34623237777870797,
+      "mean_false_emergency_rate": 0.4418745852874136,
+      "mean_macro_f1": 0.0980167124364045,
+      "safety_passes": 1
+    },
+    "Track_B_Quantum": {
+      "mean_emergency_recall": 0.3759427609427609,
+      "std_emergency_recall": 0.34349362297633035,
+      "mean_false_emergency_rate": 0.4519579081861379,
+      "mean_macro_f1": 0.09706715170319383,
+      "safety_passes": 2,
+      "quantum_influence": 0.1001640265772679
+    },
+    "Track_C_Shadow": {
+      "mean_emergency_recall": 0.41695707070707066,
+      "std_emergency_recall": 0.3546718400041344,
+      "mean_false_emergency_rate": 0.48978542350398985,
+      "mean_macro_f1": 0.09285467137830855,
+      "safety_passes": 0
+    }
+  },
+  "statistical_primary_outcome": {
+    "metric": "Emergency Recall",
+    "B_vs_C_p_value": 0.05653573053244728,
+    "B_vs_C_significant": false,
+    "B_vs_A_p_value": 0.9212536740733438
+  },
+  "verdict": "NOT SUPPORTED (NO QUANTUM ADVANTAGE OVER MATCHED CLASSICAL SHADOW)"
+}

@@ -1,0 +1,31 @@
+feature_id,feature_name,subsystem,implementation_status,source_file,evidence_or_reason,gate_authorization
+FEAT-001,Process Liveness Endpoint (/health),Backend API,OPERATIONAL,src/app/main.py,Returns HTTP 200 process status with service metadata,Authorized
+FEAT-002,Component Readiness Endpoint (/ready),Backend API,OPERATIONAL,src/app/main.py,Validates Whisper and ModelManager initialization,Authorized
+FEAT-003,Materialized Model Inference (/predict),Backend API,OPERATIONAL,src/app/routes/predict.py,Executes frozen Phase 7.5 classical adapter forward pass,Authorized
+FEAT-004,Multi-Part Audio File Inference (/predict/file),Backend API,OPERATIONAL,src/app/routes/predict.py,Validates WAV upload and runs end-to-end inference,Authorized
+FEAT-005,Audio Transcription Endpoint (/audio/transcribe),Backend API,OPERATIONAL,src/app/routes/audio.py,Invokes Whisper-tiny for local speech-to-text,Authorized
+FEAT-006,Audio Embedding Extraction (/audio/extract-embedding),Backend API,OPERATIONAL,src/app/routes/audio.py,Extracts 384-dimensional log-mel acoustic embedding,Authorized
+FEAT-007,WebSocket Streaming Inference (/ws/audio-stream),WebSocket,OPERATIONAL,src/app/routes/websocket.py,Streaming chunk aggregation and real-time inference,Authorized
+FEAT-008,WebSocket Buffer Bound & Protection,WebSocket,OPERATIONAL,src/app/routes/websocket.py,Enforces 100-chunk cap to prevent memory exhaustion,Authorized
+FEAT-009,Research Results Explorer (/research/*),Research API,OPERATIONAL,src/app/routes/research.py,Safe read-only retrieval of locked experimental artifacts,Authorized
+FEAT-010,Provenance & Evidence Inventory (/provenance/*),Provenance API,OPERATIONAL,src/app/routes/provenance.py,Cryptographic verification against 28 historical checksums,Authorized
+FEAT-011,HTML5 Audio Waveform Visualizer,Frontend UI,OPERATIONAL,src/app/static/app.js,Real-time Web Audio API AnalyserNode visual feedback,Authorized
+FEAT-012,Audio Lab State Machine Display,Frontend UI,OPERATIONAL,src/app/static/app.js,Visual badge reflecting 10-state deterministic machine,Authorized
+FEAT-013,Synthetic Input Isolation & Warning,Frontend UI,OPERATIONAL,src/app/static/app.js,Banners preventing synthetic tones from scientific results,Authorized
+FEAT-014,Session Audio Purge & Cleanup,Frontend UI,OPERATIONAL,src/app/static/app.js,Revokes Object URLs and resets UI to IDLE,Authorized
+FEAT-015,Canonical 7-Class Taxonomy Probability Rendering,Frontend UI,OPERATIONAL,src/app/static/app.js,Renders probabilities for all 7 classes in canonical order,Authorized
+FEAT-016,Model Weights Invariance Enforcement,Core ML,SAFEGUARDED,src/app/model_manager.py,Weights loaded weights_only=True in eval() with requires_grad=False,Authorized
+FEAT-017,Speaker Adapter Routing & Isolation,Core ML,SAFEGUARDED,src/app/model_manager.py,Per-speaker routing with HTTP 404 on unknown speaker,Authorized
+FEAT-018,Phase 8.1 Classical Candidate Model,Core ML,UNAVAILABLE,src/app/model_manager.py,Unmaterialized checkpoint on disk; returns HTTP 503 fail-closed,Candidate Only
+FEAT-019,Phase 8.1 Quantum Candidate Model,Core ML,UNAVAILABLE,src/app/model_manager.py,Unmaterialized checkpoint on disk; returns HTTP 503 fail-closed,Candidate Only
+FEAT-020,Phase 8.2 Classical Candidate Model,Core ML,UNAVAILABLE,src/app/model_manager.py,Unmaterialized checkpoint on disk; returns HTTP 503 fail-closed,Candidate Only
+FEAT-021,Phase 8.2 Quantum Candidate Model,Core ML,UNAVAILABLE,src/app/model_manager.py,Unmaterialized checkpoint on disk; returns HTTP 503 fail-closed,Candidate Only
+FEAT-022,Phase 8.2.1 Classical Candidate Model,Core ML,UNAVAILABLE,src/app/model_manager.py,Unmaterialized checkpoint on disk; returns HTTP 503 fail-closed,Candidate Only
+FEAT-023,Phase 8.2.1 Quantum Candidate Model,Core ML,UNAVAILABLE,src/app/model_manager.py,Unmaterialized checkpoint on disk; returns HTTP 503 fail-closed,Candidate Only
+FEAT-024,Demonstration Cutoff Notice (tau=0.6000),Governance,SAFEGUARDED,src/app/routes/predict.py,Labeled as uncalibrated demonstration default in all responses,Authorized
+FEAT-025,Zero Speech Persistence Enforcement,Privacy,SAFEGUARDED,src/app/audio_service.py,Guaranteed tempfile unlinking in try/finally blocks,Authorized
+FEAT-026,Local Loopback Binding Enforcement,Security,SAFEGUARDED,src/app/config.py,Enforces 127.0.0.1 binding and prohibits 0.0.0.0,Authorized
+FEAT-027,Controlled Human User Pilot (Gate C),Governance,BLOCKED,None,Lacks IRB/IEC approval and signed multi-center DUAs,BLOCKED
+FEAT-028,Clinical & Emergency CAD/911 Deployment (Gate D),Governance,BLOCKED,None,Unacceptable error rate (>80% missed emergencies) and no FDA clearance,BLOCKED
+FEAT-029,Outbound Telephony & SMS Dispatch,Integration,BLOCKED,None,Zero external dispatch capability; prohibited by research scope,BLOCKED
+FEAT-030,EHR & Hospital Telemetry Integration,Integration,BLOCKED,None,Zero healthcare integration; prohibited by research scope,BLOCKED

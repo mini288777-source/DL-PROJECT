@@ -1,0 +1,15 @@
+metric,metric_label,model_A,model_B,n_pairs,mean_A,mean_B,mean_diff,median_diff,std_diff,ci_95_lower,ci_95_upper,cohens_dz,wilcoxon_stat,raw_p_value,direction,ablation_type,p_value_adjusted_holm,conclusion
+end_to_end_macro_f1,End-to-End Macro-F1,qsvc_q8_r1,qsvc_q4_r1,60,0.1051,0.1108,-0.0057,0.0,0.0179,-0.0102,-0.0012,-0.3186,594.5,0.202542,B > A,QUBIT_SCALING_Q8_VS_Q4,1.0,NO_STATISTICAL_DIFFERENCE
+end_to_end_emergency_recall,Emergency Recall,qsvc_q8_r1,qsvc_q4_r1,60,0.2752,0.2725,0.0027,0.0,0.1718,-0.0408,0.0461,0.0156,94.0,0.967858,A > B,QUBIT_SCALING_Q8_VS_Q4,1.0,NO_STATISTICAL_DIFFERENCE
+end_to_end_emergency_precision,Emergency Precision,qsvc_q8_r1,qsvc_q4_r1,60,0.0081,0.0175,-0.0094,0.0,0.043,-0.0203,0.0015,-0.2183,88.5,0.132163,B > A,QUBIT_SCALING_Q8_VS_Q4,1.0,NO_STATISTICAL_DIFFERENCE
+end_to_end_false_emergency_rate,False-Emergency Rate,qsvc_q8_r1,qsvc_q4_r1,60,0.2812,0.2797,0.0015,0.0,0.1149,-0.0276,0.0306,0.0129,494.0,0.61143,A > B,QUBIT_SCALING_Q8_VS_Q4,1.0,NO_STATISTICAL_DIFFERENCE
+end_to_end_iper,End-to-End IPER,qsvc_q8_r1,qsvc_q4_r1,60,0.0825,0.0661,0.0164,0.0,0.1322,-0.017,0.0498,0.1241,79.0,0.33109,A > B,QUBIT_SCALING_Q8_VS_Q4,1.0,NO_STATISTICAL_DIFFERENCE
+stage2_feasible_macro_f1,Stage-2 Feasible Macro-F1,qsvc_q8_r1,qsvc_q4_r1,60,0.1252,0.1455,-0.0202,-0.0116,0.1186,-0.0503,0.0098,-0.1705,613.0,0.264809,B > A,QUBIT_SCALING_Q8_VS_Q4,1.0,NO_STATISTICAL_DIFFERENCE
+stage2_balanced_accuracy,Stage-2 Balanced Accuracy,qsvc_q8_r1,qsvc_q4_r1,60,0.3253,0.2701,0.0552,0.0,0.2706,-0.0133,0.1236,0.204,402.5,0.131331,A > B,QUBIT_SCALING_Q8_VS_Q4,1.0,NO_STATISTICAL_DIFFERENCE
+end_to_end_macro_f1,End-to-End Macro-F1,qsvc_q8_r1,qsvc_q8_r2,60,0.1051,0.107,-0.0019,-0.0004,0.0059,-0.0034,-0.0004,-0.3155,259.0,0.002098,B > A,CIRCUIT_DEPTH_REPS1_VS_REPS2,0.027274,qsvc_q8_r2_SUPERIOR
+end_to_end_emergency_recall,Emergency Recall,qsvc_q8_r1,qsvc_q8_r2,60,0.2752,0.2643,0.0108,0.0,0.0768,-0.0086,0.0303,0.1412,8.0,0.310494,A > B,CIRCUIT_DEPTH_REPS1_VS_REPS2,1.0,NO_STATISTICAL_DIFFERENCE
+end_to_end_emergency_precision,Emergency Precision,qsvc_q8_r1,qsvc_q8_r2,60,0.0081,0.0066,0.0015,0.0,0.0131,-0.0018,0.0048,0.1168,45.0,0.637601,A > B,CIRCUIT_DEPTH_REPS1_VS_REPS2,1.0,NO_STATISTICAL_DIFFERENCE
+end_to_end_false_emergency_rate,False-Emergency Rate,qsvc_q8_r1,qsvc_q8_r2,60,0.2812,0.2673,0.0138,0.0035,0.04,0.0037,0.024,0.3459,162.0,0.000503,A > B,CIRCUIT_DEPTH_REPS1_VS_REPS2,0.007042,qsvc_q8_r2_SUPERIOR_LOWER_FPR
+end_to_end_iper,End-to-End IPER,qsvc_q8_r1,qsvc_q8_r2,60,0.0825,0.0765,0.0059,0.0,0.0589,-0.009,0.0208,0.1004,11.0,0.611453,A > B,CIRCUIT_DEPTH_REPS1_VS_REPS2,1.0,NO_STATISTICAL_DIFFERENCE
+stage2_feasible_macro_f1,Stage-2 Feasible Macro-F1,qsvc_q8_r1,qsvc_q8_r2,60,0.1252,0.1296,-0.0044,0.0,0.1021,-0.0302,0.0214,-0.0432,290.5,0.688148,B > A,CIRCUIT_DEPTH_REPS1_VS_REPS2,1.0,NO_STATISTICAL_DIFFERENCE
+stage2_balanced_accuracy,Stage-2 Balanced Accuracy,qsvc_q8_r1,qsvc_q8_r2,60,0.3253,0.3048,0.0205,0.0,0.2159,-0.0341,0.0751,0.0949,215.0,0.517554,A > B,CIRCUIT_DEPTH_REPS1_VS_REPS2,1.0,NO_STATISTICAL_DIFFERENCE

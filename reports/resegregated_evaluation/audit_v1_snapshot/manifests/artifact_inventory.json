@@ -1,0 +1,234 @@
+{
+  "report_package": "TORGO Resegregated Evaluation Package",
+  "created_at": "2026-10-12T10:45:00Z",
+  "artifacts": [
+    {
+      "relative_path": "README_RESULTS.md",
+      "size_bytes": 7315,
+      "sha256": "e4771716fd004fb3f05d22645097860d8a372ef8b518e12e1073260508d014cb",
+      "file_type": "MD"
+    },
+    {
+      "relative_path": "RESEGREGATED_MODEL_COMPARISON_REPORT.docx",
+      "size_bytes": 1090932,
+      "sha256": "bc472a8c499fb0e8580bcf3b7546d195ce34fe9b50258a3d7b8e2b6cd4a82163",
+      "file_type": "DOCX"
+    },
+    {
+      "relative_path": "RESEGREGATED_MODEL_COMPARISON_REPORT.md",
+      "size_bytes": 27559,
+      "sha256": "589c7aad767307f250f42384193c39f48bc427bea35834b5a250bebdabbacac7",
+      "file_type": "MD"
+    },
+    {
+      "relative_path": "RESEGREGATED_MODEL_COMPARISON_REPORT.pdf",
+      "size_bytes": 1318561,
+      "sha256": "dd00da47005068d27633f41995772c2ac77043f57f05494a71cea2f19e5246fd",
+      "file_type": "PDF"
+    },
+    {
+      "relative_path": "figures\\fig10_confusion_matrices.png",
+      "size_bytes": 194436,
+      "sha256": "8d0a067b3c9a5e61640f04c0d1295f3230089cb1c9cd9c36cc40bb3ae600d11a",
+      "file_type": "PNG"
+    },
+    {
+      "relative_path": "figures\\fig10_confusion_matrices.svg",
+      "size_bytes": 113000,
+      "sha256": "c37729bee2624dcecf6465efd99fe04c83c1ae6e4485437d4d1a76140576e3c9",
+      "file_type": "SVG"
+    },
+    {
+      "relative_path": "figures\\fig11_per_class_performance.png",
+      "size_bytes": 198373,
+      "sha256": "94f76099164e9835bd944969e6986e5ba32020c1c6f21ad8a7109b6909715e03",
+      "file_type": "PNG"
+    },
+    {
+      "relative_path": "figures\\fig11_per_class_performance.svg",
+      "size_bytes": 81309,
+      "sha256": "22e00d448f362e99c158edcb70ed65dcdd48adb061d04688ca3a4970ea941518",
+      "file_type": "SVG"
+    },
+    {
+      "relative_path": "figures\\fig12_runtime_latency.png",
+      "size_bytes": 145690,
+      "sha256": "e90b102a7cdb18b44197f3d034cc4fc3008bba0d418a608564dbee155083a5b8",
+      "file_type": "PNG"
+    },
+    {
+      "relative_path": "figures\\fig12_runtime_latency.svg",
+      "size_bytes": 80212,
+      "sha256": "4c07670428592cd048f5a39bc9e34d60914ea7e905641c79b4f10acd8fdcf9f0",
+      "file_type": "SVG"
+    },
+    {
+      "relative_path": "figures\\fig1_dataset_distribution.png",
+      "size_bytes": 216995,
+      "sha256": "1fd2b08da3074f56087b3e5325843f08cf495b3f51a1425c7a7cb7e61a7e932b",
+      "file_type": "PNG"
+    },
+    {
+      "relative_path": "figures\\fig1_dataset_distribution.svg",
+      "size_bytes": 147608,
+      "sha256": "9c7dceab85aa4237a4c4c3283f22018055fb0e9befff124f47ace8f2f3f650f2",
+      "file_type": "SVG"
+    },
+    {
+      "relative_path": "figures\\fig2_overall_accuracy.png",
+      "size_bytes": 235803,
+      "sha256": "5cf0cc1bae7a220c0a2b48ce0b2655089db71def32e7d7d06feb239c899181c5",
+      "file_type": "PNG"
+    },
+    {
+      "relative_path": "figures\\fig2_overall_accuracy.svg",
+      "size_bytes": 144240,
+      "sha256": "8dfb71bcf555718e5fab6772e17026081e33425495ec0f33cef5ee93a04750e7",
+      "file_type": "SVG"
+    },
+    {
+      "relative_path": "figures\\fig3_macro_f1_comparison.png",
+      "size_bytes": 258568,
+      "sha256": "ad47316476d64e7b2d7149926a10f493d94dcd73e8b2e1c529035981aa372fee",
+      "file_type": "PNG"
+    },
+    {
+      "relative_path": "figures\\fig3_macro_f1_comparison.svg",
+      "size_bytes": 86339,
+      "sha256": "0d651093f441dcc5c700dd3bd9fad5eb078421047e56c5ca4b69277b99dbfa24",
+      "file_type": "SVG"
+    },
+    {
+      "relative_path": "figures\\fig4_emergency_recall_vs_precision.png",
+      "size_bytes": 183531,
+      "sha256": "52c72e9fbc14f729a94de089a603b0946a89f2e2c6e333d7e3053f1ce9757655",
+      "file_type": "PNG"
+    },
+    {
+      "relative_path": "figures\\fig4_emergency_recall_vs_precision.svg",
+      "size_bytes": 84728,
+      "sha256": "9da207a92cadd0b4f53563d4eb7d6d0e80f3c4ed994cfa26b63a8868ad74da1a",
+      "file_type": "SVG"
+    },
+    {
+      "relative_path": "figures\\fig5_false_emergency_rate.png",
+      "size_bytes": 223287,
+      "sha256": "c837be25bc2afeaa44d72a0f24475bf60895a1ee9697058095bb10a002602820",
+      "file_type": "PNG"
+    },
+    {
+      "relative_path": "figures\\fig5_false_emergency_rate.svg",
+      "size_bytes": 82534,
+      "sha256": "3b8cf1bec9bcdb480d78274d4fdad9cdf53697e34842c937bc637d5b82356fea",
+      "file_type": "SVG"
+    },
+    {
+      "relative_path": "figures\\fig6_balanced_accuracy.png",
+      "size_bytes": 236191,
+      "sha256": "161ad8ab317eb55d907db092c7a2c1869967581dd6ef8ad7966358fa7b90e861",
+      "file_type": "PNG"
+    },
+    {
+      "relative_path": "figures\\fig6_balanced_accuracy.svg",
+      "size_bytes": 80430,
+      "sha256": "6ee25722105534099e033cae851b2550b19d538fc53ed13d84fc9d792200a6c2",
+      "file_type": "SVG"
+    },
+    {
+      "relative_path": "figures\\fig7_sample_budget_scaling.png",
+      "size_bytes": 230502,
+      "sha256": "611b9cc95c8bf257249d599187219e0f20d9a0d9e99e13794e9e99763d2dc2d9",
+      "file_type": "PNG"
+    },
+    {
+      "relative_path": "figures\\fig7_sample_budget_scaling.svg",
+      "size_bytes": 86676,
+      "sha256": "bcfb8d8c9bb82e1683feb13899e0bf11e1de010db94c4c0599238ff7fa67567c",
+      "file_type": "SVG"
+    },
+    {
+      "relative_path": "figures\\fig8_speaker_variation.png",
+      "size_bytes": 215625,
+      "sha256": "081153745888310e0b38b90f6ec7f1b040cf45d9e2f2adad5066ae86be2e413f",
+      "file_type": "PNG"
+    },
+    {
+      "relative_path": "figures\\fig8_speaker_variation.svg",
+      "size_bytes": 80195,
+      "sha256": "2be1bf1366419217480a6619a5b100793ef074177c520ee3a6b099bb4127ebfb",
+      "file_type": "SVG"
+    },
+    {
+      "relative_path": "figures\\fig9_quantum_vs_rbf_matched.png",
+      "size_bytes": 256183,
+      "sha256": "af119c375dd71d517881220bf6aeda1011ca8815c753efb9e5f773729cfdb048",
+      "file_type": "PNG"
+    },
+    {
+      "relative_path": "figures\\fig9_quantum_vs_rbf_matched.svg",
+      "size_bytes": 103836,
+      "sha256": "e0e8f056a819b9394763d41e04fc7914afa0ba409a354fb2ed280eba8a763de3",
+      "file_type": "SVG"
+    },
+    {
+      "relative_path": "manifests\\evaluation_manifest.json",
+      "size_bytes": 799074,
+      "sha256": "a880d36e29e8ac9805d317fd5d57ed2b6db86c86f9ec2c22b30f663f5c256497",
+      "file_type": "JSON"
+    },
+    {
+      "relative_path": "results\\condition_level_results.csv",
+      "size_bytes": 7277,
+      "sha256": "1b511b681c80b6c2442c02be5fb5256f3ee3a7ba19c493dee6ec896c5bb500c8",
+      "file_type": "CSV"
+    },
+    {
+      "relative_path": "results\\model_comparison_summary.csv",
+      "size_bytes": 2415,
+      "sha256": "6de3d208e0e0a7e812719b5acd5eba6d91e04b962afb23dc96f7b03f4f0622c7",
+      "file_type": "CSV"
+    },
+    {
+      "relative_path": "results\\per_class_metrics.csv",
+      "size_bytes": 1031,
+      "sha256": "38dcd50b93937bf9e2cedbc3a9040026e9258645a987312d27d39aa77c2bcf02",
+      "file_type": "CSV"
+    },
+    {
+      "relative_path": "results\\runtime_comparison.csv",
+      "size_bytes": 983,
+      "sha256": "a0283e2f05d613e012c919db323e23b1e2e37d4d79aa75cb95754ada8400c398",
+      "file_type": "CSV"
+    },
+    {
+      "relative_path": "results\\speaker_level_results.csv",
+      "size_bytes": 1561,
+      "sha256": "c54a0eacc8662a4ff29d909f6d9987a8ba75b0c93c9a301144cec0d41528c854",
+      "file_type": "CSV"
+    },
+    {
+      "relative_path": "results\\statistical_comparisons.csv",
+      "size_bytes": 1733,
+      "sha256": "b6523f741cea4c65b8bcb99fdc3165338b723da90603eb26c99ab17abf662973",
+      "file_type": "CSV"
+    },
+    {
+      "relative_path": "results\\confusion_matrices\\confusion_matrix_qsvc_q8_r1.csv",
+      "size_bytes": 286,
+      "sha256": "ec534603519bb6c74bc3824dc0137229cca4a050683a591eff46c1b102cd7f00",
+      "file_type": "CSV"
+    },
+    {
+      "relative_path": "results\\confusion_matrices\\confusion_matrix_rbf_svm8.csv",
+      "size_bytes": 287,
+      "sha256": "accc370d308cf263c04f1c8b9c0fcf0717cc7f447b859bd2f34a6389716135c4",
+      "file_type": "CSV"
+    },
+    {
+      "relative_path": "results\\confusion_matrices\\confusion_matrix_weighted_adapter8.csv",
+      "size_bytes": 288,
+      "sha256": "f5021ee2e69aafc29336a0c2c33cc271a8aa6a2314c66fae216ff727413c0ae5",
+      "file_type": "CSV"
+    }
+  ]
+}

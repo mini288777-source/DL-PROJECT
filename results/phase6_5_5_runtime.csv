@@ -1,0 +1,8 @@
+model,model_family,dimension,qubit_count,reps,hilbert_dim,circuit_depth,two_qubit_gate_count,one_qubit_gate_count,total_gate_count,mean_train_time_sec,std_train_time_sec,mean_inf_time_sec,std_inf_time_sec,total_wall_time_sec
+qsvc_q8_r1,quantum,8,8,1,256,23,14,23,37,0.0888,0.069,1.0816,1.0408,70.22
+hierarchical_adapter_d8,adapter,8,0,0,0,0,0,0,0,0.2625,0.1049,0.0006,0.0002,15.79
+hierarchical_rbf_svm_d8,rbf_svm,8,0,0,0,0,0,0,0,0.004,0.0008,0.0014,0.0009,0.33
+qsvc_q4_r1,quantum,4,4,1,16,11,6,11,17,0.0247,0.0179,0.4194,0.457,26.64
+qsvc_q8_r2,quantum,8,8,2,256,31,28,46,74,0.1578,0.1255,1.9761,1.8272,128.04
+hierarchical_adapter_d4,adapter,4,0,0,0,0,0,0,0,0.2247,0.089,0.0004,0.0002,13.51
+hierarchical_rbf_svm_d4,rbf_svm,4,0,0,0,0,0,0,0,0.0038,0.0007,0.0014,0.0009,0.31

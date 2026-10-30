@@ -1,0 +1,2 @@
+track,accuracy,macro_f1,emergency_recall,emergency_precision,false_emergency_rate,intent_preservation_rate,train_samples,test_samples,train_time_sec,eval_time_sec
+Track_C_Classical_Shadow,0.8082304526748971,0.1499634821527116,0.11666666666666667,0.03825136612021858,0.1523809523809524,0.8476190476190476,4852,1215,32.89190569999846,0.029822800000147254

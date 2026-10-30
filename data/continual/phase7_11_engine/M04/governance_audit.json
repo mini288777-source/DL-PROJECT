@@ -1,0 +1,66 @@
+[
+  {
+    "timestamp": "2026-10-06T19:06:58.986335+00:00",
+    "event": "REJECTED",
+    "event_type": "REJECTION",
+    "model_version": "M04_v1.0.0_b20",
+    "speaker_id": "M04",
+    "candidate_version": "M04_v1.0.0_b20",
+    "validation_id": "VAL_M04_v1.0.0_b20_20261006190658",
+    "reason": "REJECTED_SAFETY_VETO_FER_EXCEEDED, REJECTED_MACRO_F1_REGRESSION",
+    "reason_codes": [
+      "REJECTED_SAFETY_VETO_FER_EXCEEDED",
+      "REJECTED_MACRO_F1_REGRESSION"
+    ],
+    "safety_veto": true,
+    "policy_version": "v1.0.0_frozen"
+  },
+  {
+    "timestamp": "2026-10-06T19:06:59.175937+00:00",
+    "event": "REJECTED",
+    "event_type": "REJECTION",
+    "model_version": "M04_v2.0.0_b30",
+    "speaker_id": "M04",
+    "candidate_version": "M04_v2.0.0_b30",
+    "validation_id": "VAL_M04_v2.0.0_b30_20261006190659",
+    "reason": "REJECTED_SAFETY_VETO_FER_EXCEEDED, REJECTED_MACRO_F1_REGRESSION",
+    "reason_codes": [
+      "REJECTED_SAFETY_VETO_FER_EXCEEDED",
+      "REJECTED_MACRO_F1_REGRESSION"
+    ],
+    "safety_veto": true,
+    "policy_version": "v1.0.0_frozen"
+  },
+  {
+    "timestamp": "2026-10-06T19:06:59.435587+00:00",
+    "event": "REJECTED",
+    "event_type": "REJECTION",
+    "model_version": "M04_v3.0.0_b40",
+    "speaker_id": "M04",
+    "candidate_version": "M04_v3.0.0_b40",
+    "validation_id": "VAL_M04_v3.0.0_b40_20261006190659",
+    "reason": "REJECTED_SAFETY_VETO_FER_EXCEEDED, REJECTED_MACRO_F1_REGRESSION",
+    "reason_codes": [
+      "REJECTED_SAFETY_VETO_FER_EXCEEDED",
+      "REJECTED_MACRO_F1_REGRESSION"
+    ],
+    "safety_veto": true,
+    "policy_version": "v1.0.0_frozen"
+  },
+  {
+    "timestamp": "2026-10-06T19:06:59.730977+00:00",
+    "event": "REJECTED",
+    "event_type": "REJECTION",
+    "model_version": "M04_v4.0.0_b50",
+    "speaker_id": "M04",
+    "candidate_version": "M04_v4.0.0_b50",
+    "validation_id": "VAL_M04_v4.0.0_b50_20261006190659",
+    "reason": "REJECTED_SAFETY_VETO_FER_EXCEEDED, REJECTED_MACRO_F1_REGRESSION",
+    "reason_codes": [
+      "REJECTED_SAFETY_VETO_FER_EXCEEDED",
+      "REJECTED_MACRO_F1_REGRESSION"
+    ],
+    "safety_veto": true,
+    "policy_version": "v1.0.0_frozen"
+  }
+]

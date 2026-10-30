@@ -1,0 +1,290 @@
+{
+  "audit": "Phase 8.1 Speaker-Specific FER and Safety Audit",
+  "canonical_fer_formula": "FER = FP / (FP + TN) = FP / Total_Non_Emergency_Speech",
+  "safety_bound_limit": 0.15,
+  "pooled_vs_speaker_level_finding": "A pooled FER at or below 15% does not establish that every speaker individually satisfies the same limit.",
+  "tracks": {
+    "Track_A_Baseline": {
+      "pooled_outer_fold_FER": 0.06457204767063922,
+      "pooled_FER_percentage": "6.46%",
+      "pooled_safety_pass": true,
+      "speakers_above_15pct_FER": [
+        "M05"
+      ],
+      "speakers_above_15pct_count": 1,
+      "speakers_at_or_below_15pct_FER": [
+        "F01",
+        "F03",
+        "F04",
+        "FC01",
+        "FC02",
+        "FC03",
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "MC01",
+        "MC02",
+        "MC03",
+        "MC04"
+      ],
+      "speakers_at_or_below_15pct_count": 14,
+      "detailed_violating_speakers": [
+        {
+          "speaker_id": "M05",
+          "cohort": "dysarthric",
+          "FP": 42,
+          "TN": 228,
+          "non_emergency_support": 270,
+          "FER": 0.1555555555555555,
+          "FER_percentage": "15.56%"
+        }
+      ],
+      "dysarthric_cohort": {
+        "total_non_emergency_samples": 1614,
+        "FP": 110,
+        "TN": 1504,
+        "cohort_FER": 0.06815365551425032,
+        "cohort_FER_percentage": "6.82%"
+      },
+      "control_cohort": {
+        "total_non_emergency_samples": 3001,
+        "FP": 188,
+        "TN": 2813,
+        "cohort_FER": 0.06264578473842053,
+        "cohort_FER_percentage": "6.26%"
+      }
+    },
+    "INT-1-CALIB": {
+      "pooled_outer_fold_FER": 0.028602383531960998,
+      "pooled_FER_percentage": "2.86%",
+      "pooled_safety_pass": true,
+      "speakers_above_15pct_FER": [],
+      "speakers_above_15pct_count": 0,
+      "speakers_at_or_below_15pct_FER": [
+        "F01",
+        "F03",
+        "F04",
+        "FC01",
+        "FC02",
+        "FC03",
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05",
+        "MC01",
+        "MC02",
+        "MC03",
+        "MC04"
+      ],
+      "speakers_at_or_below_15pct_count": 15,
+      "detailed_violating_speakers": [],
+      "dysarthric_cohort": {
+        "total_non_emergency_samples": 1614,
+        "FP": 91,
+        "TN": 1523,
+        "cohort_FER": 0.0563816604708798,
+        "cohort_FER_percentage": "5.64%"
+      },
+      "control_cohort": {
+        "total_non_emergency_samples": 3001,
+        "FP": 41,
+        "TN": 2960,
+        "cohort_FER": 0.013662112629123625,
+        "cohort_FER_percentage": "1.37%"
+      }
+    },
+    "INT-2-COST": {
+      "pooled_outer_fold_FER": 0.0647887323943662,
+      "pooled_FER_percentage": "6.48%",
+      "pooled_safety_pass": true,
+      "speakers_above_15pct_FER": [],
+      "speakers_above_15pct_count": 0,
+      "speakers_at_or_below_15pct_FER": [
+        "F01",
+        "F03",
+        "F04",
+        "FC01",
+        "FC02",
+        "FC03",
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05",
+        "MC01",
+        "MC02",
+        "MC03",
+        "MC04"
+      ],
+      "speakers_at_or_below_15pct_count": 15,
+      "detailed_violating_speakers": [],
+      "dysarthric_cohort": {
+        "total_non_emergency_samples": 1614,
+        "FP": 93,
+        "TN": 1521,
+        "cohort_FER": 0.05762081784386617,
+        "cohort_FER_percentage": "5.76%"
+      },
+      "control_cohort": {
+        "total_non_emergency_samples": 3001,
+        "FP": 206,
+        "TN": 2795,
+        "cohort_FER": 0.06864378540486504,
+        "cohort_FER_percentage": "6.86%"
+      }
+    },
+    "INT-3-SAMP": {
+      "pooled_outer_fold_FER": 0.11180931744312025,
+      "pooled_FER_percentage": "11.18%",
+      "pooled_safety_pass": true,
+      "speakers_above_15pct_FER": [
+        "FC02",
+        "M03"
+      ],
+      "speakers_above_15pct_count": 2,
+      "speakers_at_or_below_15pct_FER": [
+        "F01",
+        "F03",
+        "F04",
+        "FC01",
+        "FC03",
+        "M01",
+        "M02",
+        "M04",
+        "M05",
+        "MC01",
+        "MC02",
+        "MC03",
+        "MC04"
+      ],
+      "speakers_at_or_below_15pct_count": 13,
+      "detailed_violating_speakers": [
+        {
+          "speaker_id": "FC02",
+          "cohort": "control",
+          "FP": 202,
+          "TN": 547,
+          "non_emergency_support": 749,
+          "FER": 0.2696929238985314,
+          "FER_percentage": "26.97%"
+        },
+        {
+          "speaker_id": "M03",
+          "cohort": "dysarthric",
+          "FP": 65,
+          "TN": 241,
+          "non_emergency_support": 306,
+          "FER": 0.2124183006535947,
+          "FER_percentage": "21.24%"
+        }
+      ],
+      "dysarthric_cohort": {
+        "total_non_emergency_samples": 1614,
+        "FP": 170,
+        "TN": 1444,
+        "cohort_FER": 0.10532837670384139,
+        "cohort_FER_percentage": "10.53%"
+      },
+      "control_cohort": {
+        "total_non_emergency_samples": 3001,
+        "FP": 346,
+        "TN": 2655,
+        "cohort_FER": 0.11529490169943352,
+        "cohort_FER_percentage": "11.53%"
+      }
+    },
+    "Track_B_Quantum": {
+      "pooled_outer_fold_FER": 0.06370530877573131,
+      "pooled_FER_percentage": "6.37%",
+      "pooled_safety_pass": true,
+      "speakers_above_15pct_FER": [
+        "M05"
+      ],
+      "speakers_above_15pct_count": 1,
+      "speakers_at_or_below_15pct_FER": [
+        "F01",
+        "F03",
+        "F04",
+        "FC01",
+        "FC02",
+        "FC03",
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "MC01",
+        "MC02",
+        "MC03",
+        "MC04"
+      ],
+      "speakers_at_or_below_15pct_count": 14,
+      "detailed_violating_speakers": [
+        {
+          "speaker_id": "M05",
+          "cohort": "dysarthric",
+          "FP": 41,
+          "TN": 229,
+          "non_emergency_support": 270,
+          "FER": 0.1518518518518518,
+          "FER_percentage": "15.19%"
+        }
+      ],
+      "dysarthric_cohort": {
+        "total_non_emergency_samples": 1614,
+        "FP": 127,
+        "TN": 1487,
+        "cohort_FER": 0.07868649318463444,
+        "cohort_FER_percentage": "7.87%"
+      },
+      "control_cohort": {
+        "total_non_emergency_samples": 3001,
+        "FP": 167,
+        "TN": 2834,
+        "cohort_FER": 0.05564811729423526,
+        "cohort_FER_percentage": "5.56%"
+      }
+    },
+    "Track_C_Shadow": {
+      "pooled_outer_fold_FER": 0.06717226435536294,
+      "pooled_FER_percentage": "6.72%",
+      "pooled_safety_pass": true,
+      "speakers_above_15pct_FER": [],
+      "speakers_above_15pct_count": 0,
+      "speakers_at_or_below_15pct_FER": [
+        "F01",
+        "F03",
+        "F04",
+        "FC01",
+        "FC02",
+        "FC03",
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05",
+        "MC01",
+        "MC02",
+        "MC03",
+        "MC04"
+      ],
+      "speakers_at_or_below_15pct_count": 15,
+      "detailed_violating_speakers": [],
+      "dysarthric_cohort": {
+        "total_non_emergency_samples": 1614,
+        "FP": 100,
+        "TN": 1514,
+        "cohort_FER": 0.061957868649318466,
+        "cohort_FER_percentage": "6.20%"
+      },
+      "control_cohort": {
+        "total_non_emergency_samples": 3001,
+        "FP": 210,
+        "TN": 2791,
+        "cohort_FER": 0.06997667444185271,
+        "cohort_FER_percentage": "7.00%"
+      }
+    }
+  }
+}

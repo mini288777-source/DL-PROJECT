@@ -1,0 +1,107 @@
+{
+  "quantum_vs_classical_shadow": {
+    "emergency_recall": {
+      "mean_difference": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "cohens_d": 0.0,
+      "t_statistic": 0.0,
+      "t_p_value": 1.0,
+      "wilcoxon_stat": 0.0,
+      "wilcoxon_p_value": 1.0,
+      "fdr_significant": false
+    },
+    "emergency_precision": {
+      "mean_difference": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "cohens_d": 0.0,
+      "t_statistic": 0.0,
+      "t_p_value": 1.0,
+      "wilcoxon_stat": 0.0,
+      "wilcoxon_p_value": 1.0,
+      "fdr_significant": false
+    },
+    "false_emergency_rate": {
+      "mean_difference": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "cohens_d": 0.0,
+      "t_statistic": 0.0,
+      "t_p_value": 1.0,
+      "wilcoxon_stat": 0.0,
+      "wilcoxon_p_value": 1.0,
+      "fdr_significant": false
+    },
+    "macro_f1": {
+      "mean_difference": -0.0013793865918496522,
+      "ci_95": [
+        -0.0037215751438995246,
+        0.0009628019602002204
+      ],
+      "cohens_d": -0.14902001143813745,
+      "t_statistic": -1.1543040451030906,
+      "t_p_value": 0.25302973374532534,
+      "wilcoxon_stat": 233.0,
+      "wilcoxon_p_value": 0.1792429225770218,
+      "fdr_significant": false
+    }
+  },
+  "quantum_vs_hierarchical_classical": {
+    "emergency_recall": {
+      "mean_difference": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "cohens_d": 0.0,
+      "t_statistic": 0.0,
+      "t_p_value": 1.0,
+      "wilcoxon_stat": 0.0,
+      "wilcoxon_p_value": 1.0
+    },
+    "emergency_precision": {
+      "mean_difference": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "cohens_d": 0.0,
+      "t_statistic": 0.0,
+      "t_p_value": 1.0,
+      "wilcoxon_stat": 0.0,
+      "wilcoxon_p_value": 1.0
+    },
+    "false_emergency_rate": {
+      "mean_difference": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "cohens_d": 0.0,
+      "t_statistic": 0.0,
+      "t_p_value": 1.0,
+      "wilcoxon_stat": 0.0,
+      "wilcoxon_p_value": 1.0
+    },
+    "macro_f1": {
+      "mean_difference": -0.0007457444696846418,
+      "ci_95": [
+        -0.0026220569622945446,
+        0.0011305680229252613
+      ],
+      "cohens_d": -0.1005692745577954,
+      "t_statistic": -0.7790062510050056,
+      "t_p_value": 0.43908946654200565,
+      "wilcoxon_stat": 243.0,
+      "wilcoxon_p_value": 0.15737607169087242
+    }
+  },
+  "hierarchical_classical_vs_shadow": {}
+}

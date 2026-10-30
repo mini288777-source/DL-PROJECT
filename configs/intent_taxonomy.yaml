@@ -1,0 +1,55 @@
+# Emergency-Intent Taxonomy for Atypical Speech Recognition
+# Fixed schema for emergency communication assistance
+
+version: "1.0.0"
+dataset_applicability: ["TORGO", "UASpeech", "SAP"]
+
+intents:
+  - intent_id: "SOS_HELP"
+    intent_name: "SOS / Immediate Help"
+    definition: "Urgent call for external assistance, danger notification, or immediate human intervention."
+    evidence_requirement: "Explicit utterance of distress invocation (e.g., 'help', 'trouble', 'save') without contradictory casual context."
+    mapping_rule: "Exact match on isolated distress tokens or phrases where the primary semantic head conveys urgent need for assistance."
+    keywords: ["help", "trouble", "save", "sos", "assist", "emergency"]
+
+  - intent_id: "FALL"
+    intent_name: "Fall / Grounded Event"
+    definition: "Notification that the speaker has collapsed, fallen, slipped, or is physically immobilized on the ground/floor."
+    evidence_requirement: "Explicit expression of downward physical collapse or kinematic loss of footing."
+    mapping_rule: "Exact match on isolated fall tokens or verbs/nouns indicating physical drop or slip ('fall', 'fell', 'drop', 'slip', 'floor')."
+    keywords: ["fall", "fell", "slip", "drop", "floor", "down"]
+
+  - intent_id: "BREATHING_MEDICAL"
+    intent_name: "Breathing / Medical Distress"
+    definition: "Acute physiological distress involving airway obstruction, oxygen deprivation, or critical medication requirement."
+    evidence_requirement: "Direct mention of respiratory impediment, air hunger, choking, or emergency medication."
+    mapping_rule: "Exact match on respiratory keywords ('air', 'breath', 'choke', 'cough') or vital medication ('pill', 'medicine')."
+    keywords: ["air", "breath", "breathe", "choke", "cough", "pill", "medicine"]
+
+  - intent_id: "PAIN"
+    intent_name: "Acute Pain / Injury"
+    definition: "Report of acute physical suffering, injury, trauma, or somatic distress."
+    evidence_requirement: "Direct expression of localized or systemic pain, ache, or injury."
+    mapping_rule: "Exact match on isolated somatic pain or trauma descriptors ('pain', 'hurt', 'ache', 'burn', 'bad')."
+    keywords: ["pain", "hurt", "ache", "burn", "bad", "sore"]
+
+  - intent_id: "LOCATION"
+    intent_name: "Location / Spatial Reference"
+    definition: "Spatial designation identifying where the distressed individual is located within a residence or facility."
+    evidence_requirement: "Specific domestic or physical room identifier or deictic spatial coordinate."
+    mapping_rule: "Tokens referencing specific emergency-relevant indoor zones ('room', 'bed', 'bathroom', 'kitchen', 'door', 'here', 'there')."
+    keywords: ["room", "bed", "bathroom", "kitchen", "door", "floor", "here", "there", "home"]
+
+  - intent_id: "CRITICAL_RESPONSE"
+    intent_name: "Critical Binary Response / Imperative"
+    definition: "Time-critical responses to emergency personnel or imperative commands during incident triage."
+    evidence_requirement: "Isolated confirmation, disconfirmation, or urgent halt/proceed command."
+    mapping_rule: "Direct match on isolated binary triage tokens ('yes', 'no') or urgent action imperatives ('stop', 'go', 'now')."
+    keywords: ["yes", "no", "stop", "go", "now", "wait"]
+
+  - intent_id: "GENERAL_SPEECH"
+    intent_name: "General / Non-Emergency Speech"
+    definition: "Standard speech stimuli, phonetically balanced reading passages, or vocabulary items lacking emergency relevance."
+    evidence_requirement: "Absence of emergency distress or triage intent."
+    mapping_rule: "Default mapping for all standard reading passages and non-emergency vocabulary."
+    keywords: []
